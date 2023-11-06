@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6d819e768f.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="share-buttons">
+    <div class="share-button" onclick="shareOnTwitter()">
+      <div class="share-button-secondary">
+        <div class="share-button-secondary-content">Share on Twitter</div>
+      </div>
+      <div class="share-button-primary">
+        <i class="share-button-icon fa fa-twitter"></i>
+      </div>
+    </div>
+    <div class="share-button" onclick="shareOnFacebook()">
+      <div class="share-button-secondary">
+        <div class="share-button-secondary-content">Share on Facebook</div>
+      </div>
+      <div class="share-button-primary">
+        <i class="share-button-icon fa fa-facebook"></i>
+      </div>
+    </div>
+    <div class="share-button" onclick="shareOnLinkedIn()">
+      <div class="share-button-secondary">
+        <div class="share-button-secondary-content">Share on LinkedIn</div>
+      </div>
+      <div class="share-button-primary">
+        <i class="share-button-icon fa fa-linkedin"></i>
+      </div>
+    </div>
+    <div class="share-button" onclick="shareOnWhatsApp()">
+      <div class="share-button-secondary">
+        <div class="share-button-secondary-content">Share on Whatsapp</div>
+      </div>
+      <div class="share-button-primary">
+        <i class="share-button-icon fa fa-whatsapp"></i>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .share-buttons {
+      position: fixed;
+      width: 301px;
+      height: 212px;
+      padding-left: 135px;
+      bottom: 5%;
+      left: 1.5%;
+      margin-left: -150px;
+      z-index: 100;
+    }
+
+    .share-buttons .share-button {
+      float: left;
+      margin-top: 18px;
+    }
+
+    .share-buttons .share-button:after {
+      clear: both;
+      display: table;
+    }
+
+    .share-buttons .share-button:first-child {
+      margin-top: 0;
+    }
+
+    .share-button {
+      display: block;
+      position: relative;
+      height: 30px;
+    }
+
+    .share-button:hover {
+      cursor: pointer;
+    }
+
+    .share-button:hover .share-button-primary {
+      box-shadow: 1px 0 0 0 rgba(0, 0, 0, .1);
+    }
+
+    .share-button:hover .share-button-secondary-content {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .share-button-primary {
+      position: absolute;
+      background: #03033f;
+      width: 35px;
+      height: 35px;
+      border-radius: 20px;
+      left: 0;
+      top: 50%;
+      margin-top: -15px;
+    }
+
+    .share-button-icon {
+      display: block;
+      color: white;
+      position: absolute;
+      width: 26px;
+      line-height: 30px;
+      font-size: 17px;
+      margin-top: 2px;
+      margin-left: 10px;
+    }
+
+    .share-button-secondary {
+      overflow: hidden;
+      margin-left: 15px;
+      height: 40px;
+    }
+
+    .share-button-secondary-content {
+      font-family: sans-serif;
+      font-size: .75em;
+      background: #03033f;
+      display: block;
+      height: 34px;
+      text-align: left;
+      padding-left: 24px;
+      padding-right: 18px;
+      line-height: 30px;
+      color: white;
+      border-radius: 0 15px 15px 0;
+      transform: translate3d(-100%, 0, 0);
+      transition: transform 175ms ease;
+    }
+  </style>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
