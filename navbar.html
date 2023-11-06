@@ -581,7 +581,17 @@
             <div class="mobile-hamburg-menu-list">
                 <div class="mobile-hamburg-submenu">
                     <ul>
-                        <li>Women IT jobs</li>
+                        <li>
+                            <div style="display: flex; justify-content: space-between;">
+                                <p>Women IT job</p>
+                                <p id="women"> <i class="fa-solid fa-plus"></i></p>
+                            </div>
+                            <ul style="display: none;" id="women-job">
+                                <li>Content-one</li>
+                                <li>Content-two</li>
+                            </ul>
+                            </i>
+                        </li>
                         <li>Career Restart</li>
                         <li>Placement</li>
                         <li>Review</li>
@@ -591,9 +601,26 @@
                         <li> Blockchain</li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </nav>
+
+    <script>
+        var women = document.getElementById("women");
+        var displayWomenJob = document.getElementById("women-job");
+        var isVisible = false;
+    
+        women.addEventListener("click", function () {
+            if (isVisible) {
+                displayWomenJob.style.display = "none";
+            } else {
+                displayWomenJob.style.display = "block";
+            }
+            isVisible = !isVisible;
+        });
+    </script>
+    
 
 
     <script>

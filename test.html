@@ -1,142 +1,225 @@
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/6d819e768f.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carousel with Buttons</title>
+    <style>
+     .carousel-container-unique {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.carousel-wrapper-unique {
+  padding: 20px 0px 20px 0px;
+  overflow: hidden;
+  flex: 1;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: flex;
+}
+
+.carousel-slide-unique {
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.carousel-card-unique {
+  flex: 0 0 calc(25% - 20px); 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  border-radius: 15px;
+  background: #edf8fA;
+  margin-right: 20px; 
+  padding: 20px;
+  font-family: hind;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+    </style>
 </head>
 
 <body>
-
-  <div class="share-buttons">
-    <div class="share-button" onclick="shareOnTwitter()">
-      <div class="share-button-secondary">
-        <div class="share-button-secondary-content">Share on Twitter</div>
-      </div>
-      <div class="share-button-primary">
-        <i class="share-button-icon fa fa-twitter"></i>
-      </div>
+   <div class="carousel-container-unique">
+        <div class="carousel-wrapper-unique">
+            <div class="carousel-controls">
+                <button id="prevBtnn">Previous</button>
+                <button id="nextBtnn">Next</button>
+            </div>
+            <div class="carousel-slide-unique">
+                <div class="carousel-card-unique">
+                    <p>Slide 1</p>
+                </div>
+                <div class="carousel-card-unique">
+                    <p>Slide 2</p>
+                </div>
+                <div class="carousel-card-unique">
+                    <p>Slide 3</p>
+                </div>
+                <div class="carousel-card-unique">
+                    <p>Slide 4</p>
+                </div>
+                <div class="carousel-card-unique">
+                    <p>Slide 5</p>
+                </div>
+                <div class="carousel-card-unique">
+                    <p>Slide 6</p>
+                </div>
+                <div class="carousel-card-unique">
+                    <p>Slide 7</p>
+                </div>
+                <div class="carousel-card-unique">
+                    <p>Slide 8</p>
+                </div>
+                <div class="carousel-card-unique">
+                    <p>Slide 9</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="share-button" onclick="shareOnFacebook()">
-      <div class="share-button-secondary">
-        <div class="share-button-secondary-content">Share on Facebook</div>
-      </div>
-      <div class="share-button-primary">
-        <i class="share-button-icon fa fa-facebook"></i>
-      </div>
-    </div>
-    <div class="share-button" onclick="shareOnLinkedIn()">
-      <div class="share-button-secondary">
-        <div class="share-button-secondary-content">Share on LinkedIn</div>
-      </div>
-      <div class="share-button-primary">
-        <i class="share-button-icon fa fa-linkedin"></i>
-      </div>
-    </div>
-    <div class="share-button" onclick="shareOnWhatsApp()">
-      <div class="share-button-secondary">
-        <div class="share-button-secondary-content">Share on Whatsapp</div>
-      </div>
-      <div class="share-button-primary">
-        <i class="share-button-icon fa fa-whatsapp"></i>
-      </div>
-    </div>
-  </div>
 
-  <style>
-    .share-buttons {
-      position: fixed;
-      width: 301px;
-      height: 212px;
-      padding-left: 135px;
-      bottom: 5%;
-      left: 1.5%;
-      margin-left: -150px;
-      z-index: 100;
-    }
+    <script src="script.js"></script>
 
-    .share-buttons .share-button {
-      float: left;
-      margin-top: 18px;
-    }
+    <script>
+        const prevBtnUnique = document.getElementById('prevBtnn');
+        const nextBtnUnique = document.getElementById('nextBtnn');
+        const carouselSlideUnique = document.querySelector('.carousel-slide-unique');
 
-    .share-buttons .share-button:after {
-      clear: both;
-      display: table;
-    }
+        let currentCardUnique = 0;
+        const cardsPerViewUnique = 4; 
 
-    .share-buttons .share-button:first-child {
-      margin-top: 0;
-    }
+        prevBtnUnique.addEventListener('click', () => {
+            if (currentCardUnique === 0) {
+                currentCardUnique = carouselSlideUnique.children.length - cardsPerViewUnique;
+            } else {
+                currentCardUnique--;
+            }
+            moveCarouselUnique();
+        });
 
-    .share-button {
-      display: block;
-      position: relative;
-      height: 30px;
-    }
+        nextBtnUnique.addEventListener('click', () => {
+            if (currentCardUnique >= carouselSlideUnique.children.length - cardsPerViewUnique) {
+                currentCardUnique = 0;
+            } else {
+                currentCardUnique++;
+            }
+            moveCarouselUnique();
+        });
 
-    .share-button:hover {
-      cursor: pointer;
-    }
+        function moveCarouselUnique() {
+            const cardWidthUnique = carouselSlideUnique.children[0].clientWidth;
+            const cardMarginRightUnique = parseFloat(getComputedStyle(carouselSlideUnique.children[0]).marginRight);
+            const cardMarginLeftUnique = parseFloat(getComputedStyle(carouselSlideUnique.children[0]).marginLeft);
+            const totalCardWidthUnique = cardWidthUnique + cardMarginRightUnique + cardMarginLeftUnique;
+            carouselSlideUnique.style.transform = `translateX(-${currentCardUnique * totalCardWidthUnique}px)`;
+        }
 
-    .share-button:hover .share-button-primary {
-      box-shadow: 1px 0 0 0 rgba(0, 0, 0, .1);
-    }
-
-    .share-button:hover .share-button-secondary-content {
-      transform: translate3d(0, 0, 0);
-    }
-
-    .share-button-primary {
-      position: absolute;
-      background: #03033f;
-      width: 35px;
-      height: 35px;
-      border-radius: 20px;
-      left: 0;
-      top: 50%;
-      margin-top: -15px;
-    }
-
-    .share-button-icon {
-      display: block;
-      color: white;
-      position: absolute;
-      width: 26px;
-      line-height: 30px;
-      font-size: 17px;
-      margin-top: 2px;
-      margin-left: 10px;
-    }
-
-    .share-button-secondary {
-      overflow: hidden;
-      margin-left: 15px;
-      height: 40px;
-    }
-
-    .share-button-secondary-content {
-      font-family: sans-serif;
-      font-size: .75em;
-      background: #03033f;
-      display: block;
-      height: 34px;
-      text-align: left;
-      padding-left: 24px;
-      padding-right: 18px;
-      line-height: 30px;
-      color: white;
-      border-radius: 0 15px 15px 0;
-      transform: translate3d(-100%, 0, 0);
-      transition: transform 175ms ease;
-    }
-  </style>
-
-  <script>
-
-  </script>
+    </script>
 </body>
 
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel</title>
+  <style>
+    .carousel-container {
+      display: flex;
+      overflow: hidden;
+      width: 400px; /* Adjust the container width as needed */
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-item {
+      width: 100px; /* Adjust the item width as needed */
+      height: 200px;
+      flex-shrink: 0;
+      margin-right: 10px;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .carousel-button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">1</div>
+      <div class="carousel-item">2</div>
+      <div class="carousel-item">3</div>
+      <div class="carousel-item">4</div>
+      <div class="carousel-item">5</div>
+      <div class="carousel-item">6</div>
+      <div class="carousel-item">7</div>
+      <div class="carousel-item">8</div>
+      <div class="carousel-item">9</div>
+    </div>
+  </div>
+  <div class="carousel-button" id="prev">Previous</div>
+  <div class="carousel-button" id="next">Next</div>
+
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const itemWidth = document.querySelector('.carousel-item').offsetWidth;
+      const itemsInView = 4;
+      carousel.style.transform = `translateX(-${currentIndex * (itemWidth + 10)}px)`; // Adjust the margin-right value as needed
+    }
+
+    prevButton.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    nextButton.addEventListener('click', () => {
+      if (currentIndex < 5) { // Adjust the maximum index as needed
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    updateCarousel();
+  </script>
+</body>
 </html>
