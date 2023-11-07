@@ -1,148 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="navbar.css">
-    <style>
-        .carousel-container-unique {
-            border: 1px solid black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow: hidden;
-            position: relative;
-            max-width: 100%;
-            margin: 0 auto;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            overflow-x: hidden;
-            white-space: nowrap;
-        }
-
-        .carousel-wrapper-unique {
-            border: 1px solid black;
-            padding: 20px 0px 20px 0px;
-            overflow: hidden;
-            flex: 1;
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 30px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .carousel-slide-unique {
-            display: flex;
-            transition: all 0.3s ease;
-        }
-
-        .carousel-button-unique {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            margin: 0 5px;
-            border-radius: 10px;
-            width: 3%;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            left: 3%;
-            z-index: 100;
-        }
-
-        .carousel-button-unique:hover {
-            background-color: #007D6F;
-        }
-
-        .carousel-card-unique {
-            flex: 0 0 calc(15% - 10px);
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-sizing: border-box;
-            position: relative;
-            float: left;
-            box-shadow: 0 2px 5px 0 rgba(17, 121, 239, .15);
-            border-radius: 35px;
-            border: 1px solid #e6ecef;
-            background: #fff;
-            margin-right: 87px;
-            margin-left: 10px;
-            padding: 20px;
-        }
- 
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
-
-    <div style="width: 86%; margin: auto;" class="carousel-container-unique">
-        <div style="display: flex; justify-content: flex-end; border: 1px solid black; width: 100%;">
-            <button class="carousel-button-unique" id="prevBtnn"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="carousel-button-unique" id="nextBtnn"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-        <div onclick="handlecourse(event)" class="carousel-wrapper-unique">
-            <div class="carousel-slide-unique">
-                <!-- Add your carousel cards here -->
-                <div id="software-courses" style="background-color: #007d6f; color: white;"
-                    class="carousel-card-unique">
-                    <p>software</p>
-                </div>
-                <div id="networking-courses" class="carousel-card-unique">
-                    <p>Networking</p>
-                </div>
-                <div id="dm-courses" class="carousel-card-unique">
-                    <p>Digital Marketing</p>
-                </div>
-                <div id="ds-courses" class="carousel-card-unique">
-                    <p>Data Science</p>
-                </div>
-                <div id="ml-courses" class="carousel-card-unique">
-                    <p>Machine Learning</p>
-                </div>
-                <div id="cs-courses" class="carousel-card-unique">
-                    <p>Cyber Security</p>
-                </div>
+    <div class="container">
+        <div class="image-grid">
+            <div class="image-grid-image">
+                <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/6.png" alt="Image 1"
+                    class="grid-item">
             </div>
-        </div>
+            <div class="image-grid-image">
+                <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/5.png" alt="Image 2"
+                    class="grid-item">
+            </div>
+            <div class="image-grid-image">
+                <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277393/4.png" alt="Image 1"
+                    class="grid-item">
+            </div>
+            <div class="image-grid-image">
+                <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277393/2.png" alt="Image 2"
+                    class="grid-item">
+            </div>
+            <div class="image-grid-image">
+                <img id="niche" src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/7.png" alt="Image 1"
+                    class="grid-item">
+            </div>
+            <div class="image-grid-image">
+                <img id="niche" src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/1.png" alt="Image 2"
+                    class="grid-item">
+            </div>
+            <div class="image-grid-image">
+                <img id="niche" src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277961/takit.png"
+                    alt="Image 1" class="grid-item">
+            </div>
+            <div class="image-grid-image">
+                <img id="niche" src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/8.png" alt="Image 2"
+                    class="grid-item">
+            </div>
+    </div>
+    
+
     </div>
 
-    <script>
-        const prevBtnUnique = document.getElementById('prevBtnn');
-        const nextBtnUnique = document.getElementById('nextBtnn');
-        const carouselSlideUnique = document.querySelector('.carousel-slide-unique');
-
-        let currentCardUnique = 0;
-        const cardsPerViewUnique = 5;
-
-        prevBtnUnique.addEventListener('click', () => {
-            if (currentCardUnique === 0) {
-                currentCardUnique = carouselSlideUnique.children.length - cardsPerViewUnique; // Loop to the end
-            } else {
-                currentCardUnique--;
-            }
-            moveCarouselUnique();
-        });
-
-        nextBtnUnique.addEventListener('click', () => {
-            if (currentCardUnique >= carouselSlideUnique.children.length - cardsPerViewUnique) {
-                currentCardUnique = 0; // Loop back to the start
-            } else {
-                currentCardUnique++;
-            }
-            moveCarouselUnique();
-        });
-
-        function moveCarouselUnique() {
-            const cardWidthUnique = carouselSlideUnique.children[0].clientWidth;
-            const cardMarginRightUnique = parseFloat(getComputedStyle(carouselSlideUnique.children[0]).marginRight);
-            const cardMarginLeftUnique = parseFloat(getComputedStyle(carouselSlideUnique.children[0]).marginLeft);
-            const totalCardWidthUnique = cardWidthUnique + cardMarginRightUnique + cardMarginLeftUnique; // Combine card width and both margins
-            carouselSlideUnique.style.transform = `translateX(-${currentCardUnique * totalCardWidthUnique}px)`;
+    <style>
+        .container {
+            border: 1px solid black;
+            width: 1180px;
+            margin: auto;
         }
-    </script>
 
+        .image-grid {
+            width: 100%;
+            height: 800px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
+        .image-grid-image {
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+        }
+
+        .image-grid-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
 </body>
 
 </html>
