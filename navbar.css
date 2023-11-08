@@ -286,7 +286,7 @@ ul li {
     width: 100%;
     /* height: 160px; */
     position: sticky;
-    top: 0%;
+    top: 0;
     z-index: 500;
     background-color: white;
 }
@@ -3626,11 +3626,15 @@ footer {
     font-size: 50px;
     padding: 20px 0px 20px 0px;
     color: #272566;
+    font-weight: 800;
+    font-family: nunito;
 }
 
 .fullstack-intro h2 {
     font-size: 28px;
     color: #007d6f;
+    font-weight: 800;
+    font-family: nunito;
 }
 
 .fullstack-into-section {
@@ -3654,23 +3658,27 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    line-height: 2.5;
 }
 
 .fullstack-intro-first-point>p {
     font-size: 16px;
     margin-left: 10px;
     line-height: 1.5;
+    font-family: mulish;
 }
 
 .fullstack-intro-button {
     /* border: 1px solid black; */
-    width: 38%;
-    height: 30px;
+    width: 48%;
+    height: 50px;
     border-radius: 8px;
     margin-top: 45px;
     background-color: #007d6f;
     color: white;
     font-weight: 800;
+    font-size: 16px;
+    font-family: mulish;
 }
 
 .fullstack-intro-student-review {
@@ -3703,7 +3711,7 @@ footer {
 
 .fullstack-intro-review-categories {
     /* border: 1px solid black; */
-    width: 20%;
+    width: 22%;
     line-height: 1.5;
     padding: 15px 0px 15px 0px;
     margin-left: 15px;
@@ -3711,8 +3719,14 @@ footer {
 
 .fullstack-intro-review-star {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.fullstack-intro-review-star i{
+    margin-left: 5px;
 }
 
 .full-stack-student-video-review {
@@ -3725,13 +3739,20 @@ footer {
 }
 
 
+.javascript-course{
+/* border: 1px solid black; */
+width: 100%;
+padding: 15px 50px 15px 50px;
+height: 180px;
+}
+
+
 
 /* fullstack-course-intro */
 
 .fullstack-course-intro {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 30px 0px 30px 0px;
     background-color: white;
 }
 
@@ -3745,14 +3766,14 @@ footer {
 .fullstack-course-content-name {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 25px 25px 25px 25px;
+    padding: 50px 25px 25px 25px;
     display: flex;
     justify-content: space-evenly;
     background-color: #272566;
     border-radius: 15px;
-    height: 110px;
+    height: 150px;
     position: relative;
-    bottom: 15%;
+    bottom: 65%;
 }
 
 .fullstack-content-course-name {
@@ -3762,8 +3783,9 @@ footer {
 }
 
 .fullstack-content-course-name>p {
-    font-weight: 800;
+    font-weight: 450;
     font-size: 18px;
+    font-family: mulish;
 }
 
 .fullstack-course-content {
@@ -3805,6 +3827,8 @@ footer {
     font-size: 50px;
     padding-top: 25px;
     color: #272566;
+    font-family: nunito;
+    font-weight: 800;
 }
 
 .fullstack-course-section>p {
@@ -3812,6 +3836,8 @@ footer {
     font-size: 16px;
     padding: 25px 0px 0px 0px;
     color: #007d6f;
+    font-weight: 550;
+    font-family: mulish;
 }
 
 .fullstack-course-rating {
@@ -3865,11 +3891,14 @@ footer {
     font-size: 50px;
     color: #272566;
     padding-top: 60px;
+    font-weight: 800;
+    font-family: nunito;
 }
 
 .fullstack-package-heading>p {
     font-size: 20px !important;
-    font-weight: 800;
+    font-weight: 500;
+    font-family: poppins;
 }
 
 .fullstack-package-section {
@@ -3913,7 +3942,8 @@ footer {
 }
 
 .fullstack-pacakge-info>p {
-    font-size: 20px;
+    font-size: 18px;
+    font-family: mulish;
 }
 
 .fullstack-package-company {
@@ -3938,6 +3968,8 @@ footer {
     font-size: 50px;
     color: #272566;
     padding-top: 30px;
+    font-weight: 800;
+    font-family: nunito;
 }
 
 .awdiz-trust-container {
@@ -3951,10 +3983,12 @@ footer {
 .awdiz-trust-section {
     /* border: 1px solid black; */
     width: 60%;
+    margin-top: 25px;
 }
 
 .awdiz-trust-section p {
-    font-size: 20px;
+    font-size: 16px;
+    font-family: mulish;
 }
 
 .awdiz-trust-image {
@@ -4000,7 +4034,7 @@ footer {
     width: 100%;
     padding: 10px 0px 10px 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .book-demo-box-one {
@@ -4019,19 +4053,20 @@ footer {
 .book-demo-box-one>h3 {
     font-size: 28px;
     color: white;
+    font-family: mulish;
 }
 
 .book-demo-box-two-button {
     /* border: 1px solid black; */
     width: 65%;
     font-size: 24px;
-    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     background-color: #007D6F;
     color: white;
+    font-family: hind;
 }
 
 
@@ -4047,11 +4082,14 @@ footer {
 .awdiz-chatgpt h3 {
     font-size: 50px;
     padding: 60px 0px 15px 0px;
+    font-family: nunito;
+    font-weight: 800;
 }
 
 .awdiz-chagpt-point>p {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 8px;
+    font-family: mulish;
 }
 
 .awdiz-chagpt-point {
@@ -4090,9 +4128,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 450;
+    font-weight: 800;
     border-radius: 10px;
     cursor: pointer;
+    font-family: hind;
+    font-size: 18px
 }
 
 .fullstack-syllabus-display-content {
@@ -4106,12 +4146,14 @@ footer {
     font-weight: 800;
     color: #272566;
     margin-top: 80px;
+    font-family: nunito;
 }
 
 .fullstack-syllabus-display-content>p {
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 30px;
+    font-family: mulish;
 }
 
 
@@ -4125,13 +4167,17 @@ footer {
 }
 
 .industry-para {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 60px;
+    font-family: mulish;
+    line-height: 1.5;
 }
 
 .industry-para-one {
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 35px;
+    font-family: mulish;
+    line-height: 1.5;
 }
 
 .industry-box-one {
@@ -4162,12 +4208,14 @@ footer {
 
 .industry-item-form>h3 {
     font-size: 24px;
+    font-family: mulish;
 }
 
 .industry-item-form>p {
     padding-top: 20px;
     font-size: 18px;
     line-height: 1.5;
+    font-family: poppins;
 }
 
 .industry-item-two {
@@ -4198,6 +4246,11 @@ footer {
     list-style: none;
 }
 
+.industry-item-two-points ul li{
+    font-family: mulish;
+    color: black;
+}
+
 .industry-box-three {
     /* border: 1px solid black; */
     width: 100%;
@@ -4210,6 +4263,7 @@ footer {
     font-size: 24px;
     background-color: white;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    font-family: poppins
 }
 
 .industry-item-three {
@@ -4253,6 +4307,7 @@ footer {
 .industry-content-info>p {
     font-size: 16px;
     color: black;
+    font-family: mulish;
 }
 
 .industry-content-info>h3 {
@@ -4269,9 +4324,9 @@ footer {
     height: 60px;
     margin-top: 30px;
     font-size: 18px;
-    font-weight: 800;
     background-color: #272566;
     color: white;
+    font-family: nunito;
 }
 
 .industry-button:hover {
@@ -4292,13 +4347,16 @@ footer {
     text-align: center;
     padding-top: 50px;
     color: #272566;
+    font-family: nunito;
+    font-weight: 800;
 }
 
 .languague-para {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     padding-top: 30px;
     line-height: 1.5;
+    font-family: mulish
 }
 
 .languague-box-one {
@@ -4327,13 +4385,13 @@ footer {
     /* border: 1px solid black; */
     width: 90%;
     font-size: 24px;
-    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     background-color: #007D6F;
     color: white;
+    font-family: hind;
 }
 
 
@@ -4350,6 +4408,8 @@ footer {
     color: #272566;
     padding-top: 50px;
     padding-left: 15px;
+    font-weight: 800;
+    font-family: nunito;
 }
 
 .project-modal {
@@ -4380,6 +4440,7 @@ footer {
 .first-project-modal>p {
     font-size: 18px;
     font-weight: 550;
+    font-family: mulish;
 }
 
 .fullstack-project-box-one {
@@ -4428,20 +4489,24 @@ footer {
 
 .fullstack-project-content ul li p {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: mulish;
 }
 
 .fullstack-project-heading-one {
     font-size: 50px;
     color: #272566;
     padding-left: 15px;
+    font-weight: 800;
+    font-family: nunito;
 }
 
 .fullstack-project-para {
     padding-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     padding-left: 15px;
+    font-family: mulish;
 }
 
 .fullstack-roadmap {
@@ -4484,6 +4549,13 @@ footer {
 
 .fullstack-trainer-heading {
     padding: 15px 0px 15px 0px;
+    font-family: nunito;
+}
+
+.trainer-info{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: mulish;
 }
 
 
@@ -4518,7 +4590,9 @@ footer {
 
 .developer-points ul li p {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: mulish;
+    color: black;
 }
 
 .emis {
@@ -4537,6 +4611,8 @@ footer {
     text-align: center;
     background-color: #007D6F;
     color: white;
+    font-weight: 550;
+    font-family: mulish;
 }
 
 .emis-box-one-para {
@@ -4570,6 +4646,8 @@ footer {
 
 .emis-box-one-para-two {
     margin-top: 80px;
+    font-weight: 100;
+    font-family: mulish;
 }
 
 .rupees {
@@ -4586,7 +4664,7 @@ footer {
     border-radius: 0px;
     height: 40px;
     color: #272566;
-    font-weight: 800;
+    font-family: hind;
 }
 
 .learn-more-button:hover{
@@ -4600,10 +4678,11 @@ footer {
     padding: 40px 15px 40px 15px;
     text-align: center;
     height: 564px;
+    font-family: mulish;
 }
 
 .emis-item-one-partner-one {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 35%;
 }
 
@@ -4614,14 +4693,16 @@ footer {
 }
 
 .emis-item-two{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     padding-top: 20px;
 }
 
 .emis-para{
     font-size: 20px;
-    padding: 20px 0px 50px 0px;
+    padding: 20px 0px 50px 17px;
+    font-family: poppins;
+    color: #272566;
 }
 
 .emis-class{
@@ -4660,15 +4741,20 @@ footer {
 
 .emis-session-box-one > p{
     margin-left: 15px;
+    font-family: poppins;
+}
+
+.emis-pro{
+    font-weight: 550;
 }
 
 .apply-button{
     /* border: 1px solid black; */
     width: 80%;
     font-size: 18px;
-    font-weight: 800;
     background-color: #272566;
     color: white;
+    font-family: hind;
 }
 
 
@@ -4696,8 +4782,9 @@ footer {
 .display-course-item-one{
     /* border: 1px solid black; */
     width: 65%;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
+    font-family: mulish;
 }
 
 .display-course-certificate-image{
@@ -4722,7 +4809,8 @@ footer {
 
 .fullstack-near-para{
     font-size: 20px;
-    padding-top: 15px;
+    padding-top: 25px;
+    font-family: nunito;
 }
 
 .fullstack-center{
@@ -4866,4 +4954,63 @@ footer {
     border: 1px solid black;
     width: 50px;
     height: 50px;
+}
+
+/* developer-questions */
+
+.developer-questions{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+}
+
+.question-box-one{
+    /* border: 1px solid black; */
+    width: 100%;
+    /* padding: 15px 0px 15px 0px; */
+}
+
+.question{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 30px 0px;
+}
+
+.question i{
+    font-size: 20px;
+}
+
+.question-section{
+    /* border: 1px solid black; */
+    width: 45%;
+    /* padding: 10px 0px 10px 0px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+
+.answer{
+    /* border: 1px solid black; */
+    width: 96%;
+    margin: auto;
+ padding-bottom: 15px;
+}
+
+.answer > p{
+    font-size: 20px;
+    font-family: mulish;
+}
+
+.question-number{
+    color: #272566;
+    font-weight: 450;
+    font-family: poppins
+}
+
+.questions{
+    font-family: mulish;
 }

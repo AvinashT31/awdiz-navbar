@@ -2209,7 +2209,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     var globalfooter = document.getElementById("global-footer");
-
     globalfooter.innerHTML = ` <footer>
       <div class="container">
           <div class="footer-page">
@@ -2321,8 +2320,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </footer>`
 })
 
-function syllabus(event) {
-    event.preventDefault()
+document.addEventListener("DOMContentLoaded", function () {
 
     var detailsawdiz = document.getElementById("detailsawdiz");
     var displaydetailsawdiz = document.getElementById("displaydetailsawdiz")
@@ -2375,7 +2373,7 @@ function syllabus(event) {
         displaytrainingawdiz.style.display = "block"
         trainingawdiz.style.backgroundColor = "#007d6f";
         trainingawdiz.style.color = "white";
-        
+
         displaycertificationawdiz.style.display = "none"
         certificationawdiz.style.backgroundColor = "#edf8fA";
         certificationawdiz.style.color = "black";
@@ -2401,7 +2399,7 @@ function syllabus(event) {
         displaytrainingawdiz.style.display = "none"
         trainingawdiz.style.backgroundColor = "#edf8fA";
         trainingawdiz.style.color = "black";
-        
+
         displaycertificationawdiz.style.display = "none"
         certificationawdiz.style.backgroundColor = "#edf8fA";
         certificationawdiz.style.color = "black";
@@ -2411,4 +2409,76 @@ function syllabus(event) {
         detailsawdiz.style.color = "black";
     });
 
-}
+
+
+    //QUESTION ANSWER
+
+    var plus = document.getElementById("plus");
+    var xmark = document.getElementById("x-mark");
+    var ans = document.getElementById("ans");
+
+    plus.addEventListener("click", function () {
+        ans.style.display = "block";
+        xmark.style.display = "block"
+        plus.style.display = "none"
+    })
+
+    xmark.addEventListener("click", function () {
+        ans.style.display = "none";
+        xmark.style.display = "none"
+        plus.style.display = "block"
+    })
+
+    var plusone = document.getElementById("plusone");
+    var xmarkone = document.getElementById("x-markone");
+    var ansone = document.getElementById("ansone");
+
+    plusone.addEventListener("click", function () {
+        ansone.style.display = "block";
+        xmarkone.style.display = "block"
+        plusone.style.display = "none"
+    })
+
+    xmarkone.addEventListener("click", function () {
+        ansone.style.display = "none";
+        xmarkone.style.display = "none"
+        plusone.style.display = "block"
+    })
+
+    var plustwo = document.getElementById("plustwo");
+    var xmarktwo = document.getElementById("x-marktwo");
+    var anstwo = document.getElementById("anstwo");
+
+    plustwo.addEventListener("click", function () {
+        anstwo.style.display = "block";
+        xmarktwo.style.display = "block"
+        plustwo.style.display = "none"
+    })
+
+    xmarktwo.addEventListener("click", function () {
+        anstwo.style.display = "none";
+        xmarktwo.style.display = "none"
+        plustwo.style.display = "block"
+    })
+
+    var plusthree = document.getElementById("plusthree");
+    var xmarkthree = document.getElementById("x-markthree");
+    var ansthree = document.getElementById("ansthree");
+
+    plusthree.addEventListener("click", function () {
+        ansthree.style.display = "block";
+        xmarkthree.style.display = "block"
+        plusthree.style.display = "none"
+    })
+
+    xmarkthree.addEventListener("click", function () {
+        ansthree.style.display = "none";
+        xmarkthree.style.display = "none"
+        plusthree.style.display = "block"
+    })
+
+
+})
+
+
+
