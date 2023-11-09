@@ -5711,3 +5711,22 @@ footer {
 .cohort-section-two>p {
     padding-top: 25px;
 }
+
+/* course report */
+
+.course-report{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-report-circle{
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    overflow: hidden;
+}
