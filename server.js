@@ -2481,4 +2481,102 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
+// UI UX page
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    var uxdetailsawdiz = document.getElementById("uxdetailsawdiz");
+    var uxdisplaydetailsawdiz = document.getElementById("uxdisplaydetailsawdiz")
+
+    uxdetailsawdiz.addEventListener('click', function () {
+        uxdisplaydetailsawdiz.style.display = "block"
+        uxdetailsawdiz.style.backgroundColor = "#007d6f";
+        uxdetailsawdiz.style.color = "white";
+
+        uxdisplaycertificationawdiz.style.display = "none"
+        uxcertificationawdiz.style.backgroundColor = "#edf8fA";
+        uxcertificationawdiz.style.color = "black";
+
+        uxdisplaytrainingawdiz.style.display = "none"
+        uxtrainingawdiz.style.backgroundColor = "#edf8fA";
+        uxtrainingawdiz.style.color = "black";
+
+        uxdisplaysyallbus.style.display = "none"
+        uxsyallbus.style.backgroundColor = "#edf8fA";
+        uxsyallbus.style.color = "black";
+    });
+
+
+
+    var uxcertificationawdiz = document.getElementById("uxcertificationawdiz")
+    var uxdisplaycertificationawdiz = document.getElementById("uxdisplaycertificationawdiz")
+
+    uxcertificationawdiz.addEventListener('click', function () {
+        uxdisplaycertificationawdiz.style.display = "block"
+        uxcertificationawdiz.style.backgroundColor = "#007d6f";
+        uxcertificationawdiz.style.color = "white";
+
+        uxdisplaydetailsawdiz.style.display = "none"
+        uxdetailsawdiz.style.backgroundColor = "#edf8fA";
+        uxdetailsawdiz.style.color = "black";
+
+        uxdisplaytrainingawdiz.style.display = "none"
+        uxtrainingawdiz.style.backgroundColor = "#edf8fA";
+        uxtrainingawdiz.style.color = "black";
+
+        uxdisplaysyallbus.style.display = "none"
+        uxsyallbus.style.backgroundColor = "#edf8fA";
+        uxsyallbus.style.color = "black";
+
+    });
+
+    var uxtrainingawdiz = document.getElementById("uxtrainingawdiz")
+    var uxdisplaytrainingawdiz = document.getElementById("uxdisplaytrainingawdiz")
+
+    uxtrainingawdiz.addEventListener('click', function () {
+        uxdisplaytrainingawdiz.style.display = "block"
+        uxtrainingawdiz.style.backgroundColor = "#007d6f";
+        uxtrainingawdiz.style.color = "white";
+
+        uxdisplaycertificationawdiz.style.display = "none"
+        uxcertificationawdiz.style.backgroundColor = "#edf8fA";
+        uxcertificationawdiz.style.color = "black";
+
+        uxdisplaydetailsawdiz.style.display = "none"
+        uxdetailsawdiz.style.backgroundColor = "#edf8fA";
+        uxdetailsawdiz.style.color = "black";
+
+        uxdisplaysyallbus.style.display = "none"
+        uxsyallbus.style.backgroundColor = "#edf8fA";
+        uxsyallbus.style.color = "black";
+
+
+    });
+
+    var uxsyallbus = document.getElementById("uxsyallbus")
+    var uxdisplaysyallbus = document.getElementById("uxdisplaysyallbus")
+
+    uxsyallbus.addEventListener('click', function () {
+        uxdisplaysyallbus.style.display = "block"
+        uxsyallbus.style.backgroundColor = "#007d6f";
+        uxsyallbus.style.color = "white";
+
+        uxdisplaytrainingawdiz.style.display = "none"
+        uxtrainingawdiz.style.backgroundColor = "#edf8fA";
+        uxtrainingawdiz.style.color = "black";
+
+        uxdisplaycertificationawdiz.style.display = "none"
+        uxcertificationawdiz.style.backgroundColor = "#edf8fA";
+        uxcertificationawdiz.style.color = "black";
+
+        uxdisplaydetailsawdiz.style.display = "none"
+        uxdetailsawdiz.style.backgroundColor = "#edf8fA";
+        uxdetailsawdiz.style.color = "black";
+
+       
+    });
+
+})
+
+
 

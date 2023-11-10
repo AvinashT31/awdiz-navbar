@@ -77,3 +77,108 @@
 </html> -->
 
 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Carousel</title>
+
+    <style>
+        /* styles.css */
+        .review-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .review-carousel-container {
+            position: relative;
+            width: 60%;
+            /* Adjust based on requirement */
+            overflow: hidden;
+        }
+
+        .review-carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .review-carousel-item {
+            flex: 0 0 calc(50% - 20px);
+            /* Adjust width for margin */
+            margin-right: 20px;
+            /* Margin between items */
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        .review-carousel-item:last-child {
+            margin-right: 0;
+            /* Remove margin for the last item */
+        }
+
+        .review-carousel-navigation {
+            text-align: right;
+            /* Align buttons to the right */
+            padding-top: 10px;
+            /* Space above the buttons */
+        }
+
+        .review-carousel-button {
+            background-color: #ddd;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 5px;
+            /* Space between buttons */
+        }
+
+        @media (max-width: 600px) {
+            .review-carousel-item {
+                flex: 0 0 calc(100% - 10px);
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carouselInner = document.querySelector('.review-carousel-inner');
+            let currentIndex = 0;
+
+            document.querySelector('.review-carousel-button.left').addEventListener('click', function () {
+                if (currentIndex > 0) {
+                    currentIndex -= 2;
+                    updateCarousel();
+                }
+            });
+
+            document.querySelector('.review-carousel-button.right').addEventListener('click', function () {
+                if (currentIndex < carouselInner.children.length - 2) {
+                    currentIndex += 2;
+                    updateCarousel();
+                }
+            });
+
+            function updateCarousel() {
+                const itemWidthIncludingMargin = carouselInner.children[0].offsetWidth + 20; // Assuming a 20px margin for each item
+                const newTransform = -(itemWidthIncludingMargin * currentIndex);
+                carouselInner.style.transform = `translateX(${newTransform}px)`;
+            }
+        });
+    </script>
+</body>
+
+</html>

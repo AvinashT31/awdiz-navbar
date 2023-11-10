@@ -4843,6 +4843,110 @@ footer {
     background-color: #edf8fA;
 }
 
+.review-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    margin: 0;
+}
+
+.review-carousel-container {
+    position: relative;
+    width: 100%; /* Adjust based on requirement */
+    overflow: hidden;
+    padding: 50px 0px 30px 0px;
+}
+
+.review-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.review-carousel-item {
+    flex: 0 0 calc(50% - 20px); /* Adjust width for margin */
+    margin-right: 20px; /* Margin between items */
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.review-carousel-item:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.review-carousel-navigation {
+    width: 99%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right; 
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.review-carousel-button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;
+} 
+
+.review-caorusel-student{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.review-carousel-student-circle{
+    /* border: 1px solid black; */
+    width: 15%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.review-carousel-student-name > h4{
+    font-size: 24px;
+}
+
+.review-carousel-student-name{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 90px;
+    margin-left: 10px;
+   text-align: left;
+   padding-top: 15px;
+   line-height: 1.5;
+}
+
+.review-carousel-item > p{
+    padding-top: 30px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.review-carousel-circle{
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+@media (max-width: 600px) {
+    .review-carousel-item {
+        flex: 0 0 calc(100% - 10px);
+        margin-right: 20px;
+    }
+}
+
 
 .fullstack-carousel-container {
     display: flex;
@@ -5729,4 +5833,178 @@ footer {
     height: 150px;
     border-radius: 75px;
     overflow: hidden;
+}
+
+
+/* ux-review */
+
+.ux-review{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 80px 0px 30px 0px;
+}
+
+.ux-design-people{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ux-desing-people-section{
+    /* border: 1px solid black; */
+    width: 60%; 
+}
+
+.ux-design-people-icon{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.ux-design-people-info{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+}
+
+.ux-design-people-info > h4{
+    font-size: 40px;
+    font-weight: 800;
+    color: #272566;
+}
+
+.ux-design-people-section-two{
+    /* border: 1px solid black; */
+    width: 30%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ux-design-people-rating{
+    /* border: 1px solid black; */
+    width: 65%;
+    height: 100%;
+}
+
+.ux-design-people-rating > h4{
+    font-size: 24px;
+    padding-top: 10px;
+    color: #272566;
+    font-weight: 800;
+}
+
+.rating-box-one{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+.rating-box-one > p{
+    font-size: 28px;
+}
+
+.ux-design-rating{
+    /* border: 1px solid black; */
+    width: 70%;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.ux-design-rating-box{
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.ux-design-people-review{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ux-design-people-review-one{
+    /* border: 1px solid black; */
+    width: 28%;
+    padding: 10px 10px 10px 10px;
+}
+
+.ux-desing-people-item-one{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.ux-design-people-review-two{
+    /* border: 1px solid black; */
+    width: 40%;
+    padding: 10px 10px 10px 10px;
+}
+
+.ux-design-people-content{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.ux-design-content-item-one{
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 52px;
+    display: flex;
+}
+
+.ux-design-content-circle{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.ux-design-content-circle-info{
+    /* border: 1px solid black; */
+    width: 78%;
+    margin-left: 10px;
+}
+
+.ux-design-content-one-circle{
+    /* border: 1px solid black; */
+    width: 10%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui-design-circle{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.ux-design-people-star{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    margin-top: 30px;
 }
