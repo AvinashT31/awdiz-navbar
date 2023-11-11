@@ -2409,6 +2409,146 @@ document.addEventListener("DOMContentLoaded", function () {
         detailsawdiz.style.color = "black";
     });
 
+    
+
+    var coveredtask = document.getElementById("covered-task")
+    var displaycoveredtask = document.getElementById("display-covered-task")
+
+    coveredtask.addEventListener('click', function () {
+        displaycoveredtask.style.display = "block"
+        coveredtask.style.backgroundColor = "#007d6f";
+        coveredtask.style.color = "white";
+
+        displaycoveredcommerece.style.display = "none"
+        coveredcommerece.style.backgroundColor = "white";
+        coveredcommerece.style.color = "black";
+
+        displaycoveredsocial.style.display = "none"
+        coveredsocial.style.backgroundColor = "white";
+        coveredsocial.style.color = "black";
+
+        displaycoveredonline.style.display = "none"
+        coveredonline.style.backgroundColor = "white";
+        coveredonline.style.color = "black";
+
+        displaycoveredreal.style.display = "none"
+        coveredreal.style.backgroundColor = "white";
+        coveredreal.style.color = "black";
+
+
+    });
+
+
+    var coveredcommerece = document.getElementById("covered-commerece")
+    var displaycoveredcommerece = document.getElementById("display-covered-commerece")
+
+    coveredcommerece.addEventListener('click', function () {
+        displaycoveredcommerece.style.display = "block"
+        coveredcommerece.style.backgroundColor = "#007d6f";
+        coveredcommerece.style.color = "white";
+
+        displaycoveredsocial.style.display = "none"
+        coveredsocial.style.backgroundColor = "white";
+        coveredsocial.style.color = "black";
+
+        displaycoveredonline.style.display = "none"
+        coveredonline.style.backgroundColor = "white";
+        coveredonline.style.color = "black";
+
+        displaycoveredreal.style.display = "none"
+        coveredreal.style.backgroundColor = "white";
+        coveredreal.style.color = "black";
+
+        displaycoveredtask.style.display = "none"
+        coveredtask.style.backgroundColor = "white";
+        coveredtask.style.color = "black";
+
+    });
+
+
+
+    var coveredsocial = document.getElementById("covered-social")
+    var displaycoveredsocial = document.getElementById("display-covered-social")
+
+    coveredsocial.addEventListener('click', function () {
+        displaycoveredsocial.style.display = "block"
+        coveredsocial.style.backgroundColor = "#007d6f";
+        coveredsocial.style.color = "white";
+
+        displaycoveredonline.style.display = "none"
+        coveredonline.style.backgroundColor = "white";
+        coveredonline.style.color = "black";
+
+        displaycoveredreal.style.display = "none"
+        coveredreal.style.backgroundColor = "white";
+        coveredreal.style.color = "black";
+
+        displaycoveredtask.style.display = "none"
+        coveredtask.style.backgroundColor = "white";
+        coveredtask.style.color = "black";
+
+        displaycoveredcommerece.style.display = "none"
+        coveredcommerece.style.backgroundColor = "white";
+        coveredcommerece.style.color = "black";
+
+    });
+
+
+    var coveredonline = document.getElementById("covered-online")
+    var displaycoveredonline = document.getElementById("display-covered-online")
+
+    coveredonline.addEventListener('click', function () {
+        displaycoveredonline.style.display = "block"
+        coveredonline.style.backgroundColor = "#007d6f";
+        coveredonline.style.color = "white";
+
+        displaycoveredtask.style.display = "none"
+        coveredtask.style.backgroundColor = "white";
+        coveredtask.style.color = "black";
+
+        displaycoveredcommerece.style.display = "none"
+        coveredcommerece.style.backgroundColor = "white";
+        coveredcommerece.style.color = "black";
+
+        displaycoveredsocial.style.display = "none"
+        coveredsocial.style.backgroundColor = "white";
+        coveredsocial.style.color = "black";
+
+        displaycoveredreal.style.display = "none"
+        coveredreal.style.backgroundColor = "white";
+        coveredreal.style.color = "black";
+
+    });
+
+
+    var coveredreal = document.getElementById("covered-real")
+    var displaycoveredreal = document.getElementById("display-covered-real")
+
+    coveredreal.addEventListener('click', function () {
+        displaycoveredreal.style.display = "block"
+        coveredreal.style.backgroundColor = "#007d6f";
+        coveredreal.style.color = "white";
+
+        displaycoveredonline.style.display = "none"
+        coveredonline.style.backgroundColor = "white";
+        coveredonline.style.color = "black";
+
+        displaycoveredtask.style.display = "none"
+        coveredtask.style.backgroundColor = "white";
+        coveredtask.style.color = "black";
+
+        displaycoveredcommerece.style.display = "none"
+        coveredcommerece.style.backgroundColor = "white";
+        coveredcommerece.style.color = "black";
+
+        displaycoveredsocial.style.display = "none"
+        coveredsocial.style.backgroundColor = "white";
+        coveredsocial.style.color = "black";
+
+    });
+
+
+
 
 
     //QUESTION ANSWER

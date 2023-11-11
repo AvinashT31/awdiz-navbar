@@ -1,184 +1,103 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="image-grid">
-            <div class="image-grid-image">
-                <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/6.png" alt="Image 1"
-                    class="grid-item">
-            </div>
-            <div class="image-grid-image">
-                <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/5.png" alt="Image 2"
-                    class="grid-item">
-            </div>
-            <div class="image-grid-image">
-                <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277393/4.png" alt="Image 1"
-                    class="grid-item">
-            </div>
-            <div class="image-grid-image">
-                <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277393/2.png" alt="Image 2"
-                    class="grid-item">
-            </div>
-            <div class="image-grid-image">
-                <img id="niche" src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/7.png" alt="Image 1"
-                    class="grid-item">
-            </div>
-            <div class="image-grid-image">
-                <img id="niche" src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/1.png" alt="Image 2"
-                    class="grid-item">
-            </div>
-            <div class="image-grid-image">
-                <img id="niche" src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277961/takit.png"
-                    alt="Image 1" class="grid-item">
-            </div>
-            <div class="image-grid-image">
-                <img id="niche" src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1699277394/8.png" alt="Image 2"
-                    class="grid-item">
-            </div>
-    </div>
-</div>
-
-    <style>
-        .container {
-            border: 1px solid black;
-            width: 1180px;
-            margin: auto;
-        }
-
-        .image-grid {
-            width: 100%;
-            height: 800px;
-            border: 1px solid black;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .image-grid-image {
-            border: 1px solid black;
-            width: 250px;
-            height: 250px;
-        }
-
-        .image-grid-image img {
-            width: 100%;
-            height: 100%;
-        }
-
-    </style>
-</body>
-</html> -->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Carousel</title>
-
     <style>
-        /* styles.css */
-        .review-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
+     .carousel-container {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 
-        .review-carousel-container {
-            position: relative;
-            width: 60%;
-            /* Adjust based on requirement */
-            overflow: hidden;
-        }
+.carousel {
+  display: flex;
+  width: calc(100% * 4); /* Adjust based on the number of slides */
+  transition: transform 0.5s ease-in-out;
+}
 
-        .review-carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+.carousel-slide {
+  flex: 0 0 33.3333%; /* 100% / 3 slides per view */
+  text-align: center;
+}
 
-        .review-carousel-item {
-            flex: 0 0 calc(50% - 20px);
-            /* Adjust width for margin */
-            margin-right: 20px;
-            /* Margin between items */
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-            border: 1px solid black;
-        }
+#prevBtn, #nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
 
-        .review-carousel-item:last-child {
-            margin-right: 0;
-            /* Remove margin for the last item */
-        }
+#prevBtn {
+  left: 10px;
+}
 
-        .review-carousel-navigation {
-            text-align: right;
-            /* Align buttons to the right */
-            padding-top: 10px;
-            /* Space above the buttons */
-        }
+#nextBtn {
+  right: 10px;
+}
 
-        .review-carousel-button {
-            background-color: #ddd;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin-left: 5px;
-            /* Space between buttons */
-        }
 
-        @media (max-width: 600px) {
-            .review-carousel-item {
-                flex: 0 0 calc(100% - 10px);
-                margin-right: 20px;
-            }
-        }
     </style>
 </head>
 
 <body>
 
+    <div class="carousel-container">
+        <div id="carousel" class="carousel">
+          <div class="carousel-slide">
+            <h2>Slide 1</h2>
+          </div>
+          <div class="carousel-slide">
+            <h2>Slide 2</h2>
+          </div>
+          <div class="carousel-slide">
+            <h2>Slide 3</h2>
+          </div>
+          <div class="carousel-slide">
+            <h2>Slide 4</h2>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <button id="prevBtn" onclick="moveSlides(-1)">Prev</button>
+        <button id="nextBtn" onclick="moveSlides(1)">Next</button>
+      </div>
+      
+      
+
+
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const carouselInner = document.querySelector('.review-carousel-inner');
-            let currentIndex = 0;
+     const carousel = document.getElementById('carousel');
+let currentIndex = 0;
 
-            document.querySelector('.review-carousel-button.left').addEventListener('click', function () {
-                if (currentIndex > 0) {
-                    currentIndex -= 2;
-                    updateCarousel();
-                }
-            });
+function moveSlides(step) {
+  const totalSlides = document.getElementsByClassName('carousel-slide').length;
+  const slidesPerView = 3;
 
-            document.querySelector('.review-carousel-button.right').addEventListener('click', function () {
-                if (currentIndex < carouselInner.children.length - 2) {
-                    currentIndex += 2;
-                    updateCarousel();
-                }
-            });
+  currentIndex += step;
+  
+  // Bound the navigation
+  if (currentIndex < 0) {
+    currentIndex = 0;
+  } else if (currentIndex > totalSlides - slidesPerView) {
+    currentIndex = totalSlides - slidesPerView;
+  }
 
-            function updateCarousel() {
-                const itemWidthIncludingMargin = carouselInner.children[0].offsetWidth + 20; // Assuming a 20px margin for each item
-                const newTransform = -(itemWidthIncludingMargin * currentIndex);
-                carouselInner.style.transform = `translateX(${newTransform}px)`;
-            }
-        });
+  const newTransformValue = -(100 / slidesPerView) * currentIndex;
+  carousel.style.transform = `translateX(${newTransformValue}%)`;
+}
+
+document.getElementById('prevBtn').addEventListener('click', () => moveSlides(-1));
+document.getElementById('nextBtn').addEventListener('click', () => moveSlides(1));
+
+
+
     </script>
+
 </body>
 
 </html>
