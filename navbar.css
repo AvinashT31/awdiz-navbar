@@ -259,11 +259,8 @@ ul li {
     /* border: 1px solid  black; */
     width: 100%;
     padding: 20px 20px 20px 20px;
-    position: fixed;
-    top: 85%;
     cursor: pointer;
     display: none;
-    left: 95%;
 }
 
 .arrow-up {
@@ -279,6 +276,9 @@ ul li {
     font-size: 24px;
     background-color: #007d6f;
     color: white;
+    position: fixed;
+    left: 95%;
+    top: 84%;
 }
 
 #global-nav {
@@ -433,6 +433,83 @@ ul li {
     font-weight: 550;
     font-family: mulish;
 }
+
+
+/* Quckform */
+
+.mobile-modal-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  #quickForm.sticky .mobile-modal-button {
+    bottom: 70px;
+  }
+
+  #quickForm {
+    /* border: 1px solid black; */
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #quickForm.sticky {
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #main-contact-form1 .form-group {
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-right: 15px;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  #main-contact-form1 .glow-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .mobile-view-button {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    left: 250px;
+    width: 10%;
+  }
+
+  @media (max-width: 768px) {
+    .mobile-view-button {
+      display: block;
+    }
+
+    #quickForm {
+      display: none;
+    }
+
+    #quickForm.sticky {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
 
 
 /* show-content */
@@ -908,7 +985,7 @@ button:hover {
 }
 
 
-@media screen and (min-width:485px) and (max-width:2000px) {
+@media screen and (min-width:485px) and (max-width:4000px) {
     .mobile-navbar {
         display: none;
         visibility: hidden;
@@ -5301,7 +5378,7 @@ footer {
 
 .ui-ux-box-one>h1 {
     font-size: 50px;
-    font-family: 800;
+    font-weight: 800;
     color: #272566;
 }
 
@@ -5342,6 +5419,8 @@ footer {
 
 .ui-ux-item-two>p {
     line-height: 1.5;
+    font-family: mulish;
+    font-size: 16px;
 }
 
 .watch-review-button {
@@ -5352,6 +5431,7 @@ footer {
     background-color: #007D6F;
     color: white;
     font-weight: 800;
+    font-family: hind;
 }
 
 
@@ -5377,9 +5457,10 @@ footer {
 }
 
 .ui-ux-key ul li {
-    font-size: 20px !important;
+    font-size: 18px !important;
     color: black;
-    font-weight: 500;
+    font-weight: 800;
+    font-family: mulish;
 }
 
 
@@ -5402,6 +5483,8 @@ footer {
 
 .ux-academy-para {
     font-size: 24px;
+    font-family: mulish;
+    color: #007D6F;
 }
 
 .ux-academy h2 {
@@ -5442,6 +5525,7 @@ footer {
 .ux-social-linkdein-content {
     /* border: 1px solid black; */
     width: 75%;
+    font-family: mulish;
 }
 
 
@@ -5511,6 +5595,7 @@ footer {
     font-weight: 800;
     color: #272566;
     padding: 40px 0px 40px 0px;
+    font-family: nunito;
 }
 
 .learn-ux-design-box-one {
@@ -5543,8 +5628,14 @@ footer {
     /* border: 1px solid black; */
     width: 65%;
     font-size: 28px;
-    font-weight: 800;
+   
+}
+
+.learn-ux-design-heading > h2{
     color: #272566;
+    font-family: nunito;
+    font-weight: 800;
+    font-family: nunito;
 }
 
 .learn-ux-desing-circle {
@@ -5564,6 +5655,7 @@ footer {
     width: 65%;
     font-size: 18px;
     padding: 15px 30px 15px 30px;
+    font-family: mulish;
 }
 
 .learn-ux-design-item-two {
@@ -5579,9 +5671,13 @@ footer {
     width: 100%;
     padding: 15px 30px 15px 30px;
     font-size: 28px;
+    margin-top: 45px;
+}
+
+.learn-ux-design-item-two-one > h2{
     font-weight: 800;
     color: #272566;
-    margin-top: 45px;
+    font-family: nunito;
 }
 
 .ux-first-syllabus {
@@ -5614,6 +5710,11 @@ footer {
     margin-bottom: 30px;
 }
 
+.ux-desing-course-one-p{
+    font-family: mulish;
+    color: #99CBC5;
+}
+
 .ux-design-course-duration {
     /* border: 1px solid black; */
     width: 100%;
@@ -5626,6 +5727,12 @@ footer {
 .ux-design-course-name {
     padding: 10px 0px 10px 0px;
     font-size: 24px;
+    font-family: nunito;
+}
+
+.ux-desing-course-one-para{
+    font-family: mulish;
+    line-height: 1.5;
 }
 
 .ux-design-tool {
@@ -5694,14 +5801,17 @@ footer {
 }
 
 .portfolio-second-page>h3 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 800;
     color: #272566;
+    font-family: nunito;
 }
 
 .portfolio-second-page>p {
     padding-top: 20px;
     line-height: 1.5;
+    font-size: 16px;
+    font-family: mulish;
 }
 
 .portfolio-design {
@@ -5710,6 +5820,8 @@ footer {
     padding: 25px 0px 25px 0px;
     display: flex;
     justify-content: flex-start;
+    font-family: mulish;
+    font-size: 16px;
 }
 
 .portfolio-desing-first {
@@ -5724,6 +5836,152 @@ footer {
     margin-left: 10px;
 }
 
+.showcase{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+}
+
+.showcase-box-one{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase-box-item-one{
+    /* border: 1PX solid black; */
+    width: 70%;
+}
+
+.showcase-box-item-one > h4{
+    font-size: 40px;
+    font-family: nunito;
+    font-weight: 800;
+    line-height: 1.5;
+    color: #272566;
+}
+
+.showcase-box-item-two{
+    /* border: 1px solid black; */
+    width: 15%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.showcase-box-item-two-one{
+    /* border: 1px solid black; */
+    width: 23%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #bebed1;
+    color: white;
+}
+
+.showcase-box-item-two-one:hover{
+    background-color: #272566;
+    color: white;
+}
+
+.showcase-box-two-item{
+    border: 1px solid black;
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+.showcase-box-two-item-one{
+    border: 1px solid black;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.showcase-h4{
+    font-size: 20px;
+    font-family: nunito;
+    font-weight: 800;
+    font-family: mulish;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.showcase-para{
+    font-family: mulish;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+
+.showcase-points{
+    margin-top: 15px;
+}
+
+
+.showcase-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .showcase-wrapper {
+    padding: 30px 0px 30px 0px;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .showcase-slide {
+    display: flex;
+    transition: all 0.3s ease;
+  }
+
+  .showcase-button {
+    background-color: #333;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 10px;
+    width: 3%;
+    background-color: white;
+    left: 3%;
+    z-index: 100;
+  }
+
+  .showcase-button:hover {
+    background-color: #007D6F;
+  }
+
+  .showcase-card {
+    flex: 0 0 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    box-shadow: 0 2px 5px 0 rgba(17, 121, 239, .15);
+    border-radius: 6px;
+    border: 1px solid #e6ecef;
+    background: #fff;
+    margin-right: 1.7%;
+    margin-left: 1.7%;
+    padding: 30px 30px 30px 30px;
+  }
 
 /* .kickass-student */
 
@@ -5731,6 +5989,7 @@ footer {
     /* border: 1px solid black; */
     width: 100%;
     padding: 50px 0px 50px 0px;
+    background-color: #edf8fA;
 }
 
 .kickass-student h3 {
@@ -5738,6 +5997,7 @@ footer {
     font-weight: 800;
     text-align: center;
     color: #272566;
+    font-family: nunito;
 }
 
 .student-work-section {
@@ -5759,6 +6019,7 @@ footer {
     width: 100%;
     height: 600px;
     border-radius: 10px;
+    background-color: white;
 }
 
 .student-work-middle-section {
@@ -5771,6 +6032,7 @@ footer {
     width: 100%;
     height: 380px;
     border-radius: 10px;
+    background-color: white;
 }
 
 
@@ -5805,12 +6067,15 @@ footer {
     font-weight: 800;
     color: #272566;
     padding-top: 60px;
+    font-family: nunito;
 }
 
 .mentor-box-one>p {
     width: 55%;
     line-height: 1.5;
     padding-top: 30px;
+    font-size: 16px;
+    font-family: mulish;
 }
 
 .mentor-box-two {
@@ -5908,6 +6173,110 @@ footer {
     top: 50%;
 }
 
+.ux-carousel{
+    /* border: 1px solid black; */
+}
+
+#awdizz-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .awdizz-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .awdizz-carousel-slide {
+    box-sizing: border-box;
+    flex: 0 0 25%;
+    padding: 10px;
+  }
+
+  .awdizz-carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: #99CBC5;
+    width: 3%;
+    height: 50px;
+    color: black;
+  }
+
+  .awdizz-prev {
+    left: 10px;
+  }
+
+  .awdizz-next {
+   left: 95%;
+  }
+
+  .awdizz-ui-carousel {
+    width: 95%;
+    margin: auto;
+    padding: 25px 0px 25px 0px;
+  }
+
+  .awdizz-ui-carousel-box-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .awdizz-ui-carousel-circle {
+    /* border: 1px solid black; */
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .awdizz-ui-carousel-box-one>p {
+    font-size: 16px;
+    font-family: hind;
+    margin-left: 10px;
+  }
+
+  .awdizzz-info{
+    font-size: 16px;
+    font-family: mulish;
+    line-height: 1.5;
+  }
+
+  .awdizz-ui-carousel-content {
+    text-align: center;
+    font-size: 16px;
+    font-family: mulish;
+  }
+
+  .awdizz-ui-carousel-content > p{
+    margin-top: 20px;
+  }
+
+  .awdizz-ui-carousel-button {
+    /* border: 1px solid black; */
+    width: 40%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+  }
+
+  .awdizz-ui-carousel-button>p {
+    margin-left: 10px;
+    font-family: hind;
+  }
+
+
+
+
+
 .cohort {
     /* border: 1px solid black; */
     width: 100%;
@@ -5947,6 +6316,7 @@ footer {
     font-size: 40px;
     font-weight: 800;
     color: #272566;
+    font-family: nunito;
 }
 
 .cohort-button {
@@ -5957,10 +6327,14 @@ footer {
     margin-top: 25px;
     background-color: #007D6F;
     color: white;
+    font-family: hind;
 }
 
 .cohort-section-two>p {
     padding-top: 25px;
+    line-height: 1.5;
+    font-family: mulish;
+    font-size: 16px;
 }
 
 /* course report */
@@ -6020,6 +6394,7 @@ footer {
     font-size: 40px;
     font-weight: 800;
     color: #272566;
+    font-family: nunito;
 }
 
 .ux-design-people-section-two{
@@ -6041,6 +6416,7 @@ footer {
     padding-top: 10px;
     color: #272566;
     font-weight: 800;
+    font-family: nunito;
 }
 
 .rating-box-one{
@@ -6119,6 +6495,12 @@ footer {
     display: flex;
 }
 
+.ux-desing-people-item-one-para{
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: mulish;
+}
+
 .ux-design-content-circle{
     border: 1px solid black;
     width: 50px;
@@ -6130,6 +6512,8 @@ footer {
     /* border: 1px solid black; */
     width: 78%;
     margin-left: 10px;
+    font-size: 14px;
+    font-family: mulish;
 }
 
 .ux-design-content-one-circle{
