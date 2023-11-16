@@ -1,162 +1,166 @@
-<!-- <div class="modal fade bottom-form" id="quickForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body" style="padding:1px">
-        <section id="newsletter" class="sticky-form">
-          <div class="container">
-            <div class="newsletter-inner">
-              <form id="main-contact-form1" name="contact-form form" method="post" action="/footerform/stickyform.php"
-                onsubmit="return validate();" class="probootstrap-form">
-                <input type="hidden" name="form_page" value="femalejobssticky">
-                <div class="mailpoet_form row"  style="display: flex; justify-content: space-between; vertical-align: middle;">
-                  <div class="col-md-3" style="width: 20%; ">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="text" name="name" class="form-control" placeholder="Full Name *"
-                        required="required" data-error="Full Name is required">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 20%;">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="email" name="email" class="form-control" placeholder="Email *" required="required"
-                        data-error="Valid Email is required">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 20%; height: 30px;">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="text" name="message" class="form-control" placeholder="Phone Number & Message *"
-                        required="required" data-error="Please, leave us a message">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 20%;">
-                    <button class="glow-on-hover" type="submit">
-                      <input style="width: 290px; height: 30px; background-color: #edf8fA; border: none; border-radius: 10px; font-family: mulish; margin-top: 3px;" type="submit" class="btn btn-success btn-send" value="✉ Request call back ✉">
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-      </div>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoplay Carousel</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .carousel-wrapper {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .carousel-slide {
+      flex: 0 0 33%;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="carousel-slide">Slide 1 Content</div>
+      <div class="carousel-slide">Slide 2 Content</div>
+      <div class="carousel-slide">Slide 3 Content</div>
+      <div class="carousel-slide">Slide 4 Content</div>
+      <div class="carousel-slide">Slide 5 Content</div>
     </div>
   </div>
-</div> -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const wrapper = document.querySelector(".carousel-wrapper");
+      const slides = document.querySelectorAll(".carousel-slide");
+
+      let index = 0;
+
+      function nextSlide() {
+        index = (index + 1) % slides.length;
+        updateSlide();
+      }
+
+      function updateSlide() {
+        const translateValue = -index * (100 / 3) + "%";
+        wrapper.style.transform = "translateX(" + translateValue + ")";
+      }
+
+      setTimeout(function () {
+        setInterval(nextSlide, 2000);
+      }, 1000);
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html> -->
+
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="navbar.css">
+  <style>
+/* .speech-bubble {
+  position: relative;
+  background-color: #67c9ad; 
+  border-radius: 30px; 
+  padding: 20px;
+  max-width: 300px;
+  color: white; 
+  font-family: sans-serif; 
+  font-size: 18px;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 20px 20px 0;
+  border-color: #67c9ad transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  display: inline-block;
+  font-weight: bold;
+  color: #0275d8;
+} */
+
+
+.speech-bubble {
+  background-color: #67c9ad; /* Your preferred color */
+  border-radius: 50px; /* Adjust for desired roundness */
+  padding: 20px 40px; /* Top/bottom padding and Left/right padding */
+  position: relative;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Adjust as needed */
+  max-width: 80%; /* Adjust as needed */
+  margin: 40px auto; /* Increased top margin to account for notch */
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: 0; /* Position at the top */
+  left: 50%; /* Center the notch horizontally */
+  border-style: solid;
+  border-width: 0 20px 20px; /* Create a triangle */
+  border-color: transparent transparent #67c9ad; 
+  transform: translate(-50%, -100%); /* Adjust horizontal position and move it out of the bubble */
+  z-index: 1;
+}
+
+.arrow {
+  margin: 0 10px; /* Spacing around the arrow */
+  font-size: 24px; /* Adjust as needed */
+}
+
+/* Add responsive design as needed */
+
+
+   
+  </style>
+  <title>Your Page Title</title>
 </head>
-<style>
-  body{
-    background-color: gray;
-  }
-</style>
+
 <body>
-
-  <div id="form-modal">
-
+  <div class="speech-bubble">
+    <span>Service based</span>
+    <i class="arrow">→</i>
+    <span>Product based company</span>
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var formmodal = document.getElementById("form-modal");
-      console.log(formmodal, "formmodal");
-
-      formmodal.innerHTML = `
-        
-        <button id="openMobileModalBtn" class="mobile-view-button">
-            <i class="fa-regular fa-message"></i>
-        </button>
-       <div class="modal fade bottom-form" id="quickForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body" style="padding: 1px">
-        <section id="newsletter" class="sticky-form">
-          <div class="container">
-            <div class="newsletter-inner">
-              <form id="main-contact-form1" name="contact-form form" method="post" action="/footerform/stickyform.php"
-                onsubmit="return validate();" class="probootstrap-form">
-                <input type="hidden" name="form_page" value="femalejobssticky">
-                <div class="mailpoet_form row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-                  <div class="col-md-3" style="width: 100%; max-width: 250px; margin-bottom: 10px;">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="text" name="name" class="form-control" placeholder="Full Name *"
-                        required="required" data-error="Full Name is required">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 100%; max-width: 250px; margin-bottom: 10px;">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="email" name="email" class="form-control" placeholder="Email *"
-                        required="required" data-error="Valid Email is required">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 100%; max-width: 250px; margin-bottom: 10px;">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="text" name="message" class="form-control" placeholder="Phone Number & Message *"
-                        required="required" data-error="Please, leave us a message">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 100%; max-width: 250px; margin-bottom: 10px;">
-                    <button class="glow-on-hover" type="submit" style="width: 100%;">
-                      <input style="width: 100%; height: 30px; background-color: #edf8fA; border: none; border-radius: 10px; font-family: mulish;"
-                        type="submit" class="btn btn-success btn-send" value="✉ Request call back ✉">
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
-    `;
-
-      var modal = document.getElementById("quickForm");
-      var openMobileModalBtn = document.getElementById("openMobileModalBtn");
-
-      // Function to open the mobile modal
-      function openMobileModal() {
-        modal.style.display = "block";
-      }
-
-      // Function to close the mobile modal
-      function closeMobileModal() {
-        modal.style.display = "none";
-      }
-
-      openMobileModalBtn.addEventListener("click", function () {
-        openMobileModal();
-      });
-
-      // Event listener to close modal when clicking outside of it
-      window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-          closeMobileModal();
-        }
-      });
-
-      function handleResponsiveDesign() {
-        if (window.innerWidth >= 768) {
-          modal.style.display = "block";
-          openMobileModalBtn.style.display = "none";
-        } else {
-          openMobileModalBtn.style.display = "block";
-          modal.style.display = "none";
-        }
-      }
-
-      handleResponsiveDesign();
-      window.addEventListener("resize", handleResponsiveDesign);
-    });
-
-  </script>
+  
+  
 </body>
 
 </html>

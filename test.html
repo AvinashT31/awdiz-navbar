@@ -1,311 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <style>
-    #carousel {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      /* Carousel width */
-    }
-
-    .slides {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
-
-    .carousel-slide {
-      /* border: 1px solid black; */
-      box-sizing: border-box;
-      flex: 0 0 25%;
-      padding: 10px;
-    }
-
-    .carousel-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
-      background-color: #fff;
-      width: 3%;
-      height: 50px;
-      color: black;
-    }
-
-    .prev {
-      left: 10px;
-    }
-
-    .next {
-      right: 10px;
-    }
-
-    .ui-carousel {
-      /* border: 1px solid black; */
-      width: 95%;
-      margin: auto;
-      padding: 25px 0px 25px 0px;
-
-    }
-
-    .ui-carousel-box-one {
-      /* border: 1px solid black; */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .ui-caorusel-circle {
-      border: 1px solid black;
-      width: 40px;
-      height: 40px;
-      border-radius: 20px;
-    }
-
-    .ui-carousel-box-one>p {
-      font-size: 16px;
-      font-family: mulish;
-      margin-left: 10px;
-    }
-
-    .ui-carousel-content {
-      text-align: center;
-      font-size: 16px;
-      font-family: mulish;
-    }
-
-    .ui-caorusel-button {
-      border: 1px solid black;
-      width: 40%;
-      margin: auto;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-      color: black;
-    }
-
-    .ui-caorusel-button>p {
-      margin-left: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="carousel" class="carousel">
-    <button class="carousel-button prev"><i class="fa-solid fa-arrow-left"></i></button>
-    <div class="slides">
-      <div style="background-color: #272566;" class="carousel-slide">
-        <div  class="ui-carousel">
-          <div class="ui-carousel-box-one">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p style="color: white;">Omkar Kachare</p>
-          </div>
-          <div class="ui-carousel-content">
-            <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet reiciendis,
-              earum amet ad</p>
-          </div>
-          <div class="ui-caorusel-button">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Hired by Spotify</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-slide">
-        <div class="ui-carousel">
-          <div class="ui-carousel-box-one">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Omkar Kachare</p>
-          </div>
-          <div class="ui-carousel-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet reiciendis, earum amet ad</p>
-          </div>
-          <div class="ui-caorusel-button">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Hired by Spotify</p>
-          </div>
-        </div>
-      </div>
-      <div style="background-color: #272566;" class="carousel-slide">
-        <div  class="ui-carousel">
-          <div class="ui-carousel-box-one">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p style="color: white;">Omkar Kachare</p>
-          </div>
-          <div class="ui-carousel-content">
-            <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet reiciendis,
-              earum amet ad</p>
-          </div>
-          <div class="ui-caorusel-button">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Hired by Spotify</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-slide">
-        <div class="ui-carousel">
-          <div class="ui-carousel-box-one">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Omkar Kachare</p>
-          </div>
-          <div class="ui-carousel-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet reiciendis, earum amet ad</p>
-          </div>
-          <div class="ui-caorusel-button">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Hired by Spotify</p>
-          </div>
-        </div>
-      </div>
-      <div style="background-color: #272566;" class="carousel-slide">
-        <div  class="ui-carousel">
-          <div class="ui-carousel-box-one">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p style="color: white;">Omkar Kachare</p>
-          </div>
-          <div class="ui-carousel-content">
-            <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet reiciendis,
-              earum amet ad</p>
-          </div>
-          <div class="ui-caorusel-button">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Hired by Spotify</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-slide">
-        <div class="ui-carousel">
-          <div class="ui-carousel-box-one">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Omkar Kachare</p>
-          </div>
-          <div class="ui-carousel-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet reiciendis, earum amet ad</p>
-          </div>
-          <div class="ui-caorusel-button">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Hired by Spotify</p>
-          </div>
-        </div>
-      </div>
-      <div style="background-color: #272566;" class="carousel-slide">
-        <div  class="ui-carousel">
-          <div class="ui-carousel-box-one">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p style="color: white;">Omkar Kachare</p>
-          </div>
-          <div class="ui-carousel-content">
-            <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet reiciendis,
-              earum amet ad</p>
-          </div>
-          <div class="ui-caorusel-button">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Hired by Spotify</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-slide">
-        <div class="ui-carousel">
-          <div class="ui-carousel-box-one">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Omkar Kachare</p>
-          </div>
-          <div class="ui-carousel-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet reiciendis, earum amet ad</p>
-          </div>
-          <div class="ui-caorusel-button">
-            <div class="ui-caorusel-circle">
-
-            </div>
-            <p>Hired by Spotify</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-button next">›</button>
-  </div>
-
-
-
-  <script>
-    const slidesContainer = document.querySelector('.slides');
-    const slides = document.querySelectorAll('.carousel-slide');
-    const visibleSlides = 4;
-    let currentIndex = 0;
-
-    function updateCarousel() {
-      // Find the width of a single slide (which is 25% of the carousel's width)
-      const slideWidth = slides[0].offsetWidth;
-      // Calculate the offset needed to show the next set of 4 slides
-      const offset = -(slideWidth * currentIndex);
-      // Update the transform property to move the slides
-      slidesContainer.style.transform = `translateX(${offset}px)`;
-    }
-
-    document.querySelector('.prev').addEventListener('click', () => {
-      // Move to the previous set of slides, but don't go below 0
-      if (currentIndex > 0) {
-        currentIndex -= visibleSlides;
-        if (currentIndex < 0) currentIndex = 0;
-        updateCarousel();
-      }
-    });
-
-    document.querySelector('.next').addEventListener('click', () => {
-      // Move to the next set of slides, but don't exceed the total number of slides
-      if (currentIndex < slides.length - visibleSlides) {
-        currentIndex += visibleSlides;
-        if (currentIndex > slides.length - visibleSlides) currentIndex = slides.length - visibleSlides;
-        updateCarousel();
-      }
-    });
-
-    updateCarousel(); // Initialize the carousel position
-
-
-  </script>
-</body>
-
-</html> -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -348,7 +40,7 @@
     }
 
     .awdizz-next {
-     left: 95%;
+      left: 95%;
     }
 
     .awdizz-ui-carousel {
@@ -411,7 +103,8 @@
             <p style="color: white;">New Name</p>
           </div>
           <div class="awdizz-ui-carousel-content">
-            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde explicabo! Ex expedita,</p>
+            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci
+              aperiam temporibus unde explicabo! Ex expedita,</p>
           </div>
           <div class="awdizz-ui-carousel-button">
             <div class="awdizz-ui-carousel-circle"></div>
@@ -419,7 +112,7 @@
           </div>
         </div>
       </div>
-    
+
       <div class="awdizz-carousel-slide">
         <div class="awdizz-ui-carousel">
           <div class="awdizz-ui-carousel-box-one">
@@ -427,7 +120,8 @@
             <p>New Name</p>
           </div>
           <div class="awdizz-ui-carousel-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde explicabo! Ex expedita,</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde
+              explicabo! Ex expedita,</p>
           </div>
           <div class="awdizz-ui-carousel-button">
             <div class="awdizz-ui-carousel-circle"></div>
@@ -443,7 +137,8 @@
             <p style="color: white;">New Name</p>
           </div>
           <div class="awdizz-ui-carousel-content">
-            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde explicabo! Ex expedita,</p>
+            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci
+              aperiam temporibus unde explicabo! Ex expedita,</p>
           </div>
           <div class="awdizz-ui-carousel-button">
             <div class="awdizz-ui-carousel-circle"></div>
@@ -459,7 +154,8 @@
             <p>New Name</p>
           </div>
           <div class="awdizz-ui-carousel-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde explicabo! Ex expedita,</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde
+              explicabo! Ex expedita,</p>
           </div>
           <div class="awdizz-ui-carousel-button">
             <div class="awdizz-ui-carousel-circle"></div>
@@ -475,7 +171,8 @@
             <p style="color: white;">New Name</p>
           </div>
           <div class="awdizz-ui-carousel-content">
-            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde explicabo! Ex expedita,</p>
+            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci
+              aperiam temporibus unde explicabo! Ex expedita,</p>
           </div>
           <div class="awdizz-ui-carousel-button">
             <div class="awdizz-ui-carousel-circle"></div>
@@ -491,7 +188,8 @@
             <p>New Name</p>
           </div>
           <div class="awdizz-ui-carousel-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde explicabo! Ex expedita,</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde
+              explicabo! Ex expedita,</p>
           </div>
           <div class="awdizz-ui-carousel-button">
             <div class="awdizz-ui-carousel-circle"></div>
@@ -507,7 +205,8 @@
             <p style="color: white;">New Name</p>
           </div>
           <div class="awdizz-ui-carousel-content">
-            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde explicabo! Ex expedita,</p>
+            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci
+              aperiam temporibus unde explicabo! Ex expedita,</p>
           </div>
           <div class="awdizz-ui-carousel-button">
             <div class="awdizz-ui-carousel-circle"></div>
@@ -523,7 +222,8 @@
             <p>New Name</p>
           </div>
           <div class="awdizz-ui-carousel-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde explicabo! Ex expedita,</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae adipisci aperiam temporibus unde
+              explicabo! Ex expedita,</p>
           </div>
           <div class="awdizz-ui-carousel-button">
             <div class="awdizz-ui-carousel-circle"></div>

@@ -2881,9 +2881,269 @@ document.addEventListener("DOMContentLoaded", function () {
         uxdisplaydetailsawdiz.style.display = "none"
         uxdetailsawdiz.style.backgroundColor = "#edf8fA";
         uxdetailsawdiz.style.color = "black";
-
-
     });
+
+})
+
+
+// PAGE5
+
+document.addEventListener("DOMContentLoaded", function () {
+        var developementmentor = document.getElementById("developement-mentor");
+        var displaydevelopmentmentor = document.getElementById("display-development-mentor")
+
+        developementmentor.addEventListener('click', function () {
+            displaydevelopmentmentor.style.display = "flex";
+            developementmentor.style.backgroundColor = "#007d6f";
+            developementmentor.style.borderTopRightRadius = "50px";
+            developementmentor.style.borderBottomRightRadius = "50px";
+            developementmentor.style.color = "white"
+
+            displaydevelopmentinterview.style.display = "none";
+            developementinterview.style.backgroundColor = "white";
+            developementinterview.style.borderTopRightRadius = "initital";
+            developementinterview.style.borderBottomRightRadius = "initital";
+            developementinterview.style.color = "black"
+
+            displaydevelopmentnetwork.style.display = "none";
+            developementnetwork.style.backgroundColor = "white";
+            developementnetwork.style.borderTopRightRadius = "initital";
+            developementnetwork.style.borderBottomRightRadius = "initital";
+            developementnetwork.style.color = "black"
+
+            displaydevelopmenthackathon.style.display = "none";
+            developementhackathon.style.backgroundColor = "white";
+            developementhackathon.style.borderTopRightRadius = "initital";
+            developementhackathon.style.borderBottomRightRadius = "initital";
+            developementhackathon.style.color = "black"
+
+            displaydevelopmentindustry.style.display = "none";
+            developementindustry.style.backgroundColor = "white";
+            developementindustry.style.borderTopRightRadius = "initital";
+            developementindustry.style.borderBottomRightRadius = "initital";
+            developementindustry.style.color = "black"
+
+            displayindustry.style.display = "none";
+            industry.style.backgroundColor = "white";
+            industry.style.borderTopRightRadius = "initital";
+            industry.style.borderBottomRightRadius = "initital";
+            industry.style.color = "black";
+        })
+
+
+
+        var developementinterview = document.getElementById("developement-interview");
+        var displaydevelopmentinterview = document.getElementById("display-development-interview")
+
+        developementinterview.addEventListener('click', function () {
+            displaydevelopmentinterview.style.display = "flex";
+            developementinterview.style.backgroundColor = "#007d6f";
+            developementinterview.style.borderTopRightRadius = "50px";
+            developementinterview.style.borderBottomRightRadius = "50px";
+            developementinterview.style.color = "white"
+
+
+            displaydevelopmentmentor.style.display = "none";
+            developementmentor.style.backgroundColor = "white";
+            developementmentor.style.borderTopRightRadius = "initital";
+            developementmentor.style.borderBottomRightRadius = "initital";
+            developementmentor.style.color = "black";
+
+            displaydevelopmentnetwork.style.display = "none";
+            developementnetwork.style.backgroundColor = "white";
+            developementnetwork.style.borderTopRightRadius = "initital";
+            developementnetwork.style.borderBottomRightRadius = "initital";
+            developementnetwork.style.color = "black";
+
+            displaydevelopmenthackathon.style.display = "none";
+            developementhackathon.style.backgroundColor = "white";
+            developementhackathon.style.borderTopRightRadius = "initital";
+            developementhackathon.style.borderBottomRightRadius = "initital";
+            developementhackathon.style.color = "black";
+
+            displaydevelopmentindustry.style.display = "none";
+            developementindustry.style.backgroundColor = "white";
+            developementindustry.style.borderTopRightRadius = "initital";
+            developementindustry.style.borderBottomRightRadius = "initital";
+            developementindustry.style.color = "black";
+
+            displayindustry.style.display = "none";
+            industry.style.backgroundColor = "white";
+            industry.style.borderTopRightRadius = "initital";
+            industry.style.borderBottomRightRadius = "initital";
+            industry.style.color = "black";
+        })
+
+
+
+        var developementnetwork = document.getElementById("developement-network");
+        var displaydevelopmentnetwork = document.getElementById("display-development-network")
+
+        developementnetwork.addEventListener('click', function () {
+            displaydevelopmentnetwork.style.display = "flex";
+            developementnetwork.style.backgroundColor = "#007d6f";
+            developementnetwork.style.borderTopRightRadius = "50px";
+            developementnetwork.style.borderBottomRightRadius = "50px";
+            developementnetwork.style.color = "white"
+
+            displaydevelopmentinterview.style.display = "none";
+            developementinterview.style.backgroundColor = "white";
+            developementinterview.style.borderTopRightRadius = "initital";
+            developementinterview.style.borderBottomRightRadius = "initital";
+            developementinterview.style.color = "black";
+
+            displaydevelopmentmentor.style.display = "none";
+            developementmentor.style.backgroundColor = "white";
+            developementmentor.style.borderTopRightRadius = "initital";
+            developementmentor.style.borderBottomRightRadius = "initital";
+            developementmentor.style.color = "black";
+
+            displaydevelopmenthackathon.style.display = "none";
+            developementhackathon.style.backgroundColor = "white";
+            developementhackathon.style.borderTopRightRadius = "initital";
+            developementhackathon.style.borderBottomRightRadius = "initital";
+            developementhackathon.style.color = "black";
+
+            displaydevelopmentindustry.style.display = "none";
+            developementindustry.style.backgroundColor = "white";
+            developementindustry.style.borderTopRightRadius = "initital";
+            developementindustry.style.borderBottomRightRadius = "initital";
+            developementindustry.style.color = "black";
+
+            displayindustry.style.display = "none";
+            industry.style.backgroundColor = "white";
+            industry.style.borderTopRightRadius = "initital";
+            industry.style.borderBottomRightRadius = "initital";
+            industry.style.color = "black";
+        })
+
+
+
+        var developementhackathon = document.getElementById("developement-hackathon");
+        var displaydevelopmenthackathon = document.getElementById("display-development-hackathon")
+
+        developementhackathon.addEventListener('click', function () {
+            displaydevelopmenthackathon.style.display = "flex";
+            developementhackathon.style.backgroundColor = "#007d6f";
+            developementhackathon.style.borderTopRightRadius = "50px";
+            developementhackathon.style.borderBottomRightRadius = "50px";
+            developementhackathon.style.color = "white"
+
+            displaydevelopmentnetwork.style.display = "none";
+            developementnetwork.style.backgroundColor = "white";
+            developementnetwork.style.borderTopRightRadius = "initital";
+            developementnetwork.style.borderBottomRightRadius = "initital";
+            developementnetwork.style.color = "black";
+
+            displaydevelopmentinterview.style.display = "none";
+            developementinterview.style.backgroundColor = "white";
+            developementinterview.style.borderTopRightRadius = "initital";
+            developementinterview.style.borderBottomRightRadius = "initital";
+            developementinterview.style.color = "black";
+
+            displaydevelopmentmentor.style.display = "none";
+            developementmentor.style.backgroundColor = "white";
+            developementmentor.style.borderTopRightRadius = "initital";
+            developementmentor.style.borderBottomRightRadius = "initital";
+            developementmentor.style.color = "black";
+
+            displaydevelopmentindustry.style.display = "none";
+            developementindustry.style.backgroundColor = "white";
+            developementindustry.style.borderTopRightRadius = "initital";
+            developementindustry.style.borderBottomRightRadius = "initital";
+            developementindustry.style.color = "black";
+
+            displayindustry.style.display = "none";
+            industry.style.backgroundColor = "white";
+            industry.style.borderTopRightRadius = "initital";
+            industry.style.borderBottomRightRadius = "initital";
+            industry.style.color = "black";
+        })
+
+
+
+        var developementindustry = document.getElementById("developement-industry");
+        var displaydevelopmentindustry = document.getElementById("display-development-industry")
+
+        developementindustry.addEventListener('click', function () {
+            displaydevelopmentindustry.style.display = "flex";
+            developementindustry.style.backgroundColor = "#007d6f";
+            developementindustry.style.borderTopRightRadius = "50px";
+            developementindustry.style.borderBottomRightRadius = "50px";
+            developementindustry.style.color = "white"
+
+            displaydevelopmenthackathon.style.display = "none";
+            developementhackathon.style.backgroundColor = "white";
+            developementhackathon.style.borderTopRightRadius = "initital";
+            developementhackathon.style.borderBottomRightRadius = "initital";
+            developementhackathon.style.color = "black";
+
+            displaydevelopmentnetwork.style.display = "none";
+            developementnetwork.style.backgroundColor = "white";
+            developementnetwork.style.borderTopRightRadius = "initital";
+            developementnetwork.style.borderBottomRightRadius = "initital";
+            developementnetwork.style.color = "black";
+
+            displaydevelopmentinterview.style.display = "none";
+            developementinterview.style.backgroundColor = "white";
+            developementinterview.style.borderTopRightRadius = "initital";
+            developementinterview.style.borderBottomRightRadius = "initital";
+            developementinterview.style.color = "black";
+
+            displaydevelopmentmentor.style.display = "none";
+            developementmentor.style.backgroundColor = "white";
+            developementmentor.style.borderTopRightRadius = "initital";
+            developementmentor.style.borderBottomRightRadius = "initital";
+            developementmentor.style.color = "black";
+
+            displayindustry.style.display = "none";
+            industry.style.backgroundColor = "white";
+            industry.style.borderTopRightRadius = "initital";
+            industry.style.borderBottomRightRadius = "initital";
+            industry.style.color = "black";
+        })
+
+        var industry = document.getElementById("industry");
+        var displayindustry = document.getElementById("display-industry")
+
+        industry.addEventListener('click', function () {
+            displayindustry.style.display = "flex";
+            industry.style.backgroundColor = "#007d6f";
+            industry.style.borderTopRightRadius = "50px";
+            industry.style.borderBottomRightRadius = "50px";
+            industry.style.color = "white"
+
+            displaydevelopmentindustry.style.display = "none";
+            developementindustry.style.backgroundColor = "white";
+            developementindustry.style.borderTopRightRadius = "initital";
+            developementindustry.style.borderBottomRightRadius = "initital";
+            developementindustry.style.color = "black";
+
+            displaydevelopmenthackathon.style.display = "none";
+            developementhackathon.style.backgroundColor = "white";
+            developementhackathon.style.borderTopRightRadius = "initital";
+            developementhackathon.style.borderBottomRightRadius = "initital";
+            developementhackathon.style.color = "black";
+
+            displaydevelopmentnetwork.style.display = "none";
+            developementnetwork.style.backgroundColor = "white";
+            developementnetwork.style.borderTopRightRadius = "initital";
+            developementnetwork.style.borderBottomRightRadius = "initital";
+            developementnetwork.style.color = "black";
+
+            displaydevelopmentinterview.style.display = "none";
+            developementinterview.style.backgroundColor = "white";
+            developementinterview.style.borderTopRightRadius = "initital";
+            developementinterview.style.borderBottomRightRadius = "initital";
+            developementinterview.style.color = "black";
+
+            displaydevelopmentmentor.style.display = "none";
+            developementmentor.style.backgroundColor = "white";
+            developementmentor.style.borderTopRightRadius = "initital";
+            developementmentor.style.borderBottomRightRadius = "initital";
+            developementmentor.style.color = "black";
+        })
+
 
 })
 
