@@ -3144,8 +3144,107 @@ document.addEventListener("DOMContentLoaded", function () {
             developementmentor.style.color = "black";
         })
 
-
+        var nonit = document.getElementById("non-it");
+        var displaynonit = document.getElementById("display-non-it");
+    
+        nonit.addEventListener('click', function () {
+            displaynonit.style.display = "block";
+            nonit.style.backgroundColor = "white";
+    
+            displaynonengineering.style.display = "none";
+            nonEngineering.style.backgroundColor = "#edf8fa";
+    
+            displaycareergap.style.display = "none";
+            careergap.style.backgroundColor = "#edf8fa";
+    
+            displaymncs.style.display = "none";
+            MNC.style.backgroundColor = "#edf8fa";
+    
+            displayallsenior.style.display = "none";
+            allsenior.style.backgroundColor = "#edf8fa";
+        })
+     
+        var nonEngineering = document.getElementById("non-Engineering");
+        var displaynonengineering = document.getElementById("display-non-engineering");
+    
+        nonEngineering.addEventListener('click', function () {
+            displaynonengineering.style.display = "block";
+            nonEngineering.style.backgroundColor = "white";
+    
+            displaynonit.style.display = "none";
+            nonit.style.backgroundColor = "#edf8fa";
+    
+            displaycareergap.style.display = "none";
+            careergap.style.backgroundColor = "#edf8fa";
+    
+            displaymncs.style.display = "none";
+            MNC.style.backgroundColor = "#edf8fa";
+    
+            displayallsenior.style.display = "none";
+            allsenior.style.backgroundColor = "#edf8fa";
+        })
+    
+        var careergap = document.getElementById("career-gap");
+        var displaycareergap = document.getElementById("display-career-gap");
+    
+        careergap.addEventListener('click', function () {
+            displaycareergap.style.display = "block";
+            careergap.style.backgroundColor = "white";
+    
+            displaynonit.style.display = "none";
+            nonit.style.backgroundColor = "#edf8fa";
+    
+            displaynonengineering.style.display = "none";
+            nonEngineering.style.backgroundColor = "#edf8fa";
+    
+            displaymncs.style.display = "none";
+            MNC.style.backgroundColor = "#edf8fa";
+    
+            displayallsenior.style.display = "none";
+            allsenior.style.backgroundColor = "#edf8fa";
+        })
+    
+        var MNC = document.getElementById("M-N-C");
+        var displaymncs = document.getElementById("display-mncs");
+    
+        MNC.addEventListener('click', function () {
+            displaymncs.style.display = "block";
+            MNC.style.backgroundColor = "white";
+    
+            displaycareergap.style.display = "none";
+            careergap.style.backgroundColor = "#edf8fa";
+    
+            displaynonit.style.display = "none";
+            nonit.style.backgroundColor = "#edf8fa";
+    
+            displaynonengineering.style.display = "none";
+            nonEngineering.style.backgroundColor = "#edf8fa";
+    
+            displayallsenior.style.display = "none";
+            allsenior.style.backgroundColor = "#edf8fa";
+        })
+    
+        var allsenior = document.getElementById("all-senior");
+        var displayallsenior = document.getElementById("display-all-senior");
+    
+        allsenior.addEventListener('click', function () {
+            displayallsenior.style.display = "block";
+            allsenior.style.backgroundColor = "white";
+    
+            displaycareergap.style.display = "none";
+            careergap.style.backgroundColor = "#edf8fa";
+    
+            displaynonit.style.display = "none";
+            nonit.style.backgroundColor = "#edf8fa";
+    
+            displaynonengineering.style.display = "none";
+            nonEngineering.style.backgroundColor = "#edf8fa";
+    
+            displaymncs.style.display = "none";
+            MNC.style.backgroundColor = "#edf8fa";
+        })   
 })
+
 
 
 
