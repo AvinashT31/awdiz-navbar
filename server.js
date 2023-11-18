@@ -3,40 +3,27 @@ function handleClick(event) {
 
     var hoverDiv = document.getElementById('navbar');
     var hoverDisplayDiv = document.getElementById('hover-content');
-    var showrightitmone = document.getElementById("show-right-itm-one");
-    var showrightitmtwo = document.getElementById("show-right-itm-two");
-    var showrightitmthree = document.getElementById("show-right-itm-three");
-    var showrightitmfour = document.getElementById("show-right-itm-four");
-    var showrightitmfive = document.getElementById("show-right-itm-five");
-    var showrightitmsix = document.getElementById("show-right-itm-six");
-    var othermenu = document.getElementsByClassName("navtwo-menu");
+    var showRightItems = document.querySelectorAll("[id^='show-right-itm']");
+    var otherMenu = document.getElementsByClassName("navtwo-menu");
 
-    for (var i = 0; i < othermenu.length; i++) {
-        othermenu[i].addEventListener('mouseover', function (event) {
+    for (var i = 0; i < otherMenu.length; i++) {
+        otherMenu[i].addEventListener('mouseover', function () {
             hoverDisplayDiv.classList.remove('flex-display');
         });
     }
-
-    hoverDiv.addEventListener('mouseover', function (event) {
+    hoverDiv.addEventListener('mouseover', function () {
         hoverDisplayDiv.classList.add('flex-display');
-        showrightitmone.style.display = "block";
-        showrightitmtwo.style.display = "none";
-        showrightitmthree.style.display = "none";
-        showrightitmfour.style.display = "none";
-        showrightitmfive.style.display = "none";
-        showrightitmsix.style.display = "none";
+        showRightItems.forEach(item => item.style.display = "none");
+        showRightItems[0].style.display = "block";
     });
-
     hoverDiv.addEventListener('mouseout', function (event) {
         if (event.target !== hoverDiv && event.target !== hoverDisplayDiv) {
             hoverDisplayDiv.classList.remove('flex-display');
         }
     });
-
     hoverDisplayDiv.addEventListener('mouseover', function () {
         hoverDisplayDiv.classList.add('flex-display');
     });
-
     hoverDisplayDiv.addEventListener('mouseout', function () {
         hoverDisplayDiv.classList.remove('flex-display');
     });
@@ -44,290 +31,28 @@ function handleClick(event) {
 
 
 function displaycontent(event) {
-
-    var openstpage = document.getElementById("opensoftwarepage");
-    var showrightitmone = document.getElementById("show-right-itm-one");
-    var icon = document.getElementById("icon");
-
-    openstpage.addEventListener("mouseover", function (event) {
-        event.preventDefault();
-        showrightitmone.style.display = "block";
-        showrightitmtwo.style.display = "none";
-        showrightitmthree.style.display = "none";
-        showrightitmfour.style.display = "none";
-        showrightitmfive.style.display = "none";
-        showrightitmsix.style.display = "none";
-
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "#ffffff";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#272566";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#edf8fa";
+    document.querySelectorAll('.menu-item').forEach(item => {
+        item.addEventListener('mouseover', function(event) {
+            document.querySelectorAll('.menu-item').forEach(menuItem => {
+                menuItem.style.backgroundColor = 'initial';
+                if (menuItem.querySelector('i')) {
+                    menuItem.querySelector('i').style.color = '#edf8fa';
+                }
+            });
+            document.querySelectorAll('.content-div').forEach(content => {
+                content.style.display = 'none';
+            });
+            const targetContentId = item.getAttribute('data-target');
+            const contentToShow = document.getElementById(targetContentId);
+            if (contentToShow) {
+                contentToShow.style.display = 'block';
+                item.style.backgroundColor = '#ffffff'; 
+                if (item.querySelector('i')) {
+                    item.querySelector('i').style.color = '#272566'; 
+                }
+            }
+        });
     });
-
-
-    showrightitmone.addEventListener('mouseover', function () {
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "#ffffff";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#272566";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#edf8fa";
-    });
-
-
-    var openinfra = document.getElementById("openinfrapage");
-    var showrightitmtwo = document.getElementById("show-right-itm-two");
-    var iconone = document.getElementById("icon-one")
-
-    openinfra.addEventListener("mouseover", function (event) {
-        event.preventDefault();
-        showrightitmone.style.display = "none";
-        showrightitmtwo.style.display = "block";
-        showrightitmthree.style.display = "none";
-        showrightitmfour.style.display = "none";
-        showrightitmfive.style.display = "none";
-        showrightitmsix.style.display = "none";
-
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openinfra.style.backgroundColor = "#ffffff";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#272566";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#edf8fa";
-
-    });
-
-    showrightitmtwo.addEventListener('mouseover', function () {
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "#ffffff";
-
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#272566";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#edf8fa";
-    });
-
-
-    var opendigitalmarketing = document.getElementById("opendmpage");
-    var showrightitmthree = document.getElementById("show-right-itm-three");
-    var icontwo = document.getElementById("icon-two")
-
-    opendigitalmarketing.addEventListener("mouseover", function (event) {
-        event.preventDefault();
-        showrightitmone.style.display = "none";
-        showrightitmtwo.style.display = "none";
-        showrightitmthree.style.display = "block";
-        showrightitmfour.style.display = "none";
-        showrightitmfive.style.display = "none";
-        showrightitmsix.style.display = "none";
-
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "#ffffff";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#272566";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#edf8fa";
-    });
-
-    showrightitmthree.addEventListener('mouseover', function () {
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "#ffffff";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#272566";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#edf8fa";
-    });
-
-    var science = document.getElementById("opendspage");
-    var showrightitmfour = document.getElementById("show-right-itm-four");
-    var iconthree = document.getElementById("icon-three")
-
-    science.addEventListener("mouseover", function (event) {
-        showrightitmone.style.display = "none";
-        showrightitmtwo.style.display = "none";
-        showrightitmthree.style.display = "none";
-        showrightitmfour.style.display = "block";
-        showrightitmfive.style.display = "none";
-        showrightitmsix.style.display = "none";
-
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "#ffffff";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#272566";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#edf8fa";
-    });
-
-
-    showrightitmfour.addEventListener('mouseover', function () {
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "#ffffff";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#272566";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#edf8fa";
-    });
-
-
-    var ML = document.getElementById("openmlpage");
-    var showrightitmfive = document.getElementById("show-right-itm-five");
-    var iconfour = document.getElementById("icon-four")
-
-    ML.addEventListener("mouseover", function (event) {
-        event.preventDefault();
-        showrightitmone.style.display = "none";
-        showrightitmtwo.style.display = "none";
-        showrightitmthree.style.display = "none";
-        showrightitmfour.style.display = "none";
-        showrightitmfive.style.display = "block";
-        showrightitmsix.style.display = "none";
-
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "#ffffff";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#272566";
-        iconfive.style.color = "#edf8fa";
-
-    });
-
-    showrightitmfive.addEventListener('mouseover', function () {
-        security.style.backgroundColor = "initial";
-        ML.style.backgroundColor = "#ffffff";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#272566";
-        iconfive.style.color = "#edf8fa";
-    });
-
-    var security = document.getElementById("opencspage");
-    var showrightitmsix = document.getElementById("show-right-itm-six");
-    var iconfive = document.getElementById("icon-five")
-
-    security.addEventListener("mouseover", function (event) {
-        event.preventDefault();
-        showrightitmone.style.display = "none";
-        showrightitmtwo.style.display = "none";
-        showrightitmthree.style.display = "none";
-        showrightitmfour.style.display = "none";
-        showrightitmfive.style.display = "none";
-        showrightitmsix.style.display = "block";
-
-        security.style.backgroundColor = "#ffffff";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#272566";
-    });
-
-    showrightitmsix.addEventListener('mouseover', function () {
-        security.style.backgroundColor = "#ffffff";
-        ML.style.backgroundColor = "initial";
-        science.style.backgroundColor = "initial";
-        opendigitalmarketing.style.backgroundColor = "initial";
-        openstpage.style.backgroundColor = "initial";
-        openstpage.style.color = "initial";
-        openinfra.style.backgroundColor = "initial";
-
-        icon.style.color = "#edf8fa";
-        iconone.style.color = "#edf8fa";
-        icontwo.style.color = "#edf8fa";
-        iconthree.style.color = "#edf8fa";
-        iconfour.style.color = "#edf8fa";
-        iconfive.style.color = "#272566";
-    });
-
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -899,27 +624,27 @@ document.addEventListener("DOMContentLoaded", function () {
                       <div class="show-item-left">
                           <h3>Course Categories</h3>
                           <ul>
-                              <li style="background-color: white;" id="opensoftwarepage">Software Development <i
+                              <li class="menu-item" style="background-color: white;" data-target="show-right-itm-one" id="opensoftwarepage">Software Development <i
                                       id="icon" style="padding-left: 17px; color: #272566;"
                                       class="fa-solid fa-angle-right"></i></li>
-                              <li id="openinfrapage">Networking infrastructure <i id="icon-one"
+                              <li class="menu-item"  id="openinfrapage" data-target="show-right-itm-two">Networking infrastructure <i id="icon-one"
                                       style="color: #edf8fa;" class="fa-solid fa-angle-right arrow"></i></li>
-                              <li id="opendmpage">Digital Marketing <i id="icon-two"
+                              <li class="menu-item" id="opendmpage" data-target="show-right-itm-three">Digital Marketing <i id="icon-two"
                                       style="padding-left: 57px; color: #edf8fa;" class="fa-solid fa-angle-right"></i>
                               </li>
-                              <li id="opendspage">Data science <i id="icon-three"
+                              <li class="menu-item" id="opendspage" data-target="show-right-itm-four">Data science <i id="icon-three"
                                       style="padding-left: 83px; color: #edf8fa;" class="fa-solid fa-angle-right"></i>
                               </li>
-                              <li id="openmlpage">Machine Learning <i id="icon-four"
+                              <li class="menu-item" id="openmlpage" data-target="show-right-itm-five">Machine Learning <i id="icon-four"
                                       style="padding-left: 47px; color: #edf8fa;" class="fa-solid fa-angle-right"></i>
                               </li>
-                              <li id="opencspage">Cyber security <i id="icon-five"
+                              <li class="menu-item" id="opencspage" data-target="show-right-itm-six">Cyber security <i id="icon-five"
                                       style="padding-left: 71px; color: #edf8fa;" class="fa-solid fa-angle-right"></i>
                               </li>
                           </ul>
                       </div>
                       <div class="show-content">
-                          <div id="show-right-itm-one">
+                          <div id="show-right-itm-one" class="content-div">
                               <div class="show-item-right">
                                   <div class="show-item-content">
                                       <div class="show-item-one">
@@ -998,7 +723,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           </div>
 
 
-                          <div style="display: none;" id="show-right-itm-two">
+                          <div style="display: none;" id="show-right-itm-two" class="content-div">
                               <div class="show-item-right">
                                   <div class="show-item-content">
                                       <div class="show-item-one">
@@ -1076,7 +801,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           </div>
 
 
-                          <div style="display: none;" id="show-right-itm-three">
+                          <div style="display: none;" id="show-right-itm-three" class="content-div">
                               <div class="show-item-right">
                                   <div class="show-item-content">
                                       <div class="show-item-one">
@@ -1142,7 +867,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           </div>
 
 
-                          <div style="display: none;" id="show-right-itm-four">
+                          <div style="display: none;" id="show-right-itm-four" class="content-div">
                               <div class="show-item-right">
                                   <div class="show-item-content">
                                       <div class="show-item-one">
@@ -1208,7 +933,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                   </div>
                               </div>
                           </div>
-                          <div style="display: none;" id="show-right-itm-five">
+                          <div style="display: none;" id="show-right-itm-five" class="content-div">
                               <div class="show-item-right">
                                   <div class="show-item-content">
                                       <div class="show-item-one">
@@ -1271,7 +996,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                   </div>
                               </div>
                           </div>
-                          <div style="display: none;" id="show-right-itm-six">
+                          <div style="display: none;" id="show-right-itm-six" class="content-div">
                               <div class="show-item-right">
                                   <div class="show-item-content">
                                       <div class="show-item-one">
