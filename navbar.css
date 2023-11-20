@@ -255,14 +255,13 @@ ul li {
 }
 
 .top-bar {
-    /* border: 1px solid  black; */
+    /* border: 1px solid black; */
     width: 100%;
     padding: 20px 20px 20px 20px;
     cursor: pointer;
     display: none;
     position: fixed;
-    right: -95%;
-    top: 80%;
+    bottom: 5%;
 }
 
 .arrow-up {
@@ -278,6 +277,8 @@ ul li {
     font-size: 24px;
     background-color: #007d6f;
     color: white;
+    position: relative;
+    left: 97%;
 }
 
 #global-nav {
@@ -1557,6 +1558,7 @@ button:hover {
 
     .banner-section>h1 {
         font-size: 30px;
+        line-height: 40px;
     }
 }
 
@@ -1569,6 +1571,7 @@ button:hover {
     width: 100%;
     padding: 80px 0px 80px 0px;
     background-color: #edf8fA;
+    box-sizing: border-box;
 }
 
 .guarentee-page {
@@ -1578,8 +1581,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .image {
     position: absolute;
@@ -1675,7 +1676,58 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+
+    .guarentee{
+        padding: 30px 0px 30px 0px
+    }
+
+    .guarentee-page {
+        flex-direction: column;
+    }
+
+    .guarentee-image {
+        width: 100% !important;
+        background-size: 100% !important;
+        height: 215px !important;
+    }
+
+    .guarentee-content {
+        width: 100%;
+        /* border: 1px solid black; */
+        padding: 35px 0px 0px 0px;
+    }
+
+    .mt_btn_yellow{
+        right: -30px !important;
+        top: 158px !important;
+        padding: 40px 35px;
+    }
+
+    .fa-play-circle{
+        font-size: 40px !important;
+    }
+
+    .guarentee-content h2{
+        font-size: 27px;
+    }
+
+    .guarentee-rating{
+        flex-direction: column;
+    }
+
+    .guarentee-rating-container{
+        width: 100%;
+        margin-left: 0px !important;
+        margin-top: 15px;
+    }
+
+    .guarentee-rating-odd-container{
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0px !important;
+    }
+}
 
 
 
@@ -1685,6 +1737,7 @@ button:hover {
     /* border: 1px solid black; */
     width: 100%;
     padding: 80px 0px 80px 0px;
+    box-sizing: border-box;
 }
 
 .cisco-training-page {
@@ -1701,7 +1754,7 @@ button:hover {
 }
 
 .cisco-form {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 70%;
     margin: auto;
     padding: 25px 25px 25px 25px;
@@ -1778,6 +1831,7 @@ button:hover {
     padding: 20px 0px 20px 0px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cisco-container {
@@ -1804,7 +1858,59 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .cisco-training-page {
+        flex-direction: column;
+    }
+
+    .cisco-training-form {
+        width: 100%;
+    }
+
+    .cisco-form {
+        width: 100%;
+    }
+
+    .cisco-training-info {
+        width: 100%;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .cisco-training-info > h2{
+        font-size: 27px;
+    }
+
+    .cisco-job {
+        width: 100%;
+        /* border: 1px solid black; */
+        justify-content: space-between !important;
+    }
+
+    .cisco-container > h2{
+        font-size: 24px;
+    }
+
+    .cisco-info{
+        font-size: 15px;
+    }
+
+    .cisco-training{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .cisco-container{
+        width: 48%;
+    }
+
+    .ciscos-con{
+        text-align: right;
+    }
+
+    .cisco-fo{
+        margin-top: 35px;
+    }
+
+}
 
 
 /* why-awdiz-page */
@@ -1900,7 +2006,39 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .why-awdiz-page{
+        /* border: 1px solid black; */
+        padding: 30px 0px 30px 0px;
+    }
+
+    .why-awdiz h2{
+        font-size: 27px;
+    }
+
+    .why-awdiz-course{
+        flex-direction: column;
+    }
+
+    .why-awdiz-container{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .why-awdiz-info{
+        font-size: 15px;
+    }
+
+    .awdiz-courses{
+        flex-direction: column;
+    }
+
+    .why-awdiz-mock{
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 0px !important;
+    }
+}
 
 
 
@@ -2068,7 +2206,27 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .career-page > h2{
+        font-size: 27px;
+    }
+
+    .career-page > p{
+        width: 100%;
+    }
+
+    .awdiz-career{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .career-page{
+        padding: 15px 0px 0px 0px;
+    }
+
+    .carousel-container{
+        padding-bottom: 0px;
+    }
+}
 
 /* our-courses */
 
@@ -2077,6 +2235,7 @@ button:hover {
     width: 100%;
     padding: 60px 0px 60px 0px;
     background-color: #edf8fA;
+    box-sizing: border-box;
 }
 
 .container {
@@ -2212,7 +2371,7 @@ button:hover {
 }
 
 .our-courses-info {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 100%;
     margin-top: 50px;
     display: flex;
@@ -2220,7 +2379,7 @@ button:hover {
 }
 
 .our-courses-angular {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 32%;
     padding: 30px 25px 30px 25px;
     border-radius: 10px;
@@ -2229,7 +2388,7 @@ button:hover {
 }
 
 .our-courses-image {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 100%;
     height: 200px;
     border-radius: 15px;
@@ -2265,7 +2424,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     font-family: poppins;
-    font-size: 18px
+    font-size: 16px
 }
 
 .duration-one {
@@ -2282,6 +2441,9 @@ button:hover {
     /* border: 1px solid black; */
     width: 40%;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .duration-one-image img {
@@ -2299,7 +2461,7 @@ button:hover {
     width: 21%;
     height: 40px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -2308,7 +2470,7 @@ button:hover {
     width: 40%;
     height: 40px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -2318,6 +2480,22 @@ button:hover {
     padding: 10px 0px 10px 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-card-unique {
+        flex: 0 0 calc(33% - 10px); /* Adjust width for two and a half cards */
+        margin-right: 10px; /* Adjust margin to ensure spacing */
+    }
+
+    .carousel-wrapper-unique {
+        overflow-x: hidden; /* Hide the overflow to clip the half-visible card */
+    }
+
+    .carousel-slide-unique {
+        justify-content: start; /* Align items to the start */
+    }
 }
 
 .our-courses-rating {
@@ -2359,6 +2537,7 @@ button:hover {
     color: white;
     font-family: mulish;
     height: 50px;
+    margin-top: 11px;
 }
 
 .btns:hover {
@@ -2389,7 +2568,98 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .our-courses-info{
+        flex-direction: column;
+    }
+
+    .our-courses-angular{
+        width: 100%;
+    }
+
+    .our-courses{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .our-courses h2{
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    .our-courses-summary{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .our-courses-para{
+        font-size: 16px;
+    }
+
+    .our-summary-arrow{
+        margin-top: 1px;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .carousel-wrapper-unique{
+        padding: 0px;
+    }
+
+    .carousel-card-unique{
+        padding: 0px;
+        font-size: 16px;
+        margin-right: 15px;
+        margin-left: 0px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 calc(45% - 10px);
+        line-height: 1.2;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .duration-three{
+        display: none;
+        visibility: hidden;
+    }
+
+    .duration-one{
+        width: 30%;
+    }
+
+    .duration-two{
+        width: 33%;
+    }
+
+    .our-courses-rating{
+       height: 40px;
+       justify-content: flex-start;
+       width: 30%;
+    }
+
+    .our-rating-star{
+        /* border: 1px solid black; */
+        width: 40%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-courses-rating > p{
+        margin-top: 5px;
+    }
+
+    .btns{
+        width: 45%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .carousel-wrapper-unique{
+        margin-top: 3px;
+    }
+}
 
 
 
@@ -2618,7 +2888,26 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .job-guarentee-info{
+        flex-direction: column;
+    }
+
+    .job-guarentee-box-one{
+        width: 100%;
+    }
+
+    .job-guarentee-program h2{
+        font-size: 27px;
+    }
+
+    .view-more-button{
+        width: 60%;
+        font-size: 16px;
+        height: 50px;
+    }
+
+}
 
 
 
@@ -2730,7 +3019,23 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+
+    .infinty-carousel{
+        padding: 30px 0px 30px 0px;
+    }
+    .infinty-carousel h2{
+        font-size: 27px;
+    }
+
+    .slider{
+        margin-top: 0px;
+    }
+
+    .certificate-h2{
+        font-size: 27px !important;
+    }
+}
 
 
 /* training */
@@ -2817,7 +3122,12 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .training{
+        display: none;
+        visibility: hidden;
+    }
+}
 
 
 
@@ -2948,7 +3258,27 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .certificate-page{
+        flex-direction: column;
+    }
+
+    .certificate-first-page{
+        width: 100%;
+    }
+
+    .certi{
+        font-size: 20px !important;
+    }
+
+    .certificate-rating{
+        flex-direction: column;
+    }
+
+    .certificate-rating-first{
+        width: 100%;
+    }
+}
 
 
 /* awdiz-choose */
@@ -3039,7 +3369,11 @@ button:hover {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .placement-content > h2{
+        font-size: 30px !important;
+    }
+}
 
 
 /* placement-record */
@@ -3467,7 +3801,15 @@ textarea {
 
 @media screen and (min-width:481px) and (max-width:767px) {}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .demo-form-section{
+        flex-direction: column;
+    }
+
+    .demo-form-trial{
+        width: 100%;
+    }
+}
 
 
 /* footer */
@@ -3691,7 +4033,8 @@ footer {
 
 @media screen and (max-width:768px) {
     .share-buttons {
-        left: 3.5%;
+        display: none;
+        visibility: hidden;
     }
 }
 
@@ -7172,27 +7515,7 @@ footer {
     overflow: hidden;
 }
 
-/* .awdiz-hiring-slide-circle {
-    width: 60px;
-    margin: auto;
-    height: 60px;
-    border-radius: 30px;
-    overflow: hidden;
-}
 
-.awdiz-hiring-slide-circle img {
-    width: 100%;
-    height: 100%;
-}
-
-.awdiz-hiring-slide-para {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.awdiz-hiring-slide-course {
-    font-size: 18px;
-} */
 
 .awdiz-hiring-slide img {
     width: 100%;
@@ -8218,6 +8541,8 @@ footer {
     width: 15%;
     margin: 0 5px;
     padding: 10px;
+    font-size: 16px;
+    font-family: mulish;
 }
 
 .sticky-form button {
@@ -8299,5 +8624,15 @@ footer {
     .message-icon,
     .overlay {
         display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .top-bar{
+        bottom: 9%;
+    }
+
+    .arrow-up{
+        left: 86%;
     }
 }

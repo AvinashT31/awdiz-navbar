@@ -2144,7 +2144,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </form>
     </div>
-    <div class="message-icon" onclick="toggleForm()">Msg</div>
+    <div class="message-icon" onclick="toggleForm()"><i class="fa-regular fa-message"></i></div>
   </section>
     `;
 });
