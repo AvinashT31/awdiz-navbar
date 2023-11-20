@@ -53,6 +53,7 @@ function displaycontent(event) {
             }
         });
     });
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -627,7 +628,7 @@ document.addEventListener("DOMContentLoaded", function () {
                               <li class="menu-item" style="background-color: white;" data-target="show-right-itm-one" id="opensoftwarepage">Software Development <i
                                       id="icon" style="padding-left: 17px; color: #272566;"
                                       class="fa-solid fa-angle-right"></i></li>
-                              <li class="menu-item"  id="openinfrapage" data-target="show-right-itm-two">Networking infrastructure <i id="icon-one"
+                              <li class="menu-item" id="openinfrapage" data-target="show-right-itm-two">Networking infrastructure <i id="icon-one"
                                       style="color: #edf8fa;" class="fa-solid fa-angle-right arrow"></i></li>
                               <li class="menu-item" id="opendmpage" data-target="show-right-itm-three">Digital Marketing <i id="icon-two"
                                       style="padding-left: 57px; color: #edf8fa;" class="fa-solid fa-angle-right"></i>
@@ -772,7 +773,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                                   <p>Blockchain Fullstack</p>
                                               </div> -->
                                       </div>
-                                      <div class="show-item-three">
+                                      <div class="show-item-three" class="content-div">
                                           <h3>Master's Program</h3>
                                           <div class="show-item-container">
                                               <div class="show-item-container-box">
@@ -2130,89 +2131,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     formmodal.innerHTML = `
         
-        <button id="openMobileModalBtn" class="mobile-view-button">
-            <i class="fa-regular fa-message"></i>
-        </button>
-       <div class="modal fade bottom-form" id="quickForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body" style="padding: 1px">
-        <section id="newsletter" class="sticky-form">
-          <div class="container">
-            <div class="newsletter-inner">
-              <form id="main-contact-form1" name="contact-form form" method="post" action="/footerform/stickyform.php"
-                onsubmit="return validate();" class="probootstrap-form">
-                <input type="hidden" name="form_page" value="femalejobssticky">
-                <div class="mailpoet_form row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-                  <div class="col-md-3" style="width: 100%; max-width: 250px; margin-bottom: 10px;">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="text" name="name" class="form-control" placeholder="Full Name *"
-                        required="required" data-error="Full Name is required">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 100%; max-width: 250px; margin-bottom: 10px;">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="email" name="email" class="form-control" placeholder="Email *"
-                        required="required" data-error="Valid Email is required">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 100%; max-width: 250px; margin-bottom: 10px;">
-                    <div class="form-group">
-                      <input style="width: 100%; height: 30px; font-family: mulish;" type="text" name="message" class="form-control" placeholder="Phone Number & Message *"
-                        required="required" data-error="Please, leave us a message">
-                    </div>
-                  </div>
-                  <div class="col-md-3" style="width: 100%; max-width: 250px; margin-bottom: 10px;">
-                    <button class="glow-on-hover" type="submit" style="width: 100%;">
-                      <input style="width: 100%; height: 30px; background-color: #edf8fA; border: none; border-radius: 10px; font-family: mulish;"
-                        type="submit" class="btn btn-success btn-send" value="✉ Request call back ✉">
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-      </div>
+    <section class="form-modal">
+    <div class="overlay" onclick="toggleForm()"></div>
+    <div class="sticky-form">
+      <form action="/submit-form" method="post">
+        <div class="form-row">
+          <input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
+          <input type="tel" id="phone-number" name="phone_number" placeholder="Phone Number" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="text" id="message" name="message" placeholder="Message" required>
+          <button type="submit">Request on Call</button>
+        </div>
+      </form>
     </div>
-  </div>
-</div>
+    <div class="message-icon" onclick="toggleForm()">Msg</div>
+  </section>
     `;
-
-    var modal = document.getElementById("quickForm");
-    var openMobileModalBtn = document.getElementById("openMobileModalBtn");
-
-    function openMobileModal() {
-        modal.style.display = "block";
-    }
-
-    function closeMobileModal() {
-        modal.style.display = "none";
-    }
-
-    openMobileModalBtn.addEventListener("click", function () {
-        openMobileModal();
-    });
-
-    window.addEventListener("click", function(event) {
-        if (event.target === modal) {
-            closeMobileModal();
-        }
-    });
-
-    function handleResponsiveDesign() {
-        if (window.innerWidth >= 768) {
-            modal.style.display = "block";
-            openMobileModalBtn.style.display = "none";
-        } else {
-            openMobileModalBtn.style.display = "block";
-            modal.style.display = "none";
-        }
-    }
-
-    handleResponsiveDesign();
-    window.addEventListener("resize", handleResponsiveDesign);
 });
+
+function toggleForm() {
+    var form = document.querySelector('.sticky-form');
+    var overlay = document.querySelector('.overlay');
+    var isFormVisible = form.style.display === 'flex';
+
+    form.style.display = isFormVisible ? 'none' : 'flex';
+    overlay.style.display = isFormVisible ? 'none' : 'block';
+}
 
 
 
@@ -2614,360 +2558,360 @@ document.addEventListener("DOMContentLoaded", function () {
 // PAGE5
 
 document.addEventListener("DOMContentLoaded", function () {
-        var developementmentor = document.getElementById("developement-mentor");
-        var displaydevelopmentmentor = document.getElementById("display-development-mentor")
+    var developementmentor = document.getElementById("developement-mentor");
+    var displaydevelopmentmentor = document.getElementById("display-development-mentor")
 
-        developementmentor.addEventListener('click', function () {
-            displaydevelopmentmentor.style.display = "flex";
-            developementmentor.style.backgroundColor = "#007d6f";
-            developementmentor.style.borderTopRightRadius = "50px";
-            developementmentor.style.borderBottomRightRadius = "50px";
-            developementmentor.style.color = "white"
+    developementmentor.addEventListener('click', function () {
+        displaydevelopmentmentor.style.display = "flex";
+        developementmentor.style.backgroundColor = "#007d6f";
+        developementmentor.style.borderTopRightRadius = "50px";
+        developementmentor.style.borderBottomRightRadius = "50px";
+        developementmentor.style.color = "white"
 
-            displaydevelopmentinterview.style.display = "none";
-            developementinterview.style.backgroundColor = "white";
-            developementinterview.style.borderTopRightRadius = "initital";
-            developementinterview.style.borderBottomRightRadius = "initital";
-            developementinterview.style.color = "black"
+        displaydevelopmentinterview.style.display = "none";
+        developementinterview.style.backgroundColor = "white";
+        developementinterview.style.borderTopRightRadius = "initital";
+        developementinterview.style.borderBottomRightRadius = "initital";
+        developementinterview.style.color = "black"
 
-            displaydevelopmentnetwork.style.display = "none";
-            developementnetwork.style.backgroundColor = "white";
-            developementnetwork.style.borderTopRightRadius = "initital";
-            developementnetwork.style.borderBottomRightRadius = "initital";
-            developementnetwork.style.color = "black"
+        displaydevelopmentnetwork.style.display = "none";
+        developementnetwork.style.backgroundColor = "white";
+        developementnetwork.style.borderTopRightRadius = "initital";
+        developementnetwork.style.borderBottomRightRadius = "initital";
+        developementnetwork.style.color = "black"
 
-            displaydevelopmenthackathon.style.display = "none";
-            developementhackathon.style.backgroundColor = "white";
-            developementhackathon.style.borderTopRightRadius = "initital";
-            developementhackathon.style.borderBottomRightRadius = "initital";
-            developementhackathon.style.color = "black"
+        displaydevelopmenthackathon.style.display = "none";
+        developementhackathon.style.backgroundColor = "white";
+        developementhackathon.style.borderTopRightRadius = "initital";
+        developementhackathon.style.borderBottomRightRadius = "initital";
+        developementhackathon.style.color = "black"
 
-            displaydevelopmentindustry.style.display = "none";
-            developementindustry.style.backgroundColor = "white";
-            developementindustry.style.borderTopRightRadius = "initital";
-            developementindustry.style.borderBottomRightRadius = "initital";
-            developementindustry.style.color = "black"
+        displaydevelopmentindustry.style.display = "none";
+        developementindustry.style.backgroundColor = "white";
+        developementindustry.style.borderTopRightRadius = "initital";
+        developementindustry.style.borderBottomRightRadius = "initital";
+        developementindustry.style.color = "black"
 
-            displayindustry.style.display = "none";
-            industry.style.backgroundColor = "white";
-            industry.style.borderTopRightRadius = "initital";
-            industry.style.borderBottomRightRadius = "initital";
-            industry.style.color = "black";
-        })
-
-
-
-        var developementinterview = document.getElementById("developement-interview");
-        var displaydevelopmentinterview = document.getElementById("display-development-interview")
-
-        developementinterview.addEventListener('click', function () {
-            displaydevelopmentinterview.style.display = "flex";
-            developementinterview.style.backgroundColor = "#007d6f";
-            developementinterview.style.borderTopRightRadius = "50px";
-            developementinterview.style.borderBottomRightRadius = "50px";
-            developementinterview.style.color = "white"
-
-
-            displaydevelopmentmentor.style.display = "none";
-            developementmentor.style.backgroundColor = "white";
-            developementmentor.style.borderTopRightRadius = "initital";
-            developementmentor.style.borderBottomRightRadius = "initital";
-            developementmentor.style.color = "black";
-
-            displaydevelopmentnetwork.style.display = "none";
-            developementnetwork.style.backgroundColor = "white";
-            developementnetwork.style.borderTopRightRadius = "initital";
-            developementnetwork.style.borderBottomRightRadius = "initital";
-            developementnetwork.style.color = "black";
-
-            displaydevelopmenthackathon.style.display = "none";
-            developementhackathon.style.backgroundColor = "white";
-            developementhackathon.style.borderTopRightRadius = "initital";
-            developementhackathon.style.borderBottomRightRadius = "initital";
-            developementhackathon.style.color = "black";
-
-            displaydevelopmentindustry.style.display = "none";
-            developementindustry.style.backgroundColor = "white";
-            developementindustry.style.borderTopRightRadius = "initital";
-            developementindustry.style.borderBottomRightRadius = "initital";
-            developementindustry.style.color = "black";
-
-            displayindustry.style.display = "none";
-            industry.style.backgroundColor = "white";
-            industry.style.borderTopRightRadius = "initital";
-            industry.style.borderBottomRightRadius = "initital";
-            industry.style.color = "black";
-        })
+        displayindustry.style.display = "none";
+        industry.style.backgroundColor = "white";
+        industry.style.borderTopRightRadius = "initital";
+        industry.style.borderBottomRightRadius = "initital";
+        industry.style.color = "black";
+    })
 
 
 
-        var developementnetwork = document.getElementById("developement-network");
-        var displaydevelopmentnetwork = document.getElementById("display-development-network")
+    var developementinterview = document.getElementById("developement-interview");
+    var displaydevelopmentinterview = document.getElementById("display-development-interview")
 
-        developementnetwork.addEventListener('click', function () {
-            displaydevelopmentnetwork.style.display = "flex";
-            developementnetwork.style.backgroundColor = "#007d6f";
-            developementnetwork.style.borderTopRightRadius = "50px";
-            developementnetwork.style.borderBottomRightRadius = "50px";
-            developementnetwork.style.color = "white"
-
-            displaydevelopmentinterview.style.display = "none";
-            developementinterview.style.backgroundColor = "white";
-            developementinterview.style.borderTopRightRadius = "initital";
-            developementinterview.style.borderBottomRightRadius = "initital";
-            developementinterview.style.color = "black";
-
-            displaydevelopmentmentor.style.display = "none";
-            developementmentor.style.backgroundColor = "white";
-            developementmentor.style.borderTopRightRadius = "initital";
-            developementmentor.style.borderBottomRightRadius = "initital";
-            developementmentor.style.color = "black";
-
-            displaydevelopmenthackathon.style.display = "none";
-            developementhackathon.style.backgroundColor = "white";
-            developementhackathon.style.borderTopRightRadius = "initital";
-            developementhackathon.style.borderBottomRightRadius = "initital";
-            developementhackathon.style.color = "black";
-
-            displaydevelopmentindustry.style.display = "none";
-            developementindustry.style.backgroundColor = "white";
-            developementindustry.style.borderTopRightRadius = "initital";
-            developementindustry.style.borderBottomRightRadius = "initital";
-            developementindustry.style.color = "black";
-
-            displayindustry.style.display = "none";
-            industry.style.backgroundColor = "white";
-            industry.style.borderTopRightRadius = "initital";
-            industry.style.borderBottomRightRadius = "initital";
-            industry.style.color = "black";
-        })
+    developementinterview.addEventListener('click', function () {
+        displaydevelopmentinterview.style.display = "flex";
+        developementinterview.style.backgroundColor = "#007d6f";
+        developementinterview.style.borderTopRightRadius = "50px";
+        developementinterview.style.borderBottomRightRadius = "50px";
+        developementinterview.style.color = "white"
 
 
+        displaydevelopmentmentor.style.display = "none";
+        developementmentor.style.backgroundColor = "white";
+        developementmentor.style.borderTopRightRadius = "initital";
+        developementmentor.style.borderBottomRightRadius = "initital";
+        developementmentor.style.color = "black";
 
-        var developementhackathon = document.getElementById("developement-hackathon");
-        var displaydevelopmenthackathon = document.getElementById("display-development-hackathon")
+        displaydevelopmentnetwork.style.display = "none";
+        developementnetwork.style.backgroundColor = "white";
+        developementnetwork.style.borderTopRightRadius = "initital";
+        developementnetwork.style.borderBottomRightRadius = "initital";
+        developementnetwork.style.color = "black";
 
-        developementhackathon.addEventListener('click', function () {
-            displaydevelopmenthackathon.style.display = "flex";
-            developementhackathon.style.backgroundColor = "#007d6f";
-            developementhackathon.style.borderTopRightRadius = "50px";
-            developementhackathon.style.borderBottomRightRadius = "50px";
-            developementhackathon.style.color = "white"
+        displaydevelopmenthackathon.style.display = "none";
+        developementhackathon.style.backgroundColor = "white";
+        developementhackathon.style.borderTopRightRadius = "initital";
+        developementhackathon.style.borderBottomRightRadius = "initital";
+        developementhackathon.style.color = "black";
 
-            displaydevelopmentnetwork.style.display = "none";
-            developementnetwork.style.backgroundColor = "white";
-            developementnetwork.style.borderTopRightRadius = "initital";
-            developementnetwork.style.borderBottomRightRadius = "initital";
-            developementnetwork.style.color = "black";
+        displaydevelopmentindustry.style.display = "none";
+        developementindustry.style.backgroundColor = "white";
+        developementindustry.style.borderTopRightRadius = "initital";
+        developementindustry.style.borderBottomRightRadius = "initital";
+        developementindustry.style.color = "black";
 
-            displaydevelopmentinterview.style.display = "none";
-            developementinterview.style.backgroundColor = "white";
-            developementinterview.style.borderTopRightRadius = "initital";
-            developementinterview.style.borderBottomRightRadius = "initital";
-            developementinterview.style.color = "black";
-
-            displaydevelopmentmentor.style.display = "none";
-            developementmentor.style.backgroundColor = "white";
-            developementmentor.style.borderTopRightRadius = "initital";
-            developementmentor.style.borderBottomRightRadius = "initital";
-            developementmentor.style.color = "black";
-
-            displaydevelopmentindustry.style.display = "none";
-            developementindustry.style.backgroundColor = "white";
-            developementindustry.style.borderTopRightRadius = "initital";
-            developementindustry.style.borderBottomRightRadius = "initital";
-            developementindustry.style.color = "black";
-
-            displayindustry.style.display = "none";
-            industry.style.backgroundColor = "white";
-            industry.style.borderTopRightRadius = "initital";
-            industry.style.borderBottomRightRadius = "initital";
-            industry.style.color = "black";
-        })
+        displayindustry.style.display = "none";
+        industry.style.backgroundColor = "white";
+        industry.style.borderTopRightRadius = "initital";
+        industry.style.borderBottomRightRadius = "initital";
+        industry.style.color = "black";
+    })
 
 
 
-        var developementindustry = document.getElementById("developement-industry");
-        var displaydevelopmentindustry = document.getElementById("display-development-industry")
+    var developementnetwork = document.getElementById("developement-network");
+    var displaydevelopmentnetwork = document.getElementById("display-development-network")
 
-        developementindustry.addEventListener('click', function () {
-            displaydevelopmentindustry.style.display = "flex";
-            developementindustry.style.backgroundColor = "#007d6f";
-            developementindustry.style.borderTopRightRadius = "50px";
-            developementindustry.style.borderBottomRightRadius = "50px";
-            developementindustry.style.color = "white"
+    developementnetwork.addEventListener('click', function () {
+        displaydevelopmentnetwork.style.display = "flex";
+        developementnetwork.style.backgroundColor = "#007d6f";
+        developementnetwork.style.borderTopRightRadius = "50px";
+        developementnetwork.style.borderBottomRightRadius = "50px";
+        developementnetwork.style.color = "white"
 
-            displaydevelopmenthackathon.style.display = "none";
-            developementhackathon.style.backgroundColor = "white";
-            developementhackathon.style.borderTopRightRadius = "initital";
-            developementhackathon.style.borderBottomRightRadius = "initital";
-            developementhackathon.style.color = "black";
+        displaydevelopmentinterview.style.display = "none";
+        developementinterview.style.backgroundColor = "white";
+        developementinterview.style.borderTopRightRadius = "initital";
+        developementinterview.style.borderBottomRightRadius = "initital";
+        developementinterview.style.color = "black";
 
-            displaydevelopmentnetwork.style.display = "none";
-            developementnetwork.style.backgroundColor = "white";
-            developementnetwork.style.borderTopRightRadius = "initital";
-            developementnetwork.style.borderBottomRightRadius = "initital";
-            developementnetwork.style.color = "black";
+        displaydevelopmentmentor.style.display = "none";
+        developementmentor.style.backgroundColor = "white";
+        developementmentor.style.borderTopRightRadius = "initital";
+        developementmentor.style.borderBottomRightRadius = "initital";
+        developementmentor.style.color = "black";
 
-            displaydevelopmentinterview.style.display = "none";
-            developementinterview.style.backgroundColor = "white";
-            developementinterview.style.borderTopRightRadius = "initital";
-            developementinterview.style.borderBottomRightRadius = "initital";
-            developementinterview.style.color = "black";
+        displaydevelopmenthackathon.style.display = "none";
+        developementhackathon.style.backgroundColor = "white";
+        developementhackathon.style.borderTopRightRadius = "initital";
+        developementhackathon.style.borderBottomRightRadius = "initital";
+        developementhackathon.style.color = "black";
 
-            displaydevelopmentmentor.style.display = "none";
-            developementmentor.style.backgroundColor = "white";
-            developementmentor.style.borderTopRightRadius = "initital";
-            developementmentor.style.borderBottomRightRadius = "initital";
-            developementmentor.style.color = "black";
+        displaydevelopmentindustry.style.display = "none";
+        developementindustry.style.backgroundColor = "white";
+        developementindustry.style.borderTopRightRadius = "initital";
+        developementindustry.style.borderBottomRightRadius = "initital";
+        developementindustry.style.color = "black";
 
-            displayindustry.style.display = "none";
-            industry.style.backgroundColor = "white";
-            industry.style.borderTopRightRadius = "initital";
-            industry.style.borderBottomRightRadius = "initital";
-            industry.style.color = "black";
-        })
+        displayindustry.style.display = "none";
+        industry.style.backgroundColor = "white";
+        industry.style.borderTopRightRadius = "initital";
+        industry.style.borderBottomRightRadius = "initital";
+        industry.style.color = "black";
+    })
 
-        var industry = document.getElementById("industry");
-        var displayindustry = document.getElementById("display-industry")
 
-        industry.addEventListener('click', function () {
-            displayindustry.style.display = "flex";
-            industry.style.backgroundColor = "#007d6f";
-            industry.style.borderTopRightRadius = "50px";
-            industry.style.borderBottomRightRadius = "50px";
-            industry.style.color = "white"
 
-            displaydevelopmentindustry.style.display = "none";
-            developementindustry.style.backgroundColor = "white";
-            developementindustry.style.borderTopRightRadius = "initital";
-            developementindustry.style.borderBottomRightRadius = "initital";
-            developementindustry.style.color = "black";
+    var developementhackathon = document.getElementById("developement-hackathon");
+    var displaydevelopmenthackathon = document.getElementById("display-development-hackathon")
 
-            displaydevelopmenthackathon.style.display = "none";
-            developementhackathon.style.backgroundColor = "white";
-            developementhackathon.style.borderTopRightRadius = "initital";
-            developementhackathon.style.borderBottomRightRadius = "initital";
-            developementhackathon.style.color = "black";
+    developementhackathon.addEventListener('click', function () {
+        displaydevelopmenthackathon.style.display = "flex";
+        developementhackathon.style.backgroundColor = "#007d6f";
+        developementhackathon.style.borderTopRightRadius = "50px";
+        developementhackathon.style.borderBottomRightRadius = "50px";
+        developementhackathon.style.color = "white"
 
-            displaydevelopmentnetwork.style.display = "none";
-            developementnetwork.style.backgroundColor = "white";
-            developementnetwork.style.borderTopRightRadius = "initital";
-            developementnetwork.style.borderBottomRightRadius = "initital";
-            developementnetwork.style.color = "black";
+        displaydevelopmentnetwork.style.display = "none";
+        developementnetwork.style.backgroundColor = "white";
+        developementnetwork.style.borderTopRightRadius = "initital";
+        developementnetwork.style.borderBottomRightRadius = "initital";
+        developementnetwork.style.color = "black";
 
-            displaydevelopmentinterview.style.display = "none";
-            developementinterview.style.backgroundColor = "white";
-            developementinterview.style.borderTopRightRadius = "initital";
-            developementinterview.style.borderBottomRightRadius = "initital";
-            developementinterview.style.color = "black";
+        displaydevelopmentinterview.style.display = "none";
+        developementinterview.style.backgroundColor = "white";
+        developementinterview.style.borderTopRightRadius = "initital";
+        developementinterview.style.borderBottomRightRadius = "initital";
+        developementinterview.style.color = "black";
 
-            displaydevelopmentmentor.style.display = "none";
-            developementmentor.style.backgroundColor = "white";
-            developementmentor.style.borderTopRightRadius = "initital";
-            developementmentor.style.borderBottomRightRadius = "initital";
-            developementmentor.style.color = "black";
-        })
+        displaydevelopmentmentor.style.display = "none";
+        developementmentor.style.backgroundColor = "white";
+        developementmentor.style.borderTopRightRadius = "initital";
+        developementmentor.style.borderBottomRightRadius = "initital";
+        developementmentor.style.color = "black";
 
-        var nonit = document.getElementById("non-it");
-        var displaynonit = document.getElementById("display-non-it");
-    
-        nonit.addEventListener('click', function () {
-            displaynonit.style.display = "block";
-            nonit.style.backgroundColor = "white";
-    
-            displaynonengineering.style.display = "none";
-            nonEngineering.style.backgroundColor = "#edf8fa";
-    
-            displaycareergap.style.display = "none";
-            careergap.style.backgroundColor = "#edf8fa";
-    
-            displaymncs.style.display = "none";
-            MNC.style.backgroundColor = "#edf8fa";
-    
-            displayallsenior.style.display = "none";
-            allsenior.style.backgroundColor = "#edf8fa";
-        })
-     
-        var nonEngineering = document.getElementById("non-Engineering");
-        var displaynonengineering = document.getElementById("display-non-engineering");
-    
-        nonEngineering.addEventListener('click', function () {
-            displaynonengineering.style.display = "block";
-            nonEngineering.style.backgroundColor = "white";
-    
-            displaynonit.style.display = "none";
-            nonit.style.backgroundColor = "#edf8fa";
-    
-            displaycareergap.style.display = "none";
-            careergap.style.backgroundColor = "#edf8fa";
-    
-            displaymncs.style.display = "none";
-            MNC.style.backgroundColor = "#edf8fa";
-    
-            displayallsenior.style.display = "none";
-            allsenior.style.backgroundColor = "#edf8fa";
-        })
-    
-        var careergap = document.getElementById("career-gap");
-        var displaycareergap = document.getElementById("display-career-gap");
-    
-        careergap.addEventListener('click', function () {
-            displaycareergap.style.display = "block";
-            careergap.style.backgroundColor = "white";
-    
-            displaynonit.style.display = "none";
-            nonit.style.backgroundColor = "#edf8fa";
-    
-            displaynonengineering.style.display = "none";
-            nonEngineering.style.backgroundColor = "#edf8fa";
-    
-            displaymncs.style.display = "none";
-            MNC.style.backgroundColor = "#edf8fa";
-    
-            displayallsenior.style.display = "none";
-            allsenior.style.backgroundColor = "#edf8fa";
-        })
-    
-        var MNC = document.getElementById("M-N-C");
-        var displaymncs = document.getElementById("display-mncs");
-    
-        MNC.addEventListener('click', function () {
-            displaymncs.style.display = "block";
-            MNC.style.backgroundColor = "white";
-    
-            displaycareergap.style.display = "none";
-            careergap.style.backgroundColor = "#edf8fa";
-    
-            displaynonit.style.display = "none";
-            nonit.style.backgroundColor = "#edf8fa";
-    
-            displaynonengineering.style.display = "none";
-            nonEngineering.style.backgroundColor = "#edf8fa";
-    
-            displayallsenior.style.display = "none";
-            allsenior.style.backgroundColor = "#edf8fa";
-        })
-    
-        var allsenior = document.getElementById("all-senior");
-        var displayallsenior = document.getElementById("display-all-senior");
-    
-        allsenior.addEventListener('click', function () {
-            displayallsenior.style.display = "block";
-            allsenior.style.backgroundColor = "white";
-    
-            displaycareergap.style.display = "none";
-            careergap.style.backgroundColor = "#edf8fa";
-    
-            displaynonit.style.display = "none";
-            nonit.style.backgroundColor = "#edf8fa";
-    
-            displaynonengineering.style.display = "none";
-            nonEngineering.style.backgroundColor = "#edf8fa";
-    
-            displaymncs.style.display = "none";
-            MNC.style.backgroundColor = "#edf8fa";
-        })   
+        displaydevelopmentindustry.style.display = "none";
+        developementindustry.style.backgroundColor = "white";
+        developementindustry.style.borderTopRightRadius = "initital";
+        developementindustry.style.borderBottomRightRadius = "initital";
+        developementindustry.style.color = "black";
+
+        displayindustry.style.display = "none";
+        industry.style.backgroundColor = "white";
+        industry.style.borderTopRightRadius = "initital";
+        industry.style.borderBottomRightRadius = "initital";
+        industry.style.color = "black";
+    })
+
+
+
+    var developementindustry = document.getElementById("developement-industry");
+    var displaydevelopmentindustry = document.getElementById("display-development-industry")
+
+    developementindustry.addEventListener('click', function () {
+        displaydevelopmentindustry.style.display = "flex";
+        developementindustry.style.backgroundColor = "#007d6f";
+        developementindustry.style.borderTopRightRadius = "50px";
+        developementindustry.style.borderBottomRightRadius = "50px";
+        developementindustry.style.color = "white"
+
+        displaydevelopmenthackathon.style.display = "none";
+        developementhackathon.style.backgroundColor = "white";
+        developementhackathon.style.borderTopRightRadius = "initital";
+        developementhackathon.style.borderBottomRightRadius = "initital";
+        developementhackathon.style.color = "black";
+
+        displaydevelopmentnetwork.style.display = "none";
+        developementnetwork.style.backgroundColor = "white";
+        developementnetwork.style.borderTopRightRadius = "initital";
+        developementnetwork.style.borderBottomRightRadius = "initital";
+        developementnetwork.style.color = "black";
+
+        displaydevelopmentinterview.style.display = "none";
+        developementinterview.style.backgroundColor = "white";
+        developementinterview.style.borderTopRightRadius = "initital";
+        developementinterview.style.borderBottomRightRadius = "initital";
+        developementinterview.style.color = "black";
+
+        displaydevelopmentmentor.style.display = "none";
+        developementmentor.style.backgroundColor = "white";
+        developementmentor.style.borderTopRightRadius = "initital";
+        developementmentor.style.borderBottomRightRadius = "initital";
+        developementmentor.style.color = "black";
+
+        displayindustry.style.display = "none";
+        industry.style.backgroundColor = "white";
+        industry.style.borderTopRightRadius = "initital";
+        industry.style.borderBottomRightRadius = "initital";
+        industry.style.color = "black";
+    })
+
+    var industry = document.getElementById("industry");
+    var displayindustry = document.getElementById("display-industry")
+
+    industry.addEventListener('click', function () {
+        displayindustry.style.display = "flex";
+        industry.style.backgroundColor = "#007d6f";
+        industry.style.borderTopRightRadius = "50px";
+        industry.style.borderBottomRightRadius = "50px";
+        industry.style.color = "white"
+
+        displaydevelopmentindustry.style.display = "none";
+        developementindustry.style.backgroundColor = "white";
+        developementindustry.style.borderTopRightRadius = "initital";
+        developementindustry.style.borderBottomRightRadius = "initital";
+        developementindustry.style.color = "black";
+
+        displaydevelopmenthackathon.style.display = "none";
+        developementhackathon.style.backgroundColor = "white";
+        developementhackathon.style.borderTopRightRadius = "initital";
+        developementhackathon.style.borderBottomRightRadius = "initital";
+        developementhackathon.style.color = "black";
+
+        displaydevelopmentnetwork.style.display = "none";
+        developementnetwork.style.backgroundColor = "white";
+        developementnetwork.style.borderTopRightRadius = "initital";
+        developementnetwork.style.borderBottomRightRadius = "initital";
+        developementnetwork.style.color = "black";
+
+        displaydevelopmentinterview.style.display = "none";
+        developementinterview.style.backgroundColor = "white";
+        developementinterview.style.borderTopRightRadius = "initital";
+        developementinterview.style.borderBottomRightRadius = "initital";
+        developementinterview.style.color = "black";
+
+        displaydevelopmentmentor.style.display = "none";
+        developementmentor.style.backgroundColor = "white";
+        developementmentor.style.borderTopRightRadius = "initital";
+        developementmentor.style.borderBottomRightRadius = "initital";
+        developementmentor.style.color = "black";
+    })
+
+    var nonit = document.getElementById("non-it");
+    var displaynonit = document.getElementById("display-non-it");
+
+    nonit.addEventListener('click', function () {
+        displaynonit.style.display = "block";
+        nonit.style.backgroundColor = "white";
+
+        displaynonengineering.style.display = "none";
+        nonEngineering.style.backgroundColor = "#edf8fa";
+
+        displaycareergap.style.display = "none";
+        careergap.style.backgroundColor = "#edf8fa";
+
+        displaymncs.style.display = "none";
+        MNC.style.backgroundColor = "#edf8fa";
+
+        displayallsenior.style.display = "none";
+        allsenior.style.backgroundColor = "#edf8fa";
+    })
+
+    var nonEngineering = document.getElementById("non-Engineering");
+    var displaynonengineering = document.getElementById("display-non-engineering");
+
+    nonEngineering.addEventListener('click', function () {
+        displaynonengineering.style.display = "block";
+        nonEngineering.style.backgroundColor = "white";
+
+        displaynonit.style.display = "none";
+        nonit.style.backgroundColor = "#edf8fa";
+
+        displaycareergap.style.display = "none";
+        careergap.style.backgroundColor = "#edf8fa";
+
+        displaymncs.style.display = "none";
+        MNC.style.backgroundColor = "#edf8fa";
+
+        displayallsenior.style.display = "none";
+        allsenior.style.backgroundColor = "#edf8fa";
+    })
+
+    var careergap = document.getElementById("career-gap");
+    var displaycareergap = document.getElementById("display-career-gap");
+
+    careergap.addEventListener('click', function () {
+        displaycareergap.style.display = "block";
+        careergap.style.backgroundColor = "white";
+
+        displaynonit.style.display = "none";
+        nonit.style.backgroundColor = "#edf8fa";
+
+        displaynonengineering.style.display = "none";
+        nonEngineering.style.backgroundColor = "#edf8fa";
+
+        displaymncs.style.display = "none";
+        MNC.style.backgroundColor = "#edf8fa";
+
+        displayallsenior.style.display = "none";
+        allsenior.style.backgroundColor = "#edf8fa";
+    })
+
+    var MNC = document.getElementById("M-N-C");
+    var displaymncs = document.getElementById("display-mncs");
+
+    MNC.addEventListener('click', function () {
+        displaymncs.style.display = "block";
+        MNC.style.backgroundColor = "white";
+
+        displaycareergap.style.display = "none";
+        careergap.style.backgroundColor = "#edf8fa";
+
+        displaynonit.style.display = "none";
+        nonit.style.backgroundColor = "#edf8fa";
+
+        displaynonengineering.style.display = "none";
+        nonEngineering.style.backgroundColor = "#edf8fa";
+
+        displayallsenior.style.display = "none";
+        allsenior.style.backgroundColor = "#edf8fa";
+    })
+
+    var allsenior = document.getElementById("all-senior");
+    var displayallsenior = document.getElementById("display-all-senior");
+
+    allsenior.addEventListener('click', function () {
+        displayallsenior.style.display = "block";
+        allsenior.style.backgroundColor = "white";
+
+        displaycareergap.style.display = "none";
+        careergap.style.backgroundColor = "#edf8fa";
+
+        displaynonit.style.display = "none";
+        nonit.style.backgroundColor = "#edf8fa";
+
+        displaynonengineering.style.display = "none";
+        nonEngineering.style.backgroundColor = "#edf8fa";
+
+        displaymncs.style.display = "none";
+        MNC.style.backgroundColor = "#edf8fa";
+    })
 })
 
 
