@@ -1,232 +1,989 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autoplay Carousel</title>
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .carousel-container {
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .carousel-wrapper {
-      display: flex;
-      transition: transform 1s ease-in-out;
-    }
-
-    .carousel-slide {
-      flex: 0 0 33%;
-      box-sizing: border-box;
-      padding: 20px;
-      text-align: center;
-      background-color: #ddd;
-      margin-right: 10px;
-    }
-  </style>
+  <title>Document</title>
 </head>
-
 <body>
-  <div class="carousel-container">
-    <div class="carousel-wrapper">
-      <div class="carousel-slide">Slide 1 Content</div>
-      <div class="carousel-slide">Slide 2 Content</div>
-      <div class="carousel-slide">Slide 3 Content</div>
-      <div class="carousel-slide">Slide 4 Content</div>
-      <div class="carousel-slide">Slide 5 Content</div>
+  <div id="software-courese-page" class="our-courses-info" style="display: flex;">
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+
+   <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+
+ <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
     </div>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const wrapper = document.querySelector(".carousel-wrapper");
-      const slides = document.querySelectorAll(".carousel-slide");
 
-      let index = 0;
+  <div id="networking-courese-page" style="display: none;" class="our-courses-info">
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
 
-      function nextSlide() {
-        index = (index + 1) % slides.length;
-        updateSlide();
-      }
 
-      function updateSlide() {
-        const translateValue = -index * (100 / 3) + "%";
-        wrapper.style.transform = "translateX(" + translateValue + ")";
-      }
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
 
-      setTimeout(function () {
-        setInterval(nextSlide, 2000);
-      }, 1000);
-    });
-  </script>
-  <script src="script.js"></script>
-</body>
 
-</html> -->
 
-<!DOCTYPE html>
-<html>
+        <button class="btns">View Course</button>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="navbar.css">
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="dm-courese-page" class="our-courses-info" style="display: none;">
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="dt-courese-page" class="our-courses-info" style="display: none;">
+ <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="ml-courese-page" class="our-courses-info" style="display: none;">
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="cs-courese-page" class="our-courses-info" style="display: none;">
+  <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+    <div class="our-courses-angular">
+      <div class="our-courses-image">
+        <img class="image-fluid" src="/img/images.jpg" alt="">
+      </div>
+      <div class="our-courses-course-heading">
+        <h2>AngularJS Full Stack
+          Developer Training</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laborum officia illum ea velit,
+        perferendis </p>
+
+
+      <div class="our-courses-duration">
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+     
+        <div class="duration-one">
+          <div class="duration-one-image">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p style="padding-left: 5px;">1504</p>
+        </div>
+
+
+
+        <button class="btns">View Course</button>
+
+      </div>
+
+    </div>
+  </div>
+
 
   <style>
+    
+.our-courses-info {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
 
-    .form-modal{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      bottom: 0%;
+/* This is each flex item */
+.our-courses-angular {
+    flex: 0 0 29%;
+    margin-right: 60px;
+    scroll-snap-align: start;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.our-courses-info::-webkit-scrollbar {
+    width: 10px;
+}
+
+.our-courses-info::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+
+.our-courses-info::-webkit-scrollbar-track {
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .our-courses-angular {}
+}
+
+
+.our-courses-image {
+    /*! border: 1px solid black; */
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins;
+    font-size: 16px;
+}
+
+.our-courses-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.our-courses-course-heading>h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    font-family: nunito;
+    font-weight: 800;
+    color: #272566;
+}
+
+.our-courses-angular>p {
+    padding: 20px 0px 10px 5px;
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: poppins;
+    color: #373737;
+}
+
+.our-courses-duration {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: poppins;
+    font-size: 16px
+}
+
+.duration-one {
+    /* border: 1px solid black; */
+    /* padding: 5px 0px 5px 0px; */
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.duration-one-image {
+    /* border: 1px solid black; */
+    /*! width: 100%; */
+    /*! height: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duration-one-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .duration-one  p{
+    font-size: 20px;
+} */
+
+.duration-two {
+    /* border: 1px solid black; */
+    /* padding: 5px 0px 5px 0px; */
+    width: 21%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.duration-three {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-courses-button {
+    /* border: 1px solid black; */
+    width: 49%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-card-unique {
+        flex: 0 0 calc(33% - 10px);
+        /* Adjust width for two and a half cards */
+        margin-right: 10px;
+        /* Adjust margin to ensure spacing */
     }
 
-    .sticky-form {
-      bottom: 0;
-      background-color: #f2f2f2;
-      padding: 10px;
-      box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
-      box-sizing: border-box;
-      width: 75%;
+    .carousel-wrapper-unique {
+        overflow-x: hidden;
+        /* Hide the overflow to clip the half-visible card */
     }
 
-    .sticky-form .form-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .carousel-slide-unique {
+        justify-content: start;
+        /* Align items to the start */
+    }
+}
+
+.our-courses-rating {
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 24px;
+    display: flex;
+    margin-top: 11px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    font-family: hind;
+    font-weight: 800;
+}
+
+.our-rating-star {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 24px;
+}
+
+.our-rating-star img {
+    width: 100%;
+    height: 100%;
+}
+
+.our-courses-rating>p {
+    margin-left: 5px;
+}
+
+.btns {
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    width: 32%;
+    /*! border-radius: 10px; */
+    border: 1px solid;
+    font-size: 18px;
+    background-color: #007d6f;
+    color: white;
+    font-family: mulish;
+    height: 50px;
+}
+
+.btns:hover {
+    background-color: #007D6F;
+}
+
+
+@media screen and (width:1440px) {
+    .btns {
+        width: 45% !important;
     }
 
-    .sticky-form input,
-    .sticky-form button {
-      width: 15%;
-      margin: 0 5px;
-      padding: 10px;
+    .our-courses-name ul li {
+        width: 12% !important;
     }
 
-    .sticky-form button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
+    .carousel-card-unique {
+        flex: 0 0 calc(16% - 10px);
     }
 
-    .sticky-form button:hover {
-      background-color: #45a049;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.our-courses-info::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.our-courses-info {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (min-width:992px) and (max-width:1199px) {}
+
+@media screen and (min-width:768px) and (max-width:991px) {}
+
+@media screen and (min-width:481px) and (max-width:767px) {}
+
+@media screen and (max-width:480px) {
+    .our-courses-angular {
+        flex: 0 0 auto;
+        margin-right: 22px;
     }
 
-    .sticky-form input {
-      border: 1px solid #ccc;
-      border-radius: 4px;
+    .our-courses-angular {
+        width: 85%;
+        margin-top: 22px;
+        border: 2px solid white;
+        background: white;
+        border-radius: 10px;
     }
 
-    @media screen and (max-width: 600px) {
-      .sticky-form {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        background-color: #f2f2f2;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        box-sizing: border-box;
-        padding: 10px;
-        z-index: 1000;
-      }
+    .our-courses {
+        padding: 15px 0px 30px 0px;
+    }
 
-      form {
-        width: 100%;
-      }
+    .our-courses h2 {
+        font-size: 27px;
+        padding: 20px 0px 0px 5px;
+    }
 
-      .sticky-form .form-row {
+    .our-courses-summary {
         flex-direction: column;
-        align-items: center;
-      }
+        padding-bottom: 0px;
+    }
 
-      .sticky-form input,
-      .sticky-form button {
+    .our-courses-para {
+        font-size: 16px;
+    }
+
+    .our-summary-arrow {
+        margin-top: 1px;
+        justify-content: flex-end;
         width: 100%;
-        margin: 5px 0;
-      }
+    }
 
-      .message-icon {
+    .carousel-wrapper-unique {
+        padding: 0px;
+    }
+
+    .carousel-card-unique {
+        padding: 0px;
+        font-size: 16px;
+        margin-right: 15px;
+        margin-left: 0px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 calc(45% - 10px);
+        line-height: 1.2;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .duration-three {
+        display: none;
+        visibility: hidden;
+    }
+
+    .duration-one {
+        width: 50%;
+    }
+
+    .duration-two {
+        width: 50%;
+    }
+
+    .our-courses-rating {
+        height: 40px;
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+    .our-rating-star {
+        /* border: 1px solid black; */
+        width: 40%;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
-        color: white;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 1000;
-      }
-
-      .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 999;
-        background-color: #ccc;
-      }
     }
 
-    /* Hide message icon on larger screens */
-    @media screen and (min-width: 601px) {
-
-      .message-icon,
-      .overlay {
-        display: none;
-      }
+    .our-courses-rating>p {
+        margin-top: 5px;
     }
+
+    .btns {
+        /*! width: 50%; */
+        /*! height: 40px; */
+        font-size: 10px;
+        margin: 0px;
+        width: auto;
+        height: 35px;
+    }
+
+    .carousel-wrapper-unique {
+        margin-top: 10px;
+    }
+}
   </style>
-
-  </style>
-</head>
-
-<body>
-
-  <section class="form-modal">
-    <div class="overlay" onclick="toggleForm()"></div>
-    <div class="sticky-form">
-      <form action="/submit-form" method="post">
-        <div class="form-row">
-          <input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
-          <input type="tel" id="phone-number" name="phone_number" placeholder="Phone Number" required>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-          <input type="text" id="message" name="message" placeholder="Message" required>
-          <button type="submit">Request on Call</button>
-        </div>
-      </form>
-    </div>
-    <div class="message-icon" onclick="toggleForm()">Msg</div>
-  </section>
-  
-
-  <script>
-    function toggleForm() {
-      var form = document.querySelector('.sticky-form');
-      var overlay = document.querySelector('.overlay');
-      var isFormVisible = form.style.display === 'flex';
-
-      form.style.display = isFormVisible ? 'none' : 'flex';
-      overlay.style.display = isFormVisible ? 'none' : 'block';
-    }
-  </script>
 </body>
-
 </html>

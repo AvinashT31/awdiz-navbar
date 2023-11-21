@@ -32,7 +32,7 @@ function handleClick(event) {
 
 function displaycontent(event) {
     document.querySelectorAll('.menu-item').forEach(item => {
-        item.addEventListener('mouseover', function(event) {
+        item.addEventListener('mouseover', function (event) {
             document.querySelectorAll('.menu-item').forEach(menuItem => {
                 menuItem.style.backgroundColor = 'initial';
                 if (menuItem.querySelector('i')) {
@@ -46,9 +46,9 @@ function displaycontent(event) {
             const contentToShow = document.getElementById(targetContentId);
             if (contentToShow) {
                 contentToShow.style.display = 'block';
-                item.style.backgroundColor = '#ffffff'; 
+                item.style.backgroundColor = '#ffffff';
                 if (item.querySelector('i')) {
-                    item.querySelector('i').style.color = '#272566'; 
+                    item.querySelector('i').style.color = '#272566';
                 }
             }
         });
@@ -2098,15 +2098,15 @@ function shareOnWhatsApp() {
 //   5.GLOBAL-TOP-BAR-SECTION
 
 document.addEventListener("DOMContentLoaded", function () {
-    var topbar = document.getElementById("top-bar");
+    var topbar = document.getElementById("arrow-up");
+    console.log(topbar, "topbar");
     topbar.innerHTML = `
-<div class="arrow-up">
     <i class="fa-solid fa-arrow-up"></i>
-  </div>`
+  `
 })
 
 document.addEventListener("DOMContentLoaded", function () {
-    const scrollButton = document.getElementById('top-bar');
+    const scrollButton = document.getElementById('arrow-up');
     const content = document.getElementById('content');
 
     window.addEventListener('scroll', () => {
