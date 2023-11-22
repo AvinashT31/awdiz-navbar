@@ -6,25 +6,30 @@ function handleClick(event) {
     var showRightItems = document.querySelectorAll("[id^='show-right-itm']");
     var otherMenu = document.getElementsByClassName("navtwo-menu");
 
+    // Using mouseenter and mouseleave
     for (var i = 0; i < otherMenu.length; i++) {
-        otherMenu[i].addEventListener('mouseover', function () {
+        otherMenu[i].addEventListener('mouseenter', function () {
             hoverDisplayDiv.classList.remove('flex-display');
         });
     }
-    hoverDiv.addEventListener('mouseover', function () {
+
+    hoverDiv.addEventListener('mouseenter', function () {
         hoverDisplayDiv.classList.add('flex-display');
         showRightItems.forEach(item => item.style.display = "none");
         showRightItems[0].style.display = "block";
     });
-    hoverDiv.addEventListener('mouseout', function (event) {
-        if (event.target !== hoverDiv && event.target !== hoverDisplayDiv) {
+
+    hoverDiv.addEventListener('mouseleave', function (event) {
+        if (!hoverDiv.contains(event.relatedTarget)) {
             hoverDisplayDiv.classList.remove('flex-display');
         }
     });
-    hoverDisplayDiv.addEventListener('mouseover', function () {
+
+    hoverDisplayDiv.addEventListener('mouseenter', function () {
         hoverDisplayDiv.classList.add('flex-display');
     });
-    hoverDisplayDiv.addEventListener('mouseout', function () {
+
+    hoverDisplayDiv.addEventListener('mouseleave', function () {
         hoverDisplayDiv.classList.remove('flex-display');
     });
 }
@@ -610,7 +615,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="top-bar-left pull-left"><ul><li><i class="fa fa-phone"></i> &nbsp; Phone:  7678000695 | &nbsp; 8657202255</li><li><i class="fa fa-envelope"></i> &nbsp; Email: <a href="mailto:contact@awdiz.in">contact@awdiz.in</a></li></ul></div><div class="top-bar-right pull-right"><ul><li><a href="https://www.facebook.com/awdiz" target="_blank"><i class="fa-brands fa-facebook"></i></a></li><li><a href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i class="fa-brands fa-youtube"></i></a></li><li><a href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i class="fa-brands fa-instagram"></i></a></li><li style="padding: 0px 14px 0px;">Mumbai Pune Bangalore</li><li><button class="glow-on-hover" type="button" style="width:125px;height:auto"><a href="https://www.awdiz.in/contact">Enroll Now</a></button></li></ul></div></div></div></div>
 
   <div class="navbar">
-      <div class="nav">
+      <div class="container">
           <div onmouseover="handleClick(event)" class="navmenu">
               <div class="navone">
                   <div class="navlogo navtwo-menu">
@@ -619,7 +624,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
               <div class="navdropdown">
                   <div class="navcourses" id="navbar">
-                      <p>All Courses</p>
+                  <p style="padding: 35px 31px;">All Courses</p>
                   </div>
                   <div onmouseover="displaycontent(event)" class="show-item" id="hover-content">
                       <div class="show-item-left">

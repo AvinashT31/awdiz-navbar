@@ -5,115 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <style>
-    .blog-courses-container {
-      position: relative;
-      border: 1px solid black;
-      /* This enables absolute positioning for child elements */
-    }
-
-    .blog-courses-name {
-      width: 86%;
+    .image-container {
+      max-width: 800px;
+      /* Set the max width of the container */
       margin: auto;
-      padding: 20px 0px;
-      margin-top: 30px;
-      background-color: white;
-      border-radius: 10px;
-    }
-
-    .blog-courses-wrapper {
+      /* Center the container */
       overflow: hidden;
+      /* Ensures the container does not allow content to spill out */
     }
 
-    #blog-courses-carousel {
-      display: flex;
-      transition: all 0.3s ease;
-      list-style: none;
-      padding: 0;
-    }
-
-    .blog-courses-name ul li {
-      width: 11%;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      padding: 15px 0px 15px 0px;
-      border-radius: 15px;
-      cursor: pointer;
-      font-family: hind;
-      font-weight: 800;
-      font-size: 18px;
-    }
-
-    .blog-carousel-button {
-      display: none;
-    }
-
-    @media screen and (max-width: 768px) {
-
-      .blog-courses-name ul li {
-        flex: 0 0 45%;
-      }
-
-      .blog-carousel-button {
-        display: block;
-      }
+    .image-container img {
+      width: 100%;
+      /* Make the image responsive */
+      height: auto;
+      /* Maintain aspect ratio */
+      display: block;
+      /* Remove extra space under the image */
     }
   </style>
+
 </head>
 
 <body>
-
-    <div class="blog-courses-name" style="background-color: #edf8fA;">
-      <div class="blog-courses-wrapper">
-        <ul id="blog-courses-carousel">
-          <li id="blog-software" style="background-color: #007d6f; color: white;">Software</li>
-          <li id="blog-network">Networking</li>
-          <li id="blog-dm">Digital Marketing</li>
-          <li id="blog-ds">Data Science</li>
-          <li id="blog-ml">Machine Learning</li>
-          <li id="blog-cs">Cyber Security</li>
-        </ul>
-      </div>
-    </div>
-
-  <div style="border: 1px solid black; width: 100%; height: 50px; display: flex; justify-content: flex-end; align-items: center;">
-    <button class="blog-carousel-button" id="blog-prevButton">Prev</button>
-    <button class="blog-carousel-button" id="blog-nextButton">Next</button>
+  <div class="image-container">
+    <img src="/img/Home page 600 x 400 px.webp" srcset="Home page 600 x 400 px.webp 600w, 
+              Homepage 550 x 400 px.webp 550w, 
+              Homepage 800 x 400.webp 800w" sizes="(max-width: 599px) 550px,
+             (min-width: 600px) and (max-width: 799px) 600px,
+             (min-width: 800px) 800px" alt="Learn With Mumbai's No. 1 IT Institute For Freshers" loading="lazy">
   </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const prevBtn = document.getElementById('blog-prevButton');
-      const nextBtn = document.getElementById('blog-nextButton');
-      const carousel = document.getElementById('blog-courses-carousel');
-      let currentSlide = 0;
-
-      prevBtn.addEventListener('click', () => {
-        if (currentSlide === 0) {
-          currentSlide = carousel.children.length - 2; // Go to the last slide
-        } else {
-          currentSlide--;
-        }
-        updateCarousel();
-      });
-
-      nextBtn.addEventListener('click', () => {
-        if (currentSlide >= carousel.children.length - 2) {
-          currentSlide = 0; // Go back to the first slide
-        } else {
-          currentSlide++;
-        }
-        updateCarousel();
-      });
-
-      function updateCarousel() {
-        const slideWidth = carousel.children[0].offsetWidth;
-        carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-      }
-    });
-  </script>
 
 </body>
 

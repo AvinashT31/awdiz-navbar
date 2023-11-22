@@ -153,10 +153,8 @@ html {
 
 .topbar-section {
     position: relative;
-    padding: 12px 0;
-    height: 63px;
+    max-height: 52px;
     background: #007d6f;
-    padding-bottom: 60px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -204,7 +202,7 @@ ul li {
     padding-left: 0;
     margin-left: 0;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 12px;
 }
 
@@ -224,12 +222,12 @@ ul li {
 .top-bar-right ul li {
     display: inline-block;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .top-bar-right ul li {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .top-bar-right ul li.button {
@@ -247,7 +245,7 @@ ul li {
     font-family: mulish;
     font-weight: 800;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .glow-on-hover:hover {
@@ -361,7 +359,7 @@ ul li {
 
 .navbar {
     /* border: 1px solid black; */
-    height: 88px;
+    height: 72px;
     width: 100%;
     position: sticky;
     top: 0%;
@@ -379,6 +377,7 @@ ul li {
     width: 100%;
     margin: auto;
     float: left;
+    max-height: 72px;
 }
 
 .navone {
@@ -399,17 +398,16 @@ ul li {
     width: 170px;
     height: 60px;
     float: left;
+    margin: 12px 0 0 0;
 }
 
-.navlogo img {
-    width: 100%;
-    height: 100%;
-}
+
 
 .navdropdown {
     float: left;
     /* border: 1px solid black; */
     margin-left: 65px;
+    margin-top: 15px;
 }
 
 .navcourses {
@@ -422,8 +420,7 @@ ul li {
     background-color: #272566;
     color: white;
     border-radius: 10px;
-    margin-top: 13px !important;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
     font-family: mulish;
     font-weight: 550;
 }
@@ -733,6 +730,7 @@ button:hover {
 #hover-content {
     display: none;
     flex: 0;
+    margin-top: 17px;
 }
 
 #hover-content.flex-display {
@@ -1395,6 +1393,7 @@ button:hover {
     /* z-index: 1; */
     margin: 0;
     left: 0;
+    margin-top: 7px;
 
 }
 
@@ -1621,15 +1620,34 @@ button:hover {
     /* border: 1px solid black; */
     padding: 15px 0px 15px 0px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 10px;
 }
 
 .guarentee-rating-container {
-    /* border: 1px solid black; */
-    width: 23%;
+    width: 31%;
+    height: 80px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+    background-color: white;
+    color: #007D6F;
+    border-radius: 10px;
+}
+
+.guarentee-rating-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.guarentee-rating-odd-container {
+    /* border: 1px solid black; */
+    width: 31%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding: 10px 0px 10px 0px;
     border-radius: 10px;
@@ -1639,19 +1657,9 @@ button:hover {
     color: #007D6F;
 }
 
-.guarentee-rating-odd-container {
-    /* border: 1px solid black; */
-    width: 29%;
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 0px 10px 0px;
-    border-radius: 10px;
-    background-color: white;
-    font-weight: 550;
-    font-size: 20px;
-    color: #007D6F;
+.guarentee-rating-odd-container img {
+    width: 100%;
+    height: 100%;
 }
 
 .popup-video .modal-dialog {
@@ -1704,13 +1712,6 @@ button:hover {
     align-items: center;
 }
 
-.mt_btn_yellow {
-    position: absolute;
-    right: -24px;
-    padding: 40px 0px;
-    font-size: 61px;
-    bottom: 0;
-}
 
 .mt_btn_yellow {
     position: absolute;
@@ -1768,6 +1769,68 @@ button:hover {
     }
 }
 
+@media screen and (max-width: 428px) {
+    .mt_btn_yellow {
+        top: 178px !important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .mt_btn_yellow {
+        top: 170px !important;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .mt_btn_yellow {
+        top: 169px !important;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .mt_btn_yellow {
+        right: 7px !important;
+        top: 166px !important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .mt_btn_yellow {
+        top: 154px !important;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .mt_btn_yellow {
+        right: 5px !important;
+        top: 151px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .mt_btn_yellow {
+        top: 147px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mt_btn_yellow {
+        top: 139px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .mt_btn_yellow {
+        right: 4px !important;
+        top: 120px !important;
+        font-size: 33px;
+    }
+
+    .fa-play-circle {
+        font-size: 33px !important;
+    }
+}
+
 @media screen and (max-width:480px) {
 
     .guarentee {
@@ -1789,13 +1852,6 @@ button:hover {
         width: 100%;
         /* border: 1px solid black; */
         padding: 35px 0px 0px 0px;
-    }
-
-    .mt_btn_yellow {
-        right: 4px !important;
-        top: 179px !important;
-        padding: 36px 0px !important;
-        font-size: 16px !important;
     }
 
     .fa-play-circle {
@@ -2244,34 +2300,34 @@ button:hover {
     background: #fff;
     margin-right: 1.7%;
     margin-left: 1.7%;
-    padding: 20px;
 }
 
 .slider-img {
     width: 100%;
     overflow: hidden;
-    /* In case the image is larger than the container */
-    border-radius: 10px;
-    /* Optional: to give the image a rounded corner */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     margin-bottom: 10px;
+    height: 250px;
 }
 
 .slider-img img {
     width: 100%;
     /* Make the image responsive */
-    height: auto;
+    height: 100%;
     /* Maintain the aspect ratio */
     display: block;
 }
 
 .slider-info {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     margin-top: 15px;
     line-height: 1.8;
     font-family: nunito;
     font-weight: 800;
     color: #272566;
+    padding: 0px 20px 10px 20px;
 }
 
 .slider-info h4 {
@@ -2287,8 +2343,8 @@ button:hover {
 
 .pgp-info {
     width: 100%;
-    bottom: 10px;
-    right: 10px;
+    margin-top: 3px;
+    padding: 0px 20px 20px 20px;
 }
 
 .pgp-info img {
@@ -2304,9 +2360,14 @@ button:hover {
 }
 
 .slide-logo-img {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50px;
     height: 50px;
+}
+
+.slide-logo-img img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -2485,22 +2546,39 @@ button:hover {
     font-size: 18px;
 }
 
+@media only screen and (max-width: 600px) {
+    .carousel-card-unique {
+        flex: 0 0 calc(40% - 10px);
+        /* Adjust width for 2 cards per view */
+    }
+}
+
+
 .our-courses-info {
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    margin-top: 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-/* This is each flex item */
+.our-courses-info::-webkit-scrollbar {
+    display: none;
+}
+
 .our-courses-angular {
     flex: 0 0 29%;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     scroll-snap-align: start;
     background-color: white;
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin-top: 60px;
 }
 
 .our-courses-info::-webkit-scrollbar {
@@ -2514,10 +2592,6 @@ button:hover {
 
 .our-courses-info::-webkit-scrollbar-track {
     background: white;
-}
-
-@media (max-width: 768px) {
-    .our-courses-angular {}
 }
 
 
@@ -2546,8 +2620,15 @@ button:hover {
     color: #272566;
 }
 
+.our-courses-course-heading-h6 {
+    font-size: 20px;
+    padding-top: 10px;
+    color: black;
+    padding-left: 5px;
+}
+
 .our-courses-angular>p {
-    padding: 20px 0px 20px 5px;
+    padding: 20px 0px 10px 5px;
     line-height: 1.6;
     font-size: 16px;
     font-family: poppins;
@@ -2701,20 +2782,6 @@ button:hover {
         flex: 0 0 calc(16% - 10px);
     }
 
-}
-
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.our-courses-info::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge, and Firefox */
-.our-courses-info {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
 }
 
 
@@ -2874,16 +2941,28 @@ button:hover {
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
-.job-guarentee ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    font-size: 18px;
-    font-weight: 550;
+
+
+.guarantee-courses-name {
+    width: 100%;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-.job-guarentee ul li {
-    /* border: 1px solid black; */
+.guarantee-courses-wrapper {
+    overflow: hidden;
+}
+
+#guarantee-courses-carousel {
+    display: flex;
+    transition: all 0.3s ease;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.guarantee-courses-name ul li {
     width: 11%;
     display: flex;
     justify-content: center;
@@ -2894,6 +2973,28 @@ button:hover {
     font-family: hind;
     font-weight: 800;
     font-size: 18px;
+    margin-top: 15px;
+}
+
+.guarantee-carousael-seection {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+.guarantee-carousel-button {
+    padding: 20px 25px 20px 25px;
+    background-color: #bebed1;
+    color: white;
+}
+
+.guarantee-carousel-button:hover {
+    background-color: #272566;
+    color: white;
 }
 
 .job-guarentee-info {
@@ -2918,7 +3019,7 @@ button:hover {
 
 .job-guarentee-item-one {
     /* border: 1px solid black; */
-    width: 48%;
+    width: 45%;
     height: 186px;
     border-radius: 10px;
     overflow: hidden;
@@ -2929,9 +3030,14 @@ button:hover {
     height: 100%;
 }
 
+.job-guarentee-section-one {
+    /* border: 1px solid black; */
+    width: 53%;
+}
+
 .job-guarentee-item-two {
     /* border: 1px solid black; */
-    width: 50%;
+    width: 100%;
 }
 
 .content {
@@ -2945,6 +3051,13 @@ button:hover {
     font-size: 12px !important;
     font-family: mulish;
     color: #373737;
+}
+
+.job-guarentee-content-one {
+    font-size: 12px;
+    font-family: mulish;
+    color: #373737;
+    margin-left: 10px;
 }
 
 .job-guarentee-duration {
@@ -2962,7 +3075,7 @@ button:hover {
     padding: 5px 0px 5px 0px;
     width: 22%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -2971,7 +3084,7 @@ button:hover {
     width: 33%;
     padding: 5px 0px 5px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -2980,7 +3093,7 @@ button:hover {
     width: 36%;
     padding: 5px 0px 5px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -2996,13 +3109,14 @@ button:hover {
     /* border: 1px solid black; */
     width: 35%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .place-content {
     font-weight: 800;
     color: #007d6f;
+    margin-left: 10px;
 }
 
 .placement-button {
@@ -3067,24 +3181,55 @@ button:hover {
 @media screen and (max-width:480px) {
     .job-guarentee-info {
         flex-direction: column;
+        padding-top: 40px;
     }
 
     .job-guarentee-box-one {
         width: 100%;
+        flex-direction: column;
     }
 
     .job-guarentee-program h4 {
         font-size: 27px;
     }
 
+    .job-guarentee-item-one {
+        width: 100%;
+    }
+
+    .job-guarentee-section-one {
+        width: 100%;
+    }
+
+    .placement-item-one {
+        width: 45%;
+    }
+
+    .job-two {
+        margin-top: 30px;
+    }
+
     .view-more-button {
-        width: 60%;
-        font-size: 16px;
-        height: 50px;
+        width: 45%;
+        font-size: 14px;
+        height: 48px !important;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .view-more-button i {
+        font-size: 14px;
     }
 
     .job-guarentee-program {
         padding: 0px;
+    }
+
+    .guarantee-courses-name ul li {
+        flex: 0 0 45%;
+    }
+
+    .guarantee-carousael-seection {
+        display: flex;
     }
 
 }
@@ -3238,6 +3383,7 @@ button:hover {
     justify-content: space-between;
     position: relative;
     height: 800px;
+
 }
 
 .training-box-one {
@@ -3248,6 +3394,12 @@ button:hover {
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     line-height: 1.5;
     height: 350px;
+    cursor: pointer;
+}
+
+.training-box-one:hover {
+    background-color: #007D6F;
+    color: white;
 }
 
 .training-box-one i {
@@ -3257,7 +3409,7 @@ button:hover {
 .training-box-one h3 {
     font-size: 24px;
     margin-top: 24px;
-    color: #272566;
+    /* color: #272566; */
     font-weight: 800;
     font-family: nunito;
 }
@@ -3266,7 +3418,7 @@ button:hover {
     padding-top: 24px;
     font-size: 16px;
     font-family: mulish;
-    color: #373737;
+    /* color: #373737; */
 }
 
 .training-item-one {
@@ -3439,6 +3591,11 @@ button:hover {
     margin-top: 15px;
 }
 
+.certi {
+    font-size: 30px;
+    font-weight: 550;
+}
+
 @media screen and (width:1440px) {}
 
 @media screen and (max-width:1280px) {}
@@ -3461,10 +3618,7 @@ button:hover {
 
     .certificate-first-page {
         width: 100%;
-    }
-
-    .certi {
-        font-size: 20px !important;
+        padding: 5px 20px 20px 20px;
     }
 
     .certificate-rating {
@@ -3485,6 +3639,32 @@ button:hover {
 
     .certificate-rating-first-para1 {
         font-size: 20px;
+    }
+
+    .certificate-page-info>p {
+        font-size: 14px;
+        padding-top: 0px;
+        margin-top: 15px;
+    }
+
+    .certi {
+        font-size: 20px !important;
+    }
+
+    .certificate-button {
+        width: 80%;
+        font-size: 14px;
+        padding-top: 0px;
+        margin-top: 15px;
+    }
+
+    .certificate-page-circle {
+        height: 150px;
+        width: 150px;
+    }
+
+    .sec-page {
+        margin-top: 30px;
     }
 }
 
@@ -4151,50 +4331,12 @@ textarea {
     color: #272566
 }
 
-.btnssss {
-    border: none;
-    outline: none;
-    width: 45%;
-    border-radius: 10px;
-    border: 1px solid;
-    font-size: 18px;
-    color: white;
-    font-family: mulish;
-    height: 50px;
-    margin-top: 30px;
-    background-color: #272566;
-}
-
-
-.blog-page-carousel {
-    /* border: 1px solid black; */
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    border-radius: 5px !important;
-}
-
-.blog-carousel-button {
-    /* border: 1px solid black; */
-    padding: 20px 25px 20px 25px;
-    background-color: #bebed1;
-    color: white;
-    display: none;
-}
-
-.blog-carousel-button:hover {
-    background-color: #272566;
-    color: white;
-}
-
-
 .blog-courses-name {
     width: 100%;
-    padding: 20px 0px 5px 0px;
+    margin: auto;
     margin-top: 30px;
     background-color: white;
     border-radius: 10px;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 .blog-courses-wrapper {
@@ -4203,11 +4345,12 @@ textarea {
 
 #blog-courses-carousel {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
-    font-size: 18px;
-    font-weight: 550;
     transition: all 0.3s ease;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
 }
 
 .blog-courses-name ul li {
@@ -4220,7 +4363,43 @@ textarea {
     cursor: pointer;
     font-family: hind;
     font-weight: 800;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-page-carousel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+.blog-carousel-button {
+    padding: 20px 25px 20px 25px;
+    background-color: #bebed1;
+    color: white;
+}
+
+.btnssss {
+    border: none;
+    outline: none;
+    width: 45%;
+    border-radius: 10px;
+    border: 1px solid;
     font-size: 18px;
+    color: white;
+    font-family: mulish;
+    height: 50px;
+    background-color: #272566;
+}
+
+
+@media screen and (max-width:1280px) {
+    .blog-courses-name ul li {
+        font-size: 14px !important;
+    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -4241,9 +4420,12 @@ textarea {
         flex: 0 0 45%;
     }
 
-    .blog-carousel-button {
-        display: block;
+    .blog-page-carousel {
+        display: flex;
+        margin-top: 30px;
     }
+
+
 }
 
 
