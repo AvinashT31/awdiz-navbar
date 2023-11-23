@@ -459,13 +459,8 @@
                   </div>
                   <p style="padding-left: 5px;">1504</p>
                 </div>
-
-
-
                 <button class="btns">View Course</button>
-
               </div>
-
             </div>
 
             <div class="our-courses-angular">
@@ -3553,6 +3548,48 @@
       }
     });
   </script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
+  });
+
+  function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
+    const prevBtn = document.getElementById(prevBtnId);
+    const nextBtn = document.getElementById(nextBtnId);
+    const carouselSlide = document.querySelector(carouselClass);
+
+    let currentCard = 0;
+
+    const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
+
+    const moveCarousel = () => {
+      const step = getStep();
+      const cardWidth = carouselSlide.children[0].clientWidth;
+      const cardMarginRight = parseFloat(getComputedStyle(carouselSlide.children[0]).marginRight);
+      const cardMarginLeft = parseFloat(getComputedStyle(carouselSlide.children[0]).marginLeft);
+      const totalCardWidth = cardWidth + cardMarginRight + cardMarginLeft;
+      carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
+    };
+
+    prevBtn.addEventListener('click', () => {
+      const step = getStep();
+      currentCard = (currentCard + step) % carouselSlide.children.length;
+      moveCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      const step = getStep();
+      currentCard = (currentCard - step + carouselSlide.children.length) % carouselSlide.children.length;
+      moveCarousel();
+    });
+
+    window.addEventListener('resize', moveCarousel);
+
+    moveCarousel(); // Initialize carousel position on load
+  }
+</script>
 
 
 </body>

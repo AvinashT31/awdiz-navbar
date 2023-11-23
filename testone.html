@@ -5,37 +5,398 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
   <style>
-    .image-container {
-      max-width: 800px;
-      /* Set the max width of the container */
-      margin: auto;
-      /* Center the container */
+    .carousel-container {
+      display: flex;
+      align-items: center;
       overflow: hidden;
-      /* Ensures the container does not allow content to spill out */
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      padding-top: 20px;
     }
 
-    .image-container img {
+    .carousel-wrapper {
+      padding: 30px 0px 30px 0px;
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .carousel-slide {
+      display: flex;
+      transition: all 0.3s ease;
+    }
+
+    button {
+      background-color: #333;
+      color: black;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      margin: 0 5px;
+      border-radius: 10px;
+      width: 3%;
+      background-color: white;
+      /* box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px; */
+      left: 3%;
+      /* z-index: 100; */
+    }
+
+    button:hover {
+      background-color: #007D6F;
+    }
+
+    .carousel-card {
+      flex: 0 0 30%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      box-shadow: 0 2px 5px 0 rgba(17, 121, 239, .15);
+      border-radius: 6px;
+      border: 1px solid #e6ecef;
+      background: #fff;
+      margin-right: 1.7%;
+      margin-left: 1.7%;
+    }
+
+    .slider-img {
+      width: 100%;
+      overflow: hidden;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      margin-bottom: 10px;
+      height: 250px;
+    }
+
+    .slider-img img {
       width: 100%;
       /* Make the image responsive */
-      height: auto;
-      /* Maintain aspect ratio */
+      height: 100%;
+      /* Maintain the aspect ratio */
       display: block;
-      /* Remove extra space under the image */
     }
-  </style>
 
+    .slider-info {
+      width: 100%;
+      margin-bottom: 3px;
+      margin-top: 15px;
+      line-height: 1.8;
+      font-family: nunito;
+      font-weight: 800;
+      color: #272566;
+      padding: 0px 20px 10px 20px;
+    }
+
+    .slider-info h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .info-list p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .pgp-info {
+      width: 100%;
+      margin-top: 3px;
+      padding: 0px 20px 20px 20px;
+    }
+
+    .pgp-info>p {
+      line-height: 1.5;
+      font-size: 16px;
+      font-family: mulish;
+      color: #2e2e2e;
+    }
+
+    .slide-logo-img {
+      /* border: 1px solid black; */
+      width: 50px;
+      height: 50px;
+    }
+
+    .slide-logo-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+    .carousel-container {
+      justify-content: space-between;
+    }
+
+    .carousel-container button {
+      flex: 0 0 10%; 
+      width: auto; 
+    }
+
+    .carousel-card {
+      border: 1px solid black;
+      flex: 0 0 95%; 
+      margin-right: 2.5%;
+      margin-left: 2.5;
+    }
+  }
+  </style>
 </head>
 
 <body>
-  <div class="image-container">
-    <img src="/img/Home page 600 x 400 px.webp" srcset="Home page 600 x 400 px.webp 600w, 
-              Homepage 550 x 400 px.webp 550w, 
-              Homepage 800 x 400.webp 800w" sizes="(max-width: 599px) 550px,
-             (min-width: 600px) and (max-width: 799px) 600px,
-             (min-width: 800px) 800px" alt="Learn With Mumbai's No. 1 IT Institute For Freshers" loading="lazy">
+  <div class="carousel-container">
+    <button style="box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;" id="new-nextBtn"><i
+        class="fa-solid fa-chevron-left"></i></button>
+    <div class="carousel-wrapper">
+      <div class="carousel-slide">
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button style="box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;" id="new-preBtn"><i
+        class="fa-solid fa-chevron-right"></i></button>
   </div>
 
+
+
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
+    });
+  
+    function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      const carouselSlide = document.querySelector(carouselClass);
+  
+      let currentCard = 0;
+  
+      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
+  
+      const moveCarousel = () => {
+        const step = getStep();
+        const cardWidth = carouselSlide.children[0].clientWidth;
+        const cardMarginRight = parseFloat(getComputedStyle(carouselSlide.children[0]).marginRight);
+        const cardMarginLeft = parseFloat(getComputedStyle(carouselSlide.children[0]).marginLeft);
+        const totalCardWidth = cardWidth + cardMarginRight + cardMarginLeft;
+        carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
+      };
+  
+      prevBtn.addEventListener('click', () => {
+        const step = getStep();
+        currentCard = (currentCard + step) % carouselSlide.children.length;
+        moveCarousel();
+      });
+  
+      nextBtn.addEventListener('click', () => {
+        const step = getStep();
+        currentCard = (currentCard - step + carouselSlide.children.length) % carouselSlide.children.length;
+        moveCarousel();
+      });
+  
+      window.addEventListener('resize', moveCarousel);
+  
+      moveCarousel(); // Initialize carousel position on load
+    }
+  </script>
+   -->
+  
+
+   <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
+    });
+  
+    function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      const carouselSlide = document.querySelector(carouselClass);
+  
+      let currentCard = 0;
+  
+      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
+  
+      const moveCarousel = () => {
+        const step = getStep();
+        const cardStyle = getComputedStyle(carouselSlide.children[0]);
+        const cardWidth = carouselSlide.children[0].offsetWidth; // Include margin in width calculation
+        const totalCardWidth = cardWidth + (step > 1 ? parseFloat(cardStyle.marginRight) : 0); // Add margin only for desktop view
+        carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
+      };
+  
+      prevBtn.addEventListener('click', () => {
+        const step = getStep();
+        if (step === 1 && currentCard === 0) {
+          currentCard = carouselSlide.children.length - 1; // Loop to last slide in single step mode
+        } else {
+          currentCard = Math.max(0, currentCard - step);
+        }
+        moveCarousel();
+      });
+  
+      nextBtn.addEventListener('click', () => {
+        const step = getStep();
+        if (step === 1 && currentCard === carouselSlide.children.length - 1) {
+          currentCard = 0; // Loop back to first slide in single step mode
+        } else {
+          currentCard = Math.min(carouselSlide.children.length - step, currentCard + step);
+        }
+        moveCarousel();
+      });
+  
+      window.addEventListener('resize', moveCarousel);
+  
+      moveCarousel(); // Initialize carousel position on load
+    }
+  </script>
+  
+  
 </body>
 
 </html>

@@ -708,9 +708,11 @@ ul li {
     align-items: center;
 }
 
-button {
+
+
+.show-item-right-button button {
     border: 1px solid blue;
-    width: 30%;
+    width: 23%;
     height: 45px;
     cursor: pointer;
     color: #272566;
@@ -719,9 +721,10 @@ button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-family: hind;
 }
 
-button:hover {
+.show-item-right-button button:hover {
     background-color: blue;
     color: white;
 }
@@ -2330,7 +2333,7 @@ button:hover {
     padding: 0px 20px 10px 20px;
 }
 
-.slider-info h4 {
+.slider-info h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #333;
@@ -2345,11 +2348,6 @@ button:hover {
     width: 100%;
     margin-top: 3px;
     padding: 0px 20px 20px 20px;
-}
-
-.pgp-info img {
-    width: 80px;
-    height: 80px;
 }
 
 .pgp-info>p {
@@ -2400,8 +2398,39 @@ button:hover {
     }
 
     .carousel-container {
+        justify-content: space-between;
         padding-bottom: 0px;
-    }
+      }
+  
+      .carousel-container button {
+        flex: 0 0 15%; 
+        width: auto; 
+      }
+  
+      .carousel-card {
+        /* border: 1px solid black; */
+        flex: 0 0 95%; 
+        margin-right: 5.5%;
+      }
+
+      .slider-img {
+        height: 200px;
+      }
+
+      .slide-logo-img {
+        width: 35px;
+        height: 35px;
+      }
+
+      .slider-info h3 {
+        font-size: 16px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+      }
+
+      .pgp-info > p {
+        font-size: 14px;
+      }
 }
 
 /* our-courses */
@@ -2457,6 +2486,9 @@ button:hover {
     padding: 20px 25px 20px 25px;
     background-color: #bebed1;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .arrow-button:hover {
@@ -2762,6 +2794,9 @@ button:hover {
     color: white;
     font-family: mulish;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
 }
 
 .btns:hover {
@@ -2990,6 +3025,9 @@ button:hover {
     padding: 20px 25px 20px 25px;
     background-color: #bebed1;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .guarantee-carousel-button:hover {
@@ -3136,6 +3174,9 @@ button:hover {
     /* border: 1px solid black; */
     width: 100%;
     padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .view-more-button {
@@ -3147,7 +3188,7 @@ button:hover {
     margin: auto;
     background-color: #007d6f;
     color: white;
-    height: 75px;
+    height: 80px;
     font-family: mulish;
 }
 
@@ -3592,7 +3633,7 @@ button:hover {
 }
 
 .certi {
-    font-size: 30px;
+    font-size: 30px !important;
     font-weight: 550;
 }
 
@@ -4057,6 +4098,9 @@ button:hover {
     background-color: white;
     width: 8%;
     box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button:hover {
@@ -4379,6 +4423,9 @@ textarea {
     padding: 20px 25px 20px 25px;
     background-color: #bebed1;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnssss {
@@ -4412,8 +4459,9 @@ textarea {
     }
 
     .btnssss {
-        width: 85%;
-        font-size: 16px;
+        width: 60%;
+        font-size: 14px;
+        height: 40px;
     }
 
     .blog-courses-name ul li {
@@ -9191,6 +9239,7 @@ footer {
         box-sizing: border-box;
         padding: 10px;
         z-index: 1000;
+        height: 280px;
     }
 
     form {
