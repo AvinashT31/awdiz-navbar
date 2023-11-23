@@ -1305,7 +1305,7 @@ ul li {
 
 .homepage-left {
     /* border: 1px solid black; */
-    width: 40%;
+    width: 44%;
     position: relative;
 }
 
@@ -1317,10 +1317,10 @@ ul li {
 
 .banner-section>h1 {
     padding-top: 16px;
-    font-size: 75px;
+    font-size: 65px;
     font-weight: 800;
     color: #082A5E;
-    line-height: 75px;
+    line-height: 70px;
     width: 97%;
     font-family: Nunito;
 }
@@ -1346,9 +1346,9 @@ ul li {
 
 .banner-section-guarentee {
     /* border: 1px solid black; */
-    width: 45%;
+    width: 50%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     background-color: #f3f4f6;
@@ -1431,14 +1431,15 @@ ul li {
 }
 
 
-@media screen and (width:1440px) {
-    .homepage-left {
-        width: 48%;
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .banner-section>h1 {
+        font-size: 55px;
+        width: 93%;
+        line-height: 56px;
     }
 
-    .banner-section>h1 {
-        font-size: 65px;
-        width: 93%;
+    .homepage-left {
+        width: 48%;
     }
 
     .banner-section-guarentee {
@@ -1446,7 +1447,13 @@ ul li {
     }
 }
 
-@media screen and (width:1280px) {
+@media (min-width: 1150px) and (max-width: 1280px) {
+    .banner-section>h1 {
+        font-size: 49px;
+        width: 93%;
+        line-height: 56px;
+    }
+
     .homepage-left {
         width: 48%;
     }
@@ -1457,10 +1464,6 @@ ul li {
 
     .banner-section-guarentee {
         width: 55%;
-    }
-
-    .banner-section>h1 {
-        font-size: 30px;
     }
 }
 
@@ -1586,7 +1589,7 @@ ul li {
 
 .guarentee-page {
     /* border: 1px solid black; */
-    width: 86%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -1700,28 +1703,15 @@ ul li {
 
 .guarentee-image {
     width: 45%;
-    height: 492px;
+    /* height: 492px; */
     border-radius: 20px;
     overflow: hidden;
-    background-image: url("/img/image.png");
-    background-repeat: no-repeat;
     position: relative;
-    background-size: cover;
 }
 
-.news-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.mt_btn_yellow {
-    position: absolute;
-    right: -28px;
-    bottom: -28px;
-    padding: 14px 33px;
-    font-size: 80px;
+.guarentee-image img {
+    width: 100%;
+    height: 100%;
 }
 
 .fa-play-circle {
@@ -1729,108 +1719,56 @@ ul li {
     height: 10%;
 }
 
+.news-content {
+    position: absolute;
+    right: 13px;
+    bottom: 0px;
+}
+
 
 
 /* MEDIA QUERIES */
 
-@media screen and (width: 1440px) {
+
+@media (min-width:1441px) and (max-width:1920px) {
     .mt_btn_yellow {
-        right: 6px !important;
-        top: 256px !important;
+        font-size: 76px;
+        padding: 0px;
+    }
+
+    .guarentee-content h2 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1440px) {
+    .mt_btn_yellow {
+        font-size: 57px;
+        padding: 0px;
     }
 
     .guarentee-image {
         height: 372px;
     }
 
-    .mt_btn_yellow {
-        position: absolute;
-        right: -24px;
-        padding: 40px 0px;
-        font-size: 61px;
-        bottom: 0;
+    .news-content {
+        right: 10px;
     }
 
-}
-
-@media screen and (width: 1280px) {
-    .mt_btn_yellow {
-        right: 6px !important;
-        top: 225px !important;
-    }
-
-    .guarentee-image {
-        height: 331px;
-    }
-
-    .mt_btn_yellow {
-        position: absolute;
-        right: -24px;
-        padding: 40px 0px;
-        font-size: 55px;
-        bottom: 0;
+    .guarentee-content h2 {
+        font-size: 45px;
     }
 }
 
-@media screen and (max-width: 428px) {
-    .mt_btn_yellow {
-        top: 178px !important;
+@media (min-width:1150px) and (max-width:1280px) {
+    .news-content {
+        right: 1%;
     }
 }
 
-@media screen and (max-width: 414px) {
-    .mt_btn_yellow {
-        top: 170px !important;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    .mt_btn_yellow {
-        top: 169px !important;
-    }
-}
-
-@media screen and (max-width: 411px) {
-    .mt_btn_yellow {
-        right: 7px !important;
-        top: 166px !important;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .mt_btn_yellow {
-        top: 154px !important;
-    }
-}
-
-@media screen and (max-width: 384px) {
-    .mt_btn_yellow {
-        right: 5px !important;
-        top: 151px !important;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .mt_btn_yellow {
-        top: 147px !important;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .mt_btn_yellow {
-        top: 139px !important;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .mt_btn_yellow {
-        right: 4px !important;
-        top: 120px !important;
-        font-size: 33px;
-    }
-
-    .fa-play-circle {
-        font-size: 33px !important;
+@media (min-width: 380px) and (max-width: 393px) {
+    .news-content {
+        right: 3px;
     }
 }
 
@@ -1845,10 +1783,15 @@ ul li {
         width: 90%;
     }
 
-    .guarentee-image {
-        width: 100% !important;
-        background-size: 100% !important;
-        height: 259px !important;
+    .guarantee-image {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .guarantee-image img {
+        width: 100%;
+        height: 100%;
     }
 
     .guarentee-content {
@@ -1858,7 +1801,7 @@ ul li {
     }
 
     .fa-play-circle {
-        font-size: 40px !important;
+        /* font-size: 40px; */
     }
 
     .guarentee-content h2 {
@@ -1880,7 +1823,89 @@ ul li {
         margin-top: 15px;
         margin-left: 0px !important;
     }
+
+    .news-content {
+        position: absolute;
+        right: 12px;
+        bottom: 0px;
+    }
 }
+
+@media screen and (max-width:428px) {
+    .guarentee-image {
+        width: 100%;
+    }
+
+    .mt_btn_yellow {
+        font-size: 38px;
+    }
+
+    .news-content {
+        right: 9px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .guarentee-image {
+        width: 100%;
+    }
+
+    .mt_btn_yellow {
+        font-size: 38px;
+    }
+
+    .news-content {
+        right: 7px;
+    }
+}
+
+@media screen and (max-width:412px) {
+    .guarentee-image {
+        width: 100%;
+    }
+
+    .mt_btn_yellow {
+        font-size: 36px;
+    }
+
+    .news-content {
+        right: 9px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .mt_btn_yellow {
+        font-size: 33px;
+    }
+
+    .news-content {
+        right: 6px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .mt_btn_yellow {
+        font-size: 32px;
+    }
+
+    .news-content {
+        right: 7px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .mt_btn_yellow {
+        font-size: 29px;
+    }
+
+    .news-content {
+        right: 6px;
+    }
+}
+
+
+
+
 
 
 
@@ -1904,6 +1929,7 @@ ul li {
 .cisco-training-form {
     /* border: 1px solid black; */
     width: 38%;
+    height: 613px;
 }
 
 .cisco-form {
@@ -1916,10 +1942,24 @@ ul li {
     border-radius: 10px;
 }
 
-.cisco-form h2 {
+.cisco-training-form::after {
+    content: "";
     /* border: 1px solid black; */
-    font-size: 39px;
-    padding-bottom: 25px;
+    width: 85%;
+    margin: auto;
+    border-radius: 270px;
+    background-color: #d3dfde;
+    display: inline-block;
+    position: relative;
+    bottom: 80%;
+    z-index: -2;
+    height: 536px;
+    left: 7%;
+}
+
+.cisco-form h3 {
+    /* border: 1px solid black; */
+    font-size: 28px;
     margin-bottom: 18px;
     font-family: nunito;
 }
@@ -1927,6 +1967,7 @@ ul li {
 .cisco-form label {
     margin-top: 10px;
     font-family: mulish;
+    font-size: 14px
 }
 
 .cisco-form input {
@@ -1939,7 +1980,41 @@ ul li {
     outline: none;
     background-color: #ffffff;
     padding-left: 16px;
-    font-size: 16px;
+    font-size: 13px;
+    font-family: poppins;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+    font-size: 14px !important;
+}
+
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="text"]::placeholder {
+    font-size: 13px !important
+}
+
+textarea.cisco-textarea {
+    font-size: 14px
+}
+
+textarea.cisco-textarea::placeholder {
+    font-size: 13px
+}
+
+.cisco-textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    padding-left: 16px;
+    font-size: 13px;
     font-family: poppins;
 }
 
@@ -1955,6 +2030,63 @@ ul li {
     background-color: #007d6f;
     color: white;
     font-family: hind;
+    margin: 0;
+}
+
+@media screen and (max-width:1440px) {
+    .cisco-training-form::after {
+        width: 85%;
+        margin: auto;
+        bottom: 62%;
+        height: 390px;
+        left: 7%;
+    }
+
+    .cisco-form h3 {
+        font-size: 18px;
+    }
+
+    .cisco-form label {
+        font-size: 12px;
+    }
+
+    .cisco-form input {
+        font-size: 12px;
+        height: 36px;
+    }
+
+    .cisco-textarea {
+        font-size: 12px;
+        height: 36px;
+    }
+
+    .cisco-form button {
+        height: 36px;
+        padding: 0px;
+    }
+
+    .cisco-training-form {
+        height: 565px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .cisco-training-form::after {
+        width: 95%;
+        margin: auto;
+        bottom: 64%;
+        height: 390px;
+        left: 2.5%;
+    }
+
+    .cisco-training-form {
+        height: 560px;
+    }
+
+    .cisco-form{
+        width: 80%;
+    }
 }
 
 
@@ -1965,14 +2097,14 @@ ul li {
 }
 
 .cisco-training-info>h3 {
-    font-size: 50px;
+    font-size: 49px;
     color: #272566;
     font-family: nunito;
     font-weight: 800;
 
 }
 
-.cisco-container>h2 {
+.cicso-p {
     font-size: 44px;
     color: #007d6f;
     font-family: nunito;
@@ -1985,17 +2117,21 @@ ul li {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 .cisco-container {
-    width: 23%;
+    width: 24%;
     /* border: 1px solid black; */
 }
 
 .cisco-info {
-    font-size: 16px;
+    font-size: 14px;
     font-family: mulish;
 }
+
+
+
 
 
 
@@ -2040,7 +2176,7 @@ ul li {
         justify-content: space-between !important;
     }
 
-    .cisco-container>h2 {
+    .cicso-p {
         font-size: 24px;
     }
 
@@ -2064,7 +2200,7 @@ ul li {
         margin-top: 35px;
     }
 
-    .cisco-form h2 {
+    .cisco-form h3 {
         font-size: 27px;
     }
 
@@ -2400,37 +2536,37 @@ button:hover {
     .carousel-container {
         justify-content: space-between;
         padding-bottom: 0px;
-      }
-  
-      .carousel-container button {
-        flex: 0 0 15%; 
-        width: auto; 
-      }
-  
-      .carousel-card {
+    }
+
+    .carousel-container button {
+        flex: 0 0 15%;
+        width: auto;
+    }
+
+    .carousel-card {
         /* border: 1px solid black; */
-        flex: 0 0 95%; 
+        flex: 0 0 95%;
         margin-right: 5.5%;
-      }
+    }
 
-      .slider-img {
+    .slider-img {
         height: 200px;
-      }
+    }
 
-      .slide-logo-img {
+    .slide-logo-img {
         width: 35px;
         height: 35px;
-      }
+    }
 
-      .slider-info h3 {
+    .slider-info h3 {
         font-size: 16px;
         margin-bottom: 0px;
         margin-top: 10px;
-      }
+    }
 
-      .pgp-info > p {
+    .pgp-info>p {
         font-size: 14px;
-      }
+    }
 }
 
 /* our-courses */
