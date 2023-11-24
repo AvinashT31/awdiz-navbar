@@ -2084,7 +2084,7 @@ textarea.cisco-textarea::placeholder {
         height: 560px;
     }
 
-    .cisco-form{
+    .cisco-form {
         width: 80%;
     }
 }
@@ -3356,58 +3356,76 @@ button:hover {
 @media screen and (min-width:481px) and (max-width:767px) {}
 
 @media screen and (max-width:480px) {
-    .job-guarentee-info {
-        flex-direction: column;
+    /* .job-guarentee-info{
         padding-top: 40px;
+        flex-direction: column; 
+    } */
+
+    .job-guarentee-info {
+        padding-top: 40px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
-    .job-guarentee-box-one {
-        width: 100%;
-        flex-direction: column;
-    }
+    
 
-    .job-guarentee-program h4 {
-        font-size: 27px;
-    }
+.job-guarentee-box-one {
+    width: auto;
+    margin-right: 30px;
+    /* width: 100%; */
+    flex-direction: column;
+}
 
-    .job-guarentee-item-one {
-        width: 100%;
-    }
+.job-guarentee-program h4 {
+    font-size: 27px;
+}
 
-    .job-guarentee-section-one {
-        width: 100%;
-    }
+.job-guarentee-item-one {
+    width: 100%;
+}
 
-    .placement-item-one {
-        width: 45%;
-    }
+.job-guarentee-section-one {
+    width: 100%;
+}
 
-    .job-two {
-        margin-top: 30px;
-    }
+.placement-item-one {
+    width: 45%;
+}
 
-    .view-more-button {
-        width: 45%;
-        font-size: 14px;
-        height: 48px !important;
-        padding: 10px 0px 10px 0px;
-    }
+/* .job-two {
+    margin-top: 30px;
+} */
 
-    .view-more-button i {
-        font-size: 14px;
-    }
+.view-more-button {
+    width: 45%;
+    font-size: 14px;
+    height: 48px !important;
+    padding: 10px 0px 10px 0px;
+}
 
-    .job-guarentee-program {
-        padding: 0px;
-    }
+.view-more-button i {
+    font-size: 14px;
+}
 
-    .guarantee-courses-name ul li {
-        flex: 0 0 45%;
-    }
+.job-guarentee-program {
+    padding: 0px;
+}
 
-    .guarantee-carousael-seection {
-        display: flex;
-    }
+.guarantee-courses-name ul li {
+    flex: 0 0 45%;
+}
+
+.guarantee-carousael-seection {
+    display: flex;
+}
 
 }
 

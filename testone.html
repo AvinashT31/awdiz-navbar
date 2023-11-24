@@ -4,399 +4,1074 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/fontawesome/css/solid.css" rel="stylesheet">
   <title>Document</title>
 
+
   <style>
-    .carousel-container {
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      position: relative;
-      max-width: 100%;
-      margin: 0 auto;
-      padding-bottom: 20px;
-      padding-top: 20px;
-    }
-
-    .carousel-wrapper {
-      padding: 30px 0px 30px 0px;
-      overflow: hidden;
-      flex: 1;
-    }
-
-    .carousel-slide {
-      display: flex;
-      transition: all 0.3s ease;
-    }
-
-    button {
-      background-color: #333;
-      color: black;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      margin: 0 5px;
-      border-radius: 10px;
-      width: 3%;
-      background-color: white;
-      /* box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px; */
-      left: 3%;
-      /* z-index: 100; */
-    }
-
-    button:hover {
-      background-color: #007D6F;
-    }
-
-    .carousel-card {
-      flex: 0 0 30%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-sizing: border-box;
-      position: relative;
-      float: left;
-      box-shadow: 0 2px 5px 0 rgba(17, 121, 239, .15);
-      border-radius: 6px;
-      border: 1px solid #e6ecef;
-      background: #fff;
-      margin-right: 1.7%;
-      margin-left: 1.7%;
-    }
-
-    .slider-img {
-      width: 100%;
-      overflow: hidden;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-      margin-bottom: 10px;
-      height: 250px;
-    }
-
-    .slider-img img {
-      width: 100%;
-      /* Make the image responsive */
-      height: 100%;
-      /* Maintain the aspect ratio */
-      display: block;
-    }
-
-    .slider-info {
-      width: 100%;
-      margin-bottom: 3px;
-      margin-top: 15px;
-      line-height: 1.8;
-      font-family: nunito;
-      font-weight: 800;
-      color: #272566;
-      padding: 0px 20px 10px 20px;
-    }
-
-    .slider-info h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .info-list p {
-      font-size: 14px;
-      color: #666;
-    }
-
-    .pgp-info {
-      width: 100%;
-      margin-top: 3px;
-      padding: 0px 20px 20px 20px;
-    }
-
-    .pgp-info>p {
-      line-height: 1.5;
-      font-size: 16px;
-      font-family: mulish;
-      color: #2e2e2e;
-    }
-
-    .slide-logo-img {
+    .mobile-navbar {
       /* border: 1px solid black; */
-      width: 50px;
-      height: 50px;
-    }
-
-    .slide-logo-img img {
       width: 100%;
-      height: 100%;
+      /* height: 70px; */
+      padding: 10px 0px 10px 0px;
+      position: sticky;
+      top: 0%;
+      z-index: 100;
     }
 
-    @media only screen and (max-width: 768px) {
-    .carousel-container {
+    .mobile-nav {
+      /* border: 1px solid black; */
+      width: 90%;
+      margin: auto;
+      display: flex;
       justify-content: space-between;
     }
 
-    .carousel-container button {
-      flex: 0 0 10%; 
-      width: auto; 
+    .moblie-nav-left {
+      /* border: 1px solid black; */
+      width: 35%;
     }
 
-    .carousel-card {
-      border: 1px solid black;
-      flex: 0 0 95%; 
-      margin-right: 2.5%;
-      margin-left: 2.5;
+    .moblie-nav-left img {
+      max-width: 100%;
     }
-  }
+
+    .moblie-nav-right {
+      /* border: 1px solid black; */
+      padding: 5px 0px 5px 0px;
+      width: 55%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .mobile-nav-right-one {
+      border: 1px solid black;
+      width: 65%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 550;
+      background-color: #272566;
+      border-radius: 5px;
+      color: white;
+      font-family: nunito;
+    }
+
+    .mobile-nav-right-one a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .mobile-nav-right-two {
+      /* border: 1px solid black; */
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mobile {
+      /* border: 1px solid black; */
+      width: 100%;
+      height: 100%
+    }
+
+    .mobile-hamburg-click-section {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      background-color: white;
+      display: none;
+      z-index: 500;
+      background-color: white;
+    }
+
+    .mobile-hamburg-click-section-heading {
+      /* border: 1px solid black; */
+      width: 100%;
+      height: auto;
+      background-color: #f3f4f6;
+      /* box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 2px 6px; */
+    }
+
+    .mobile-hamburg-click-section-heading-page {
+      /* border: 1px solid black; */
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .mobile-hamburg-click-section-heading-left {
+      /* border: 1px solid black; */
+      width: 30%;
+      font-size: 20px;
+    }
+
+    .mobile-hamburg-click-section-heading-left i {
+      color: #272566;
+    }
+
+    .mobile-hamburg-click-section-heading-right {
+      /* border: 1px solid black; */
+      width: 70%;
+      display: flex;
+      padding-bottom: 10px;
+      align-items: center;
+      font-weight: 550;
+    }
+
+
+    .mobile-hamburg-menu-list {
+      /* border: 1px solid black; */
+      padding: 10px 0px 0px 0px;
+      position: relative;
+      z-index: 100;
+      background: white;
+      height: 350px;
+    }
+
+    .mobile-hamburg-submenu {
+      /* border: 1px solid black; */
+      width: 90%;
+      margin: auto;
+    }
+
+    .mobile-hamburg-submenu ul {
+      list-style: none;
+      line-height: 2;
+      cursor: pointer;
+    }
+
+    .mobile-hamburg-submenu ul li {
+      font-size: 15px;
+      font-family: poppins;
+    }
+
+
+    /* allcoursespage */
+    #allcoursescontent {
+      border: 1px solid black;
+      width: 100%;
+      height: 100%;
+    }
+
+    .displaymobilecontent {
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      background-color: white;
+    }
+
+    .allcoursespage {
+      border: 1px solid #f3f4f6;
+      width: 100%;
+      padding: 10px 0px 10px 0px;
+      background-color: #f3f4f6;
+    }
+
+    .allcourses-heading {
+      /* border: 1px solid black; */
+      width: 100%;
+    }
+
+    .allcourses-heading-page {
+      /* border: 1px solid black; */
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      /* padding: 10px 0px 10px 0px; */
+    }
+
+    .allcourses-heading-left {
+      /* border: 1px solid black; */
+      width: 20%;
+      font-size: 20px;
+    }
+
+    .allcourses-heading-left i {
+      color: #272566;
+    }
+
+    .allcourses-heading-right {
+      /* border: 1px solid black; */
+      width: 80%;
+      display: flex;
+      /* justify-content: center; */
+      padding-left: 28px;
+      align-items: center;
+      font-weight: 550;
+    }
+
+    .allcourses-heading-right>p {
+      font-family: nunito;
+    }
+
+    .allcourses-menu-section {
+      /* border: 1px solid black; */
+      width: 100%;
+      /* height: 100vh; */
+      padding: 10px 0px 10px 0px;
+    }
+
+    .allcourses-menu-list {
+      /* border: 1px solid black; */
+      width: 90%;
+      margin: auto;
+    }
+
+    .allcourses-menu-list ul {
+      list-style: none;
+      line-height: 2.5;
+    }
+
+    .allcourses-menu-list ul li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    .allcourses-menu-list ul a {
+      text-decoration: none;
+      color: black;
+    }
   </style>
 </head>
 
 <body>
-  <div class="carousel-container">
-    <button style="box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;" id="new-nextBtn"><i
-        class="fa-solid fa-chevron-left"></i></button>
-    <div class="carousel-wrapper">
-      <div class="carousel-slide">
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
+  <nav class="mobile-navbar">
+    <div class="mobile-nav">
+      <div class="moblie-nav-left">
+        <img src="img/awdiz.png" class="img-fluid" alt="">
+      </div>
+      <div class="moblie-nav-right">
+        <div id="allcourses" class="mobile-nav-right-one">
+          <p style="color: white;">All Courses</p>
+        </div>
+        <div class="mobile-nav-right-two" id="hamburg-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <div style="display: none;" id="allcoursescontent" class="allcoursescontent">
+      <div id="displaymobilecontent" class="displaymobilecontent">
+        <main class="allcoursespage">
+          <div class="allcourses-heading">
+            <div class="allcourses-heading-page">
+              <div class="allcourses-heading-left">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="allcourses-heading-right">
+                <p>All Courses</p>
+              </div>
             </div>
-            <h3>CCNA</h3>
           </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+        </main>
+        <section class="allcourses-menu-section">
+          <div class="allcourses-menu-list">
+            <ul>
+              <a href="#">
+                <li id="software">Software Development <span><i class="fa-solid fa-angle-right"></i></span> </li>
+              </a>
+              <a href="#">
+                <li id="networks">Networking infrastructure <span id="allcoursespage"><i
+                      class="fa-solid fa-angle-right"></i></span></li>
+              </a>
+              <a href="#">
+                <li id="digital">Digital Marketing <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li id="data">Data science <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
+              </a>
+              <a href="#">
+                <li id="machine">Machine Learning <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
+              </a>
+              <a href="#">
+                <li id="cyber">Cyber security <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
+              </a>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="software-page" style="display:none" class="software-pages">
+      <main class="software">
+        <div class="software-heading">
+          <div class="software-heading-page">
+            <div class="software-heading-left back-arrow">
+              <a href=""> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="software-heading-right">
+              <p style="padding-left: 10px; ">Software Development</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
+      </main>
+      <section class="software-menu-section">
+        <div class="software-menu-list">
+          <div class="software-menu-courses">
+            <h4>Individual Courses</h4>
+            <div class="software-menu-submenu">
+              <ul>
+                <li>Data Science with R Training</li>
+                <li>Data Science with Python Training</li>
+                <li>Data Science with SAS Training</li>
+                <li>Data Science with Tableau Training</li>
+                <li>Data Science with Power BI Training</li>
+                <li>Data Analyst Training</li>
+                <li>Natural Language Processing NLP Training</li>
+              </ul>
             </div>
-            <h3>CCNA</h3>
+          </div>
+
+          <div class="software-menu-job-program">
+            <h4>Job guarantee Program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MERN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MEAN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>Java FullStack</p>
+                </div>
+              </div>
+            </div>
 
           </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+
+          <div class="software-master-program">
+            <h4>Master's program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
-            </div>
-            <h3>CCNA</h3>
+      </section>
+    </div>
 
-          </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+    <div style="display: none;" id="networking-page" class="networking-page">
+      <main class="software">
+        <div class="software-heading">
+          <div class="software-heading-page">
+            <div class="software-heading-left">
+              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="software-heading-right">
+              <p>Networking infrastructure</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
+      </main>
+      <section class="software-menu-section">
+        <div class="software-menu-list">
+          <div class="software-menu-courses">
+            <h4>Individual Courses</h4>
+            <div class="software-menu-submenu">
+              <ul>
+                <li>Data Science with R Training</li>
+                <li>Data Science with Python Training</li>
+                <li>Data Science with SAS Training</li>
+                <li>Data Science with Tableau Training</li>
+                <li>Data Science with Power BI Training</li>
+                <li>Data Analyst Training</li>
+                <li>Natural Language Processing NLP Training</li>
+              </ul>
             </div>
-            <h3>CCNA</h3>
+          </div>
+
+          <div class="software-menu-job-program">
+            <h4>Job guarantee Program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MERN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MEAN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>Java FullStack</p>
+                </div>
+              </div>
+            </div>
 
           </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+
+          <div class="software-master-program">
+            <h4>Master's program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
-            </div>
-            <h3>CCNA</h3>
+      </section>
+    </div>
 
-          </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+
+    <div style="display: none;" id="digital-page" class="digital-page">
+      <main class="software">
+        <div class="software-heading">
+          <div class="software-heading-page">
+            <div class="software-heading-left">
+              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="software-heading-right">
+              <p style="padding-left: 33px;">Digital Marketing</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
+      </main>
+
+      <section class="software-menu-section">
+        <div class="software-menu-list">
+          <div class="software-menu-courses">
+            <h4>Individual Courses</h4>
+            <div class="software-menu-submenu">
+              <ul>
+                <li>Data Science with R Training</li>
+                <li>Data Science with Python Training</li>
+                <li>Data Science with SAS Training</li>
+                <li>Data Science with Tableau Training</li>
+                <li>Data Science with Power BI Training</li>
+                <li>Data Analyst Training</li>
+                <li>Natural Language Processing NLP Training</li>
+              </ul>
             </div>
-            <h3>CCNA</h3>
+          </div>
+
+          <div class="software-menu-job-program">
+            <h4>Job guarantee Program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MERN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MEAN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>Java FullStack</p>
+                </div>
+              </div>
+            </div>
 
           </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+
+          <div class="software-master-program">
+            <h4>Master's program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
-            </div>
-            <h3>CCNA</h3>
+      </section>
+    </div>
 
-          </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+    <div class="data-page" id="data-page" style="display: none;">
+      <main class="software">
+        <div class="software-heading">
+          <div class="software-heading-page">
+            <div class="software-heading-left">
+              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="software-heading-right">
+              <p style="padding-left: 48px;">Data science</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
+      </main>
+
+      <section class="software-menu-section">
+        <div class="software-menu-list">
+          <div class="software-menu-courses">
+            <h4>Individual Courses</h4>
+            <div class="software-menu-submenu">
+              <ul>
+                <li>Data Science with R Training</li>
+                <li>Data Science with Python Training</li>
+                <li>Data Science with SAS Training</li>
+                <li>Data Science with Tableau Training</li>
+                <li>Data Science with Power BI Training</li>
+                <li>Data Analyst Training</li>
+                <li>Natural Language Processing NLP Training</li>
+              </ul>
             </div>
-            <h3>CCNA</h3>
+          </div>
+
+          <div class="software-menu-job-program">
+            <h4>Job guarantee Program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MERN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MEAN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>Java FullStack</p>
+                </div>
+              </div>
+            </div>
 
           </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+
+          <div class="software-master-program">
+            <h4>Master's program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-card">
-          <div class="slider-img">
-            <img src="/img/images.jpg" alt="">
-          </div>
-          <div class="slider-info">
-            <div class="slide-logo-img">
-              <img src="/img/ccna.jpg" alt="">
+      </section>
+    </div>
+
+    <div class="learning" id="learning" style="display: none;">
+      <main class="software">
+        <div class="software-heading">
+          <div class="software-heading-page">
+            <div class="software-heading-left">
+              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
             </div>
-            <h3>CCNA</h3>
+            <div class="software-heading-right">
+              <p style="padding-left: 33px;">Machine Learning</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="software-menu-section">
+        <div class="software-menu-list">
+          <div class="software-menu-courses">
+            <h4>Individual Courses</h4>
+            <div class="software-menu-submenu">
+              <ul>
+                <li>Data Science with R Training</li>
+                <li>Data Science with Python Training</li>
+                <li>Data Science with SAS Training</li>
+                <li>Data Science with Tableau Training</li>
+                <li>Data Science with Power BI Training</li>
+                <li>Data Analyst Training</li>
+                <li>Natural Language Processing NLP Training</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="software-menu-job-program">
+            <h4>Job guarantee Program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MERN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MEAN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>Java FullStack</p>
+                </div>
+              </div>
+            </div>
 
           </div>
-          <div class="pgp-info">
-            <p>Cisco Certified Network Associate</p>
-            <p>5000+ Students Certified</p>
+
+          <div class="software-master-program">
+            <h4>Master's program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="cybers" id="cybers" style="display: none;">
+      <main class="software">
+        <div class="software-heading">
+          <div class="software-heading-page">
+            <div class="software-heading-left">
+              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="software-heading-right">
+              <p style="padding-left: 48px;">Cyber Security</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="software-menu-section">
+        <div class="software-menu-list">
+          <div class="software-menu-courses">
+            <h4>Individual Courses</h4>
+            <div class="software-menu-submenu">
+              <ul>
+                <li>Data Science with R Training</li>
+                <li>Data Science with Python Training</li>
+                <li>Data Science with SAS Training</li>
+                <li>Data Science with Tableau Training</li>
+                <li>Data Science with Power BI Training</li>
+                <li>Data Analyst Training</li>
+                <li>Natural Language Processing NLP Training</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="software-menu-job-program">
+            <h4>Job guarantee Program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MERN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>MEAN Master</p>
+                </div>
+              </div>
+              <div class="software-menu-job-submenu">
+                <div class="software-menu-submenu">
+                  <div class="software-menu-job-submenu-box">
+
+                  </div>
+                  <p>Java FullStack</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="software-master-program">
+            <h4>Master's program</h4>
+            <div style="width: 90%; margin: auto; padding-top: 10px;">
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="software-master-program-submenu">
+                <div class="software-master-program-menu">
+                  <div class="software-master-program-box">
+
+                  </div>
+                  <div class="software-master-program-box-one">
+                    <p>Advanced Digital Marketing</p>
+                    <p class="duration">Duration - 6 months</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="mobile">
+      <div class="mobile-hamburg-click-section" id="mobile-view">
+        <div class="mobile-hamburg-click-section-heading">
+          <div class="mobile-hamburg-click-section-heading-page">
+            <div class="mobile-hamburg-click-section-heading-left">
+              <a href=""> <i style="padding-top: 10px;" class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="mobile-hamburg-click-section-heading-right">
+              <p style="padding-left: 18px; padding-top: 10px;">MENU</p>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-hamburg-menu-list">
+          <div class="mobile-hamburg-submenu">
+            <ul>
+              <li>
+                <div style="display: flex; justify-content: space-between;">
+                  <p>Women IT job</p>
+                  <p id="women"> <i class="fa-solid fa-plus"></i></p>
+                </div>
+                <ul style="display: none;" id="women-job">
+                  <li style="padding-top: 15px">Content-one</li>
+                  <li>Content-two</li>
+                </ul>
+
+              </li>
+              <li>Career Restart</li>
+              <li>Placement</li>
+              <li>Review</li>
+              <li>Student Corner</li>
+              <li>About</li>
+              <li>About</li>
+              <li> Blockchain</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <button style="box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;" id="new-preBtn"><i
-        class="fa-solid fa-chevron-right"></i></button>
-  </div>
+  </nav>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var displayMobileContent = document.getElementById('displaymobilecontent');
+      var allCoursesButton = document.getElementById('allcourses');
+      var hamburgIconButton = document.getElementById('hamburg-icon');
+      var allCoursesContent = document.getElementById('allcoursescontent');
+      var mobileHamburgSubmenu = document.getElementById('mobile-view');
+      var backArrowAllCourses = document.querySelector('.allcourses-heading-left');
 
+      if (allCoursesContent) {
+        allCoursesContent.style.display = 'none';
+      }
+      if (mobileHamburgSubmenu) {
+        mobileHamburgSubmenu.style.display = 'none';
+      }
 
-  <!-- <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
-    });
-  
-    function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
-      const prevBtn = document.getElementById(prevBtnId);
-      const nextBtn = document.getElementById(nextBtnId);
-      const carouselSlide = document.querySelector(carouselClass);
-  
-      let currentCard = 0;
-  
-      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
-  
-      const moveCarousel = () => {
-        const step = getStep();
-        const cardWidth = carouselSlide.children[0].clientWidth;
-        const cardMarginRight = parseFloat(getComputedStyle(carouselSlide.children[0]).marginRight);
-        const cardMarginLeft = parseFloat(getComputedStyle(carouselSlide.children[0]).marginLeft);
-        const totalCardWidth = cardWidth + cardMarginRight + cardMarginLeft;
-        carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
-      };
-  
-      prevBtn.addEventListener('click', () => {
-        const step = getStep();
-        currentCard = (currentCard + step) % carouselSlide.children.length;
-        moveCarousel();
-      });
-  
-      nextBtn.addEventListener('click', () => {
-        const step = getStep();
-        currentCard = (currentCard - step + carouselSlide.children.length) % carouselSlide.children.length;
-        moveCarousel();
-      });
-  
-      window.addEventListener('resize', moveCarousel);
-  
-      moveCarousel(); // Initialize carousel position on load
-    }
-  </script>
-   -->
-  
+      function togglePage(buttonId, pageId) {
+        var button = document.getElementById(buttonId);
+        var page = document.getElementById(pageId);
 
-   <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
-    });
-  
-    function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
-      const prevBtn = document.getElementById(prevBtnId);
-      const nextBtn = document.getElementById(nextBtnId);
-      const carouselSlide = document.querySelector(carouselClass);
-  
-      let currentCard = 0;
-  
-      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
-  
-      const moveCarousel = () => {
-        const step = getStep();
-        const cardStyle = getComputedStyle(carouselSlide.children[0]);
-        const cardWidth = carouselSlide.children[0].offsetWidth; // Include margin in width calculation
-        const totalCardWidth = cardWidth + (step > 1 ? parseFloat(cardStyle.marginRight) : 0); // Add margin only for desktop view
-        carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
-      };
-  
-      prevBtn.addEventListener('click', () => {
-        const step = getStep();
-        if (step === 1 && currentCard === 0) {
-          currentCard = carouselSlide.children.length - 1; // Loop to last slide in single step mode
-        } else {
-          currentCard = Math.max(0, currentCard - step);
+        if (button && page) {
+          button.addEventListener('click', function () {
+            page.style.display = 'block';
+            if (displayMobileContent) {
+              displayMobileContent.style.display = 'none';
+            }
+          });
         }
-        moveCarousel();
+      }
+
+      if (allCoursesButton && allCoursesContent) {
+        allCoursesButton.addEventListener('click', function () {
+          allCoursesContent.style.display = allCoursesContent.style.display === 'none' ? 'block' : 'none';
+          if (displayMobileContent) {
+            displayMobileContent.style.display = 'block';
+          }
+        });
+      }
+
+      if (hamburgIconButton && mobileHamburgSubmenu) {
+        hamburgIconButton.addEventListener('click', function () {
+          mobileHamburgSubmenu.style.display = mobileHamburgSubmenu.style.display === 'none' ? 'block' : 'none';
+        });
+      }
+
+      var backArrows = document.querySelectorAll('.back-arrow');
+      backArrows.forEach(function (arrow) {
+        arrow.addEventListener('click', function () {
+          var parentPage = this.closest('.software, .networking-page, .digital-page, .data-page, .learning, .cybers');
+          if (parentPage) {
+            parentPage.style.display = 'none';
+          }
+          if (displayMobileContent) {
+            displayMobileContent.style.display = 'block';
+          }
+        });
       });
-  
-      nextBtn.addEventListener('click', () => {
-        const step = getStep();
-        if (step === 1 && currentCard === carouselSlide.children.length - 1) {
-          currentCard = 0; // Loop back to first slide in single step mode
+
+      if (backArrowAllCourses) {
+        backArrowAllCourses.addEventListener('click', function () {
+          if (displayMobileContent) {
+            displayMobileContent.style.display = 'none';
+          }
+        });
+      }
+
+      togglePage('software', 'software-page');
+      togglePage('networks', 'networking-page');
+      togglePage('digital', 'digital-page');
+      togglePage('data', 'data-page');
+      togglePage('machine', 'learning');
+      togglePage('cyber', 'cybers');
+
+
+      var women = document.getElementById("women");
+      var displayWomenJob = document.getElementById("women-job");
+      var isVisible = false;
+
+      women.addEventListener("click", function () {
+        if (isVisible) {
+          displayWomenJob.style.display = "none";
         } else {
-          currentCard = Math.min(carouselSlide.children.length - step, currentCard + step);
+          displayWomenJob.style.display = "block";
         }
-        moveCarousel();
+        isVisible = !isVisible;
       });
-  
-      window.addEventListener('resize', moveCarousel);
-  
-      moveCarousel(); // Initialize carousel position on load
-    }
+    });
   </script>
-  
-  
+
+
+
+
+
+
+
+
 </body>
 
 </html>
