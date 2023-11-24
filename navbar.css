@@ -266,8 +266,8 @@ ul li {
     background-color: #007d6f;
     color: white;
     position: fixed;
-    left: 96%;
-    bottom: 11%;
+    right: 15px;
+    bottom: 6%;
     display: none;
     cursor: pointer;
 }
@@ -281,7 +281,7 @@ ul li {
 
 @media screen and (max-width:480px) {
     .arrow-up {
-        left: 85%;
+        /* left: 85%; */
         bottom: 8%;
     }
 }
@@ -902,10 +902,15 @@ ul li {
     font-family: poppins;
 }
 
+.mobile-hamburg-submenu ul li a {
+    text-decoration: none;
+    color: #384252;
+}
+
 
 /* allcoursespage */
 #allcoursescontent {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 100%;
 }
@@ -965,7 +970,7 @@ ul li {
 .allcourses-menu-section {
     /* border: 1px solid black; */
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     padding: 10px 0px 10px 0px;
 }
 
@@ -1125,6 +1130,8 @@ ul li {
     width: 100%;
     padding: 10px 0px 10px 0px;
     background-color: #f3f4f6;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .software-menu-list {
@@ -1158,8 +1165,13 @@ ul li {
     cursor: pointer;
 }
 
-.software-menu-submenu ul li {
+.software-menu-submenu ul li a {
     padding-left: 10px;
+    color: #384252;
+}
+
+.software-menu-submenu ul a {
+    text-decoration: none;
 }
 
 .software-menu-job-program {
@@ -1207,8 +1219,13 @@ ul li {
     border-radius: 25px;
 }
 
+.software-menu-submenu a {
+    text-decoration: none;
+}
+
 .software-menu-submenu p {
     padding-left: 20px;
+    color: #384252;
 }
 
 .software-master-program {
@@ -1259,9 +1276,15 @@ ul li {
     padding-left: 15px;
 }
 
+.software-master-program-box-one a {
+    text-decoration: none;
+    color: #384252;
+}
+
 .software-menu-job-box-one p {
     font-size: 14px;
     line-height: 1.2;
+
 }
 
 .duration {
@@ -1316,13 +1339,11 @@ ul li {
 }
 
 .banner-section>h1 {
-    padding-top: 16px;
-    font-size: 65px;
+    font-size: calc(2.5vw + 1rem);
     font-weight: 800;
-    color: #082A5E;
-    line-height: 70px;
-    width: 97%;
-    font-family: Nunito;
+    line-height: 1.1;
+    padding-top: 16px;
+    color: #272566;
 }
 
 .banner-section>p {
@@ -1432,12 +1453,6 @@ ul li {
 
 
 @media (min-width: 1281px) and (max-width: 1440px) {
-    .banner-section>h1 {
-        font-size: 55px;
-        width: 93%;
-        line-height: 56px;
-    }
-
     .homepage-left {
         width: 48%;
     }
@@ -1448,12 +1463,6 @@ ul li {
 }
 
 @media (min-width: 1150px) and (max-width: 1280px) {
-    .banner-section>h1 {
-        font-size: 49px;
-        width: 93%;
-        line-height: 56px;
-    }
-
     .homepage-left {
         width: 48%;
     }
@@ -1475,9 +1484,7 @@ ul li {
         padding: 40px 0px 40px 0px;
     }
 
-    .banner-section>h1 {
-        font-size: 25px;
-    }
+   
 
     .homepage-left {
         width: 50%;
@@ -1502,10 +1509,7 @@ ul li {
 }
 
 @media screen and (min-width:481px) and (max-width:767px) {
-    .banner-section>h1 {
-        font-size: 25px;
-    }
-
+  
     .homePage {
         flex-direction: column;
         padding: 50px 0px 50px 0px;
@@ -1569,10 +1573,14 @@ ul li {
         align-items: center;
     }
 
-    .banner-section>h1 {
-        font-size: 30px;
-        line-height: 40px;
+    .banner-section > h1{
+        line-height: 1.3;
     }
+
+    .banner-section > p{
+        width: 100%;
+    }
+
 }
 
 
@@ -1609,10 +1617,11 @@ ul li {
 }
 
 .guarentee-content h2 {
-    font-size: 50px;
     color: #272566;
-    font-family: nunito;
-    font-weight: 800;
+  font-family: nunito;
+  font-weight: 800;
+  font-size: calc(1.78vw + 1rem);
+  line-height: 1.2;
 }
 
 .content-info {
@@ -1736,9 +1745,7 @@ ul li {
         padding: 0px;
     }
 
-    .guarentee-content h2 {
-        font-size: 50px;
-    }
+  
 }
 
 @media (min-width: 481px) and (max-width: 1440px) {
@@ -1755,9 +1762,6 @@ ul li {
         right: 10px;
     }
 
-    .guarentee-content h2 {
-        font-size: 45px;
-    }
 }
 
 @media (min-width:1150px) and (max-width:1280px) {
@@ -1798,14 +1802,6 @@ ul li {
         width: 100%;
         /* border: 1px solid black; */
         padding: 35px 0px 0px 0px;
-    }
-
-    .fa-play-circle {
-        /* font-size: 40px; */
-    }
-
-    .guarentee-content h2 {
-        font-size: 27px;
     }
 
     .guarentee-rating {
@@ -1902,12 +1898,6 @@ ul li {
         right: 6px;
     }
 }
-
-
-
-
-
-
 
 /* cisco-training */
 
@@ -2097,11 +2087,11 @@ textarea.cisco-textarea::placeholder {
 }
 
 .cisco-training-info>h3 {
-    font-size: 49px;
     color: #272566;
     font-family: nunito;
     font-weight: 800;
-
+    font-size: calc(1.68vw + 1rem);
+    line-height: 1.2;
 }
 
 .cicso-p {
@@ -3367,6 +3357,7 @@ button:hover {
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
+
         &::-webkit-scrollbar {
             display: none;
         }
@@ -3375,57 +3366,57 @@ button:hover {
         scrollbar-width: none;
     }
 
-    
 
-.job-guarentee-box-one {
-    width: auto;
-    margin-right: 30px;
-    /* width: 100%; */
-    flex-direction: column;
-}
 
-.job-guarentee-program h4 {
-    font-size: 27px;
-}
+    .job-guarentee-box-one {
+        width: auto;
+        margin-right: 30px;
+        /* width: 100%; */
+        flex-direction: column;
+    }
 
-.job-guarentee-item-one {
-    width: 100%;
-}
+    .job-guarentee-program h4 {
+        font-size: 27px;
+    }
 
-.job-guarentee-section-one {
-    width: 100%;
-}
+    .job-guarentee-item-one {
+        width: 100%;
+    }
 
-.placement-item-one {
-    width: 45%;
-}
+    .job-guarentee-section-one {
+        width: 100%;
+    }
 
-/* .job-two {
+    .placement-item-one {
+        width: 45%;
+    }
+
+    /* .job-two {
     margin-top: 30px;
 } */
 
-.view-more-button {
-    width: 45%;
-    font-size: 14px;
-    height: 48px !important;
-    padding: 10px 0px 10px 0px;
-}
+    .view-more-button {
+        width: 45%;
+        font-size: 14px;
+        height: 48px !important;
+        padding: 10px 0px 10px 0px;
+    }
 
-.view-more-button i {
-    font-size: 14px;
-}
+    .view-more-button i {
+        font-size: 14px;
+    }
 
-.job-guarentee-program {
-    padding: 0px;
-}
+    .job-guarentee-program {
+        padding: 0px;
+    }
 
-.guarantee-courses-name ul li {
-    flex: 0 0 45%;
-}
+    .guarantee-courses-name ul li {
+        flex: 0 0 45%;
+    }
 
-.guarantee-carousael-seection {
-    display: flex;
-}
+    .guarantee-carousael-seection {
+        display: flex;
+    }
 
 }
 
@@ -4767,8 +4758,8 @@ footer {
     width: 301px;
     height: 212px;
     padding-left: 135px;
-    bottom: 5%;
-    left: 1.5%;
+    bottom: 2%;
+    left: 2%;
     margin-left: -150px;
     z-index: 100;
 }
@@ -9338,15 +9329,13 @@ footer {
     align-items: center;
     position: fixed;
     bottom: 0%;
+    background-color: #272566;
 }
 
 .sticky-form {
-    bottom: 0;
-    background-color: #f2f2f2;
-    padding: 10px;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     width: 75%;
+    height: 40px;
 }
 
 .sticky-form .form-row {
@@ -9358,10 +9347,11 @@ footer {
 .sticky-form input,
 .sticky-form button {
     width: 15%;
-    margin: 0 5px;
-    padding: 10px;
-    font-size: 16px;
+    padding-left: 10px;
     font-family: mulish;
+    height: 40px;
+    border: none;
+    box-shadow: 0px -1px 4px rgb(76, 175, 80), 0px -2px 13px -3px rgb(8, 42, 94), inset 0px 2px 0px rgb(76, 175, 80);
 }
 
 .sticky-form button {
@@ -9369,15 +9359,38 @@ footer {
     color: white;
     border: none;
     cursor: pointer;
-}
-
-.sticky-form button:hover {
-    background-color: #45a049;
-}
-
-.sticky-form input {
-    border: 1px solid #ccc;
+    margin: 0px;
+    padding: 10px 20px;
     border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+}
+
+.sticky-form button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.6) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    /* Creating the light ray effect */
+    animation: sweep 2s infinite;
+    border-radius: 50%;
+}
+
+@keyframes sweep {
+    0% {
+        transform: rotate(30deg) translateX(-100%);
+    }
+
+    100% {
+        transform: rotate(30deg) translateX(300%);
+    }
 }
 
 @media screen and (max-width: 600px) {

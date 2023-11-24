@@ -245,6 +245,8 @@
 </head>
 
 <body>
+
+
   <nav class="mobile-navbar">
     <div class="mobile-nav">
       <div class="moblie-nav-left">
@@ -259,54 +261,40 @@
         </div>
       </div>
     </div>
-    <div style="display: none;" id="allcoursescontent" class="allcoursescontent">
-      <div id="displaymobilecontent" class="displaymobilecontent">
-        <main class="allcoursespage">
-          <div class="allcourses-heading">
-            <div class="allcourses-heading-page">
-              <div class="allcourses-heading-left">
-                <i class="fa-solid fa-arrow-left"></i>
-              </div>
-              <div class="allcourses-heading-right">
-                <p>All Courses</p>
-              </div>
+    <div style="display: none;" id="displaymobilecontent" class="displaymobilecontent">
+      <main class="allcoursespage">
+        <div class="allcourses-heading">
+          <div class="allcourses-heading-page">
+            <div class="allcourses-heading-left">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="allcourses-heading-right">
+              <p>All Courses</p>
             </div>
           </div>
-        </main>
-        <section class="allcourses-menu-section">
-          <div class="allcourses-menu-list">
-            <ul>
-              <a href="#">
-                <li id="software">Software Development <span><i class="fa-solid fa-angle-right"></i></span> </li>
-              </a>
-              <a href="#">
-                <li id="networks">Networking infrastructure <span id="allcoursespage"><i
-                      class="fa-solid fa-angle-right"></i></span></li>
-              </a>
-              <a href="#">
-                <li id="digital">Digital Marketing <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
-              <a href="#">
-                <li id="data">Data science <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
-              </a>
-              <a href="#">
-                <li id="machine">Machine Learning <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
-              </a>
-              <a href="#">
-                <li id="cyber">Cyber security <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
-              </a>
-            </ul>
-          </div>
-        </section>
-      </div>
+        </div>
+      </main>
+      <section class="allcourses-menu-section">
+        <div class="allcourses-menu-list">
+          <ul>
+            <li id="software">Software Development <span><i class="fa-solid fa-angle-right"></i></span> </li>
+            <li id="networks">Networking infrastructure <span id="allcoursespage"><i
+                  class="fa-solid fa-angle-right"></i></span></li>
+            <li id="digital">Digital Marketing <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i>
+            </li>
+            <li id="data">Data science <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
+            <li id="machine">Machine Learning <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
+            <li id="cyber">Cyber security <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
+          </ul>
+        </div>
+      </section>
     </div>
     <div id="software-page" style="display:none" class="software-pages">
       <main class="software">
         <div class="software-heading">
           <div class="software-heading-page">
             <div class="software-heading-left back-arrow">
-              <a href=""> <i class="fa-solid fa-arrow-left"></i></a>
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="software-heading-right">
               <p style="padding-left: 10px; ">Software Development</p>
@@ -320,17 +308,16 @@
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu">
               <ul>
-                <li>Data Science with R Training</li>
-                <li>Data Science with Python Training</li>
-                <li>Data Science with SAS Training</li>
-                <li>Data Science with Tableau Training</li>
-                <li>Data Science with Power BI Training</li>
-                <li>Data Analyst Training</li>
-                <li>Natural Language Processing NLP Training</li>
+                <li><a href="">Data Science with R Training</a></li>
+                <li><a href="">Data Science with Python Training</a></li>
+                <li><a href="">Data Science with SAS Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
               </ul>
             </div>
           </div>
-
           <div class="software-menu-job-program">
             <h4>Job guarantee Program</h4>
             <div style="width: 90%; margin: auto; padding-top: 10px;">
@@ -339,7 +326,8 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MERN Master</p>
+                  <a href=""><p>MERN Master</p></a>
+             
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -347,7 +335,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MEAN Master</p>
+                  <a href="">
+                    <p>MEAN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -355,13 +345,14 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>Java FullStack</p>
+                  <a href="">
+                    <p>Java FullStack</p>
+                  </a>
                 </div>
               </div>
             </div>
 
           </div>
-
           <div class="software-master-program">
             <h4>Master's program</h4>
             <div style="width: 90%; margin: auto; padding-top: 10px;">
@@ -371,8 +362,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -383,8 +378,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -395,8 +394,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -410,8 +413,8 @@
       <main class="software">
         <div class="software-heading">
           <div class="software-heading-page">
-            <div class="software-heading-left">
-              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            <div class="software-heading-left back-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="software-heading-right">
               <p>Networking infrastructure</p>
@@ -425,13 +428,13 @@
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu">
               <ul>
-                <li>Data Science with R Training</li>
-                <li>Data Science with Python Training</li>
-                <li>Data Science with SAS Training</li>
-                <li>Data Science with Tableau Training</li>
-                <li>Data Science with Power BI Training</li>
-                <li>Data Analyst Training</li>
-                <li>Natural Language Processing NLP Training</li>
+                <li><a href="">Data Science with R Training</a></li>
+                <li><a href="">Data Science with Python Training</a></li>
+                <li><a href="">Data Science with SAS Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
               </ul>
             </div>
           </div>
@@ -444,7 +447,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MERN Master</p>
+                  <a href="">
+                    <p>MERN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -452,7 +457,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MEAN Master</p>
+                  <a href="">
+                    <p>MEAN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -460,7 +467,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>Java FullStack</p>
+                  <a href="">
+                    <p>Java FullStack</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -476,8 +485,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -488,8 +501,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -500,8 +517,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -516,8 +537,8 @@
       <main class="software">
         <div class="software-heading">
           <div class="software-heading-page">
-            <div class="software-heading-left">
-              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            <div class="software-heading-left back-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="software-heading-right">
               <p style="padding-left: 33px;">Digital Marketing</p>
@@ -532,13 +553,13 @@
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu">
               <ul>
-                <li>Data Science with R Training</li>
-                <li>Data Science with Python Training</li>
-                <li>Data Science with SAS Training</li>
-                <li>Data Science with Tableau Training</li>
-                <li>Data Science with Power BI Training</li>
-                <li>Data Analyst Training</li>
-                <li>Natural Language Processing NLP Training</li>
+                <li><a href="">Data Science with R Training</a></li>
+                <li><a href="">Data Science with Python Training</a></li>
+                <li><a href="">Data Science with SAS Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
               </ul>
             </div>
           </div>
@@ -551,7 +572,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MERN Master</p>
+                  <a href="">
+                    <p>MERN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -559,7 +582,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MEAN Master</p>
+                  <a href="">
+                    <p>MEAN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -567,7 +592,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>Java FullStack</p>
+                  <a href="">
+                    <p>Java FullStack</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -583,8 +610,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -595,8 +626,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -607,8 +642,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -622,8 +661,8 @@
       <main class="software">
         <div class="software-heading">
           <div class="software-heading-page">
-            <div class="software-heading-left">
-              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            <div class="software-heading-left back-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="software-heading-right">
               <p style="padding-left: 48px;">Data science</p>
@@ -638,13 +677,13 @@
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu">
               <ul>
-                <li>Data Science with R Training</li>
-                <li>Data Science with Python Training</li>
-                <li>Data Science with SAS Training</li>
-                <li>Data Science with Tableau Training</li>
-                <li>Data Science with Power BI Training</li>
-                <li>Data Analyst Training</li>
-                <li>Natural Language Processing NLP Training</li>
+                <li><a href="">Data Science with R Training</a></li>
+                <li><a href="">Data Science with Python Training</a></li>
+                <li><a href="">Data Science with SAS Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
               </ul>
             </div>
           </div>
@@ -657,7 +696,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MERN Master</p>
+                  <a href="">
+                    <p>MERN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -665,7 +706,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MEAN Master</p>
+                  <a href="">
+                    <p>MEAN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -673,13 +716,14 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>Java FullStack</p>
+                  <a href="">
+                    <p>Java FullStack</p>
+                  </a>
                 </div>
               </div>
             </div>
 
           </div>
-
           <div class="software-master-program">
             <h4>Master's program</h4>
             <div style="width: 90%; margin: auto; padding-top: 10px;">
@@ -689,8 +733,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -701,8 +749,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -713,8 +765,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -728,8 +784,8 @@
       <main class="software">
         <div class="software-heading">
           <div class="software-heading-page">
-            <div class="software-heading-left">
-              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            <div class="software-heading-left back-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="software-heading-right">
               <p style="padding-left: 33px;">Machine Learning</p>
@@ -744,13 +800,13 @@
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu">
               <ul>
-                <li>Data Science with R Training</li>
-                <li>Data Science with Python Training</li>
-                <li>Data Science with SAS Training</li>
-                <li>Data Science with Tableau Training</li>
-                <li>Data Science with Power BI Training</li>
-                <li>Data Analyst Training</li>
-                <li>Natural Language Processing NLP Training</li>
+                <li><a href="">Data Science with R Training</a></li>
+                <li><a href="">Data Science with Python Training</a></li>
+                <li><a href="">Data Science with SAS Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
               </ul>
             </div>
           </div>
@@ -763,7 +819,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MERN Master</p>
+                  <a href="">
+                    <p>MERN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -771,7 +829,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MEAN Master</p>
+                  <a href="">
+                    <p>MEAN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -779,7 +839,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>Java FullStack</p>
+                  <a href="">
+                    <p>Java FullStack</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -795,8 +857,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -807,8 +873,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -819,8 +889,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -834,8 +908,8 @@
       <main class="software">
         <div class="software-heading">
           <div class="software-heading-page">
-            <div class="software-heading-left">
-              <a href="index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            <div class="software-heading-left back-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="software-heading-right">
               <p style="padding-left: 48px;">Cyber Security</p>
@@ -849,13 +923,13 @@
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu">
               <ul>
-                <li>Data Science with R Training</li>
-                <li>Data Science with Python Training</li>
-                <li>Data Science with SAS Training</li>
-                <li>Data Science with Tableau Training</li>
-                <li>Data Science with Power BI Training</li>
-                <li>Data Analyst Training</li>
-                <li>Natural Language Processing NLP Training</li>
+                <li><a href="">Data Science with R Training</a></li>
+                <li><a href="">Data Science with Python Training</a></li>
+                <li><a href="">Data Science with SAS Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="">Data Science with Tableau Training</a></li>
               </ul>
             </div>
           </div>
@@ -868,7 +942,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MERN Master</p>
+                  <a href="">
+                    <p>MERN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -876,7 +952,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>MEAN Master</p>
+                  <a href="">
+                    <p>MEAN Master</p>
+                  </a>
                 </div>
               </div>
               <div class="software-menu-job-submenu">
@@ -884,7 +962,9 @@
                   <div class="software-menu-job-submenu-box">
 
                   </div>
-                  <p>Java FullStack</p>
+                  <a href="">
+                    <p>Java FullStack</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -900,8 +980,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -912,8 +996,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -924,8 +1012,12 @@
 
                   </div>
                   <div class="software-master-program-box-one">
-                    <p>Advanced Digital Marketing</p>
-                    <p class="duration">Duration - 6 months</p>
+                    <a href="">
+                      <p>Advanced Digital Marketing</p>
+                    </a>
+                    <a href="">
+                      <p class="duration">Duration - 6 months</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -941,7 +1033,7 @@
         <div class="mobile-hamburg-click-section-heading">
           <div class="mobile-hamburg-click-section-heading-page">
             <div class="mobile-hamburg-click-section-heading-left">
-              <a href=""> <i style="padding-top: 10px;" class="fa-solid fa-arrow-left"></i></a>
+              <i style="padding-top: 10px;" class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="mobile-hamburg-click-section-heading-right">
               <p style="padding-left: 18px; padding-top: 10px;">MENU</p>
@@ -960,95 +1052,83 @@
                   <li style="padding-top: 15px">Content-one</li>
                   <li>Content-two</li>
                 </ul>
-
               </li>
-              <li>Career Restart</li>
-              <li>Placement</li>
-              <li>Review</li>
-              <li>Student Corner</li>
-              <li>About</li>
-              <li>About</li>
-              <li> Blockchain</li>
+              <li><a href="">Career Restart</a></li>
+              <li><a href="">Placement</a></li>
+              <li><a href="">Review</a></li>
+              <li><a href="">Student Corner</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Blockchain</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </nav>
-
+  
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var displayMobileContent = document.getElementById('displaymobilecontent');
-      var allCoursesButton = document.getElementById('allcourses');
-      var hamburgIconButton = document.getElementById('hamburg-icon');
-      var allCoursesContent = document.getElementById('allcoursescontent');
-      var mobileHamburgSubmenu = document.getElementById('mobile-view');
-      var backArrowAllCourses = document.querySelector('.allcourses-heading-left');
-
-      if (allCoursesContent) {
-        allCoursesContent.style.display = 'none';
-      }
-      if (mobileHamburgSubmenu) {
-        mobileHamburgSubmenu.style.display = 'none';
+      function toggleDisplay(elementId, shouldShow) {
+        var element = document.getElementById(elementId);
+        if (element) {
+          element.style.display = shouldShow ? 'block' : 'none';
+        }
       }
 
-      function togglePage(buttonId, pageId) {
-        var button = document.getElementById(buttonId);
-        var page = document.getElementById(pageId);
-
-        if (button && page) {
-          button.addEventListener('click', function () {
-            page.style.display = 'block';
-            if (displayMobileContent) {
-              displayMobileContent.style.display = 'none';
-            }
+      function setupCourseNavigation(courseId, pageId) {
+        var courseItem = document.getElementById(courseId);
+        if (courseItem) {
+          courseItem.addEventListener('click', function () {
+            toggleDisplay('displaymobilecontent', false);
+            toggleDisplay(pageId, true);
           });
         }
       }
 
-      if (allCoursesButton && allCoursesContent) {
+      setupCourseNavigation('software', 'software-page');
+      setupCourseNavigation('networks', 'networking-page');
+      setupCourseNavigation('digital', 'digital-page');
+      setupCourseNavigation('data', 'data-page');
+      setupCourseNavigation('machine', 'learning');
+      setupCourseNavigation('cyber', 'cybers');
+
+      var allCoursesButton = document.getElementById('allcourses');
+      if (allCoursesButton) {
         allCoursesButton.addEventListener('click', function () {
-          allCoursesContent.style.display = allCoursesContent.style.display === 'none' ? 'block' : 'none';
-          if (displayMobileContent) {
-            displayMobileContent.style.display = 'block';
-          }
+          toggleDisplay('displaymobilecontent', true);
         });
       }
 
-      if (hamburgIconButton && mobileHamburgSubmenu) {
+      var hamburgIconButton = document.getElementById('hamburg-icon');
+      if (hamburgIconButton) {
         hamburgIconButton.addEventListener('click', function () {
-          mobileHamburgSubmenu.style.display = mobileHamburgSubmenu.style.display === 'none' ? 'block' : 'none';
+          toggleDisplay('mobile-view', true);
         });
       }
 
-      var backArrows = document.querySelectorAll('.back-arrow');
-      backArrows.forEach(function (arrow) {
-        arrow.addEventListener('click', function () {
-          var parentPage = this.closest('.software, .networking-page, .digital-page, .data-page, .learning, .cybers');
-          if (parentPage) {
-            parentPage.style.display = 'none';
-          }
-          if (displayMobileContent) {
-            displayMobileContent.style.display = 'block';
-          }
-        });
-      });
-
+      var backArrowAllCourses = document.querySelector('.allcourses-heading-left i');
       if (backArrowAllCourses) {
         backArrowAllCourses.addEventListener('click', function () {
-          if (displayMobileContent) {
-            displayMobileContent.style.display = 'none';
-          }
+          toggleDisplay('displaymobilecontent', false);
         });
       }
 
-      togglePage('software', 'software-page');
-      togglePage('networks', 'networking-page');
-      togglePage('digital', 'digital-page');
-      togglePage('data', 'data-page');
-      togglePage('machine', 'learning');
-      togglePage('cyber', 'cybers');
+      var backArrowMobileView = document.querySelector('.mobile-hamburg-click-section-heading-left i');
+      if (backArrowMobileView) {
+        backArrowMobileView.addEventListener('click', function () {
+          toggleDisplay('mobile-view', false);
+        });
+      }
 
+      var courseBackArrows = document.querySelectorAll('.software-pages .back-arrow, .networking-page .back-arrow, .digital-page .back-arrow, .data-page .back-arrow, .learning .back-arrow, .cybers .back-arrow');
+      courseBackArrows.forEach(function (arrow) {
+        arrow.addEventListener('click', function () {
+          var parentPage = this.closest('div[id]');
+          toggleDisplay(parentPage.id, false);
+          toggleDisplay('displaymobilecontent', true);
+        });
+      });
 
       var women = document.getElementById("women");
       var displayWomenJob = document.getElementById("women-job");
@@ -1068,8 +1148,7 @@
 
 
 
-
-
+  <!-- <script src="server.js"></script> -->
 
 
 </body>
