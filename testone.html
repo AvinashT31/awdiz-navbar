@@ -1,1156 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="/fontawesome/css/brands.css" rel="stylesheet">
-  <link href="/fontawesome/css/solid.css" rel="stylesheet">
   <title>Document</title>
-
-
   <style>
-    .mobile-navbar {
-      /* border: 1px solid black; */
-      width: 100%;
-      /* height: 70px; */
-      padding: 10px 0px 10px 0px;
-      position: sticky;
-      top: 0%;
-      z-index: 100;
+    .navbar {
+    /* border: 1px solid black; */
+    height: 72px;
+    width: 100%;
+    /* position: sticky;
+    top: 0%;
+    z-index: 1000; */
+    transition: top 0.3s;
+}
+
+.nav {
+    /* border: 1px solid black; */
+    padding: 10px 0px 10px 0px;
+    width: 86%;
+    margin: auto;
+}
+
+.navmenu {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: auto;
+    float: left;
+    max-height: 72px;
+}
+
+.navone {
+    /* border: 1px solid black; */
+
+    float: left;
+}
+
+.navtwo {
+    /* border: 1px solid black; */
+    width: 50%;
+    padding: 25px 0px 20px 0px;
+    float: right;
+}
+
+.navlogo {
+    /* border: 1px solid black; */
+    width: 170px;
+    height: 60px;
+    float: left;
+    margin: 12px 0 0 0;
+}
+
+
+
+.navdropdown {
+    float: left;
+    /* border: 1px solid black; */
+    margin-left: 65px;
+    margin-top: 15px;
+}
+
+.navcourses {
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272566;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    font-family: mulish;
+    font-weight: 550;
+}
+
+.navtwo ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navtwo ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: mulish;
+}
+
+
+/* Quckform */
+
+.mobile-modal-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+1
+
+.mobile-view-button {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    left: 250px;
+    width: 10%;
+}
+
+@media (max-width: 768px) {
+    .mobile-view-button {
+        display: block;
     }
 
-    .mobile-nav {
-      /* border: 1px solid black; */
-      width: 90%;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
+    #quickForm {
+        display: none;
     }
 
-    .moblie-nav-left {
-      /* border: 1px solid black; */
-      width: 35%;
+    #quickForm.sticky {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
+}
 
-    .moblie-nav-left img {
-      max-width: 100%;
+
+
+/* show-content */
+
+.show-content {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    height: auto;
+    background-color: white;
+}
+
+.show-item {
+    /* border: 1px solid black; */
+    width: 72%;
+    margin: auto;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    z-index: 100;
+}
+
+.show-item-left {
+    /* border: 1px solid black; */
+    width: 30%;
+    padding: 25px 0px 25px 0px;
+    line-height: 2.6;
+    background-color: #edf8fa;
+}
+
+.show-item-left h3 {
+    padding-left: 15px;
+    font-family: nunito;
+    font-size: 24px;
+}
+
+.show-item-left ul {
+    line-height: 2.6;
+    cursor: pointer;
+}
+
+.show-item-left ul li {
+    list-style: none;
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'poppins';
+    font-size: 15px;
+}
+
+.show-item-left i {
+    margin-left: 50px;
+}
+
+
+.show-item-left ul li:hover {
+    background-color: #ffffff;
+    color: #272566;
+}
+
+.show-item-left ul li:hover i {
+    color: #272566 !important;
+}
+
+.show-item-right {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+}
+
+
+.show-item-content {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 515px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-item-one {
+    /* border: 1px solid black; */
+    width: 33%;
+    height: auto;
+    padding: 20px 10px 20px 15px;
+    line-height: 2.6;
+}
+
+.show-item-one>h3 {
+    font-size: 24px;
+    font-family: 'Nunito';
+    padding-top: 5px;
+}
+
+.show-item-one ul li {
+    list-style: none;
+    font-size: 15px;
+    font-family: poppins;
+}
+
+.show-item-two {
+    /* border: 1px solid black; */
+    width: 33%;
+    height: auto;
+    padding: 20px 10px 20px 15px;
+    line-height: 2.6;
+}
+
+.show-item-two>h3 {
+    font-size: 24px;
+    font-family: 'Nunito';
+    padding-top: 5px;
+}
+
+.show-item-two-container {
+    /* border: 1px solid black; */
+    width: auto;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.show-item-two-container-box {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.show-item-two-container p {
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: 'poppins';
+}
+
+.show-item-three {
+    /* border: 1px solid black; */
+    width: 33%;
+    height: auto;
+    padding: 20px 10px 20px 15px;
+    line-height: 2.6;
+}
+
+.show-item-three>h3 {
+    font-size: 24px;
+    font-family: 'Nunito';
+    padding-top: 5px;
+}
+
+
+.show-item-container {
+    /* border: 1px solid black; */
+    width: auto;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #edf8fa;
+}
+
+.show-item-container-box {
+    border: 1px solid black;
+    width: 35%;
+    height: 70px;
+    background-color: white;
+
+}
+
+.show-item-container-box-one {
+    /* border: 1px solid black; */
+    width: 60%;
+    line-height: 1.2
+}
+
+.show-item-container-box-one p {
+    font-size: 15px;
+    font-family: 'poppins';
+}
+
+.item {
+    padding-top: 25px;
+}
+
+.show-item-right-button {
+    /* border: 1px solid lightblue; */
+    padding: 0px 10px 0px 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+.show-item-right-button button {
+    border: 1px solid blue;
+    width: 23%;
+    height: 45px;
+    cursor: pointer;
+    color: #272566;
+    font-weight: 550;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: hind;
+}
+
+.show-item-right-button button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+#hover-content {
+    display: none;
+    flex: 0;
+    margin-top: 17px;
+}
+
+#hover-content.flex-display {
+    display: flex;
+    flex: 1;
+}
+
+@media screen and (max-width:480px) {
+    .navbar {
+        display: none;
+        visibility: hidden;
     }
+}
 
-    .moblie-nav-right {
-      /* border: 1px solid black; */
-      padding: 5px 0px 5px 0px;
-      width: 55%;
-      display: flex;
-      justify-content: space-between;
+
+.home-3 .topbar-section {
+    background: #03033f;
+    min-height: 65px;
+}
+
+.topbar-section {
+    position: relative;
+    /* max-height: 52px; */
+    background: #007d6f;
+    transition: margin-top 0.3s, 
+    max-height 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+    .topbar-section {
+        display: none !important
     }
+}
 
-    .mobile-nav-right-one {
-      border: 1px solid black;
-      width: 65%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 550;
-      background-color: #272566;
-      border-radius: 5px;
-      color: white;
-      font-family: nunito;
-    }
+.topbar-section .topbar-inner {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    font-family: mulish;
+}
 
-    .mobile-nav-right-one a {
-      text-decoration: none;
-      color: black;
-    }
+.pull-left {
+    float: left
+}
 
-    .mobile-nav-right-two {
-      /* border: 1px solid black; */
-      width: 25%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.pull-right {
+    float: right
+}
 
-    .mobile {
-      /* border: 1px solid black; */
-      width: 100%;
-      height: 100%
-    }
+ul {
+    margin: 0;
+    padding: 0
+}
 
-    .mobile-hamburg-click-section {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0px;
-      background-color: white;
-      display: none;
-      z-index: 500;
-      background-color: white;
-    }
+ul li {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 24px;
+    color: #384252;
+    padding-left: 18px;
+    position: relative
+}
 
-    .mobile-hamburg-click-section-heading {
-      /* border: 1px solid black; */
-      width: 100%;
-      height: auto;
-      background-color: #f3f4f6;
-      /* box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 2px 6px; */
-    }
+.topbar-inner ul li a {
+    color: white;
+}
 
-    .mobile-hamburg-click-section-heading-page {
-      /* border: 1px solid black; */
-      width: 90%;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-    }
+.topbar-inner ul li:first-child {
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+    color: white;
+    font-size: 14px;
+    padding-top: 12px;
+}
 
-    .mobile-hamburg-click-section-heading-left {
-      /* border: 1px solid black; */
-      width: 30%;
-      font-size: 20px;
-    }
+.topbar-inner ul li {
+    font-size: 14px;
+    border-left: 1px solid #cccccc40;
+    color: black;
+    font-weight: 400;
+    padding: 6px 12px 6px 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    line-height: 24px;
+    position: relative;
+}
 
-    .mobile-hamburg-click-section-heading-left i {
-      color: #272566;
-    }
+.top-bar-left ul li,
+.top-bar-right ul li {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+}
 
-    .mobile-hamburg-click-section-heading-right {
-      /* border: 1px solid black; */
-      width: 70%;
-      display: flex;
-      padding-bottom: 10px;
-      align-items: center;
-      font-weight: 550;
-    }
+.top-bar-right ul li {
+    margin: 0;
+    font-size: 14px;
+}
 
+.top-bar-right ul li.button {
+    padding: 0 0 0 15px
+}
 
-    .mobile-hamburg-menu-list {
-      /* border: 1px solid black; */
-      padding: 10px 0px 0px 0px;
-      position: relative;
-      z-index: 100;
-      background: white;
-      height: 350px;
-    }
+.top-bar-right ul li.button a {
+    padding: 6px 14px 6px 14px;
+    border: 2px solid;
+    border-radius: 20px
+}
 
-    .mobile-hamburg-submenu {
-      /* border: 1px solid black; */
-      width: 90%;
-      margin: auto;
-    }
+.glow-on-hover a {
+    color: #007d6f !important;
+    font-family: mulish;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 14px;
+}
 
-    .mobile-hamburg-submenu ul {
-      list-style: none;
-      line-height: 2;
-      cursor: pointer;
-    }
-
-    .mobile-hamburg-submenu ul li {
-      font-size: 15px;
-      font-family: poppins;
-    }
-
-
-    /* allcoursespage */
-    #allcoursescontent {
-      border: 1px solid black;
-      width: 100%;
-      height: 100%;
-    }
-
-    .displaymobilecontent {
-      position: absolute;
-      width: 100%;
-      top: 0px;
-      background-color: white;
-    }
-
-    .allcoursespage {
-      border: 1px solid #f3f4f6;
-      width: 100%;
-      padding: 10px 0px 10px 0px;
-      background-color: #f3f4f6;
-    }
-
-    .allcourses-heading {
-      /* border: 1px solid black; */
-      width: 100%;
-    }
-
-    .allcourses-heading-page {
-      /* border: 1px solid black; */
-      width: 90%;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      /* padding: 10px 0px 10px 0px; */
-    }
-
-    .allcourses-heading-left {
-      /* border: 1px solid black; */
-      width: 20%;
-      font-size: 20px;
-    }
-
-    .allcourses-heading-left i {
-      color: #272566;
-    }
-
-    .allcourses-heading-right {
-      /* border: 1px solid black; */
-      width: 80%;
-      display: flex;
-      /* justify-content: center; */
-      padding-left: 28px;
-      align-items: center;
-      font-weight: 550;
-    }
-
-    .allcourses-heading-right>p {
-      font-family: nunito;
-    }
-
-    .allcourses-menu-section {
-      /* border: 1px solid black; */
-      width: 100%;
-      /* height: 100vh; */
-      padding: 10px 0px 10px 0px;
-    }
-
-    .allcourses-menu-list {
-      /* border: 1px solid black; */
-      width: 90%;
-      margin: auto;
-    }
-
-    .allcourses-menu-list ul {
-      list-style: none;
-      line-height: 2.5;
-    }
-
-    .allcourses-menu-list ul li {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-
-    .allcourses-menu-list ul a {
-      text-decoration: none;
-      color: black;
-    }
+.glow-on-hover:hover {
+    background-color: white;
+}
   </style>
 </head>
-
 <body>
+  <div id="global-nav">
+  </div>
+  <div style="border: 1px solid black; width: 100%; height: 400px;">
 
+  </div>
+  <div style="border: 1px solid black; width: 100%; height: 400px;">
 
-  <nav class="mobile-navbar">
-    <div class="mobile-nav">
-      <div class="moblie-nav-left">
-        <img src="img/awdiz.png" class="img-fluid" alt="">
-      </div>
-      <div class="moblie-nav-right">
-        <div id="allcourses" class="mobile-nav-right-one">
-          <p style="color: white;">All Courses</p>
-        </div>
-        <div class="mobile-nav-right-two" id="hamburg-icon">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-    </div>
-    <div style="display: none;" id="displaymobilecontent" class="displaymobilecontent">
-      <main class="allcoursespage">
-        <div class="allcourses-heading">
-          <div class="allcourses-heading-page">
-            <div class="allcourses-heading-left">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="allcourses-heading-right">
-              <p>All Courses</p>
-            </div>
-          </div>
-        </div>
-      </main>
-      <section class="allcourses-menu-section">
-        <div class="allcourses-menu-list">
-          <ul>
-            <li id="software">Software Development <span><i class="fa-solid fa-angle-right"></i></span> </li>
-            <li id="networks">Networking infrastructure <span id="allcoursespage"><i
-                  class="fa-solid fa-angle-right"></i></span></li>
-            <li id="digital">Digital Marketing <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li id="data">Data science <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
-            <li id="machine">Machine Learning <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
-            <li id="cyber">Cyber security <span id="allcoursespage"><i class="fa-solid fa-angle-right"></i></li>
-          </ul>
-        </div>
-      </section>
-    </div>
-    <div id="software-page" style="display:none" class="software-pages">
-      <main class="software">
-        <div class="software-heading">
-          <div class="software-heading-page">
-            <div class="software-heading-left back-arrow">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="software-heading-right">
-              <p style="padding-left: 10px; ">Software Development</p>
-            </div>
-          </div>
-        </div>
-      </main>
-      <section class="software-menu-section">
-        <div class="software-menu-list">
-          <div class="software-menu-courses">
-            <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="software-menu-job-program">
-            <h4>Job guarantee Program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
+  </div>
+  <div style="border: 1px solid black; width: 100%; height: 400px;">
 
-                  </div>
-                  <a href=""><p>MERN Master</p></a>
-             
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
+  </div>
+  <div style="border: 1px solid black; width: 100%; height: 400px;">
 
-                  </div>
-                  <a href="">
-                    <p>MEAN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
+  </div>
+  <div style="border: 1px solid black; width: 100%; height: 400px;">
 
-                  </div>
-                  <a href="">
-                    <p>Java FullStack</p>
-                  </a>
-                </div>
-              </div>
-            </div>
+  </div>
+  <div style="border: 1px solid black; width: 100%; height: 400px;">
 
-          </div>
-          <div class="software-master-program">
-            <h4>Master's program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
+  </div>
+  <div style="border: 1px solid black; width: 100%; height: 400px;">
 
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
+  </div>
 
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
 
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div style="display: none;" id="networking-page" class="networking-page">
-      <main class="software">
-        <div class="software-heading">
-          <div class="software-heading-page">
-            <div class="software-heading-left back-arrow">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="software-heading-right">
-              <p>Networking infrastructure</p>
-            </div>
-          </div>
-        </div>
-      </main>
-      <section class="software-menu-section">
-        <div class="software-menu-list">
-          <div class="software-menu-courses">
-            <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="software-menu-job-program">
-            <h4>Job guarantee Program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MERN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MEAN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>Java FullStack</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="software-master-program">
-            <h4>Master's program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-
-    <div style="display: none;" id="digital-page" class="digital-page">
-      <main class="software">
-        <div class="software-heading">
-          <div class="software-heading-page">
-            <div class="software-heading-left back-arrow">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="software-heading-right">
-              <p style="padding-left: 33px;">Digital Marketing</p>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <section class="software-menu-section">
-        <div class="software-menu-list">
-          <div class="software-menu-courses">
-            <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="software-menu-job-program">
-            <h4>Job guarantee Program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MERN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MEAN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>Java FullStack</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="software-master-program">
-            <h4>Master's program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="data-page" id="data-page" style="display: none;">
-      <main class="software">
-        <div class="software-heading">
-          <div class="software-heading-page">
-            <div class="software-heading-left back-arrow">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="software-heading-right">
-              <p style="padding-left: 48px;">Data science</p>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <section class="software-menu-section">
-        <div class="software-menu-list">
-          <div class="software-menu-courses">
-            <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="software-menu-job-program">
-            <h4>Job guarantee Program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MERN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MEAN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>Java FullStack</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="software-master-program">
-            <h4>Master's program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="learning" id="learning" style="display: none;">
-      <main class="software">
-        <div class="software-heading">
-          <div class="software-heading-page">
-            <div class="software-heading-left back-arrow">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="software-heading-right">
-              <p style="padding-left: 33px;">Machine Learning</p>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <section class="software-menu-section">
-        <div class="software-menu-list">
-          <div class="software-menu-courses">
-            <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="software-menu-job-program">
-            <h4>Job guarantee Program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MERN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MEAN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>Java FullStack</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="software-master-program">
-            <h4>Master's program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="cybers" id="cybers" style="display: none;">
-      <main class="software">
-        <div class="software-heading">
-          <div class="software-heading-page">
-            <div class="software-heading-left back-arrow">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="software-heading-right">
-              <p style="padding-left: 48px;">Cyber Security</p>
-            </div>
-          </div>
-        </div>
-      </main>
-      <section class="software-menu-section">
-        <div class="software-menu-list">
-          <div class="software-menu-courses">
-            <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="software-menu-job-program">
-            <h4>Job guarantee Program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MERN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>MEAN Master</p>
-                  </a>
-                </div>
-              </div>
-              <div class="software-menu-job-submenu">
-                <div class="software-menu-submenu">
-                  <div class="software-menu-job-submenu-box">
-
-                  </div>
-                  <a href="">
-                    <p>Java FullStack</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="software-master-program">
-            <h4>Master's program</h4>
-            <div style="width: 90%; margin: auto; padding-top: 10px;">
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="software-master-program-submenu">
-                <div class="software-master-program-menu">
-                  <div class="software-master-program-box">
-
-                  </div>
-                  <div class="software-master-program-box-one">
-                    <a href="">
-                      <p>Advanced Digital Marketing</p>
-                    </a>
-                    <a href="">
-                      <p class="duration">Duration - 6 months</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-
-    <div class="mobile">
-      <div class="mobile-hamburg-click-section" id="mobile-view">
-        <div class="mobile-hamburg-click-section-heading">
-          <div class="mobile-hamburg-click-section-heading-page">
-            <div class="mobile-hamburg-click-section-heading-left">
-              <i style="padding-top: 10px;" class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="mobile-hamburg-click-section-heading-right">
-              <p style="padding-left: 18px; padding-top: 10px;">MENU</p>
-            </div>
-          </div>
-        </div>
-        <div class="mobile-hamburg-menu-list">
-          <div class="mobile-hamburg-submenu">
-            <ul>
-              <li>
-                <div style="display: flex; justify-content: space-between;">
-                  <p>Women IT job</p>
-                  <p id="women"> <i class="fa-solid fa-plus"></i></p>
-                </div>
-                <ul style="display: none;" id="women-job">
-                  <li style="padding-top: 15px">Content-one</li>
-                  <li>Content-two</li>
-                </ul>
-              </li>
-              <li><a href="">Career Restart</a></li>
-              <li><a href="">Placement</a></li>
-              <li><a href="">Review</a></li>
-              <li><a href="">Student Corner</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Blockchain</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <script src="server1.js"></script>
   
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      function toggleDisplay(elementId, shouldShow) {
-        var element = document.getElementById(elementId);
-        if (element) {
-          element.style.display = shouldShow ? 'block' : 'none';
-        }
-      }
-
-      function setupCourseNavigation(courseId, pageId) {
-        var courseItem = document.getElementById(courseId);
-        if (courseItem) {
-          courseItem.addEventListener('click', function () {
-            toggleDisplay('displaymobilecontent', false);
-            toggleDisplay(pageId, true);
-          });
-        }
-      }
-
-      setupCourseNavigation('software', 'software-page');
-      setupCourseNavigation('networks', 'networking-page');
-      setupCourseNavigation('digital', 'digital-page');
-      setupCourseNavigation('data', 'data-page');
-      setupCourseNavigation('machine', 'learning');
-      setupCourseNavigation('cyber', 'cybers');
-
-      var allCoursesButton = document.getElementById('allcourses');
-      if (allCoursesButton) {
-        allCoursesButton.addEventListener('click', function () {
-          toggleDisplay('displaymobilecontent', true);
-        });
-      }
-
-      var hamburgIconButton = document.getElementById('hamburg-icon');
-      if (hamburgIconButton) {
-        hamburgIconButton.addEventListener('click', function () {
-          toggleDisplay('mobile-view', true);
-        });
-      }
-
-      var backArrowAllCourses = document.querySelector('.allcourses-heading-left i');
-      if (backArrowAllCourses) {
-        backArrowAllCourses.addEventListener('click', function () {
-          toggleDisplay('displaymobilecontent', false);
-        });
-      }
-
-      var backArrowMobileView = document.querySelector('.mobile-hamburg-click-section-heading-left i');
-      if (backArrowMobileView) {
-        backArrowMobileView.addEventListener('click', function () {
-          toggleDisplay('mobile-view', false);
-        });
-      }
-
-      var courseBackArrows = document.querySelectorAll('.software-pages .back-arrow, .networking-page .back-arrow, .digital-page .back-arrow, .data-page .back-arrow, .learning .back-arrow, .cybers .back-arrow');
-      courseBackArrows.forEach(function (arrow) {
-        arrow.addEventListener('click', function () {
-          var parentPage = this.closest('div[id]');
-          toggleDisplay(parentPage.id, false);
-          toggleDisplay('displaymobilecontent', true);
-        });
-      });
-
-      var women = document.getElementById("women");
-      var displayWomenJob = document.getElementById("women-job");
-      var isVisible = false;
-
-      women.addEventListener("click", function () {
-        if (isVisible) {
-          displayWomenJob.style.display = "none";
-        } else {
-          displayWomenJob.style.display = "block";
-        }
-        isVisible = !isVisible;
-      });
-    });
-  </script>
-
-
-
-
-  <!-- <script src="server.js"></script> -->
-
-
 </body>
-
 </html>
