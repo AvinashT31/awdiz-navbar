@@ -1,508 +1,1834 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .navbar {
-    /* border: 1px solid black; */
-    height: 72px;
-    width: 100%;
-    /* position: sticky;
-    top: 0%;
-    z-index: 1000; */
-    transition: top 0.3s;
-}
-
-.nav {
-    /* border: 1px solid black; */
-    padding: 10px 0px 10px 0px;
-    width: 86%;
-    margin: auto;
-}
-
-.navmenu {
-    /* border: 1px solid black; */
-    width: 100%;
-    margin: auto;
-    float: left;
-    max-height: 72px;
-}
-
-.navone {
-    /* border: 1px solid black; */
-
-    float: left;
-}
-
-.navtwo {
-    /* border: 1px solid black; */
-    width: 50%;
-    padding: 25px 0px 20px 0px;
-    float: right;
-}
-
-.navlogo {
-    /* border: 1px solid black; */
-    width: 170px;
-    height: 60px;
-    float: left;
-    margin: 12px 0 0 0;
-}
-
-
-
-.navdropdown {
-    float: left;
-    /* border: 1px solid black; */
-    margin-left: 65px;
-    margin-top: 15px;
-}
-
-.navcourses {
-    border: 1px solid black;
-    width: 150px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #272566;
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 0px;
-    font-family: mulish;
-    font-weight: 550;
-}
-
-.navtwo ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navtwo ul li {
-    list-style: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 550;
-    font-family: mulish;
-}
-
-
-/* Quckform */
-
-.mobile-modal-button {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-1
-
-.mobile-view-button {
-    display: none;
-    position: fixed;
-    bottom: 90px;
-    left: 250px;
-    width: 10%;
-}
-
-@media (max-width: 768px) {
-    .mobile-view-button {
-        display: block;
-    }
-
-    #quickForm {
-        display: none;
-    }
-
-    #quickForm.sticky {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-
-
-/* show-content */
-
-.show-content {
-    /* border: 1px solid black; */
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-    height: auto;
-    background-color: white;
-}
-
-.show-item {
-    /* border: 1px solid black; */
-    width: 72%;
-    margin: auto;
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: absolute;
-    z-index: 100;
-}
-
-.show-item-left {
-    /* border: 1px solid black; */
-    width: 30%;
-    padding: 25px 0px 25px 0px;
-    line-height: 2.6;
-    background-color: #edf8fa;
-}
-
-.show-item-left h3 {
-    padding-left: 15px;
-    font-family: nunito;
-    font-size: 24px;
-}
-
-.show-item-left ul {
-    line-height: 2.6;
-    cursor: pointer;
-}
-
-.show-item-left ul li {
-    list-style: none;
-    padding-left: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'poppins';
-    font-size: 15px;
-}
-
-.show-item-left i {
-    margin-left: 50px;
-}
-
-
-.show-item-left ul li:hover {
-    background-color: #ffffff;
-    color: #272566;
-}
-
-.show-item-left ul li:hover i {
-    color: #272566 !important;
-}
-
-.show-item-right {
-    /* border: 1px solid black; */
-    width: 100%;
-    height: auto;
-}
-
-
-.show-item-content {
-    /* border: 1px solid black; */
-    width: 100%;
-    height: 515px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.show-item-one {
-    /* border: 1px solid black; */
-    width: 33%;
-    height: auto;
-    padding: 20px 10px 20px 15px;
-    line-height: 2.6;
-}
-
-.show-item-one>h3 {
-    font-size: 24px;
-    font-family: 'Nunito';
-    padding-top: 5px;
-}
-
-.show-item-one ul li {
-    list-style: none;
-    font-size: 15px;
-    font-family: poppins;
-}
-
-.show-item-two {
-    /* border: 1px solid black; */
-    width: 33%;
-    height: auto;
-    padding: 20px 10px 20px 15px;
-    line-height: 2.6;
-}
-
-.show-item-two>h3 {
-    font-size: 24px;
-    font-family: 'Nunito';
-    padding-top: 5px;
-}
-
-.show-item-two-container {
-    /* border: 1px solid black; */
-    width: auto;
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-}
-
-.show-item-two-container-box {
-    border: 1px solid black;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-}
-
-.show-item-two-container p {
-    padding-left: 15px;
-    font-size: 15px;
-    font-family: 'poppins';
-}
-
-.show-item-three {
-    /* border: 1px solid black; */
-    width: 33%;
-    height: auto;
-    padding: 20px 10px 20px 15px;
-    line-height: 2.6;
-}
-
-.show-item-three>h3 {
-    font-size: 24px;
-    font-family: 'Nunito';
-    padding-top: 5px;
-}
-
-
-.show-item-container {
-    /* border: 1px solid black; */
-    width: auto;
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    background-color: #edf8fa;
-}
-
-.show-item-container-box {
-    border: 1px solid black;
-    width: 35%;
-    height: 70px;
-    background-color: white;
-
-}
-
-.show-item-container-box-one {
-    /* border: 1px solid black; */
-    width: 60%;
-    line-height: 1.2
-}
-
-.show-item-container-box-one p {
-    font-size: 15px;
-    font-family: 'poppins';
-}
-
-.item {
-    padding-top: 25px;
-}
-
-.show-item-right-button {
-    /* border: 1px solid lightblue; */
-    padding: 0px 10px 0px 0px;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-
-
-.show-item-right-button button {
-    border: 1px solid blue;
-    width: 23%;
-    height: 45px;
-    cursor: pointer;
-    color: #272566;
-    font-weight: 550;
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: hind;
-}
-
-.show-item-right-button button:hover {
-    background-color: blue;
-    color: white;
-}
-
-
-#hover-content {
-    display: none;
-    flex: 0;
-    margin-top: 17px;
-}
-
-#hover-content.flex-display {
-    display: flex;
-    flex: 1;
-}
-
-@media screen and (max-width:480px) {
-    .navbar {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-
-.home-3 .topbar-section {
-    background: #03033f;
-    min-height: 65px;
-}
-
-.topbar-section {
-    position: relative;
-    /* max-height: 52px; */
-    background: #007d6f;
-    transition: margin-top 0.3s, 
-    max-height 0.3s ease-in-out;
-}
-
-@media only screen and (max-width: 767px) {
-    .topbar-section {
-        display: none !important
-    }
-}
-
-.topbar-section .topbar-inner {
-    display: inline-block;
-    width: 100%;
-    padding: 0;
-    font-family: mulish;
-}
-
-.pull-left {
-    float: left
-}
-
-.pull-right {
-    float: right
-}
-
-ul {
-    margin: 0;
-    padding: 0
-}
-
-ul li {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 15px;
-    line-height: 24px;
-    color: #384252;
-    padding-left: 18px;
-    position: relative
-}
-
-.topbar-inner ul li a {
-    color: white;
-}
-
-.topbar-inner ul li:first-child {
-    border: none;
-    padding-left: 0;
-    margin-left: 0;
-    color: white;
-    font-size: 14px;
-    padding-top: 12px;
-}
-
-.topbar-inner ul li {
-    font-size: 14px;
-    border-left: 1px solid #cccccc40;
-    color: black;
-    font-weight: 400;
-    padding: 6px 12px 6px 20px;
-    margin-left: 20px;
-    margin-bottom: 0;
-    line-height: 24px;
-    position: relative;
-}
-
-.top-bar-left ul li,
-.top-bar-right ul li {
-    display: inline-block;
-    color: white;
-    font-size: 14px;
-}
-
-.top-bar-right ul li {
-    margin: 0;
-    font-size: 14px;
-}
-
-.top-bar-right ul li.button {
-    padding: 0 0 0 15px
-}
-
-.top-bar-right ul li.button a {
-    padding: 6px 14px 6px 14px;
-    border: 2px solid;
-    border-radius: 20px
-}
-
-.glow-on-hover a {
-    color: #007d6f !important;
-    font-family: mulish;
-    font-weight: 800;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.glow-on-hover:hover {
-    background-color: white;
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .guarantee-courses-name {
+            width: 100%;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .guarantee-courses-wrapper {
+            overflow: hidden;
+        }
+
+        #guarantee-courses-carousel {
+            display: flex;
+            transition: all 0.3s ease;
+            list-style: none;
+            padding: 0;
+            justify-content: space-between;
+        }
+
+        .guarantee-courses-name ul li {
+            width: 11%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 15px 0px 15px 0px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: hind;
+            font-weight: 800;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .guarantee-carousael-seection {
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            display: none;
+        }
+
+        .guarantee-carousel-button {
+            padding: 20px 25px 20px 25px;
+            background-color: #bebed1;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .guarantee-carousel-button:hover {
+            background-color: #272566;
+            color: white;
+        }
+
+        .job-guarentee-info {
+            /* border: 1px solid black; */
+            width: 100%;
+            padding: 70px 0px 10px 0px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .job-guarentee-box-one {
+            /* border: 1px solid black; */
+            width: 48%;
+            padding: 10px 10px 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            background-color: white;
+        }
+
+        .job-guarentee-item-one {
+            /* border: 1px solid black; */
+            width: 45%;
+            height: 186px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .job-guarentee-item-one img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .job-guarentee-section-one {
+            /* border: 1px solid black; */
+            width: 53%;
+        }
+
+        .job-guarentee-item-two {
+            /* border: 1px solid black; */
+            width: 100%;
+        }
+
+        .content {
+            padding-top: 10px !important;
+            font-size: 16px !important;
+            font-weight: 550;
+            font-family: mulish;
+        }
+
+        .job-guarentee-content {
+            font-size: 12px !important;
+            font-family: mulish;
+            color: #373737;
+        }
+
+        .job-guarentee-content-one {
+            font-size: 12px;
+            font-family: mulish;
+            color: #373737;
+            margin-left: 10px;
+        }
+
+        .job-guarentee-duration {
+            /* border: 1px solid black; */
+            width: 100%;
+            padding: 8px 0px 8px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 800;
+        }
+
+        .duration-box-one {
+            /* border: 1px solid black; */
+            padding: 5px 0px 5px 0px;
+            width: 22%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .duration-box-two {
+            /* border: 1px solid black; */
+            width: 33%;
+            padding: 5px 0px 5px 0px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .duration-box-three {
+            /* border: 1px solid black; */
+            width: 36%;
+            padding: 5px 0px 5px 0px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .job-guarentee-placement {
+            /* border: 1px solid black; */
+            width: 100%;
+            padding: 5px 0px 5px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .placement-item-one {
+            /* border: 1px solid black; */
+            width: 35%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .place-content {
+            font-weight: 800;
+            color: #007d6f;
+            margin-left: 10px;
+        }
+
+        .placement-button {
+            /* border: 1px solid black; */
+            width: 27%;
+            height: 36px;
+            background-color: #272566;
+            color: white;
+            font-family: mulish;
+        }
+
+        .placement-button:hover {
+            background-color: #272566;
+        }
+
+        .placement-view {
+            /* border: 1px solid black; */
+            width: 100%;
+            padding: 30px 0px 30px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .view-more-button {
+            /* border: 1px solid black; */
+            width: 15%;
+            padding: 30px 0px 30px 0px;
+            font-weight: 550;
+            font-size: 20px;
+            margin: auto;
+            background-color: #007d6f;
+            color: white;
+            height: 80px;
+            font-family: mulish;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            .job-guarentee-info {
+                padding-top: 40px;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            .job-guarentee-box-one {
+                width: 100%;
+                /* Set the width to 100% */
+                margin-right: 30px;
+                /* Adjust margin as needed */
+                flex-direction: column;
+                box-sizing: border-box;
+                /* Include padding and border in the width */
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div id="global-nav">
-  </div>
-  <div style="border: 1px solid black; width: 100%; height: 400px;">
+    <div class="guarantee-courses-name" style="background-color: #edf8fA;">
+        <div class="guarantee-courses-wrapper">
+            <ul id="guarantee-courses-carousel">
+                <li id="guarentee-software" style="background-color: #007d6f; color: white;">Software</li>
+                <li id="guarentee-Networking">Networking</li>
+                <li id="guarentee-dm">Digital Marketing</li>
+                <li id="guarentee-ds">Data Science</li>
+                <li id="guarentee-ml">Machine Learning</li>
+                <li id="guarentee-cs">Cyber Security</li>
+            </ul>
+        </div>
+    </div>
+    <div id="job-software" class="job-guarentee-info">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
 
-  </div>
-  <div style="border: 1px solid black; width: 100%; height: 400px;">
+        <div class="job-guarentee-box-one job-two">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
 
-  </div>
-  <div style="border: 1px solid black; width: 100%; height: 400px;">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
 
-  </div>
-  <div style="border: 1px solid black; width: 100%; height: 400px;">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
 
-  </div>
-  <div style="border: 1px solid black; width: 100%; height: 400px;">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
 
-  </div>
-  <div style="border: 1px solid black; width: 100%; height: 400px;">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  </div>
-  <div style="border: 1px solid black; width: 100%; height: 400px;">
+    <div id="job-networking" style="display: none;" class="job-guarentee-info">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
 
-  </div>
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="job-dm" style="display: none;" class="job-guarentee-info">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="job-ds" style="display: none;" class="job-guarentee-info">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-  <script src="server1.js"></script>
-  
+    <div id="job-ml" style="display: none;" class="job-guarentee-info">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="job-cs" style="display: none;" class="job-guarentee-info">
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-guarentee-box-one">
+            <div class="job-guarentee-item-one">
+                <img class="image-fluid" src="/img/images.jpg" alt="">
+            </div>
+            <div class="job-guarentee-section-one">
+                <div class="job-guarentee-item-two">
+                    <p class="content">CCNA Course in Navi Mumbai</p>
+                    <p class="job-guarentee-content" style="padding-top: 10px; line-height: 1.5;">CCNA Online Course in
+                        Mumbai.
+                        CCNA Course fees in Mumbai
+                        is ₹55000. CCNA Salary Packages of 3 6 lpa with 100 % Job
+                        Guarantee in MNC companies. Pass the CISCO CCNA
+                        Certification</p>
+                </div>
+                <div class="job-guarentee-duration">
+                    <div class="duration-box-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">100 Hours</p>
+                    </div>
+                    <div class="duration-box-two">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Fresher Students</p>
+                    </div>
+                    <div class="duration-box-three">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content-one">Regular + Weekend</p>
+                    </div>
+                </div>
+                <div class="job-guarentee-placement">
+                    <div class="placement-item-one">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="job-guarentee-content place-content">5000+ Placements</p>
+                    </div>
+                    <button class="placement-button">Let's Go <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var jobsoftware = document.getElementById("guarentee-software");
+            var displaysoftware = document.getElementById("job-software");
+
+            jobsoftware.addEventListener("click", function () {
+                jobsoftware.style.backgroundColor = "#007d6f";
+                jobsoftware.style.color = "#ffffff";
+                displaysoftware.style.display = "flex";
+
+                displaynetworking.style.display = "none";
+                jobnetwork.style.backgroundColor = "#edf8fa";
+                jobnetwork.style.color = "black";
+
+                displaydmmarketing.style.display = "none";
+                jobdigital.style.backgroundColor = "#edf8fa";
+                jobdigital.style.color = "black";
+
+                displaydatascience.style.display = "none";
+                jobdscience.style.backgroundColor = "#edf8fa";
+                jobdscience.style.color = "black";
+
+                displaymachineleaning.style.display = "none";
+                jobmachine.style.backgroundColor = "#edf8fa";
+                jobmachine.style.color = "black";
+
+                displaycybersecurity.style.display = "none";
+                jobsecurity.style.backgroundColor = "#edf8fa";
+                jobsecurity.style.color = "black";
+
+            })
+
+            var jobnetwork = document.getElementById("guarentee-Networking");
+            var displaynetworking = document.getElementById("job-networking");
+
+            jobnetwork.addEventListener("click", function () {
+                displaynetworking.style.display = "flex";
+                jobnetwork.style.backgroundColor = "#007d6f";
+                jobnetwork.style.color = "#ffffff";
+
+                displaysoftware.style.display = "none";
+                jobsoftware.style.backgroundColor = "#edf8fa";
+                jobsoftware.style.color = "black";
+
+                displaydmmarketing.style.display = "none";
+                jobdigital.style.backgroundColor = "#edf8fa";
+                jobdigital.style.color = "black";
+
+                displaydatascience.style.display = "none";
+                jobdscience.style.backgroundColor = "#edf8fa";
+                jobdscience.style.color = "black";
+
+                displaymachineleaning.style.display = "none";
+                jobmachine.style.backgroundColor = "#edf8fa";
+                jobmachine.style.color = "black";
+
+                displaycybersecurity.style.display = "none";
+                jobsecurity.style.backgroundColor = "#edf8fa";
+                jobsecurity.style.color = "black";
+            })
+
+
+            var jobdigital = document.getElementById("guarentee-dm");
+            var displaydmmarketing = document.getElementById("job-dm");
+
+            jobdigital.addEventListener("click", function () {
+                displaydmmarketing.style.display = "flex";
+                jobdigital.style.backgroundColor = "#007d6f";
+                jobdigital.style.color = "#ffffff";
+
+                displaysoftware.style.display = "none";
+                jobsoftware.style.backgroundColor = "#edf8fa";
+                jobsoftware.style.color = "black";
+
+                displaynetworking.style.display = "none";
+                jobnetwork.style.backgroundColor = "#edf8fa";
+                jobnetwork.style.color = "black";
+
+                displaydatascience.style.display = "none";
+                jobdscience.style.backgroundColor = "#edf8fa";
+                jobdscience.style.color = "black";
+
+                displaymachineleaning.style.display = "none";
+                jobmachine.style.backgroundColor = "#edf8fa";
+                jobmachine.style.color = "black";
+
+                displaycybersecurity.style.display = "none";
+                jobsecurity.style.backgroundColor = "#edf8fa";
+                jobsecurity.style.color = "black";
+
+            })
+
+            var jobdscience = document.getElementById("guarentee-ds");
+            var displaydatascience = document.getElementById("job-ds");
+
+            jobdscience.addEventListener("click", function () {
+                displaydatascience.style.display = "flex";
+                jobdscience.style.backgroundColor = "#007d6f";
+                jobdscience.style.color = "#ffffff";
+
+                displaydmmarketing.style.display = "none";
+                jobdigital.style.backgroundColor = "#edf8fa";
+                jobdigital.style.color = "black";
+
+                displaysoftware.style.display = "none";
+                jobsoftware.style.backgroundColor = "#edf8fa";
+                jobsoftware.style.color = "black";
+
+                displaynetworking.style.display = "none";
+                jobnetwork.style.backgroundColor = "#edf8fa";
+                jobnetwork.style.color = "black";
+
+                displaymachineleaning.style.display = "none";
+                jobmachine.style.backgroundColor = "#edf8fa";
+                jobmachine.style.color = "black";
+
+                displaycybersecurity.style.display = "none";
+                jobsecurity.style.backgroundColor = "#edf8fa";
+                jobsecurity.style.color = "black";
+            })
+
+            var jobmachine = document.getElementById("guarentee-ml");
+            var displaymachineleaning = document.getElementById("job-ml");
+
+            jobmachine.addEventListener("click", function () {
+                displaymachineleaning.style.display = "flex";
+                jobmachine.style.backgroundColor = "#007d6f";
+                jobmachine.style.color = "#ffffff";
+
+                displaydatascience.style.display = "none";
+                jobdscience.style.backgroundColor = "#edf8fa";
+                jobdscience.style.color = "black";
+
+                displaydmmarketing.style.display = "none";
+                jobdigital.style.backgroundColor = "#edf8fa";
+                jobdigital.style.color = "black";
+
+                displaysoftware.style.display = "none";
+                jobsoftware.style.backgroundColor = "#edf8fa";
+                jobsoftware.style.color = "black";
+
+                displaynetworking.style.display = "none";
+                jobnetwork.style.backgroundColor = "#edf8fa";
+                jobnetwork.style.color = "black";
+
+                displaycybersecurity.style.display = "none";
+                jobsecurity.style.backgroundColor = "#edf8fa";
+                jobsecurity.style.color = "black";
+
+            })
+
+            var jobsecurity = document.getElementById("guarentee-cs");
+            var displaycybersecurity = document.getElementById("job-cs");
+
+            jobsecurity.addEventListener("click", function () {
+                displaycybersecurity.style.display = "flex";
+                jobsecurity.style.backgroundColor = "#007d6f";
+                jobsecurity.style.color = "#ffffff";
+
+                displaymachineleaning.style.display = "none";
+                jobmachine.style.backgroundColor = "#edf8fa";
+                jobmachine.style.color = "black";
+
+                displaydatascience.style.display = "none";
+                jobdscience.style.backgroundColor = "#edf8fa";
+                jobdscience.style.color = "black";
+
+                displaydmmarketing.style.display = "none";
+                jobdigital.style.backgroundColor = "#edf8fa";
+                jobdigital.style.color = "black";
+
+                displaysoftware.style.display = "none";
+                jobsoftware.style.backgroundColor = "#edf8fa";
+                jobsoftware.style.color = "black";
+
+                displaynetworking.style.display = "none";
+                jobnetwork.style.backgroundColor = "#edf8fa";
+                jobnetwork.style.color = "black";
+
+            })
+
+        })
+    </script>
+
 </body>
+
 </html>
