@@ -603,6 +603,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
+
 // GlOBAL-SECTIONS
 
 //1.global-header
@@ -611,7 +612,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var globalNav = document.getElementById("global-nav");
   globalNav.innerHTML = `  <div id="topbar-section" class="topbar-section" >
       <div class="container"><div class="topbar-inner">
-        <div class="top-bar-left pull-left"><ul><li><i class="fa fa-phone"></i> &nbsp; Phone:  7678000695 | &nbsp; 8657202255</li><li><i class="fa fa-envelope"></i> &nbsp; Email: <a href="mailto:contact@awdiz.in">contact@awdiz.in</a></li></ul></div><div id="top-right" class="top-bar-right pull-right"><ul><li><a href="https://www.facebook.com/awdiz" target="_blank"><i class="fa-brands fa-facebook"></i></a></li><li><a href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i class="fa-brands fa-youtube"></i></a></li><li><a href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i class="fa-brands fa-instagram"></i></a></li><li style="padding: 0px 14px 0px;">Mumbai Pune Bangalore</li><li><button class="glow-on-hover" type="button" style="width:125px;height:auto"><a href="https://www.awdiz.in/contact">Enroll Now</a></button></li></ul></div></div></div></div>
+        <div class="top-bar-left pull-left"><ul><li><i class="fa fa-phone"></i> &nbsp; Phone:  7678000695 | &nbsp; 8657202255</li><li><i class="fa fa-envelope"></i> &nbsp; Email: <a href="mailto:contact@awdiz.in">contact@awdiz.in</a></li></ul></div>
+        <div id="top-right" class="top-bar-right pull-right"><ul><li><a href="https://www.facebook.com/awdiz" target="_blank"><i class="fa-brands fa-facebook"></i></a></li><li><a href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i class="fa-brands fa-youtube"></i></a></li><li><a href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i class="fa-brands fa-instagram"></i></a></li><li style="padding: 0px 14px 0px;">Mumbai Pune Bangalore</li><li><button class="glow-on-hover" type="button" style="width:125px;height:auto"><a href="https://www.awdiz.in/contact">Enroll Now</a></button></li></ul></div></div></div></div>
 
   <div id="navbar" class="navbar">
       <div class="container">
@@ -623,7 +625,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
               <div class="navdropdown">
                   <div class="navcourses" id="navbar">
-                  <p style="padding: 35px 31px;">All Courses</p>
+                  <p style="padding: 28px 35px;">All Courses</p>
                   </div>
                   <div onmouseover="displaycontent(event)" class="show-item" id="hover-content">
                       <div class="show-item-left">
@@ -1084,39 +1086,39 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>`
 })
 
-// window.addEventListener('scroll', function () {
-//   var topbarsection = document.getElementById("topbar-section");
-//   var navbar = document.getElementById("navbar");
+document.addEventListener("DOMContentLoaded", function () {
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function () {
+      var context = this, args = arguments;
+      var later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
 
-//   if (window.scrollY >= 100) {
-//     topbarsection.style.display = "none";
-//     navbar.style.position = "sticky";
-//     navbar.style.top = "10";
-//     navbar.style.zIndex = "1000";
-//   }
-//   else {
-//     topbarsection.style.display = "block";
-//   }
-// });
+  var handleScroll = function () {
+    var topbar = document.querySelector('.topbar-section');
+    var navbar = document.querySelector('.navbar');
+    var topright = document.getElementById("top-right");
 
-window.addEventListener('scroll', function () {
-  var topbar = document.querySelector('.topbar-section');
-  var navbar = document.querySelector('.navbar');
-  var topright = document.getElementById("top-right");
-
-  if (window.scrollY >= 100) {
-    topbar.style.maxHeight = '0';
-    navbar.style.top = '0';
-    topright.style.display = "none"
-  } else {
-    topbar.style.maxHeight = '52px';
-    navbar.style.top = '52px';
-    topright.style.display = "block"
-  }
+    if (window.scrollY >= 40) {
+      topbar.style.maxHeight = '0';
+      navbar.style.top = '0';
+      topright.style.display = "none";
+    } else {
+      topbar.style.maxHeight = '52px';
+      navbar.style.top = '52px';
+      topright.style.display = "block";
+    }
+  };
+  window.addEventListener('scroll', debounce(handleScroll, 100));
 });
-
-
-
 
 
 //   2.global mobile header
