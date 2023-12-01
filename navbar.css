@@ -170,10 +170,10 @@ html {
 
 .topbar-section {
     position: relative;
-    max-height: 52px;
+    /* max-height: 52px; */
     background: #007d6f;
-    /* position: relative; */
-    /* z-index: 100; */
+    position: relative;
+    z-index: 100;
 }
 
 @media only screen and (max-width: 767px) {
@@ -301,7 +301,7 @@ ul li {
 
 @media screen and (max-width:480px) {
     .arrow-up {
-         left: 85%;
+        left: 85%;
         bottom: 11%;
     }
 }
@@ -382,9 +382,9 @@ ul li {
     height: 72px;
     width: 100%;
     position: sticky;
-    top: 0px;
+    top: 0%;
     z-index: 1000;
-    /* transition: top 0.3s; */
+    transition: top 0.3s;
 }
 
 .nav {
@@ -410,7 +410,7 @@ ul li {
 
 .navtwo {
     /* border: 1px solid black; */
-    
+
     padding: 25px 0px 8px 0px;
     float: right;
 }
@@ -434,18 +434,18 @@ ul li {
 
 .navcourses {
     border: 1px solid black;
-  width: 150px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #272566;
-  color: white;
-  border-radius: 10px;
-  margin-bottom: 0px;
-  font-family: mulish;
-  font-weight: 550;
-  font-size: 14px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272566;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    font-family: mulish;
+    font-weight: 550;
+    font-size: 14px;
 }
 
 .navtwo ul {
@@ -454,12 +454,12 @@ ul li {
 }
 
 .navtwo ul li {
-  list-style: none;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 550;
-  font-family: mulish;
-  padding-left: 20px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 550;
+    font-family: mulish;
+    padding-left: 20px;
 }
 
 
@@ -562,7 +562,7 @@ ul li {
 
 .show-item-left {
     /* border: 1px solid black; */
-    
+
     width: 35%;
     padding: 2px 0px 2px 0px;
     line-height: 2.6;
@@ -590,7 +590,7 @@ ul li {
     font-family: 'Mulish';
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 .show-item-left i {
@@ -634,7 +634,7 @@ ul li {
     font-family: 'Mulish';
     font-size: 17px;
     font-weight: 600;
-    padding-left: 15px; 
+    padding-left: 15px;
 }
 
 .show-item-one ul li {
@@ -664,7 +664,7 @@ ul li {
 
 .show-item-two-container {
     /* border: 1px solid black; */
-    
+
     width: auto;
     padding: 2px 2px 2px 15px;
     display: flex;
@@ -729,7 +729,7 @@ ul li {
 }
 
 .show-item-container-box-one {
-   width: 60%;
+    width: 60%;
     line-height: 1.2;
     display: flex;
     flex-direction: column;
@@ -787,11 +787,70 @@ ul li {
 #hover-content.flex-display {
     display: flex;
     flex: 1;
-    margin-left:-99px;
+    margin-left: -99px;
 }
 
 @media screen and (max-width:480px) {
     .navbar {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+/* phonemenu */
+
+.phonemenu {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #007D6F;
+}
+
+.phonemenu-one {
+    /* border: 1px solid black; */
+    width: 35%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phonemenu-one ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phonemenu-one ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+
+.whatsapp {
+    font-size: 20px;
+}
+
+.phone {
+    font-size: 15px;
+}
+
+.span-number {
+    margin-left: 5px;
+}
+
+@media screen and (min-width:485px) and (max-width:4000px) {
+    .phonemenu {
         display: none;
         visibility: hidden;
     }
@@ -806,11 +865,11 @@ ul li {
     /* border: 1px solid black; */
     width: 100%;
     /* height: 70px; */
-    
+
     position: sticky;
     top: 0%;
     z-index: 100;
-    background-color:white;
+    background-color: white;
 }
 
 
@@ -819,7 +878,7 @@ ul li {
     width: 100%;
     /* height: 70px; */
     padding: 10px 0px 10px 0px;
-    
+
 }
 
 .mobile-nav {
@@ -1437,8 +1496,9 @@ ul li {
     border: none;
     outline: none;
     font-family: mulish;
-    margin: 0;padding: 15px;
-  font-size: 15px;
+    margin: 0;
+    padding: 15px;
+    font-size: 15px;
 }
 
 .banner-section-icon {
@@ -1476,8 +1536,9 @@ picture {
 }
 
 @media screen and (max-width:480px) {
-    
-    .banner-section{height: 350px !important;
+
+    .banner-section {
+        height: 350px !important;
     }
 }
 
@@ -1599,11 +1660,15 @@ picture {
     }
 
     .banner-section>h1 {
-        line-height: 1.3;text-align: center;
+        line-height: 1.3;
+        text-align: center;
     }
 
     .banner-section>p {
-        width: 100%;text-align: center;margin-top: 20px;margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     picture {
@@ -1611,7 +1676,8 @@ picture {
     }
 
     .banner-image {
-        height: 250px;border-radius: 10px 10px 0 0;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
     }
 
     .banner-section-guarentee {
@@ -1649,11 +1715,11 @@ picture {
 
 .guarentee-content {
     /* border: 1px solid black; */
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-    
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
 }
 
 .guarentee-content h2 {
@@ -1665,7 +1731,7 @@ picture {
 }
 
 .content-info {
-    
+
     line-height: 1.7;
     font-size: 16px;
     font-family: mulish;
@@ -1673,11 +1739,11 @@ picture {
 
 .guarentee-rating {
     /* border: 1px solid black; */
-    
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 
 .guarentee-rating-container {
@@ -1754,7 +1820,7 @@ picture {
 
 .guarentee-image {
     width: 45%;
-    
+
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -1796,9 +1862,7 @@ picture {
         padding: 0px;
     }
 
-    .guarentee-image {
-          
-    }
+    .guarentee-image {}
 
     .news-content {
         right: 10px;
@@ -1821,9 +1885,9 @@ picture {
 @media screen and (max-width:480px) {
 
 
-.guarentee-rating-container img{
-    width:239px;
-}
+    .guarentee-rating-container img {
+        width: 239px;
+    }
 
 
     .guarentee {
@@ -1846,7 +1910,9 @@ picture {
         height: 100%;
     }
 
-.guarentee-content h2 {margin: 0px 0px 20px 0px;}
+    .guarentee-content h2 {
+        margin: 0px 0px 20px 0px;
+    }
 
     .guarentee-content {
         width: 100%;
@@ -1856,15 +1922,15 @@ picture {
 
     .guarentee-rating {
         flex-direction: column;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     .guarentee-rating-container {
-    width: 100%;
-    margin-left: 0px !important;
-    margin-top: 15px;
-    background-color: #edf8fa;
-    padding: 0;
+        width: 100%;
+        margin-left: 0px !important;
+        margin-top: 15px;
+        background-color: #edf8fa;
+        padding: 0;
     }
 
     .guarentee-rating-odd-container {
@@ -1878,7 +1944,7 @@ picture {
         right: 12px;
         bottom: 0px;
     }
-    
+
 }
 
 @media screen and (max-width:428px) {
@@ -1960,7 +2026,7 @@ picture {
     width: 100%;
     padding: 80px 0px 80px 0px;
     box-sizing: border-box;
-    
+
 }
 
 .cisco-training-page {
@@ -2024,7 +2090,7 @@ picture {
     height: 50px;
     border-radius: 5px;
     margin-bottom: 20px;
-    
+
     border: none;
     outline: none;
     background-color: #ffffff;
@@ -2058,7 +2124,7 @@ textarea.cisco-textarea::placeholder {
     height: 50px;
     border-radius: 5px;
     margin-bottom: 20px;
-    
+
     border: none;
     outline: none;
     background-color: #ffffff;
@@ -2133,11 +2199,11 @@ textarea.cisco-textarea::placeholder {
 
 
 .cisco-training-info {
-  width: 58%;
-  padding: 60px 40px 120px 25px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+    width: 58%;
+    padding: 60px 40px 120px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .cisco-training-info>h3 {
@@ -3390,26 +3456,22 @@ button:hover {
 
     .job-guarentee-info {
         padding-top: 40px;
-        flex-wrap: nowrap;
         overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
+        display: flex;
+        flex-wrap: nowrap;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
 
-
+    .job-guarentee-info::-webkit-scrollbar {
+        display: none;
+    }
 
     .job-guarentee-box-one {
-        width: auto;
-        margin-right: 30px;
-        /* width: 100%; */
-        flex-direction: column;
+        flex: 0 0 auto;
+        width: 100%;
+            flex-direction: column;
+            margin-right: 20px;
     }
 
     .job-guarentee-item-one {
@@ -4507,7 +4569,7 @@ textarea {
         width: 100%;
     }
 
-    
+
 
     .send-button {
         font-size: 16px !important;

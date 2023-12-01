@@ -22,6 +22,10 @@
   <div id="mobile-navigation">
   </div>
 
+  <div id="phonemenu">
+
+  </div>
+
   <div id="content">
     <section class="awdiz-homepage">
 
@@ -233,6 +237,27 @@ box-shadow: 0px 15px 4px -11px #953535;
 }
 .right-video{width: 100%;display: flex;justify-content: space-around;}
 .right-video-ok{margin-left:10px}
+
+@media screen and (max-width:480px) {
+        .video-show-page {
+          flex-direction: column-reverse;
+        }
+
+        .video-show-page-ok-right {
+          width: 100%;
+        }
+
+        .right-video {
+          display: none;
+          visibility: hidden;
+        }
+
+        .video-show-page-ok {
+          width: 100%;
+          margin-top: 40px;
+        }
+      }
+
 </style>    
     
 <section class="video-show" >

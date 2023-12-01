@@ -2268,6 +2268,28 @@ function toggleForm() {
 }
 
 
+// 7.phonemeu
+
+document.addEventListener("DOMContentLoaded", function () {
+  var globalphonemenu = document.getElementById("phonemenu");
+
+  globalphonemenu.innerHTML = `
+  <div class="phonemenu">
+    <div class="phonemenu-one">
+      <ul>
+        <li><a href=""><i class="fa-solid fa-phone phone"></i><span class="span-number">+91 8657202255</span></a></li>
+      </ul>
+    </div>
+    <div class="phonemenu-one">
+      <ul>
+        <li><a href=""><i class="fa-brands fa-whatsapp whatsapp"></i><span class="span-number">+91 8657202255</span></a></li>
+      </ul>
+    </div>
+  </div>
+  `
+})
+
+
 
 // FULLSTACKPAGE
 

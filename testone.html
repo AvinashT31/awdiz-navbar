@@ -7,339 +7,396 @@
   <title>Document</title>
 
   <style>
-    .home-3 .topbar-section {
-      background: #03033f;
-      min-height: 65px;
+    .carousel-container {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      padding-top: 20px;
     }
 
-    .topbar-section {
-      position: relative;
-      /* max-height: 52px; */
-      background: #007d6f;
-      /* position: relative; */
+    .carousel-wrapper {
+      padding: 30px 0px 30px 0px;
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .carousel-slide {
+      display: flex;
+      transition: all 0.3s ease;
+    }
+
+    button {
+      background-color: #333;
+      color: black;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      margin: 0 5px;
+      border-radius: 10px;
+      width: 3%;
+      background-color: white;
+      /* box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px; */
+      left: 3%;
       /* z-index: 100; */
     }
 
-    @media only screen and (max-width: 767px) {
-      .topbar-section {
-        display: none !important
-      }
+    button:hover {
+      background-color: #007D6F;
     }
 
-    .topbar-section .topbar-inner {
-      display: inline-block;
-      width: 100%;
-      padding: 0;
-      font-family: mulish;
-    }
-
-    .pull-left {
-      float: left
-    }
-
-    .pull-right {
-      float: right
-    }
-
-    ul {
-      margin: 0;
-      padding: 0
-    }
-
-    ul li {
-      font-size: 14px;
-      font-weight: 400;
-      margin-bottom: 15px;
-      line-height: 24px;
-      color: #384252;
-      padding-left: 18px;
-      position: relative
-    }
-
-    .topbar-inner ul li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .topbar-inner ul li:first-child {
-      border: none;
-      padding-left: 0;
-      margin-left: 0;
-      color: white;
-      font-size: 14px;
-      padding-top: 12px;
-    }
-
-    .topbar-inner ul li {
-      font-size: 14px;
-      border-left: 1px solid #cccccc40;
-      color: black;
-      font-weight: 550;
-      padding: 6px 12px 6px 20px;
-      margin-left: 20px;
-      margin-bottom: 0;
-      line-height: 24px;
+    .carousel-card {
+      flex: 0 0 30%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
       position: relative;
-    }
-
-    .top-bar-left ul li,
-    .top-bar-right ul li {
-      display: inline-block;
-      color: white;
-      font-size: 14px;
-    }
-
-    .top-bar-right ul li {
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .top-bar-right ul li.button {
-      padding: 0 0 0 15px
-    }
-
-    .top-bar-right ul li.button a {
-      padding: 6px 14px 6px 14px;
-      border: 2px solid;
-      border-radius: 20px
-    }
-
-    .glow-on-hover a {
-      color: #007d6f !important;
-      font-family: mulish;
-      font-weight: 800;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .glow-on-hover:hover {
-      background-color: white;
-    }
-
-
-    #global-nav {
-      /* border: 1px solid black; */
-      width: 100%;
-      /* height: 160px; */
-      position: sticky;
-      top: 0;
-      z-index: 500;
-      background-color: white;
-    }
-
-    .nav-head {
-      /* border: 1px solid black; */
-      width: 100%;
-      padding: 10px 0px 10px 0px;
-      background-color: #007d6f;
-    }
-
-    .nav-social {
-      /* border: 1px solid black; */
-      width: 86%;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .nav-social-info {
-      /* border: 1px solid black; */
-      width: 30%;
-      display: flex;
-      color: white;
-    }
-
-    .nav-social-number {
-      /* border: 1px solid black; */
-      width: 44%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 550;
-    }
-
-    .nav-social-email {
-      /* border: 1px solid black; */
-      width: 35%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 550;
-      padding-left: 15px;
-    }
-
-    .nav-social-icon {
-      /* border: 1px solid black; */
-      width: 30%;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .nav-social-images {
-      /* border: 1px solid black; */
-      width: 25%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 550;
-    }
-
-
-    .navbar {
-      /* border: 1px solid black; */
-      height: 72px;
-      width: 100%;
-      position: sticky;
-      top: 0px;
-      z-index: 1000;
-      /* transition: top 0.3s; */
-    }
-
-    .nav {
-      /* border: 1px solid black; */
-      padding: 10px 0px 10px 0px;
-      width: 86%;
-      margin: auto;
-    }
-
-    .navmenu {
-      /* border: 1px solid black; */
-      width: 100%;
-      margin: auto;
       float: left;
-      max-height: 72px;
+      box-shadow: 0 2px 5px 0 rgba(17, 121, 239, .15);
+      border-radius: 6px;
+      border: 1px solid #e6ecef;
+      background: #fff;
+      margin-right: 1.7%;
+      margin-left: 1.7%;
     }
 
-    .navone {
-      /* border: 1px solid black; */
-
-      float: left;
+    .slider-img {
+      width: 100%;
+      overflow: hidden;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      margin-bottom: 10px;
+      height: 250px;
     }
 
-    .navtwo {
-      /* border: 1px solid black; */
-
-      padding: 25px 0px 8px 0px;
-      float: right;
+    .slider-img img {
+      width: 100%;
+      /* Make the image responsive */
+      height: 100%;
+      /* Maintain the aspect ratio */
+      display: block;
     }
 
-    .navlogo {
-      /* border: 1px solid black; */
-      width: 170px;
-      height: 60px;
-      float: left;
-      margin: 12px 0 0 0;
-    }
-
-
-
-    .navdropdown {
-      float: left;
-      /* border: 1px solid black; */
-      margin-left: 65px;
+    .slider-info {
+      width: 100%;
+      margin-bottom: 3px;
       margin-top: 15px;
+      line-height: 1.8;
+      font-family: nunito;
+      font-weight: 800;
+      color: #272566;
+      padding: 0px 20px 10px 20px;
     }
 
-    .navcourses {
-      border: 1px solid black;
-      width: 150px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #272566;
-      color: white;
-      border-radius: 10px;
-      margin-bottom: 0px;
-      font-family: mulish;
-      font-weight: 550;
+    .slider-info h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .info-list p {
       font-size: 14px;
+      color: #666;
     }
 
-    .navtwo ul {
-      display: flex;
+    .pgp-info {
+      width: 100%;
+      margin-top: 3px;
+      padding: 0px 20px 20px 20px;
+    }
+
+    .pgp-info>p {
+      line-height: 1.5;
+      font-size: 16px;
+      font-family: mulish;
+      color: #2e2e2e;
+    }
+
+    .slide-logo-img {
+      /* border: 1px solid black; */
+      width: 50px;
+      height: 50px;
+    }
+
+    .slide-logo-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+    .carousel-container {
       justify-content: space-between;
     }
 
-    .navtwo ul li {
-      list-style: none;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 550;
-      font-family: mulish;
-      padding-left: 20px;
+    .carousel-container button {
+      flex: 0 0 10%; 
+      width: auto; 
     }
+
+    .carousel-card {
+      border: 1px solid black;
+      flex: 0 0 95%; 
+      margin-right: 2.5%;
+      margin-left: 2.5;
+    }
+  }
   </style>
 </head>
 
 <body>
-  <div id="global-nav">
+  <div class="carousel-container">
+    <button style="box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;" id="new-nextBtn"><i
+        class="fa-solid fa-chevron-left"></i></button>
+    <div class="carousel-wrapper">
+      <div class="carousel-slide">
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="slider-img">
+            <img src="/img/images.jpg" alt="">
+          </div>
+          <div class="slider-info">
+            <div class="slide-logo-img">
+              <img src="/img/ccna.jpg" alt="">
+            </div>
+            <h3>CCNA</h3>
+
+          </div>
+          <div class="pgp-info">
+            <p>Cisco Certified Network Associate</p>
+            <p>5000+ Students Certified</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button style="box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;" id="new-preBtn"><i
+        class="fa-solid fa-chevron-right"></i></button>
   </div>
 
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var globalNav = document.getElementById("global-nav");
-      globalNav.innerHTML = `  <div id="topbar-section" class="topbar-section" >
-      <div class="container"><div class="topbar-inner">
-        <div class="top-bar-left pull-left"><ul><li><i class="fa fa-phone"></i> &nbsp; Phone:  7678000695 | &nbsp; 8657202255</li><li><i class="fa fa-envelope"></i> &nbsp; Email: <a href="mailto:contact@awdiz.in">contact@awdiz.in</a></li></ul></div>
-        <div id="top-right" class="top-bar-right pull-right"><ul><li><a href="https://www.facebook.com/awdiz" target="_blank"><i class="fa-brands fa-facebook"></i></a></li><li><a href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i class="fa-brands fa-youtube"></i></a></li><li><a href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i class="fa-brands fa-instagram"></i></a></li><li style="padding: 0px 14px 0px;">Mumbai Pune Bangalore</li><li><button class="glow-on-hover" type="button" style="width:125px;height:auto"><a href="https://www.awdiz.in/contact">Enroll Now</a></button></li></ul></div></div></div></div>
-
-  <div id="navbar" class="navbar">
-      <div class="container">
-          <div onmouseover="handleClick(event)" class="navmenu">
-              <div class="navone">
-                  <div class="navlogo navtwo-menu">
-                      <img src="img/awdiz.png" class="img-fluid" alt="">
-                  </div>
-              </div>
-              <div class="navdropdown">
-                  <div class="navcourses" id="navbar">
-                  <p style="padding: 28px 35px;">All Courses</p>
-                  </div>
-                  <div onmouseover="displaycontent(event)" class="show-item" id="hover-content">
-                      <div class="show-item-left">
-                          
-                      </div>
-                  </div>
-              </div>
-              <div class="navtwo navtwo-menu">
-                  <ul>
-                      <li>Women IT jobs</li>
-                      <li>Career Restart</li>
-                      <li>Placement</li>
-                      <li>Review</li>
-                      <li>Student Corner</li>
-                      <li>About</li>
-                      <!-- <li>About</li>
-                          <li> Blockchain</li> -->
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </div>`
-    })
-
-    window.addEventListener('scroll', function () {
-      var topbar = document.getElementById('topbar-section');
-      var navbar = document.getElementById('navbar');
-      var topright = document.getElementById("top-right");
-
-      if (window.scrollY >= 100) {
-        topbar.style.maxHeight = '0';
-        navbar.style.top = '0px';
-        topright.style.display = "none";
-      } else {
-        topbar.style.maxHeight = '52px';
-        navbar.style.top = '52px';
-        topright.style.display = "block";
-      }
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
     });
+  
+    function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      const carouselSlide = document.querySelector(carouselClass);
+  
+      let currentCard = 0;
+  
+      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
+  
+      const moveCarousel = () => {
+        const step = getStep();
+        const cardWidth = carouselSlide.children[0].clientWidth;
+        const cardMarginRight = parseFloat(getComputedStyle(carouselSlide.children[0]).marginRight);
+        const cardMarginLeft = parseFloat(getComputedStyle(carouselSlide.children[0]).marginLeft);
+        const totalCardWidth = cardWidth + cardMarginRight + cardMarginLeft;
+        carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
+      };
+  
+      prevBtn.addEventListener('click', () => {
+        const step = getStep();
+        currentCard = (currentCard + step) % carouselSlide.children.length;
+        moveCarousel();
+      });
+  
+      nextBtn.addEventListener('click', () => {
+        const step = getStep();
+        currentCard = (currentCard - step + carouselSlide.children.length) % carouselSlide.children.length;
+        moveCarousel();
+      });
+  
+      window.addEventListener('resize', moveCarousel);
+  
+      moveCarousel(); // Initialize carousel position on load
+    }
   </script>
+   -->
+  
+
+   <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
+    });
+  
+    function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      const carouselSlide = document.querySelector(carouselClass);
+  
+      let currentCard = 0;
+  
+      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
+  
+      const moveCarousel = () => {
+        const step = getStep();
+        const cardStyle = getComputedStyle(carouselSlide.children[0]);
+        const cardWidth = carouselSlide.children[0].offsetWidth; // Include margin in width calculation
+        const totalCardWidth = cardWidth + (step > 1 ? parseFloat(cardStyle.marginRight) : 0); // Add margin only for desktop view
+        carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
+      };
+  
+      prevBtn.addEventListener('click', () => {
+        const step = getStep();
+        if (step === 1 && currentCard === 0) {
+          currentCard = carouselSlide.children.length - 1; // Loop to last slide in single step mode
+        } else {
+          currentCard = Math.max(0, currentCard - step);
+        }
+        moveCarousel();
+      });
+  
+      nextBtn.addEventListener('click', () => {
+        const step = getStep();
+        if (step === 1 && currentCard === carouselSlide.children.length - 1) {
+          currentCard = 0; // Loop back to first slide in single step mode
+        } else {
+          currentCard = Math.min(carouselSlide.children.length - step, currentCard + step);
+        }
+        moveCarousel();
+      });
+  
+      window.addEventListener('resize', moveCarousel);
+  
+      moveCarousel(); // Initialize carousel position on load
+    }
+  </script>
+  
+  
 </body>
 
 </html>
