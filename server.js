@@ -610,12 +610,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   var globalNav = document.getElementById("global-nav");
-  globalNav.innerHTML = `  <div id="topbar-section" class="topbar-section" >
+  globalNav.innerHTML = `  <div class="topbar-section" >
       <div class="container"><div class="topbar-inner">
         <div class="top-bar-left pull-left"><ul><li><i class="fa fa-phone"></i> &nbsp; Phone:  7678000695 | &nbsp; 8657202255</li><li><i class="fa fa-envelope"></i> &nbsp; Email: <a href="mailto:contact@awdiz.in">contact@awdiz.in</a></li></ul></div>
-        <div id="top-right" class="top-bar-right pull-right"><ul><li><a href="https://www.facebook.com/awdiz" target="_blank"><i class="fa-brands fa-facebook"></i></a></li><li><a href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i class="fa-brands fa-youtube"></i></a></li><li><a href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i class="fa-brands fa-instagram"></i></a></li><li style="padding: 0px 14px 0px;">Mumbai Pune Bangalore</li><li><button class="glow-on-hover" type="button" style="width:125px;height:auto"><a href="https://www.awdiz.in/contact">Enroll Now</a></button></li></ul></div></div></div></div>
+        <div id="top-right" class="top-bar-right pull-right"><ul><li><a href="https://www.facebook.com/awdiz" target="_blank"><i class="fa-brands fa-facebook"></i></a></li><li><a href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i class="fa-brands fa-youtube"></i></a></li><li><a href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i class="fa-brands fa-instagram"></i></a></li><li style="padding: 0px 14px 0px;">Mumbai Pune Bangalore</li><li style="padding-right: 0"><button class="glow-on-hover" type="button" style="width:125px;height:auto;margin: 0;"><a href="https://www.awdiz.in/contact">Enroll Now</a></button></li></ul></div></div></div></div>
 
-  <div id="navbar" class="navbar">
+  <div class="navbar">
       <div class="container">
           <div onmouseover="handleClick(event)" class="navmenu">
               <div class="navone">
@@ -1117,10 +1117,10 @@ document.addEventListener("DOMContentLoaded", function () {
       topright.style.display = "block";
     }
   };
+
+  // Debounce the handleScroll function. Adjust the 250ms to your needs.
   window.addEventListener('scroll', debounce(handleScroll, 100));
 });
-
-
 //   2.global mobile header
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -2268,26 +2268,36 @@ function toggleForm() {
 }
 
 
+
 // 7.phonemeu
 
 document.addEventListener("DOMContentLoaded", function () {
   var globalphonemenu = document.getElementById("phonemenu");
 
   globalphonemenu.innerHTML = `
-  <div class="phonemenu">
-    <div class="phonemenu-one">
-      <ul>
-        <li><a href=""><i class="fa-solid fa-phone phone"></i><span class="span-number">+91 8657202255</span></a></li>
-      </ul>
-    </div>
-    <div class="phonemenu-one">
-      <ul>
-        <li><a href=""><i class="fa-brands fa-whatsapp whatsapp"></i><span class="span-number">+91 8657202255</span></a></li>
-      </ul>
-    </div>
-  </div>
+  <div class="badge sticky-contact" style="z-index:100;height:24px">
+  <ul>
+    <li>
+      <i class="fa-solid fa-phone phone"></i>
+      <span>
+        <a href="tel:+918657202255">
+          <b style="font-weight: 700;color: #fff">8657202255</b>
+        </a>
+      </span>
+    </li>
+    <li>
+      <i class="fa-brands fa-whatsapp whatsapp"></i>
+      <span>
+        <a href="https://api.whatsapp.com/send?phone=917678000695">
+          <b style="font-weight: 700;color: #fff;">7678000695</b>
+        </a>
+      </span>
+    </li>
+  </ul>
+</div>
   `
 })
+
 
 
 

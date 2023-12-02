@@ -290,6 +290,7 @@ ul li {
     bottom: 6%;
     display: none;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .arrow-up i {
@@ -378,62 +379,64 @@ ul li {
 
 
 .navbar {
-    /* border: 1px solid black; */
-    height: 72px;
+
+    height: 62px;
     width: 100%;
     position: sticky;
     top: 0%;
     z-index: 1000;
-    transition: top 0.3s;
+
 }
 
 .nav {
-    /* border: 1px solid black; */
+
     padding: 10px 0px 10px 0px;
     width: 86%;
     margin: auto;
 }
 
 .navmenu {
-    /* border: 1px solid black; */
+
     width: 100%;
     margin: auto;
     float: left;
-    max-height: 72px;
+    max-height: 62px;
 }
 
 .navone {
-    /* border: 1px solid black; */
+
 
     float: left;
+    height: 62px;
 }
 
 .navtwo {
-    /* border: 1px solid black; */
-
-    padding: 25px 0px 8px 0px;
     float: right;
+    height: 62px;
+    text-align: center;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .navlogo {
-    /* border: 1px solid black; */
     width: 170px;
-    height: 60px;
+    height: 52px;
     float: left;
-    margin: 12px 0 0 0;
+    margin: 9px 0 1px 0;
 }
 
 
 
 .navdropdown {
     float: left;
-    /* border: 1px solid black; */
     margin-left: 65px;
-    margin-top: 15px;
+    margin-top: 11px;
+    margin-bottom: 1px;
+    height: 52px;
 }
 
 .navcourses {
-    border: 1px solid black;
     width: 150px;
     height: 40px;
     display: flex;
@@ -444,13 +447,16 @@ ul li {
     border-radius: 10px;
     margin-bottom: 0px;
     font-family: mulish;
-    font-weight: 550;
+    font-weight: 600;
     font-size: 14px;
 }
 
 .navtwo ul {
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navtwo ul li {
@@ -459,8 +465,10 @@ ul li {
     font-size: 14px;
     font-weight: 550;
     font-family: mulish;
-    padding-left: 20px;
+    padding-left: 0;
+    margin: 0 0 0 20px;
 }
+
 
 
 /* Quckform */
@@ -781,7 +789,7 @@ ul li {
 #hover-content {
     display: none;
     flex: 0;
-    margin-top: 17px;
+    margin-top: 11px;
 }
 
 #hover-content.flex-display {
@@ -800,60 +808,41 @@ ul li {
 
 /* phonemenu */
 
-.phonemenu {
-    /* border: 1px solid black; */
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    z-index: 1000;
-    background-color: #007D6F;
+.badge {
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
 }
 
-.phonemenu-one {
-    /* border: 1px solid black; */
-    width: 35%;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.phonemenu-one ul li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.phonemenu-one ul li a {
-    text-decoration: none;
-    font-size: 13px;
-    color: white;
-}
-
-.whatsapp {
-    font-size: 20px;
-}
-
-.phone {
-    font-size: 15px;
-}
-
-.span-number {
-    margin-left: 5px;
-}
-
-@media screen and (min-width:485px) and (max-width:4000px) {
-    .phonemenu {
-        display: none;
-        visibility: hidden;
+@media screen and (max-width: 480px) {
+    .sticky-contact {
+        display: block !important;
     }
+}
+
+.sticky-contact {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: none;
+    background: #272566;
+}
+
+.sticky-contact li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 15px;
+}
+
+.sticky-contact li i {
+    color: #fff;
+}
+
+.sticky-contact li span a {
+    text-decoration: none;
 }
 
 
@@ -864,8 +853,6 @@ ul li {
 #mobile-navigation {
     /* border: 1px solid black; */
     width: 100%;
-    /* height: 70px; */
-
     position: sticky;
     top: 0%;
     z-index: 100;
@@ -877,7 +864,7 @@ ul li {
     /* border: 1px solid black; */
     width: 100%;
     /* height: 70px; */
-    padding: 10px 0px 10px 0px;
+    padding: 5px 0px 0px 0px;
 
 }
 
@@ -1763,8 +1750,6 @@ picture {
     height: 100%;
 }
 
-
-
 .guarentee-rating-odd-container {
     /* border: 1px solid black; */
     width: 31%;
@@ -1840,6 +1825,18 @@ picture {
     position: absolute;
     right: 13px;
     bottom: 0px;
+}
+
+.popup-video .modal-dialog .modal-content {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none
+}
+
+video {
+    display: inline-block;
+    vertical-align: baseline;
+    border: 3px solid white
 }
 
 
@@ -3461,6 +3458,7 @@ button:hover {
         flex-wrap: nowrap;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
     }
 
     .job-guarentee-info::-webkit-scrollbar {
@@ -3470,8 +3468,8 @@ button:hover {
     .job-guarentee-box-one {
         flex: 0 0 auto;
         width: 100%;
-            flex-direction: column;
-            margin-right: 20px;
+        flex-direction: column;
+        margin-right: 20px;
     }
 
     .job-guarentee-item-one {
@@ -9415,6 +9413,7 @@ footer {
     position: fixed;
     bottom: 0%;
     background-color: #272566;
+    z-index: 100;
 }
 
 .sticky-form {
