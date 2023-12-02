@@ -20,6 +20,7 @@
   </div>
 
   <div id="mobile-navigation">
+
   </div>
 
   <div id="phonemenu">
@@ -28,7 +29,6 @@
 
   <div id="content">
     <section class="awdiz-homepage">
-
       <div class="homePage">
         <div class="homepage-left">
           <div class="banner-section">
@@ -68,15 +68,10 @@
 
               <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1700872764/need.png"
                 alt="best ccna training institute in navi mumbai" title="best ccna training institute in navi mumbai">
-
-
-
             </picture>
           </div>
-
         </div>
       </div>
-
     </section>
 
     <section class="guarentee">
@@ -85,14 +80,12 @@
           <div class="guarentee-image">
             <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1701183319/Group_13.png"
               alt="Background Image">
-            
-      
             <div class="news-content">
               <a href="#" class="mt_btn_yellow" type="button" onclick="showModal(event)">
                 <i class="fa fa-play-circle" aria-hidden="true"></i>
-              </a>              
+              </a>
             </div>
-            <div class="custom-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <!-- <div class="custom-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-body" style="padding:0">
@@ -105,8 +98,24 @@
                   </div>
                 </div>
               </div>
+            </div> -->
+          </div>
+
+          <div class="custom-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body" style="padding:0">
+                  <video class="lazyload" width="800" controls="" preload="none"
+                    data-poster="https://res.cloudinary.com/www-awdiz-in/image/upload/v1578817110/video/awdiz-video-back.webp"
+                    id="course-video" style="object-fit:cover">
+                    <source src="/videos/Guaranteed-Placements-Courses-in-Mumbai-Pay-Fees-after-Placements.mp4"
+                      autostart="false" frameborder="0" allowfullscreen="">
+                  </video>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="guarentee-content">
             <h2>Awdiz's Pledge: Job Success for Every Graduate!</h2>
             <p class="content-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptates
@@ -127,8 +136,8 @@
             </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </section>
 
     <section class="cisco-training">
@@ -217,7 +226,7 @@
       }
 
       .video-container iframe {
-        height: 200px;
+        height: 250px;
         border-radius: 8px;
         box-shadow: 0px 15px 4px -11px #953535;
       }
@@ -243,6 +252,7 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+        z-index: 1;
       }
 
       .right-video-ok {
@@ -280,6 +290,10 @@
         .video-show {
           margin-bottom: 0;
           padding: 40px 0px 40px 0px;
+        }
+
+        .video-container iframe {
+          height: 200px;
         }
       }
     </style>
@@ -3675,10 +3689,10 @@
     </script>
 
     <script>
+
       function showModal() {
         var modal = document.getElementById('myModal');
         modal.style.display = 'flex';
-        // modal.style.display = 'block';
         var video = document.getElementById('course-video');
         video.load();
       }
@@ -3706,8 +3720,15 @@
           hideModal();
         }
       });
-    </script>
 
+      document.addEventListener('click', function (e) {
+        var guarenteeDiv = document.querySelector('.guarentee');
+        var modal = document.getElementById('myModal');
+        if (!guarenteeDiv.contains(e.target) && modal.style.display === 'flex') {
+          hideModal();
+        }
+      });
+    </script>
 
     <script>
       document.addEventListener('DOMContentLoaded', () => {
