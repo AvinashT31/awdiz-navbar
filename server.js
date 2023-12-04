@@ -1308,13 +1308,13 @@ document.addEventListener("DOMContentLoaded", function () {
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu">
               <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
+                <li><a href="#">Data Science with R Training</a></li>
+                <li><a href="#">Data Science with Python Training</a></li>
+                <li><a href="#">Data Science with SAS Training</a></li>
+                <li><a href="#">Data Science with Tableau Training</a></li>
+                <li><a href="#">Data Science with Tableau Training</a></li>
+                <li><a href="#">Data Science with Tableau Training</a></li>
+                <li><a href="#">Data Science with Tableau Training</a></li>
               </ul>
             </div>
           </div>
