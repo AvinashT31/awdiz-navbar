@@ -34,7 +34,6 @@ function handleClick(event) {
   });
 }
 
-
 function displaycontent(event) {
   document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener('mouseover', function (event) {
@@ -1118,7 +1117,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  // Debounce the handleScroll function. Adjust the 250ms to your needs.
   window.addEventListener('scroll', debounce(handleScroll, 100));
 });
 //   2.global mobile header
@@ -1186,16 +1184,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="software-menu-list">
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
+            <div class="software-menu-submenu-list">
+            <a href="">Data Science with R Training</a>
+            <a href="">Data Science with Python Training</a>
+            <a href="">Data Science with SAS Training</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with TableauTraining</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with Tableau Training</a>
             </div>
           </div>
           <div class="software-menu-job-program">
@@ -1306,16 +1302,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="software-menu-list">
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="#">Data Science with R Training</a></li>
-                <li><a href="#">Data Science with Python Training</a></li>
-                <li><a href="#">Data Science with SAS Training</a></li>
-                <li><a href="#">Data Science with Tableau Training</a></li>
-                <li><a href="#">Data Science with Tableau Training</a></li>
-                <li><a href="#">Data Science with Tableau Training</a></li>
-                <li><a href="#">Data Science with Tableau Training</a></li>
-              </ul>
+            <div class="software-menu-submenu-list">
+            <a href="">Data Science with R Training</a>
+            <a href="">Data Science with Python Training</a>
+            <a href="">Data Science with SAS Training</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with TableauTraining</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with Tableau Training</a>
             </div>
           </div>
 
@@ -1431,16 +1425,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="software-menu-list">
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
+            <div class="software-menu-submenu-list">
+            <a href="">Data Science with R Training</a>
+            <a href="">Data Science with Python Training</a>
+            <a href="">Data Science with SAS Training</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with TableauTraining</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with Tableau Training</a>
             </div>
           </div>
 
@@ -1555,16 +1547,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="software-menu-list">
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
+            <div class="software-menu-submenu-list">
+            <a href="">Data Science with R Training</a>
+            <a href="">Data Science with Python Training</a>
+            <a href="">Data Science with SAS Training</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with TableauTraining</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with Tableau Training</a>
             </div>
           </div>
 
@@ -1678,16 +1668,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="software-menu-list">
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
+            <div class="software-menu-submenu-list">
+            <a href="">Data Science with R Training</a>
+            <a href="">Data Science with Python Training</a>
+            <a href="">Data Science with SAS Training</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with TableauTraining</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with Tableau Training</a>
             </div>
           </div>
 
@@ -1801,16 +1789,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="software-menu-list">
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
-            <div class="software-menu-submenu">
-              <ul>
-                <li><a href="">Data Science with R Training</a></li>
-                <li><a href="">Data Science with Python Training</a></li>
-                <li><a href="">Data Science with SAS Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-                <li><a href="">Data Science with Tableau Training</a></li>
-              </ul>
+            <div class="software-menu-submenu-list">
+            <a href="">Data Science with R Training</a>
+            <a href="">Data Science with Python Training</a>
+            <a href="">Data Science with SAS Training</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with TableauTraining</a>
+            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with Tableau Training</a>
             </div>
           </div>
 
@@ -2202,6 +2188,14 @@ function shareOnLinkedIn() {
 function shareOnWhatsApp() {
   var n = "https://wa.me/?text=" + encodeURIComponent(document.location); window.open(n)
 }
+
+
+// Close the share options when clicking anywhere else on the page
+document.addEventListener('click', function () {
+  document.querySelectorAll('.share-button').forEach(function (button) {
+    button.classList.remove('touched');
+  });
+});
 
 
 //   5.GLOBAL-TOP-BAR-SECTION
