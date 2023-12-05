@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blogSection {
+    width: 100%;
+    padding: 30px 0;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.container {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+}
+
+.date {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-family: hind;
+}
+
+
+.que-first-blog {
+    padding: 60px 0px 60px 0px;
+    background-color: #edf8fA;
+}
+
+.que-second-blog {
+    padding: 20px 0px 60px 0px;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.blog-cisco-form::after {
+    height: 495px !important;
+    bottom: 75% !important;
+    width: 80% !important;
+    left: 10% !important;
+}
+
+.first-blog-page {
+    width: 100% !important;
+}
+
+.que-third-blog {
+    padding: 20px 0px 60px 0px;
+    background-color: #edf8fA;
+}
+
+.que-two-bottom-para {
+    margin-top: 20px;
+    font-family: mulish;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.blog-four-bottom-para {
+    margin-top: 20px;
+    font-family: mulish;
+    font-size: 16px;
+    line-height: 1.8
+}
+
+.blog-four-bottom-para-one {
+    margin-top: 15px;
+    font-family: mulish;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.containerWrapper-h2 {
+    font-size: calc(1.4vw + 1rem);
+    color: #272566;
+    font-family: nunito;
+}
+
+.containerWrapper>p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: mulish;
+    color: black;
+    line-height: 1.8;
+}
+
+.blog-question-one {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 40px;
+    color: #272566;
+    font-family: nunito;
+    font-size: calc(1.2vw + 1rem);
+}
+
+
+.blog-diagram-one {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    margin-top: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.blog-diagram-one img {
+    width: 100%;
+    height: 100%;
+}
+
+.sub-heading-one {
+    margin-top: 30px;
+    font-family: nunito;
+    font-size: calc(1.38vw + 1rem);
+    color: #272566;
+}
+
+.bullet-heading-one {
+    margin-top: 15px;
+    font-size: calc(0.9vw + 1rem);
+    color: #272566;
+    font-family: nunito;
+}
+
+/* blog question div ul styling */
+
+.blog-list-one {
+    padding: 20px 0px 20px 0px
+}
+
+.list-style {
+    list-style: none;
+    color: black;
+    font-family: mulish;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.list-style p{
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.list-style i {
+    padding-right: 8px;
+    line-height: 1.7;
+}
+
+/* second question section */
+
+.que-two-heading {
+    padding-top: 10px;
+    color: #272566;
+    font-family: nunito;
+    font-size: calc(0.9vw + 1rem);
+}
+
+
+.blog-question-two {
+    color: #272566;
+    font-family: nunito;
+    font-size: calc(1.38vw + 1rem);
+    margin-top: 20px;
+}
+
+.que-two-bottom-heading {
+    color: #272566;
+    font-family: nunito;
+    font-size: calc(0.9vw + 1rem);
+}
+
+.bullet-heading-two {
+    font-size: calc(0.9vw + 1rem);
+    color: #272566;
+    font-family: nunito;
+}
+
+/* cta wrapper  */
+
+.cta-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* height: 140px; */
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    background-color: #272566;
+    border-radius: 15px;
+    padding: 30px 0px 30px 0px;
+}
+
+.topic {
+    line-height: 1.5;
+}
+
+.topic h4 {
+    font-size: 28px;
+    padding-bottom: 5px;
+    font-family: mulish;
+    color: white;
+}
+
+.topic p {
+    font-size: 20px;
+    font-family: mulish;
+    color: white;
+}
+
+.brochure-btn-wrapper {
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #007D6F;
+    height: 60px;
+}
+
+.brochure-btn-wrapper a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: mulish;
+}
+
+
+/* third question section */
+.blog-question-three {
+    margin-top: 40px;
+    color: #272566;
+    font-family: nunito;
+    font-size: calc(1.38vw + 1rem);
+}
+
+.blog-three-bottom-heading {
+    font-size: calc(0.9vw + 1rem);
+    color: #272566;
+    font-family: nunito;
+    padding-bottom: 10px;
+}
+
+.tableWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-family: nunito;
+    background: #007D6F;
+    height: 60px;
+    color: white;
+}
+
+td {
+    color: black;
+    height: 60px;
+    font-family: mulish;
+    text-align: center;
+}
+
+.tr-first {
+    background: #99cbc5;
+}
+
+.tr-second {
+    background-color: #f3f4f6;
+}
+
+.blog-three-bottom-para {
+    margin-top: 30px;
+    font-family: mulish;
+    font-size: 16px;
+}
+
+/* fourth question section */
+
+/* fifth question section */
+.blog-ques-sub-heading {
+    padding-top: 15px;
+    font-size: calc(0.9vw + 1rem);
+    color: #272566;
+    font-family: nunito;
+}
+
+.blog-ques-sub-heading-one {
+    margin-top: 15px;
+    font-size: calc(0.9vw + 1rem);
+    color: #272566;
+    font-family: nunito;
+}
+
+/* sixth question section */
+
+.sixth-section-p {
+    margin-top: 0px !important;
+    font-family: mulish;
+    line-height: 1.8;
+}
+
+.blog-list-one-item {
+    padding: 20px 0px 5px 0px;
+    font-family: mulish;
+}
+
+.conclusion-section {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .date {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .blog-homepage {
+        height: 780px;
+    }
+
+    .cta-wrapper {
+        flex-direction: column;
+    }
+
+    .topic {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .topic h4 {
+        font-size: 18px;
+    }
+
+    .topic p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .cta-btn {
+        padding: 0px 20px 0px 20px;
+        margin-top: 20px;
+    }
+
+    .brochure-btn-wrapper {
+        margin: 0;
+    }
+
+    .brochure-btn-wrapper a {
+        font-size: 15px;
+    }
+
+    .que-two-heading {
+        font-size: 20px;
+    }
+
+    .bullet-heading-one {
+        font-size: 18px;
+    }
+
+    th {
+        font-size: 14px;
+    }
+
+    td {
+        padding: 20px 0px 20px 0px;
+        font-size: 14px;
+    }
+
+    .blog-ques-sub-heading {
+        font-size: 20px;
+    }
+
+    .blog-cisco-form::after {
+        height: 462px !important;
+        bottom: 77% !important;
+        width: 95% !important;
+        left: 2% !important;
+    }
+
+    .content-info{
+        margin-top: 20px;
+    }
+
+    .blog-ques-sub-heading-one{
+        font-size: 20px;
+    }
+
+    .blog-question-three{
+        font-size: 22px;
+    }
+
+    .list-style{
+        padding-left: 0px;
+    }
+}
