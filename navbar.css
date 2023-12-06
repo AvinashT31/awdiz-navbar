@@ -1703,7 +1703,7 @@ picture {
 @media screen and (max-width:480px) {
 
     .banner-section {
-        height: 350px !important;
+        height: 350px;
     }
 }
 
