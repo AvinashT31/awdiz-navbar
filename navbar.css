@@ -2660,7 +2660,7 @@ textarea.cisco-textarea::placeholder {
 .career-page>p {
     padding: 20px 0px 20px 0px;
     font-size: 16px;
-    width: 60%;
+    width: 100%;
     line-height: 1.5;
     font-family: mulish;
 }
@@ -2800,7 +2800,7 @@ button:hover {
 }
 
 .mobile-carousel-card {
-   flex: 0 0 90%;
+    flex: 0 0 90%;
     box-shadow: 0 2px 5px 0 rgba(17, 121, 239, .15);
     border-radius: 6px;
     border: 1px solid #e6ecef;
@@ -2868,7 +2868,7 @@ button:hover {
 
 
 @media screen and (min-width:481px) and (max-width:4000px) {
-    .mobile-carousel-container{
+    .mobile-carousel-container {
         display: none;
         visibility: hidden;
     }
@@ -2890,8 +2890,8 @@ button:hover {
     }
 
     .carousel-container {
-       display: none;
-       visibility: hidden;
+        display: none;
+        visibility: hidden;
     }
 
 }
@@ -2913,7 +2913,7 @@ button:hover {
 }
 
 
-.our-courses h4 {
+.our-courses-h4 {
     color: #272566;
     font-family: nunito;
     font-weight: 800;
@@ -3014,7 +3014,7 @@ button:hover {
     margin-top: 30px;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     cursor: pointer;
-    background-color: #edf8fA;
+    background-color: white;
 }
 
 .carousel-slide-unique {
@@ -3093,12 +3093,7 @@ button:hover {
 .our-courses-image {
     /*! border: 1px solid black; */
     width: 100%;
-    padding-top: 0px;
     padding-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    font-family: poppins;
-    font-size: 16px;
 }
 
 .our-courses-image img {
@@ -3111,7 +3106,7 @@ button:hover {
     color: #272566;
     font-family: nunito;
     font-weight: 800;
-    font-size: calc(1.58vw + 1rem);
+    font-size: calc(1vw + 1rem);
     line-height: 1.2;
 }
 
@@ -3166,10 +3161,6 @@ button:hover {
     height: 100%;
 }
 
-/* .duration-one  p{
-    font-size: 20px;
-} */
-
 .duration-two {
     /* border: 1px solid black; */
     /* padding: 5px 0px 5px 0px; */
@@ -3201,19 +3192,15 @@ button:hover {
 @media screen and (max-width: 768px) {
     .carousel-card-unique {
         flex: 0 0 calc(33% - 10px);
-        /* Adjust width for two and a half cards */
         margin-right: 10px;
-        /* Adjust margin to ensure spacing */
     }
 
     .carousel-wrapper-unique {
         overflow-x: hidden;
-        /* Hide the overflow to clip the half-visible card */
     }
 
     .carousel-slide-unique {
         justify-content: start;
-        /* Align items to the start */
     }
 }
 
@@ -3283,7 +3270,59 @@ button:hover {
 }
 
 
-@media screen and (max-width:1280px) {}
+@media screen and (max-width:1280px) {
+    .carousel-card-unique {
+        font-size: 14px;
+        padding: 15px;
+        margin-right: 65px;
+    }
+
+    .our-courses-para {
+        font-size: 15px;
+    }
+
+    .our-courses-course-heading>h4 {
+        font-size: calc(0.5vw + 1rem);
+    }
+
+    .our-courses-angular>p {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+
+    .duration-one>p {
+        font-size: 14px;
+    }
+
+    .duration-one-image>i {
+        font-size: 14px;
+    }
+
+    .btns {
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .our-courses {
+        padding: 30px 0px 30px 0px;
+        }
+        
+        .our-courses-summary {
+        padding:0px;
+        }
+        
+        .carousel-wrapper-unique {
+        margin-top: 20px;
+        }
+        
+        .our-courses-info {
+        margin-top: 0px;
+        }
+
+        .our-courses-angular {
+            margin-top: 20px;
+        }
+}
 
 @media screen and (min-width:992px) and (max-width:1199px) {}
 
@@ -3451,6 +3490,7 @@ button:hover {
     list-style: none;
     padding: 0;
     justify-content: space-between;
+    padding: 0px 15px;
 }
 
 .guarantee-courses-name ul li {
@@ -3509,12 +3549,13 @@ button:hover {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background-color: white;
+    margin-bottom: 2%;
 }
 
 .job-guarentee-item-one {
     /* border: 1px solid black; */
     width: 45%;
-    height: 186px;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -3527,6 +3568,10 @@ button:hover {
 .job-guarentee-section-one {
     /* border: 1px solid black; */
     width: 53%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 15px;
 }
 
 .job-guarentee-item-two {
@@ -3667,13 +3712,46 @@ button:hover {
     }
 }
 
-@media screen and (max-width:1280px) {}
+@media screen and (max-width:1280px) {
+    .guarantee-courses-name ul li {
+        font-size: 14px;
+    }
 
-@media screen and (min-width:992px) and (max-width:1199px) {}
+    .job-guarentee-section-one {
+        height: 200px;
+    }
 
-@media screen and (min-width:768px) and (max-width:991px) {}
+    .placement-button {
+        padding: 0;
+        font-size: 12px;
+        height: 30px;
+        width: 35%;
+    }
 
-@media screen and (min-width:481px) and (max-width:767px) {}
+    .summary {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .job-guarentee-info {
+        padding: 30px 0px 10px 0px;
+    }
+
+    .placement-view {
+        padding: 0;
+    }
+
+    .view-more-button {
+        padding: 15px 0px 15px 0px;
+        font-size: 14px;
+     width: 12%;
+     height: auto;
+    }
+
+    .guarantee-courses-name{
+        margin-top: 0px;
+    }
+}
 
 @media screen and (max-width:480px) {
 
@@ -3757,6 +3835,7 @@ button:hover {
     font-weight: 800;
     font-size: calc(1.48vw + 1rem);
     line-height: 1.2;
+    text-align: center;
 }
 
 @-webkit-keyframes scroll {
@@ -3841,13 +3920,17 @@ button:hover {
 
 @media screen and (width:1440px) {}
 
-@media screen and (max-width:1280px) {}
-
-@media screen and (min-width:992px) and (max-width:1199px) {}
-
-@media screen and (min-width:768px) and (max-width:991px) {}
-
-@media screen and (min-width:481px) and (max-width:767px) {}
+@media screen and (max-width:1280px) {
+    .infinty-carousel{
+        padding: 30px 0px 30px 0px;
+        }
+        
+        .slider {
+        margin-top:30px;
+        padding: 40px 0px 0px 0px;
+            height: 320px;
+        }
+}
 
 @media screen and (max-width:480px) {
 
@@ -4023,6 +4106,9 @@ button:hover {
     /* border: 1px solid black; */
     width: 60%;
     font-family: nunito;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .certificate-page-info>h2 {
@@ -4031,11 +4117,11 @@ button:hover {
     margin-left: 32px;
 }
 
-.certificate-page-info>p {
+/* .certificate-page-info>p {
     padding-top: 15px;
     font-size: 18px;
     margin-left: 32px;
-}
+} */
 
 .certificate-button {
     /* border: 1px solid black; */
@@ -4097,9 +4183,71 @@ button:hover {
     font-weight: 550;
 }
 
+.certifcate-star{
+    padding-top: 15px;
+}
+
 @media screen and (width:1440px) {}
 
-@media screen and (max-width:1280px) {}
+@media screen and (max-width:1280px) {
+    .certificate{
+        padding: 30px 0px 20px 0px;
+        }
+        
+        .certificate-page{
+        padding: 20px 0px 20px 0px;
+        }
+
+        .certificate-first-page {
+            padding: 20px 20px 20px 20px;
+        }
+        
+        .certificate-page-info {
+        height: 140px;
+            margin-left: 32px;
+        }
+
+        .certi{
+            font-size: 24px !important;
+            font-family: 'hind';
+            color: #272566;
+        }
+
+        .certificate-page-info-p{
+            font-size: 18px;
+    font-family: 'Mulish';
+        }
+
+        .certificate-button {
+            width: 46%;
+        }
+
+        .certificate-info {
+            padding-top:0px;
+            }
+            
+            .certificate-rating {
+            padding:0px;
+            }
+            
+            .certificate-rating-first {
+                padding: 15px 0px 0px 0px;
+            }
+            
+            .certificate-rating-first-para {
+                font-size: 30px;
+            }
+            
+            .certificate-rating-first-para1 {
+                font-size: 20px;
+                margin-top: 0px !important; 
+                font-family: 'hind';
+            }
+
+            .certifcate-star{
+                padding-top: 0px;
+            }
+}
 
 @media screen and (min-width:992px) and (max-width:1199px) {}
 
@@ -4439,12 +4587,6 @@ button:hover {
         padding-bottom: 80px;
     } */
 
-    .view-more-button {
-        padding: 10px 0px 10px 0px;
-        font-size: 16px;
-        height: auto;
-    }
-
     .placement-content>p {
         padding: 15px 0px 15px 0px;
     }
@@ -4525,7 +4667,7 @@ button:hover {
     overflow: hidden;
 }
 
-.circle-placement-text{
+.circle-placement-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -4533,7 +4675,7 @@ button:hover {
     height: 100%;
 }
 
-.circle-grid-button{
+.circle-grid-button {
     width: 35%;
     padding: 0;
     border: 1px solid black;

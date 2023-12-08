@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     network.style.backgroundColor = "#007d6f";
     network.style.color = "#ffffff";
 
-    software.style.backgroundColor = "initial";
+    software.style.backgroundColor = "#edf8fa";
     software.style.color = "initial";
     softwarecourse.style.display = "none";
 
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
     network.style.backgroundColor = "#edf8fa";
     network.style.color = "black";
 
-    software.style.backgroundColor = "initial";
+    software.style.backgroundColor = "#edf8fa";
     software.style.color = "initial";
     softwarecourse.style.display = "none";
 
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
     network.style.backgroundColor = "#edf8fa";
     network.style.color = "black";
 
-    software.style.backgroundColor = "initial";
+    software.style.backgroundColor = "#edf8fa";
     software.style.color = "initial";
     softwarecourse.style.display = "none";
 
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
     network.style.backgroundColor = "#edf8fa";
     network.style.color = "black";
 
-    software.style.backgroundColor = "initial";
+    software.style.backgroundColor = "#edf8fa";
     software.style.color = "initial";
     softwarecourse.style.display = "none";
 
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
     security.style.backgroundColor = "#007d6f";
     security.style.color = "#ffffff";
 
-    software.style.backgroundColor = "initial";
+    software.style.backgroundColor = "#edf8fa";
     software.style.color = "initial";
     softwarecourse.style.display = "none";
 
