@@ -23,9 +23,9 @@
 
   </div>
 
-  <div id="phonemenu">
+  <!-- <div id="phonemenu">
 
-  </div>
+  </div> -->
 
   <div id="content">
     <section class="awdiz-homepage">
@@ -124,30 +124,51 @@
       </div>
     </section>
 
-    <section class="cisco-training">
+    <section id="cisco-training" class="cisco-training">
       <div class="cisco-training-page">
         <div class="cisco-training-form">
-          <form class="cisco-form">
-            <h3>Contact to Plan your Amazing Career Path Journey with Awdiz</h3>
-            <label>Full Name</label>
-            <br>
-            <input type="text" placeholder="Please enter your Full Name">
-            <br>
-            <label>Phone</label>
-            <br>
-            <input type="text" placeholder="Please enter your Phone Number">
-            <br>
-            <label>Email</label>
-            <br>
-            <input type="text" placeholder="Please enter your Email">
-            <br>
-            <label>Message</label>
-            <br>
-            <textarea class="cisco-textarea" name="" id="" cols="30" rows="2"
-              placeholder="Message for Awdiz Placement Team"></textarea>
-            <br>
-            <button>Submit</button>
+          <form class="cisco-form" action="submitform.php" method="POST">
+              <h3>Contact to Plan your Amazing Career Path Journey with Awdiz</h3>
+              <label>Full Name</label>
+              <br>
+              <input type="text" name="name" placeholder="Please enter your Full Name">
+              <br>
+              <label>Phone</label>
+              <br>
+              <input type="text" name="phone" placeholder="Please enter your Phone Number">
+              <br>
+              <label>Email</label>
+              <br>
+              <input type="text" name="email" placeholder="Please enter your Email">
+              <br>
+              <label>Message</label>
+              <br>
+              <textarea class="cisco-textarea" name="message" cols="30" rows="2" placeholder="Message for Awdiz Placement Team"></textarea>
+              <br>
+              <button type="submit">Submit</button>
           </form>
+      </div>
+      
+        
+        <div id="mobile-badge" class="badge sticky-contact" style="z-index:100;height:40px">
+          <ul>
+            <li>
+              <i class="fa-solid fa-phone phone"></i>
+              <span>
+                <a href="tel:+918657202255">
+                  <b style="font-weight: 700;color: #fff">8657202255</b>
+                </a>
+              </span>
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp whatsapp"></i>
+              <span>
+                <a href="https://api.whatsapp.com/send?phone=917678000695">
+                  <b style="font-weight: 700;color: #fff;">7678000695</b>
+                </a>
+              </span>
+            </li>
+          </ul>
         </div>
 
         <div class="cisco-training-info">
@@ -177,6 +198,35 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="cisco-enquiry">
+          <div class="badge-one" style="width: 56%;">
+
+          </div>
+          <div id="normal-badge" class="badge sticky-contact" style="z-index:100;height:40px">
+            <ul>
+              <li>
+                <i class="fa-solid fa-phone phone"></i>
+                <span>
+                  <a href="tel:+918657202255">
+                    <b style="font-weight: 700;color: #fff">8657202255</b>
+                  </a>
+                </span>
+              </li>
+              <li>
+                <i class="fa-brands fa-whatsapp whatsapp"></i>
+                <span>
+                  <a href="https://api.whatsapp.com/send?phone=917678000695">
+                    <b style="font-weight: 700;color: #fff;">7678000695</b>
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
 
@@ -261,6 +311,11 @@
         .video-show-page-ok {
           width: 100%;
           margin-top: 40px;
+        }
+
+        .video-show {
+          padding: 30px 0px 30px 0px;
+          margin-bottom: 0px;
         }
 
 
@@ -2695,27 +2750,108 @@
       <div class="placement-view">
         <button class="view-more-button">View All Courses <i class="fa-solid fa-chevron-right"></i> </button>
       </div>
-
-
     </section>
 
-    <section class="infinty-carousel">
-      <div class="container">
-        <h5>Our Hiring Partners</h5>
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide"><img class="image-fluid" src="/img/images.jpg" alt=""> </div>
-            <div style="margin-left: 2%; " class="slide">
-              <img class="image-fluid" src="/img/images.jpg" alt="">
-            </div>
-            <div style="margin-left: 2%; " class="slide"> <img class="image-fluid" src="/img/images.jpg" alt=""> </div>
-            <div style="margin-left: 2%;" class="slide"> <img class="image-fluid" src="/img/images.jpg" alt=""> </div>
-            <div style="margin-left: 2%; " class="slide"> <img class="image-fluid" src="/img/images.jpg" alt=""> </div>
-            <div style="margin-left: 2%;" class="slide"> <img class="image-fluid" src="/img/images.jpg" alt=""></div>
-            <div style="margin-left: 2%; " class="slide"> <img class="image-fluid" src="/img/images.jpg" alt=""></div>
-            <div style="margin-left: 2%;" class="slide"> <img class="image-fluid" src="/img/images.jpg" alt=""> </div>
-            <div style="margin-left: 2%;" class="slide"> <img class="image-fluid" src="/img/images.jpg" alt=""> </div>
-            <div style="margin-left: 2%; " class="slide"> <img class="image-fluid" src="/img/images.jpg" alt=""> </div>
+    <section class="infinity-carousel">
+      <h2>Our Hiring Partners</h2>
+      <div class="infinity-carousel-slider">
+        <div class="infinity-carousel-slide-track">
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
+          </div>
+          <div class="infinity-carousel-slide">
+            <img class="image-fluid" src="/img/images.jpg" alt="">
           </div>
         </div>
       </div>
@@ -2831,14 +2967,22 @@
               marketing or changed their
               career path</p>
           </div>
+
+
           <div class="certificate-rating-first">
-            <p style="padding-top: 15px;" class="certificate-rating-first-para">Google</p>
-            <div class="certifcate-star">
-              <img class="img-fluid" src="/img/star.svg" alt="">
-              <img class="img-fluid" src="/img/star.svg" alt="">
-              <img class="img-fluid" src="/img/star.svg" alt="">
-              <img class="img-fluid" src="/img/star.svg" alt="">
-              <img class="img-fluid" src="/img/star.svg" alt="">
+            <div class="cetificate-rating-item-one">
+              <div class="certificate-rating-item-two">
+                <div class="certificate-rating-item-three">
+                  <p class="certificate-rating-item-three-p">Google</p>
+                </div>
+                <div class="certficate-rating-item-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
             </div>
             <p style="margin-top: 15px;" class="certificate-rating-first-para1">200+ 5 Star Customer
               Reviews</p>
@@ -2856,7 +3000,7 @@
     <section class="awdiz-choose">
       <div class="container">
         <h5 class="choose-heading">Why Choose Awdiz Institute</h5>
-        <p style="font-size: 16px; line-height: 1.5; padding: 20px 0px 20px 0px; font-family: mulish;">Awdiz is the only
+        <p style="font-size: 16px; line-height: 1.7; padding: 20px 0px 20px 0px; font-family: mulish;">Awdiz is the only
           Training & Placement
           Institute in Mumbai Navi Mumbai Thane providing Job Guaranteed Training Courses to Mumbai University Students.
           Students have to pay the fees after getting offer letter from the company by selecting any one of the 100%
@@ -2963,7 +3107,7 @@
       </div>
     </section>
 
-    <section class="placement-record">
+    <!-- <section class="placement-record">
       <div class="container">
         <div class="placement">
           <div class="placement-box">
@@ -3013,7 +3157,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="circle-container">
       <div class="container">
@@ -3292,7 +3436,8 @@
                 </div>
               </div>
             </div>
-            <div style=" display: flex; justify-content: flex-end; width: 95%; margin: auto; margin-top: 35px;">
+            <div
+              style=" display: flex; justify-content: flex-end; width: 95%; margin: auto; margin-top: 35px; position: relative; z-index: 101;">
               <button class="double-button" id="prevButton"><i class="fa-solid fa-chevron-left"></i></button>
               <button class="double-button" id="nextButton"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
@@ -3648,313 +3793,374 @@
             </div>
           </div>
         </div>
-        <div class="placement-view">
-          <button class="view-more-button  blog-button">View All Blogs <i class="fa-solid fa-chevron-right"></i>
+        <div class="blog-placement-view">
+          <button class="blog-button">View All Blogs <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
       </div>
     </section>
 
+    <a href="#cisco-training"><button id="quick-enquiry">Quick Enquiry</button></a>
 
-    <div id="arrow-up" class="arrow-up">
 
+  </div>
+
+  <a href="#cisco-training" id="mobile-enquiry-button">
+    <div class="mobile-enquiry-section">
+      <div class="mobile-button">
+        <p>Quick Enquiry</p>
+      </div>
     </div>
-
-    <div id="share-buttons">
-
-    </div>
-
-    <div id="global-footer">
-
-    </div>
-
-
-    <div id="form-modal">
-
-    </div>
-
-
-    <script>
-      const myIndicators = document.querySelectorAll('.my-indicator');
-      const mySlides = document.querySelectorAll('.my-carousel-slide');
-      let myCurrentSlide = 0;
-
-      function myShowSlide(slideIndex) {
-        mySlides.forEach((slide, index) => {
-          if (index === slideIndex) {
-            slide.style.display = 'block';
-          } else {
-            slide.style.display = 'none';
-          }
-        });
-        myIndicators.forEach((indicator, index) => {
-          if (index === slideIndex) {
-            indicator.classList.add('my-active');
-          } else {
-            indicator.classList.remove('my-active');
-          }
-        });
-      }
-
-      myShowSlide(myCurrentSlide);
-
-      myIndicators.forEach((myIndicator, index) => {
-        myIndicator.addEventListener('click', () => {
-          myShowSlide(index);
-          myCurrentSlide = index;
-        });
-      });
-    </script>
+  </a>
 
 
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        updateCardsPerView();
-        window.addEventListener('resize', updateCardsPerView);
-      });
 
-      const prevBtnUnique = document.getElementById('prevBtnn');
-      const nextBtnUnique = document.getElementById('nextBtnn');
-      const carouselSlideUnique = document.querySelector('.carousel-slide-unique');
-      let currentCardUnique = 0;
-      let cardsPerViewUnique = 5;
+  <div id="arrow-up" class="arrow-up">
 
-      prevBtnUnique.addEventListener('click', () => {
-        if (currentCardUnique === 0) {
-          currentCardUnique = carouselSlideUnique.children.length - cardsPerViewUnique;
+  </div>
+
+  <div id="share-buttons">
+
+  </div>
+
+  <div id="global-footer">
+
+  </div>
+
+
+  <!-- <div id="form-modal">
+
+    </div> -->
+
+
+  <script>
+    const myIndicators = document.querySelectorAll('.my-indicator');
+    const mySlides = document.querySelectorAll('.my-carousel-slide');
+    let myCurrentSlide = 0;
+
+    function myShowSlide(slideIndex) {
+      mySlides.forEach((slide, index) => {
+        if (index === slideIndex) {
+          slide.style.display = 'block';
         } else {
-          currentCardUnique--;
+          slide.style.display = 'none';
         }
-        moveCarouselUnique();
+      });
+      myIndicators.forEach((indicator, index) => {
+        if (index === slideIndex) {
+          indicator.classList.add('my-active');
+        } else {
+          indicator.classList.remove('my-active');
+        }
+      });
+    }
+
+    myShowSlide(myCurrentSlide);
+
+    myIndicators.forEach((myIndicator, index) => {
+      myIndicator.addEventListener('click', () => {
+        myShowSlide(index);
+        myCurrentSlide = index;
+      });
+    });
+  </script>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCardsPerView();
+      window.addEventListener('resize', updateCardsPerView);
+    });
+
+    const prevBtnUnique = document.getElementById('prevBtnn');
+    const nextBtnUnique = document.getElementById('nextBtnn');
+    const carouselSlideUnique = document.querySelector('.carousel-slide-unique');
+    let currentCardUnique = 0;
+    let cardsPerViewUnique = 5;
+
+    prevBtnUnique.addEventListener('click', () => {
+      if (currentCardUnique === 0) {
+        currentCardUnique = carouselSlideUnique.children.length - cardsPerViewUnique;
+      } else {
+        currentCardUnique--;
+      }
+      moveCarouselUnique();
+    });
+
+    nextBtnUnique.addEventListener('click', () => {
+      if (currentCardUnique < carouselSlideUnique.children.length - cardsPerViewUnique) {
+        currentCardUnique++;
+      } else {
+        currentCardUnique = 0;
+      }
+      moveCarouselUnique();
+    });
+
+    function moveCarouselUnique() {
+      const cardWidthUnique = carouselSlideUnique.children[0].clientWidth;
+      const cardMarginRightUnique = parseFloat(getComputedStyle(carouselSlideUnique.children[0]).marginRight);
+      const cardMarginLeftUnique = parseFloat(getComputedStyle(carouselSlideUnique.children[0]).marginLeft);
+      const totalCardWidthUnique = cardWidthUnique + cardMarginRightUnique + cardMarginLeftUnique;
+
+      // Calculate max translateX to prevent cutoff
+      const maxTranslateX = (carouselSlideUnique.children.length - cardsPerViewUnique) * totalCardWidthUnique;
+
+      const translateX = Math.min(currentCardUnique * totalCardWidthUnique, maxTranslateX);
+      carouselSlideUnique.style.transform = `translateX(-${translateX}px)`;
+    }
+
+    function updateCardsPerView() {
+      if (window.innerWidth <= 600) {
+        cardsPerViewUnique = 2;
+      } else {
+        cardsPerViewUnique = 5;
+      }
+      moveCarouselUnique(); // Adjust the position based on new cardsPerView
+    }
+  </script>
+
+  <script src="server.js"></script>
+
+  <script>
+    function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      const carouselSlide = document.querySelector(carouselClass);
+
+      let currentCard = 0;
+
+      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
+
+      prevBtn.addEventListener('click', () => {
+        const step = getStep();
+        if (currentCard === 0) {
+          currentCard = carouselSlide.children.length - step;
+        } else {
+          currentCard -= step;
+        }
+        moveCarousel();
       });
 
-      nextBtnUnique.addEventListener('click', () => {
-        if (currentCardUnique < carouselSlideUnique.children.length - cardsPerViewUnique) {
-          currentCardUnique++;
+      nextBtn.addEventListener('click', () => {
+        const step = getStep();
+        if (currentCard >= carouselSlide.children.length - step) {
+          currentCard = 0;
         } else {
-          currentCardUnique = 0;
+          currentCard += step;
         }
-        moveCarouselUnique();
+        moveCarousel();
       });
 
-      function moveCarouselUnique() {
-        const cardWidthUnique = carouselSlideUnique.children[0].clientWidth;
-        const cardMarginRightUnique = parseFloat(getComputedStyle(carouselSlideUnique.children[0]).marginRight);
-        const cardMarginLeftUnique = parseFloat(getComputedStyle(carouselSlideUnique.children[0]).marginLeft);
-        const totalCardWidthUnique = cardWidthUnique + cardMarginRightUnique + cardMarginLeftUnique;
-
-        // Calculate max translateX to prevent cutoff
-        const maxTranslateX = (carouselSlideUnique.children.length - cardsPerViewUnique) * totalCardWidthUnique;
-
-        const translateX = Math.min(currentCardUnique * totalCardWidthUnique, maxTranslateX);
-        carouselSlideUnique.style.transform = `translateX(-${translateX}px)`;
+      function moveCarousel() {
+        const step = getStep();
+        const cardWidth = carouselSlide.children[0].clientWidth;
+        const cardMarginRight = parseFloat(getComputedStyle(carouselSlide.children[0]).marginRight);
+        const cardMarginLeft = parseFloat(getComputedStyle(carouselSlide.children[0]).marginLeft);
+        const totalCardWidth = cardWidth + cardMarginRight + cardMarginLeft;
+        carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
       }
 
-      function updateCardsPerView() {
-        if (window.innerWidth <= 600) {
-          cardsPerViewUnique = 2;
-        } else {
-          cardsPerViewUnique = 5;
-        }
-        moveCarouselUnique(); // Adjust the position based on new cardsPerView
-      }
-    </script>
+      window.addEventListener('resize', moveCarousel);
+    }
+    initializeCarousel('prevButton', 'nextButton', '.double-slide', 2, 1);
+  </script>
 
-    <script src="server.js"></script>
+  <script>
 
-    <script>
-      function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
-        const prevBtn = document.getElementById(prevBtnId);
-        const nextBtn = document.getElementById(nextBtnId);
-        const carouselSlide = document.querySelector(carouselClass);
+    function showModal() {
+      event.preventDefault()
+      var modal = document.getElementById('myModal');
+      modal.style.display = 'flex';
+      var video = document.getElementById('course-video');
+      video.load();
+    }
 
-        let currentCard = 0;
+    function hideModal() {
+      var modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+      var video = document.getElementById('course-video');
+      video.pause();
+    }
 
-        const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
-
-        prevBtn.addEventListener('click', () => {
-          const step = getStep();
-          if (currentCard === 0) {
-            currentCard = carouselSlide.children.length - step;
-          } else {
-            currentCard -= step;
-          }
-          moveCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-          const step = getStep();
-          if (currentCard >= carouselSlide.children.length - step) {
-            currentCard = 0;
-          } else {
-            currentCard += step;
-          }
-          moveCarousel();
-        });
-
-        function moveCarousel() {
-          const step = getStep();
-          const cardWidth = carouselSlide.children[0].clientWidth;
-          const cardMarginRight = parseFloat(getComputedStyle(carouselSlide.children[0]).marginRight);
-          const cardMarginLeft = parseFloat(getComputedStyle(carouselSlide.children[0]).marginLeft);
-          const totalCardWidth = cardWidth + cardMarginRight + cardMarginLeft;
-          carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
-        }
-
-        window.addEventListener('resize', moveCarousel);
-      }
-      initializeCarousel('prevButton', 'nextButton', '.double-slide', 2, 1);
-    </script>
-
-    <script>
-
-      function showModal() {
-        event.preventDefault()
-        var modal = document.getElementById('myModal');
-        modal.style.display = 'flex';
-        var video = document.getElementById('course-video');
-        video.load();
-      }
-
-      function hideModal() {
-        var modal = document.getElementById('myModal');
-        modal.style.display = 'none';
-        var video = document.getElementById('course-video');
+    function toggleVideo() {
+      var video = document.getElementById('course-video');
+      if (video.paused) {
+        video.play();
+      } else {
         video.pause();
       }
+    }
 
-      function toggleVideo() {
-        var video = document.getElementById('course-video');
-        if (video.paused) {
-          video.play();
+    document.getElementById('myModal').addEventListener('click', function (e) {
+      if (e.target == document.getElementById('course-video')) {
+        toggleVideo();
+      } else {
+        hideModal();
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      var guarenteeDiv = document.querySelector('.guarentee');
+      var modal = document.getElementById('myModal');
+      if (!guarenteeDiv.contains(e.target) && modal.style.display === 'flex') {
+        hideModal();
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const prevBtn = document.getElementById('guarantee-prevButton');
+      const nextBtn = document.getElementById('guarantee-nextButton');
+      const carousel = document.getElementById('guarantee-courses-carousel');
+      let currentSlide = 0;
+
+      prevBtn.addEventListener('click', () => {
+        if (currentSlide === 0) {
+          currentSlide = carousel.children.length - 2; // Go to the last slide
         } else {
-          video.pause();
+          currentSlide--;
         }
+        updateCarousel();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentSlide >= carousel.children.length - 2) {
+          currentSlide = 0; // Go back to the first slide
+        } else {
+          currentSlide++;
+        }
+        updateCarousel();
+      });
+
+      function updateCarousel() {
+        const slideWidth = carousel.children[0].offsetWidth;
+        carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const prevBtn = document.getElementById('blog-prevButton');
+      const nextBtn = document.getElementById('blog-nextButton');
+      const carousel = document.getElementById('blog-courses-carousel');
+      let currentSlide = 0;
+
+      prevBtn.addEventListener('click', () => {
+        if (currentSlide === 0) {
+          currentSlide = carousel.children.length - 2; // Go to the last slide
+        } else {
+          currentSlide--;
+        }
+        updateCarousel();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentSlide >= carousel.children.length - 2) {
+          currentSlide = 0; // Go back to the first slide
+        } else {
+          currentSlide++;
+        }
+        updateCarousel();
+      });
+
+      function updateCarousel() {
+        const slideWidth = carousel.children[0].offsetWidth;
+        carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      }
+    });
+  </script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
+    });
+
+    function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      const carouselSlide = document.querySelector(carouselClass);
+
+      let currentCard = 0;
+
+      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
+
+      const moveCarousel = () => {
+        const step = getStep();
+        const cardWidth = carouselSlide.children[0].clientWidth;
+        const cardMarginRight = parseFloat(getComputedStyle(carouselSlide.children[0]).marginRight);
+        const cardMarginLeft = parseFloat(getComputedStyle(carouselSlide.children[0]).marginLeft);
+        const totalCardWidth = cardWidth + cardMarginRight + cardMarginLeft;
+        carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
+      };
+
+      prevBtn.addEventListener('click', () => {
+        const step = getStep();
+        currentCard = (currentCard + step) % carouselSlide.children.length;
+        moveCarousel();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        const step = getStep();
+        currentCard = (currentCard - step + carouselSlide.children.length) % carouselSlide.children.length;
+        moveCarousel();
+      });
+
+      window.addEventListener('resize', moveCarousel);
+
+      moveCarousel(); // Initialize carousel position on load
+    }
+  </script>
+
+<script>
+  document.querySelector('.cisco-form').addEventListener('submit', function(e) {
+      var isValid = true;
+
+      var fullName = document.querySelector('.cisco-form input[type="text"][placeholder="Please enter your Full Name"]');
+      var phone = document.querySelector('.cisco-form input[type="text"][placeholder="Please enter your Phone Number"]');
+      var email = document.querySelector('.cisco-form input[type="text"][placeholder="Please enter your Email"]');
+      var message = document.querySelector('.cisco-form textarea');
+
+      // Full Name Validation
+      if (!fullName.value.trim()) {
+          alert('Please enter your full name.');
+          fullName.focus();
+          isValid = false;
       }
 
-      document.getElementById('myModal').addEventListener('click', function (e) {
-        if (e.target == document.getElementById('course-video')) {
-          toggleVideo();
-        } else {
-          hideModal();
-        }
-      });
-
-      document.addEventListener('click', function (e) {
-        var guarenteeDiv = document.querySelector('.guarentee');
-        var modal = document.getElementById('myModal');
-        if (!guarenteeDiv.contains(e.target) && modal.style.display === 'flex') {
-          hideModal();
-        }
-      });
-    </script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const prevBtn = document.getElementById('guarantee-prevButton');
-        const nextBtn = document.getElementById('guarantee-nextButton');
-        const carousel = document.getElementById('guarantee-courses-carousel');
-        let currentSlide = 0;
-
-        prevBtn.addEventListener('click', () => {
-          if (currentSlide === 0) {
-            currentSlide = carousel.children.length - 2; // Go to the last slide
-          } else {
-            currentSlide--;
-          }
-          updateCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-          if (currentSlide >= carousel.children.length - 2) {
-            currentSlide = 0; // Go back to the first slide
-          } else {
-            currentSlide++;
-          }
-          updateCarousel();
-        });
-
-        function updateCarousel() {
-          const slideWidth = carousel.children[0].offsetWidth;
-          carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-        }
-      });
-    </script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const prevBtn = document.getElementById('blog-prevButton');
-        const nextBtn = document.getElementById('blog-nextButton');
-        const carousel = document.getElementById('blog-courses-carousel');
-        let currentSlide = 0;
-
-        prevBtn.addEventListener('click', () => {
-          if (currentSlide === 0) {
-            currentSlide = carousel.children.length - 2; // Go to the last slide
-          } else {
-            currentSlide--;
-          }
-          updateCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-          if (currentSlide >= carousel.children.length - 2) {
-            currentSlide = 0; // Go back to the first slide
-          } else {
-            currentSlide++;
-          }
-          updateCarousel();
-        });
-
-        function updateCarousel() {
-          const slideWidth = carousel.children[0].offsetWidth;
-          carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-        }
-      });
-    </script>
-
-
-    <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-        initializeCarousel('new-preBtn', 'new-nextBtn', '.carousel-slide', 3, 1);
-      });
-
-      function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
-        const prevBtn = document.getElementById(prevBtnId);
-        const nextBtn = document.getElementById(nextBtnId);
-        const carouselSlide = document.querySelector(carouselClass);
-
-        let currentCard = 0;
-
-        const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
-
-        const moveCarousel = () => {
-          const step = getStep();
-          const cardWidth = carouselSlide.children[0].clientWidth;
-          const cardMarginRight = parseFloat(getComputedStyle(carouselSlide.children[0]).marginRight);
-          const cardMarginLeft = parseFloat(getComputedStyle(carouselSlide.children[0]).marginLeft);
-          const totalCardWidth = cardWidth + cardMarginRight + cardMarginLeft;
-          carouselSlide.style.transform = `translateX(-${currentCard * totalCardWidth}px)`;
-        };
-
-        prevBtn.addEventListener('click', () => {
-          const step = getStep();
-          currentCard = (currentCard + step) % carouselSlide.children.length;
-          moveCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-          const step = getStep();
-          currentCard = (currentCard - step + carouselSlide.children.length) % carouselSlide.children.length;
-          moveCarousel();
-        });
-
-        window.addEventListener('resize', moveCarousel);
-
-        moveCarousel(); // Initialize carousel position on load
+      // Phone Number Validation
+      if (!phone.value.trim() || !/^\d{10}$/.test(phone.value)) {
+          alert('Please enter a valid 10-digit phone number.');
+          phone.focus();
+          isValid = false;
       }
-    </script>
+
+      // Email Validation
+      if (!email.value.trim() || !/\S+@\S+\.\S+/.test(email.value)) {
+          alert('Please enter a valid email address.');
+          email.focus();
+          isValid = false;
+      }
+
+      // Message Validation
+      if (!message.value.trim()) {
+          alert('Please enter your message.');
+          message.focus();
+          isValid = false;
+      }
+
+      if (!isValid) {
+          e.preventDefault();
+      }
+  });
+</script>
+
+
+
 </body>
 
 </html>

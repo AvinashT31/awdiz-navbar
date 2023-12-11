@@ -2033,20 +2033,20 @@ document.addEventListener("DOMContentLoaded", function () {
                       Mumbai Maharashtra 400703</p>
                   <p class="footer-box-page-info">Email: <a href="mailto:contact@awdiz.in">contact@awdiz.in</a> </p>
                   <div class="social-footer-icon">
-                      <div class="social-icon">
-                          <img style="width: 100%; height: 100%;" class="image-fluid" src="img/star.svg" alt="">
+                      <div class="social-icon-facebook">
+                      <a class="facebook" href="https://www.facebook.com/awdiz" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                       </div>
-                      <div style="margin-left: 10px;" class="social-icon">
-                          <img style="width: 100%; height: 100%;" class="image-fluid" src="img/star.svg" alt="">
+                      <div style="margin-left: 10px;" class="social-icon-twitter">
+                      <a class="twitter" href="https://twitter.com/Awdiz_arb" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                       </div>
-                      <div style="margin-left: 10px;" class="social-icon">
-                          <img style="width: 100%; height: 100%;" class="image-fluid" src="img/star.svg" alt="">
+                      <div style="margin-left: 10px;" class="social-icon-youtube">
+                      <a class="youtube" href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                       </div>
-                      <div style="margin-left: 10px;" class="social-icon">
-                          <img style="width: 100%; height: 100%;" class="image-fluid" src="img/star.svg" alt="">
+                      <div style="margin-left: 10px;" class="social-icon-insta">
+                      <a class="instagram" href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                       </div>
-                      <div style="margin-left: 10px;" class="social-icon">
-                          <img style="width: 100%; height: 100%;" class="image-fluid" src="img/star.svg" alt="">
+                      <div style="margin-left: 10px;" class="social-icon-linkdein">
+                      <a class="linkedin" href="https://www.linkedin.com/school/awdiz-institute" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                       </div>
                   </div>
               </div>
@@ -2063,7 +2063,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <br>
           <hr style="color: #99cbc5;">
           <br>
-          <div class="footer-social-page">
+          <div class="footer-social-page" style="margin-bottom:40px">
               <div class="footer-declaimer">
                   <p>Disclaimer</p>
                   <p style="padding-top: 15px;">We do not claim any logo & some* Images used within the website and
@@ -2238,6 +2238,29 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
   `
 })
+
+
+// 8.Enquiry Form 
+
+document.addEventListener('DOMContentLoaded', function() {
+  var mobileEnquirySection = document.querySelector('.mobile-enquiry-section');
+  var ciscoTrainingSection = document.getElementById('cisco-training');
+  var mobileEnquiryButton = document.getElementById('mobile-enquiry-button');
+
+  mobileEnquiryButton.addEventListener('click', function() {
+      mobileEnquirySection.style.display = 'none';
+  });
+
+  window.addEventListener('scroll', function() {
+      var sectionPosition = ciscoTrainingSection.getBoundingClientRect();
+
+      if (sectionPosition.top <= window.innerHeight && sectionPosition.bottom >= 0) {
+          mobileEnquirySection.style.display = 'none';
+      } else {
+          mobileEnquirySection.style.display = 'flex'; 
+      }
+  });
+});
 
 
 
