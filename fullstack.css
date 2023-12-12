@@ -211,7 +211,7 @@ button {
 }
 
 .fullstack-intro h1 {
-    font-size: 50px;
+font-size: 50px;
     padding: 20px 0px 20px 0px;
     color: #272566;
     font-weight: 800;
@@ -219,7 +219,7 @@ button {
 }
 
 .fullstack-intro h2 {
-    font-size: 28px;
+  font-size: 28px;
     color: #007d6f;
     font-weight: 800;
     font-family: nunito;
@@ -245,8 +245,11 @@ button {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     line-height: 2.5;
+}
+
+.fullstack-intro-first-point i{
+    margin-top: 5px;
 }
 
 .fullstack-intro-first-point>p {
@@ -267,6 +270,8 @@ button {
     font-weight: 800;
     font-size: 16px;
     font-family: mulish;
+    position: relative;
+    z-index: 98;
 }
 
 .fullstack-intro-student-review {
@@ -378,9 +383,9 @@ button {
 .fullstack-course-content {
     /* border: 1px solid black; */
     width: 11.5%;
-    padding: 5px 5px 5px 5px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     border-radius: 10px;
     background-color: white;
     height: 60px
@@ -410,7 +415,7 @@ button {
     padding: 10px 0px 20px 0px;
 }
 
-.fullstack-course-section>h2 {
+.fullstack-course-section>h3 {
     font-size: 50px;
     padding-top: 25px;
     color: #272566;
@@ -524,13 +529,30 @@ button {
     margin: auto;
 }
 
-.why-awdiz h3 {
+.why-awdiz h4 {
     color: #272566;
     font-family: nunito;
     font-weight: 900;
-    font-size: calc(1.51vw + 1rem);
+    font-size: 50px;
     line-height: 1.2;
 }
+
+.why-awdiz-h8 {
+    color: #272566;
+    font-family: nunito;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.why-awdiz-h9 {
+    color: #272566;
+    font-family: nunito;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
 
 .why-awdiz-course {
     /* border: 1px solid black; */
@@ -603,10 +625,14 @@ button {
 
 @media screen and (width:1440px) {}
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1440px) {
     .why-awdiz-image i {
         font-size: 24px;
     }
+    .fullstack-content-course-name>p{
+        font-size: 14px;
+    }
+   
 }
 
 @media screen and (max-width:480px) {
@@ -642,6 +668,17 @@ button {
     .why-awdiz {
         width: 90%;
     }
+
+    .project-modal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .first-project-modal{
+        width: 80%;
+    }
 }
 
 /* fullstack-package */
@@ -653,7 +690,7 @@ button {
     background-color: #edf8fA;
 }
 
-.fullstack-package h2 {
+.fullstack-package h4 {
     font-size: 50px;
     color: #272566;
     padding-top: 60px;
@@ -730,7 +767,7 @@ button {
     background-color: white;
 }
 
-.awdiz-trust h2 {
+.awdiz-trust h3{
     font-size: 50px;
     color: #272566;
     padding-top: 30px;
@@ -814,8 +851,14 @@ button {
     justify-content: center;
     align-items: center;
 }
+.book-demo-box-one>h5{
+    font-size: 28px;
+    color: white;
+    font-family: mulish;
+}
 
-.book-demo-box-one>h3 {
+
+.book-demo-box-one>h7 {
     font-size: 28px;
     color: white;
     font-family: mulish;
@@ -824,7 +867,7 @@ button {
 .book-demo-box-two-button {
     /* border: 1px solid black; */
     width: 65%;
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -833,6 +876,7 @@ button {
     color: white;
     font-family: hind;
 }
+
 
 
 /* awdiz-chatgpt */
@@ -844,8 +888,8 @@ button {
     background-color: #edf8fA;
 }
 
-.awdiz-chatgpt h3 {
-    font-size: 50px;
+.awdiz-chatgpt h5 {
+    font-size: calc(2.2vw + 1rem);
     padding: 60px 0px 15px 0px;
     font-family: nunito;
     font-weight: 800;
@@ -888,7 +932,7 @@ button {
 
 .fullstack-syllabus-item-one {
     /* border: 1px solid black; */
-    width: 23%;
+    width: 25%;
     padding: 10px 10px 10px 10px;
     display: flex;
     justify-content: center;
@@ -903,14 +947,13 @@ button {
 .fullstack-syllabus-display-content {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 0px 0px 60px 0px;
+    padding: 50px 0px 60px 0px;
 }
 
-.fullstack-syllabus-display-content>h3 {
+.fullstack-syllabus-display-content>h5 {
     font-size: 50px;
     font-weight: 800;
     color: #272566;
-    margin-top: 80px;
     font-family: nunito;
 }
 
@@ -995,7 +1038,7 @@ button {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.industry-box-two>h3 {
+.industry-box-two>h6 {
     padding: 20px 20px 20px 40px;
     color: #272566;
     font-size: 24px;
@@ -1078,7 +1121,7 @@ button {
     font-family: mulish;
 }
 
-.industry-content-info>h3 {
+.industry-content-info>h6 {
     font-weight: 800;
     color: #007d6f;
     padding-top: 8px;
@@ -1095,6 +1138,8 @@ button {
     background-color: #272566;
     color: white;
     font-family: nunito;
+    position: relative;
+    z-index: 98;
 }
 
 .industry-button:hover {
@@ -1152,7 +1197,7 @@ button {
 .book-demo-two-button {
     /* border: 1px solid black; */
     width: 90%;
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1283,7 +1328,7 @@ button {
     height: 150px;
 }
 
-.displaycoveredcontent-box-two>h3 {
+.displaycoveredcontent-box-two>h6 {
     font-size: 28px;
     font-weight: 800;
     font-family: nunito;
@@ -1322,10 +1367,25 @@ button {
 .fullstack-project-heading {
     font-size: 50px;
     color: #272566;
-    padding-top: 50px;
-    /* padding-left: 15px; */
     font-weight: 800;
     font-family: nunito;
+    margin-top: 30px;
+}
+
+.fullstack-project-heading-h9{
+    font-size: 50px;
+    color: #272566;
+    font-weight: 800;
+    font-family: nunito;
+    text-align: center;
+}
+
+.fullstack-project-heading-h6{
+    font-size: 50px;
+    color: #272566;
+    font-weight: 800;
+    font-family: nunito;
+    text-align: center;
 }
 
 .project-modal {
@@ -1390,6 +1450,7 @@ button {
 
 .fullstack-project-content ul {
     padding-top: 30px;
+    margin-bottom: 50px;
 }
 
 .fullstack-project-content ul li {
@@ -1412,7 +1473,6 @@ button {
 .fullstack-project-heading-one {
     font-size: 50px;
     color: #272566;
-    padding-left: 15px;
     font-weight: 800;
     font-family: nunito;
 }
@@ -1467,6 +1527,7 @@ button {
     padding: 15px 0px 15px 0px;
     font-family: nunito;
     color: #272566;
+    font-size: 20px;
 }
 
 .trainer-info {
@@ -1745,7 +1806,7 @@ button {
 .fullstack-page-review {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 20px 0px 20px 0px;
+    padding: 50px 0px 20px 0px;
 }
 
 .related-program {
@@ -1824,7 +1885,7 @@ button {
     line-height: 1.5;
 }
 
-.review-carousel-student-name>h4 {
+.review-carousel-student-name>h6 {
     font-size: 24px;
 }
 
@@ -1945,7 +2006,7 @@ button {
     color: #272566;
 }
 
-.fullstack-slider-info h4 {
+.fullstack-slider-info h9 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #333;
@@ -1980,12 +2041,18 @@ button {
     height: 50px;
 }
 
+.fullstack-slide-logo-img-h6{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #272566;
+}
+
 /* developer-questions */
 
 .developer-questions {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 40px 0px 40px 0px;
+    padding: 60px 0px 40px 0px;
 }
 
 .question-box-one {
@@ -2085,7 +2152,7 @@ button {
     padding-bottom: 30px;
     font-family: nunito;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1.2;
 }
 
@@ -2132,7 +2199,7 @@ textarea {
     font-family: mulish;
 }
 
-.demo-form-content>h6 {
+.demo-form-content>h3 {
     font-size: 50px;
     color: white;
     font-family: nunito;
@@ -2157,6 +2224,10 @@ textarea {
     .send-button {
         width: 100% !important;
     }
+    .covered-slide{
+        font-size:14px;
+        
+    }
 }
 
 @media screen and (min-width:1280px) and (max-width: 1440px) {
@@ -2171,8 +2242,19 @@ textarea {
     .demo-form-content>p {
         font-size: 20px;
     }
+    .fullstack-syllabus-item-one{
+        font-size: 14px;
+    }
+    .fullstack-intro-button {
+        width: 65%;
+    }
 }
-
+@media screen and (max-width:1280px){
+    .covered-slide{
+        font-size:13px;
+        
+    }
+}
 
 @media screen and (max-width:480px) {
     .demo-form-section {

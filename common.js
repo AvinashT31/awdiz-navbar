@@ -467,15 +467,15 @@ document.addEventListener("DOMContentLoaded", function () {
                   <li><a href="" style="margin-left:14px">Career start</a></li>
                   <li><a href="" style="margin-left:14px">Placement</a></li>
                   <li><a href="" style="margin-left:14px">Review</a></li>
-                  <li class="navtwo-student"><a  style="padding-left:10px;padding-bottom:20px">Student Corner</a>
-                      <ul class="navtwo-dropdown">
+                  <li class="navtwo-student"><a style="padding-left:10px">Student Corner</a>
+                      <ul class="navtwo-dropdown" style=height:135px>
                           <li ><a href="" >Internship</a></li>
                           <li ><a href="" >Internship</a></li>
                           <li ><a href="" >Internship</a></li>
                       </ul>
                   </li>
-                  <li class="navtwo-about"><a style="margin-left:9px;padding-bottom:20px">About</a>
-                      <ul class="navtwo-dropdown-one">
+                  <li class="navtwo-about"><a style="padding-left:10px">About</a>
+                      <ul class="navtwo-dropdown-one" style=height:135px;>
                       <li ><a href="" >Internship</a></li>
                       <li ><a href="" >Internship</a></li>
                       <li ><a href="" >Internship</a></li>
@@ -1595,8 +1595,6 @@ function shareOnWhatsApp() {
   var n = "https://wa.me/?text=" + encodeURIComponent(document.location); window.open(n)
 }
 
-
-// Close the share options when clicking anywhere else on the page
 document.addEventListener('click', function () {
   document.querySelectorAll('.share-button').forEach(function (button) {
     button.classList.remove('touched');
