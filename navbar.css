@@ -510,10 +510,25 @@ ul li {
     color: #384252;
 }
 
-.navtwo-dropdown {
+.navtwo-dropdown,.navtwo-dropdown-one {
     display: none !important;
     margin-top: 0px !important;
-    z-index: 100;
+    z-index: 99999;
+    position: absolute;
+    top: 39px;
+    background-color: #f7f7f7;
+    border: 1px solid #ffffff;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(135, 123, 123);
+    border-top: 3px solid #86ad40;
+    box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.4);
+    left: 10px;
+    width: 90px;
+    padding: 10px !important;
+
+
+
 }
 
 .navtwo-dropdown li {
@@ -525,11 +540,7 @@ ul li {
     font-size: 11px !important;
 }
 
-.navtwo-dropdown-one {
-    display: none !important;
-    margin-top: 0px !important;
-    z-index: 100;
-}
+
 
 .navtwo-dropdown-one li {
     margin-left: 0px !important;
@@ -2380,56 +2391,6 @@ textarea.cisco-textarea::placeholder {
     margin: 0;
 }
 
-@media screen and (max-width:1440px) {
-    .cisco-training-form::after {
-        width: 85%;
-        margin: auto;
-        bottom: 62%;
-        height: 390px;
-        left: 7%;
-    }
-
-    .cisco-form label {
-        font-size: 12px;
-    }
-
-    .cisco-form input {
-        font-size: 12px;
-        height: 36px;
-    }
-
-
-
-    .cisco-form button {
-        height: 36px;
-        padding: 0px;
-    }
-
-    .cisco-training-form {
-        height: 565px;
-    }
-}
-
-
-@media screen and (max-width: 1280px) {
-    .cisco-training-form::after {
-        width: 95%;
-        margin: auto;
-        bottom: 64%;
-        height: 390px;
-        left: 2.5%;
-    }
-
-    .cisco-training-form {
-        height: 560px;
-    }
-
-    .cisco-form {
-        width: 80%;
-    }
-}
-
-
 .cisco-training-info {
     width: 58%;
     padding: 60px 40px 120px 25px;
@@ -2481,21 +2442,55 @@ textarea.cisco-textarea::placeholder {
 }
 
 
-
-
-
-
 /* MEDIA QUERIES */
 
-@media screen and (width:1440px) {}
+@media screen and (max-width:1440px) {
+    .cisco-training-form::after {
+        width: 85%;
+        margin: auto;
+        bottom: 62%;
+        height: 390px;
+        left: 7%;
+    }
 
-@media screen and (max-width:1280px) {}
+    .cisco-form label {
+        font-size: 12px;
+    }
 
-@media screen and (min-width:992px) and (max-width:1199px) {}
+    .cisco-form input {
+        font-size: 12px;
+        height: 36px;
+    }
 
-@media screen and (min-width:768px) and (max-width:991px) {}
 
-@media screen and (min-width:481px) and (max-width:767px) {}
+
+    .cisco-form button {
+        height: 36px;
+        padding: 0px;
+    }
+
+    .cisco-training-form {
+        height: 565px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .cisco-training-form::after {
+        width: 95%;
+        margin: auto;
+        bottom: 64%;
+        height: 390px;
+        left: 2.5%;
+    }
+
+    .cisco-training-form {
+        height: 560px;
+    }
+
+    .cisco-form {
+        width: 80%;
+    }
+}
 
 @media screen and (max-width:480px) {
     .cisco-training-page {
@@ -4214,7 +4209,6 @@ button:hover {
 
 /* certificate */
 
-
 .certificate {
     /* border: 1px solid black; */
     width: 100%;
@@ -4284,12 +4278,6 @@ button:hover {
     color: #242566;
     margin-left: 32px;
 }
-
-/* .certificate-page-info>p {
-    padding-top: 15px;
-    font-size: 18px;
-    margin-left: 32px;
-} */
 
 .certificate-button {
     /* border: 1px solid black; */
@@ -5929,6 +5917,7 @@ footer {
 
 
 @media screen and (max-width:480px) {
+
     .footer-page {
         flex-direction: column;
     }
@@ -6025,7 +6014,7 @@ footer {
 .share-button-secondary {
     overflow: hidden;
     margin-left: 15px;
-    height: 40px;
+    height: 35px;
 }
 
 .share-button-secondary-content {
@@ -10700,8 +10689,8 @@ html {
 }
 
 #quick-enquiry {
-    width: 7%;
-    background-color: #007d6f;
+    width: 10%;
+    background-color: #272566;
     color: white;
     font-weight: 550;
     font-family: hind;

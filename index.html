@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <noscript>
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="index.css">
   </noscript>
-  <link rel="preload" href="navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="common.css">
+  </noscript>
+  <link rel="preload" href="common.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <title>HomePage</title>
   <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
   <link href="/fontawesome/css/brands.css" rel="stylesheet">
@@ -92,8 +96,15 @@
                   <video id="modal-mobile-video" class="lazyload" width="800" controls="" preload="none"
                     data-poster="https://res.cloudinary.com/www-awdiz-in/image/upload/v1578817110/video/awdiz-video-back.webp"
                     id="course-video" style="object-fit:cover">
-                    <source src="/videos/Guaranteed-Placements-Courses-in-Mumbai-Pay-Fees-after-Placements.mp4"
-                      autostart="false" frameborder="0" allowfullscreen="">
+
+                    <iframe src="https://www.youtube.com/embed/opIxfZYhYAs" width="100%" height="250px" frameborder=""
+                      title="Awdiz CCNA Course in Mumbai"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
                   </video>
                 </div>
               </div>
@@ -128,28 +139,29 @@
       <div class="cisco-training-page">
         <div class="cisco-training-form">
           <form class="cisco-form" action="submitform.php" method="POST">
-              <h3>Contact to Plan your Amazing Career Path Journey with Awdiz</h3>
-              <label>Full Name</label>
-              <br>
-              <input type="text" name="name" placeholder="Please enter your Full Name">
-              <br>
-              <label>Phone</label>
-              <br>
-              <input type="text" name="phone" placeholder="Please enter your Phone Number">
-              <br>
-              <label>Email</label>
-              <br>
-              <input type="text" name="email" placeholder="Please enter your Email">
-              <br>
-              <label>Message</label>
-              <br>
-              <textarea class="cisco-textarea" name="message" cols="30" rows="2" placeholder="Message for Awdiz Placement Team"></textarea>
-              <br>
-              <button type="submit">Submit</button>
+            <h3>Contact to Plan your Amazing Career Path Journey with Awdiz</h3>
+            <label>Full Name</label>
+            <br>
+            <input type="text" name="name" placeholder="Please enter your Full Name">
+            <br>
+            <label>Phone</label>
+            <br>
+            <input type="text" name="phone" placeholder="Please enter your Phone Number">
+            <br>
+            <label>Email</label>
+            <br>
+            <input type="text" name="email" placeholder="Please enter your Email">
+            <br>
+            <label>Message</label>
+            <br>
+            <textarea class="cisco-textarea" name="message" cols="30" rows="2"
+              placeholder="Message for Awdiz Placement Team"></textarea>
+            <br>
+            <button type="submit">Submit</button>
           </form>
-      </div>
-      
-        
+        </div>
+
+
         <div id="mobile-badge" class="badge sticky-contact" style="z-index:100;height:40px">
           <ul>
             <li>
@@ -228,114 +240,6 @@
       </div>
 
     </section>
-
-
-    <style>
-      .video-show {
-        background: linear-gradient(180deg, #99CBC5 0%, #EDF8FA 56.05%, #FFF 100%);
-        padding: 100px 0 50px 0;
-        margin-bottom: 50px;
-        width: 100%;
-        box-sizing: border-box;
-      }
-
-      .video-show-page {
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        width: 90%;
-        margin: auto;
-      }
-
-      .video-show-page-ok {
-        width: 38%;
-        z-index: 1;
-      }
-
-      .video-container {
-        width: 100%;
-        position: relative;
-        z-index: 150;
-      }
-
-      .video-container iframe {
-        height: 250px;
-        border-radius: 8px;
-        box-shadow: 0px 15px 4px -11px #953535;
-      }
-
-      .video-show-page-ok-right {
-        width: 60%;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-
-      }
-
-      .video-show-page-ok-right>p20 {
-        color: #272566;
-        font-family: nunito;
-        font-weight: 900;
-        font-size: calc(1.60vw + 1rem);
-        line-height: 1.2;
-      }
-
-      .right-video {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        z-index: 1;
-      }
-
-      .right-video-ok {
-        margin-left: 10px
-      }
-
-
-      @media screen and (max-width:480px) {
-        .video-show-page {
-          flex-direction: column-reverse;
-        }
-
-        .video-show-page-ok-right {
-          width: 100%;
-        }
-
-        .right-video {
-          display: none;
-          visibility: hidden;
-        }
-
-        .video-show-page-ok {
-          width: 100%;
-          margin-top: 40px;
-        }
-
-        .video-show {
-          padding: 30px 0px 30px 0px;
-          margin-bottom: 0px;
-        }
-
-
-      }
-
-      @media screen and (max-width:320px) {
-        .video-show-page-ok-right>p20 {
-          font-size: 17px;
-        }
-
-        .video-show {
-          margin-bottom: 0;
-          padding: 40px 0px 40px 0px;
-        }
-
-        .video-container iframe {
-          height: 200px;
-        }
-      }
-    </style>
 
     <section class="video-show">
       <div class="video-show-page">
@@ -427,7 +331,6 @@
 
       </div>
     </section>
-
 
     <section class="why-awdiz-page">
       <div class="why-awdiz">
@@ -1410,7 +1313,6 @@
     </section>
 
     <section class="job-guarentee-program">
-
       <div class="container">
         <h4>Job Guarantee Courses</h4>
         <p class="summary">These are the most Trending Courses in India where Awdiz give 100% job Guarantee to the
@@ -3921,7 +3823,7 @@
     }
   </script>
 
-  <script src="server.js"></script>
+  <script src="common.js"></script>
 
   <script>
     function initializeCarousel(prevBtnId, nextBtnId, carouselClass, stepDesktop, stepMobile) {
@@ -4112,12 +4014,12 @@
 
       window.addEventListener('resize', moveCarousel);
 
-      moveCarousel(); // Initialize carousel position on load
+      moveCarousel();
     }
   </script>
 
-<script>
-  document.querySelector('.cisco-form').addEventListener('submit', function(e) {
+  <script>
+    document.querySelector('.cisco-form').addEventListener('submit', function (e) {
       var isValid = true;
 
       var fullName = document.querySelector('.cisco-form input[type="text"][placeholder="Please enter your Full Name"]');
@@ -4125,39 +4027,587 @@
       var email = document.querySelector('.cisco-form input[type="text"][placeholder="Please enter your Email"]');
       var message = document.querySelector('.cisco-form textarea');
 
-      // Full Name Validation
       if (!fullName.value.trim()) {
-          alert('Please enter your full name.');
-          fullName.focus();
-          isValid = false;
+        alert('Please enter your full name.');
+        fullName.focus();
+        isValid = false;
       }
 
-      // Phone Number Validation
       if (!phone.value.trim() || !/^\d{10}$/.test(phone.value)) {
-          alert('Please enter a valid 10-digit phone number.');
-          phone.focus();
-          isValid = false;
+        alert('Please enter a valid 10-digit phone number.');
+        phone.focus();
+        isValid = false;
       }
 
-      // Email Validation
       if (!email.value.trim() || !/\S+@\S+\.\S+/.test(email.value)) {
-          alert('Please enter a valid email address.');
-          email.focus();
-          isValid = false;
+        alert('Please enter a valid email address.');
+        email.focus();
+        isValid = false;
       }
 
-      // Message Validation
       if (!message.value.trim()) {
-          alert('Please enter your message.');
-          message.focus();
-          isValid = false;
+        alert('Please enter your message.');
+        message.focus();
+        isValid = false;
       }
 
       if (!isValid) {
-          e.preventDefault();
+        e.preventDefault();
       }
-  });
-</script>
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var software = document.getElementById("software-courses");
+      var softwarecourse = document.getElementById("software-courese-page");
+
+      software.addEventListener("click", function () {
+        software.style.backgroundColor = "#007d6f";
+        software.style.color = "#ffffff";
+        softwarecourse.style.display = "flex";
+
+        networking.style.display = "none";
+        network.style.backgroundColor = "#edf8fa";
+        network.style.color = "black";
+
+        dmmarketing.style.display = "none";
+        digital.style.backgroundColor = "#edf8fa";
+        digital.style.color = "black";
+
+        datascience.style.display = "none";
+        dscience.style.backgroundColor = "#edf8fa";
+        dscience.style.color = "black";
+
+        machineleaning.style.display = "none";
+        machine.style.backgroundColor = "#edf8fa";
+        machine.style.color = "black";
+
+        cybersecurity.style.display = "none";
+        security.style.backgroundColor = "#edf8fa";
+        security.style.color = "black";
+      })
+
+
+      var network = document.getElementById("networking-courses");
+      var networking = document.getElementById("networking-courese-page");
+
+      network.addEventListener("click", function () {
+        networking.style.display = "flex";
+        network.style.backgroundColor = "#007d6f";
+        network.style.color = "#ffffff";
+
+        software.style.backgroundColor = "#edf8fa";
+        software.style.color = "initial";
+        softwarecourse.style.display = "none";
+
+        dmmarketing.style.display = "none";
+        digital.style.backgroundColor = "#edf8fa";
+        digital.style.color = "black";
+
+        datascience.style.display = "none";
+        dscience.style.backgroundColor = "#edf8fa";
+        dscience.style.color = "black";
+
+        machineleaning.style.display = "none";
+        machine.style.backgroundColor = "#edf8fa";
+        machine.style.color = "black";
+
+        cybersecurity.style.display = "none";
+        security.style.backgroundColor = "#edf8fa";
+        security.style.color = "black";
+      })
+
+
+      var digital = document.getElementById("dm-courses");
+      var dmmarketing = document.getElementById("dm-courese-page");
+
+      digital.addEventListener("click", function () {
+        dmmarketing.style.display = "flex";
+        digital.style.backgroundColor = "#007d6f";
+        digital.style.color = "#ffffff";
+
+        networking.style.display = "none";
+        network.style.backgroundColor = "#edf8fa";
+        network.style.color = "black";
+
+        software.style.backgroundColor = "#edf8fa";
+        software.style.color = "initial";
+        softwarecourse.style.display = "none";
+
+        datascience.style.display = "none";
+        dscience.style.backgroundColor = "#edf8fa";
+        dscience.style.color = "black";
+
+        machineleaning.style.display = "none";
+        machine.style.backgroundColor = "#edf8fa";
+        machine.style.color = "black";
+
+        cybersecurity.style.display = "none";
+        security.style.backgroundColor = "#edf8fa";
+        security.style.color = "black";
+
+      })
+
+      var dscience = document.getElementById("ds-courses");
+      var datascience = document.getElementById("dt-courese-page");
+
+      dscience.addEventListener("click", function () {
+        datascience.style.display = "flex";
+        dscience.style.backgroundColor = "#007d6f";
+        dscience.style.color = "#ffffff";
+
+        dmmarketing.style.display = "none";
+        digital.style.backgroundColor = "#edf8fa";
+        digital.style.color = "black";
+
+        networking.style.display = "none";
+        network.style.backgroundColor = "#edf8fa";
+        network.style.color = "black";
+
+        software.style.backgroundColor = "#edf8fa";
+        software.style.color = "initial";
+        softwarecourse.style.display = "none";
+
+        machineleaning.style.display = "none";
+        machine.style.backgroundColor = "#edf8fa";
+        machine.style.color = "black";
+
+        cybersecurity.style.display = "none";
+        security.style.backgroundColor = "#edf8fa";
+        security.style.color = "black";
+      })
+
+      var machine = document.getElementById("ml-courses");
+      var machineleaning = document.getElementById("ml-courese-page");
+
+      machine.addEventListener("click", function () {
+        machineleaning.style.display = "flex";
+        machine.style.backgroundColor = "#007d6f";
+        machine.style.color = "#ffffff";
+
+        dmmarketing.style.display = "none";
+        digital.style.backgroundColor = "#edf8fa";
+        digital.style.color = "black";
+
+        networking.style.display = "none";
+        network.style.backgroundColor = "#edf8fa";
+        network.style.color = "black";
+
+        software.style.backgroundColor = "#edf8fa";
+        software.style.color = "initial";
+        softwarecourse.style.display = "none";
+
+        datascience.style.display = "none";
+        dscience.style.backgroundColor = "#edf8fa";
+        dscience.style.color = "black";
+
+        cybersecurity.style.display = "none";
+        security.style.backgroundColor = "#edf8fa";
+        security.style.color = "black";
+      })
+
+      var security = document.getElementById("cs-courses");
+      var cybersecurity = document.getElementById("cs-courese-page");
+
+      security.addEventListener("click", function () {
+        cybersecurity.style.display = "flex";
+        security.style.backgroundColor = "#007d6f";
+        security.style.color = "#ffffff";
+
+        software.style.backgroundColor = "#edf8fa";
+        software.style.color = "initial";
+        softwarecourse.style.display = "none";
+
+        networking.style.display = "none";
+        network.style.backgroundColor = "#edf8fa";
+        network.style.color = "black";
+
+        dmmarketing.style.display = "none";
+        digital.style.backgroundColor = "#edf8fa";
+        digital.style.color = "black";
+
+        datascience.style.display = "none";
+        dscience.style.backgroundColor = "#edf8fa";
+        dscience.style.color = "black";
+
+        machineleaning.style.display = "none";
+        machine.style.backgroundColor = "#edf8fa";
+        machine.style.color = "black";
+      })
+    })
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // job-guarantee-program
+
+      var jobsoftware = document.getElementById("guarentee-software");
+      var displaysoftware = document.getElementById("job-software");
+
+      jobsoftware.addEventListener("click", function () {
+        jobsoftware.style.backgroundColor = "#007d6f";
+        jobsoftware.style.color = "#ffffff";
+        displaysoftware.style.display = "flex";
+
+        displaynetworking.style.display = "none";
+        jobnetwork.style.backgroundColor = "#edf8fa";
+        jobnetwork.style.color = "black";
+
+        displaydmmarketing.style.display = "none";
+        jobdigital.style.backgroundColor = "#edf8fa";
+        jobdigital.style.color = "black";
+
+        displaydatascience.style.display = "none";
+        jobdscience.style.backgroundColor = "#edf8fa";
+        jobdscience.style.color = "black";
+
+        displaymachineleaning.style.display = "none";
+        jobmachine.style.backgroundColor = "#edf8fa";
+        jobmachine.style.color = "black";
+
+        displaycybersecurity.style.display = "none";
+        jobsecurity.style.backgroundColor = "#edf8fa";
+        jobsecurity.style.color = "black";
+
+      })
+
+      var jobnetwork = document.getElementById("guarentee-Networking");
+      var displaynetworking = document.getElementById("job-networking");
+
+      jobnetwork.addEventListener("click", function () {
+        displaynetworking.style.display = "flex";
+        jobnetwork.style.backgroundColor = "#007d6f";
+        jobnetwork.style.color = "#ffffff";
+
+        displaysoftware.style.display = "none";
+        jobsoftware.style.backgroundColor = "#edf8fa";
+        jobsoftware.style.color = "black";
+
+        displaydmmarketing.style.display = "none";
+        jobdigital.style.backgroundColor = "#edf8fa";
+        jobdigital.style.color = "black";
+
+        displaydatascience.style.display = "none";
+        jobdscience.style.backgroundColor = "#edf8fa";
+        jobdscience.style.color = "black";
+
+        displaymachineleaning.style.display = "none";
+        jobmachine.style.backgroundColor = "#edf8fa";
+        jobmachine.style.color = "black";
+
+        displaycybersecurity.style.display = "none";
+        jobsecurity.style.backgroundColor = "#edf8fa";
+        jobsecurity.style.color = "black";
+      })
+
+
+      var jobdigital = document.getElementById("guarentee-dm");
+      var displaydmmarketing = document.getElementById("job-dm");
+
+      jobdigital.addEventListener("click", function () {
+        displaydmmarketing.style.display = "flex";
+        jobdigital.style.backgroundColor = "#007d6f";
+        jobdigital.style.color = "#ffffff";
+
+        displaysoftware.style.display = "none";
+        jobsoftware.style.backgroundColor = "#edf8fa";
+        jobsoftware.style.color = "black";
+
+        displaynetworking.style.display = "none";
+        jobnetwork.style.backgroundColor = "#edf8fa";
+        jobnetwork.style.color = "black";
+
+        displaydatascience.style.display = "none";
+        jobdscience.style.backgroundColor = "#edf8fa";
+        jobdscience.style.color = "black";
+
+        displaymachineleaning.style.display = "none";
+        jobmachine.style.backgroundColor = "#edf8fa";
+        jobmachine.style.color = "black";
+
+        displaycybersecurity.style.display = "none";
+        jobsecurity.style.backgroundColor = "#edf8fa";
+        jobsecurity.style.color = "black";
+
+      })
+
+      var jobdscience = document.getElementById("guarentee-ds");
+      var displaydatascience = document.getElementById("job-ds");
+
+      jobdscience.addEventListener("click", function () {
+        displaydatascience.style.display = "flex";
+        jobdscience.style.backgroundColor = "#007d6f";
+        jobdscience.style.color = "#ffffff";
+
+        displaydmmarketing.style.display = "none";
+        jobdigital.style.backgroundColor = "#edf8fa";
+        jobdigital.style.color = "black";
+
+        displaysoftware.style.display = "none";
+        jobsoftware.style.backgroundColor = "#edf8fa";
+        jobsoftware.style.color = "black";
+
+        displaynetworking.style.display = "none";
+        jobnetwork.style.backgroundColor = "#edf8fa";
+        jobnetwork.style.color = "black";
+
+        displaymachineleaning.style.display = "none";
+        jobmachine.style.backgroundColor = "#edf8fa";
+        jobmachine.style.color = "black";
+
+        displaycybersecurity.style.display = "none";
+        jobsecurity.style.backgroundColor = "#edf8fa";
+        jobsecurity.style.color = "black";
+      })
+
+      var jobmachine = document.getElementById("guarentee-ml");
+      var displaymachineleaning = document.getElementById("job-ml");
+
+      jobmachine.addEventListener("click", function () {
+        displaymachineleaning.style.display = "flex";
+        jobmachine.style.backgroundColor = "#007d6f";
+        jobmachine.style.color = "#ffffff";
+
+        displaydatascience.style.display = "none";
+        jobdscience.style.backgroundColor = "#edf8fa";
+        jobdscience.style.color = "black";
+
+        displaydmmarketing.style.display = "none";
+        jobdigital.style.backgroundColor = "#edf8fa";
+        jobdigital.style.color = "black";
+
+        displaysoftware.style.display = "none";
+        jobsoftware.style.backgroundColor = "#edf8fa";
+        jobsoftware.style.color = "black";
+
+        displaynetworking.style.display = "none";
+        jobnetwork.style.backgroundColor = "#edf8fa";
+        jobnetwork.style.color = "black";
+
+        displaycybersecurity.style.display = "none";
+        jobsecurity.style.backgroundColor = "#edf8fa";
+        jobsecurity.style.color = "black";
+
+      })
+
+      var jobsecurity = document.getElementById("guarentee-cs");
+      var displaycybersecurity = document.getElementById("job-cs");
+
+      jobsecurity.addEventListener("click", function () {
+        displaycybersecurity.style.display = "flex";
+        jobsecurity.style.backgroundColor = "#007d6f";
+        jobsecurity.style.color = "#ffffff";
+
+        displaymachineleaning.style.display = "none";
+        jobmachine.style.backgroundColor = "#edf8fa";
+        jobmachine.style.color = "black";
+
+        displaydatascience.style.display = "none";
+        jobdscience.style.backgroundColor = "#edf8fa";
+        jobdscience.style.color = "black";
+
+        displaydmmarketing.style.display = "none";
+        jobdigital.style.backgroundColor = "#edf8fa";
+        jobdigital.style.color = "black";
+
+        displaysoftware.style.display = "none";
+        jobsoftware.style.backgroundColor = "#edf8fa";
+        jobsoftware.style.color = "black";
+
+        displaynetworking.style.display = "none";
+        jobnetwork.style.backgroundColor = "#edf8fa";
+        jobnetwork.style.color = "black";
+
+      })
+
+    })
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Blog-page
+
+      var blogsoftware = document.getElementById("blog-software");
+      var blogsoftwarepage = document.getElementById("blog-software-page");
+
+      blogsoftware.addEventListener("click", function () {
+        blogsoftwarepage.style.display = "flex";
+        blogsoftware.style.backgroundColor = "#007d6f";
+        blogsoftware.style.color = "#ffffff";
+
+        blognetworkingpage.style.display = "none";
+        blognetwork.style.backgroundColor = "#edf8fA";
+        blognetwork.style.color = "black";
+
+        blogdmpage.style.display = "none";
+        blogdigital.style.backgroundColor = "#edf8fA";
+        blogdigital.style.color = "black";
+
+        blogdspage.style.display = "none";
+        blogdscience.style.backgroundColor = "#edf8fA";
+        blogdscience.style.color = "black";
+
+        blogmlpage.style.display = "none";
+        blogmachine.style.backgroundColor = "#edf8fA";
+        blogmachine.style.color = "black";
+
+        blogcspage.style.display = "none";
+        blogsecurity.style.backgroundColor = "#edf8fA";
+        blogsecurity.style.color = "black";
+      })
+
+
+      var blognetwork = document.getElementById("blog-network");
+      var blognetworkingpage = document.getElementById("blog-networking-page");
+
+      blognetwork.addEventListener("click", function () {
+        blognetworkingpage.style.display = "flex";
+        blognetwork.style.backgroundColor = "#007d6f";
+        blognetwork.style.color = "#ffffff";
+
+        blogsoftwarepage.style.display = "none";
+        blogsoftware.style.backgroundColor = "#edf8fA";
+        blogsoftware.style.color = "black";
+
+        blogdmpage.style.display = "none";
+        blogdigital.style.backgroundColor = "#edf8fA";
+        blogdigital.style.color = "black";
+
+        blogdspage.style.display = "none";
+        blogdscience.style.backgroundColor = "#edf8fA";
+        blogdscience.style.color = "black";
+
+        blogmlpage.style.display = "none";
+        blogmachine.style.backgroundColor = "#edf8fA";
+        blogmachine.style.color = "black";
+
+        blogcspage.style.display = "none";
+        blogsecurity.style.backgroundColor = "#edf8fA";
+        blogsecurity.style.color = "black";
+      })
+
+
+      var blogdigital = document.getElementById("blog-dm");
+      var blogdmpage = document.getElementById("blog-dm-page");
+
+      blogdigital.addEventListener("click", function () {
+        blogdmpage.style.display = "flex";
+        blogdigital.style.backgroundColor = "#007d6f";
+        blogdigital.style.color = "#ffffff";
+
+        blognetworkingpage.style.display = "none";
+        blognetwork.style.backgroundColor = "#edf8fA";
+        blognetwork.style.color = "black";
+
+        blogsoftwarepage.style.display = "none";
+        blogsoftware.style.backgroundColor = "#edf8fA";
+        blogsoftware.style.color = "black";
+
+        blogdspage.style.display = "none";
+        blogdscience.style.backgroundColor = "#edf8fA";
+        blogdscience.style.color = "black";
+
+        blogmlpage.style.display = "none";
+        blogmachine.style.backgroundColor = "#edf8fA";
+        blogmachine.style.color = "black";
+
+        blogcspage.style.display = "none";
+        blogsecurity.style.backgroundColor = "#edf8fA";
+        blogsecurity.style.color = "black";
+
+      })
+
+      var blogdscience = document.getElementById("blog-ds");
+      var blogdspage = document.getElementById("blog-ds-page");
+
+      blogdscience.addEventListener("click", function () {
+        blogdspage.style.display = "flex";
+        blogdscience.style.backgroundColor = "#007d6f";
+        blogdscience.style.color = "#ffffff";
+
+        blogdmpage.style.display = "none";
+        blogdigital.style.backgroundColor = "#edf8fA";
+        blogdigital.style.color = "black";
+
+        blognetworkingpage.style.display = "none";
+        blognetwork.style.backgroundColor = "#edf8fA";
+        blognetwork.style.color = "black";
+
+        blogsoftwarepage.style.display = "none";
+        blogsoftware.style.backgroundColor = "#edf8fA";
+        blogsoftware.style.color = "black";
+
+        blogmlpage.style.display = "none";
+        blogmachine.style.backgroundColor = "#edf8fA";
+        blogmachine.style.color = "black";
+
+        blogcspage.style.display = "none";
+        blogsecurity.style.backgroundColor = "#edf8fA";
+        blogsecurity.style.color = "black";
+      })
+
+      var blogmachine = document.getElementById("blog-ml");
+      var blogmlpage = document.getElementById("blog-ml-page");
+
+      blogmachine.addEventListener("click", function () {
+        blogmlpage.style.display = "flex";
+        blogmachine.style.backgroundColor = "#007d6f";
+        blogmachine.style.color = "#ffffff";
+
+        blogdspage.style.display = "none";
+        blogdscience.style.backgroundColor = "#edf8fA";
+        blogdscience.style.color = "black";
+
+        blogdmpage.style.display = "none";
+        blogdigital.style.backgroundColor = "#edf8fA";
+        blogdigital.style.color = "black";
+
+        blognetworkingpage.style.display = "none";
+        blognetwork.style.backgroundColor = "#edf8fA";
+        blognetwork.style.color = "black";
+
+        blogsoftwarepage.style.display = "none";
+        blogsoftware.style.backgroundColor = "#edf8fA";
+        blogsoftware.style.color = "black";
+
+        blogcspage.style.display = "none";
+        blogsecurity.style.backgroundColor = "#edf8fA";
+        blogsecurity.style.color = "black";
+      })
+
+      var blogsecurity = document.getElementById("blog-cs");
+      var blogcspage = document.getElementById("blog-cs-page");
+
+      blogsecurity.addEventListener("click", function () {
+        blogcspage.style.display = "flex";
+        blogsecurity.style.backgroundColor = "#007d6f";
+        blogsecurity.style.color = "#ffffff";
+
+        blogmlpage.style.display = "none";
+        blogmachine.style.backgroundColor = "#edf8fA";
+        blogmachine.style.color = "black";
+
+        blogdspage.style.display = "none";
+        blogdscience.style.backgroundColor = "#edf8fA";
+        blogdscience.style.color = "black";
+
+        blogdmpage.style.display = "none";
+        blogdigital.style.backgroundColor = "#edf8fA";
+        blogdigital.style.color = "black";
+
+        blognetworkingpage.style.display = "none";
+        blognetwork.style.backgroundColor = "#edf8fA";
+        blognetwork.style.color = "black";
+
+        blogsoftwarepage.style.display = "none";
+        blogsoftware.style.backgroundColor = "#edf8fA";
+        blogsoftware.style.color = "black";
+
+      })
+
+    })
+  </script>
 
 
 

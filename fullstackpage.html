@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <noscript>
-        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="fullstack.css">
     </noscript>
-    <link rel="preload" href="navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="fullstack.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="common.css">
+    </noscript>
+    <link rel="preload" href="common.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/fontawesome/css/brands.css" rel="stylesheet">
     <link href="/fontawesome/css/solid.css" rel="stylesheet">
@@ -208,22 +213,17 @@
                     top Full Stack <br> Web Development institutes.
                 </p>
                 <div class="guarentee-rating">
-                    <div class="guarentee-rating-container fullstack-course-rating">
-                        <p>4.8</p>
-                        <img class="image-fluid" src="img/star.svg" alt="">
-                        <p>Trustpilot</p>
+                    <div class="guarentee-rating-container">
+                      <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1700882443/Ambition_Box_1.png" alt=""
+                        class="image-fluid">
                     </div>
-                    <div style=" margin-left: 10px;" class="guarentee-rating-container fullstack-course-rating">
-                        <p>4.9</p>
-                        <img class="image-fluid" src="img/star.svg" alt="">
-                        <p>Google</p>
+                    <div class="guarentee-rating-container">
+                      <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1700882441/Google_2.png" alt="">
                     </div>
-                    <div class="guarentee-rating-odd-container fullstack-course-rating-odd">
-                        <p>4.8</p>
-                        <img class="image-fluid" src="img/star.svg" alt="">
-                        <p>AmbitionBox</p>
+                    <div class="guarentee-rating-container">
+                      <img src="https://res.cloudinary.com/www-awdiz-in/image/upload/v1700882442/TrustPilot_2.png" alt="">
                     </div>
-                </div>
+                  </div>
             </div>
 
         </div>
@@ -1846,9 +1846,9 @@
             <div class="container">
                 <div class="demo-form-section">
                     <div class="demo-form-content">
-                        <h2>Submit Form and BookFree Demo
+                        <h6>Submit Form and BookFree Demo
                             Sessions by our 15-year exp
-                            Industry Expert</h2>
+                            Industry Expert</h6>
                         <br>
                         <p>100% Placement or No Question Asked Refund Policy</p>
                     </div>
@@ -2071,8 +2071,315 @@
         });
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var detailsawdiz = document.getElementById("detailsawdiz");
+            var displaydetailsawdiz = document.getElementById("displaydetailsawdiz")
 
-    <script src="server.js"></script>
+            detailsawdiz.addEventListener('click', function () {
+                displaydetailsawdiz.style.display = "block"
+                detailsawdiz.style.backgroundColor = "#007d6f";
+                detailsawdiz.style.color = "white";
+
+                displaycertificationawdiz.style.display = "none"
+                certificationawdiz.style.backgroundColor = "#edf8fA";
+                certificationawdiz.style.color = "black";
+
+                displaytrainingawdiz.style.display = "none"
+                trainingawdiz.style.backgroundColor = "#edf8fA";
+                trainingawdiz.style.color = "black";
+
+                displaysyallbus.style.display = "none"
+                syallbus.style.backgroundColor = "#edf8fA";
+                syallbus.style.color = "black";
+            });
+
+
+
+            var certificationawdiz = document.getElementById("certificationawdiz")
+            var displaycertificationawdiz = document.getElementById("displaycertificationawdiz")
+
+            certificationawdiz.addEventListener('click', function () {
+                displaycertificationawdiz.style.display = "block"
+                certificationawdiz.style.backgroundColor = "#007d6f";
+                certificationawdiz.style.color = "white";
+
+                displaytrainingawdiz.style.display = "none"
+                trainingawdiz.style.backgroundColor = "#edf8fA";
+                trainingawdiz.style.color = "black";
+
+                displaysyallbus.style.display = "none"
+                syallbus.style.backgroundColor = "#edf8fA";
+                syallbus.style.color = "black";
+
+                displaydetailsawdiz.style.display = "none"
+                detailsawdiz.style.backgroundColor = "#edf8fA";
+                detailsawdiz.style.color = "black";
+            });
+
+            var trainingawdiz = document.getElementById("trainingawdiz")
+            var displaytrainingawdiz = document.getElementById("displaytrainingawdiz")
+
+            trainingawdiz.addEventListener('click', function () {
+                displaytrainingawdiz.style.display = "block"
+                trainingawdiz.style.backgroundColor = "#007d6f";
+                trainingawdiz.style.color = "white";
+
+                displaycertificationawdiz.style.display = "none"
+                certificationawdiz.style.backgroundColor = "#edf8fA";
+                certificationawdiz.style.color = "black";
+
+                displaysyallbus.style.display = "none"
+                syallbus.style.backgroundColor = "#edf8fA";
+                syallbus.style.color = "black";
+
+                displaydetailsawdiz.style.display = "none"
+                detailsawdiz.style.backgroundColor = "#edf8fA";
+                detailsawdiz.style.color = "black";
+
+            });
+
+            var syallbus = document.getElementById("syallbus")
+            var displaysyallbus = document.getElementById("displaysyallbus")
+
+            syallbus.addEventListener('click', function () {
+                displaysyallbus.style.display = "block"
+                syallbus.style.backgroundColor = "#007d6f";
+                syallbus.style.color = "white";
+
+                displaytrainingawdiz.style.display = "none"
+                trainingawdiz.style.backgroundColor = "#edf8fA";
+                trainingawdiz.style.color = "black";
+
+                displaycertificationawdiz.style.display = "none"
+                certificationawdiz.style.backgroundColor = "#edf8fA";
+                certificationawdiz.style.color = "black";
+
+                displaydetailsawdiz.style.display = "none"
+                detailsawdiz.style.backgroundColor = "#edf8fA";
+                detailsawdiz.style.color = "black";
+            });
+        })
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var coveredtask = document.getElementById("covered-task")
+            var displaycoveredtask = document.getElementById("display-covered-task")
+
+            coveredtask.addEventListener('click', function () {
+                displaycoveredtask.style.display = "block"
+                coveredtask.style.backgroundColor = "#007d6f";
+                coveredtask.style.color = "white";
+
+                displaycoveredcommerece.style.display = "none"
+                coveredcommerece.style.backgroundColor = "white";
+                coveredcommerece.style.color = "black";
+
+                displaycoveredsocial.style.display = "none"
+                coveredsocial.style.backgroundColor = "white";
+                coveredsocial.style.color = "black";
+
+                displaycoveredonline.style.display = "none"
+                coveredonline.style.backgroundColor = "white";
+                coveredonline.style.color = "black";
+
+                displaycoveredreal.style.display = "none"
+                coveredreal.style.backgroundColor = "white";
+                coveredreal.style.color = "black";
+
+
+            });
+
+
+            var coveredcommerece = document.getElementById("covered-commerece")
+            var displaycoveredcommerece = document.getElementById("display-covered-commerece")
+
+            coveredcommerece.addEventListener('click', function () {
+                displaycoveredcommerece.style.display = "block"
+                coveredcommerece.style.backgroundColor = "#007d6f";
+                coveredcommerece.style.color = "white";
+
+                displaycoveredsocial.style.display = "none"
+                coveredsocial.style.backgroundColor = "white";
+                coveredsocial.style.color = "black";
+
+                displaycoveredonline.style.display = "none"
+                coveredonline.style.backgroundColor = "white";
+                coveredonline.style.color = "black";
+
+                displaycoveredreal.style.display = "none"
+                coveredreal.style.backgroundColor = "white";
+                coveredreal.style.color = "black";
+
+                displaycoveredtask.style.display = "none"
+                coveredtask.style.backgroundColor = "white";
+                coveredtask.style.color = "black";
+
+            });
+
+
+
+            var coveredsocial = document.getElementById("covered-social")
+            var displaycoveredsocial = document.getElementById("display-covered-social")
+
+            coveredsocial.addEventListener('click', function () {
+                displaycoveredsocial.style.display = "block"
+                coveredsocial.style.backgroundColor = "#007d6f";
+                coveredsocial.style.color = "white";
+
+                displaycoveredonline.style.display = "none"
+                coveredonline.style.backgroundColor = "white";
+                coveredonline.style.color = "black";
+
+                displaycoveredreal.style.display = "none"
+                coveredreal.style.backgroundColor = "white";
+                coveredreal.style.color = "black";
+
+                displaycoveredtask.style.display = "none"
+                coveredtask.style.backgroundColor = "white";
+                coveredtask.style.color = "black";
+
+                displaycoveredcommerece.style.display = "none"
+                coveredcommerece.style.backgroundColor = "white";
+                coveredcommerece.style.color = "black";
+
+            });
+
+
+            var coveredonline = document.getElementById("covered-online")
+            var displaycoveredonline = document.getElementById("display-covered-online")
+
+            coveredonline.addEventListener('click', function () {
+                displaycoveredonline.style.display = "block"
+                coveredonline.style.backgroundColor = "#007d6f";
+                coveredonline.style.color = "white";
+
+                displaycoveredtask.style.display = "none"
+                coveredtask.style.backgroundColor = "white";
+                coveredtask.style.color = "black";
+
+                displaycoveredcommerece.style.display = "none"
+                coveredcommerece.style.backgroundColor = "white";
+                coveredcommerece.style.color = "black";
+
+                displaycoveredsocial.style.display = "none"
+                coveredsocial.style.backgroundColor = "white";
+                coveredsocial.style.color = "black";
+
+                displaycoveredreal.style.display = "none"
+                coveredreal.style.backgroundColor = "white";
+                coveredreal.style.color = "black";
+
+            });
+        })
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var coveredreal = document.getElementById("covered-real")
+            var displaycoveredreal = document.getElementById("display-covered-real")
+
+            coveredreal.addEventListener('click', function () {
+                displaycoveredreal.style.display = "block"
+                coveredreal.style.backgroundColor = "#007d6f";
+                coveredreal.style.color = "white";
+
+                displaycoveredonline.style.display = "none"
+                coveredonline.style.backgroundColor = "white";
+                coveredonline.style.color = "black";
+
+                displaycoveredtask.style.display = "none"
+                coveredtask.style.backgroundColor = "white";
+                coveredtask.style.color = "black";
+
+                displaycoveredcommerece.style.display = "none"
+                coveredcommerece.style.backgroundColor = "white";
+                coveredcommerece.style.color = "black";
+
+                displaycoveredsocial.style.display = "none"
+                coveredsocial.style.backgroundColor = "white";
+                coveredsocial.style.color = "black";
+
+            });
+        })
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            //QUESTION ANSWER
+
+            var plus = document.getElementById("plus");
+            var xmark = document.getElementById("x-mark");
+            var ans = document.getElementById("ans");
+
+            plus.addEventListener("click", function () {
+                ans.style.display = "block";
+                xmark.style.display = "block"
+                plus.style.display = "none"
+            })
+
+            xmark.addEventListener("click", function () {
+                ans.style.display = "none";
+                xmark.style.display = "none"
+                plus.style.display = "block"
+            })
+
+            var plusone = document.getElementById("plusone");
+            var xmarkone = document.getElementById("x-markone");
+            var ansone = document.getElementById("ansone");
+
+            plusone.addEventListener("click", function () {
+                ansone.style.display = "block";
+                xmarkone.style.display = "block"
+                plusone.style.display = "none"
+            })
+
+            xmarkone.addEventListener("click", function () {
+                ansone.style.display = "none";
+                xmarkone.style.display = "none"
+                plusone.style.display = "block"
+            })
+
+            var plustwo = document.getElementById("plustwo");
+            var xmarktwo = document.getElementById("x-marktwo");
+            var anstwo = document.getElementById("anstwo");
+
+            plustwo.addEventListener("click", function () {
+                anstwo.style.display = "block";
+                xmarktwo.style.display = "block"
+                plustwo.style.display = "none"
+            })
+
+            xmarktwo.addEventListener("click", function () {
+                anstwo.style.display = "none";
+                xmarktwo.style.display = "none"
+                plustwo.style.display = "block"
+            })
+
+            var plusthree = document.getElementById("plusthree");
+            var xmarkthree = document.getElementById("x-markthree");
+            var ansthree = document.getElementById("ansthree");
+
+            plusthree.addEventListener("click", function () {
+                ansthree.style.display = "block";
+                xmarkthree.style.display = "block"
+                plusthree.style.display = "none"
+            })
+
+            xmarkthree.addEventListener("click", function () {
+                ansthree.style.display = "none";
+                xmarkthree.style.display = "none"
+                plusthree.style.display = "block"
+            })
+
+
+        })
+    </script>
+
+
+    <script src="common.js"></script>
 </body>
 
 </html>
