@@ -173,7 +173,7 @@ html {
     /* border: 1px solid black; */
     width: 90%;
     margin: auto;
-  }
+}
 
 
 /* awdiz-homepage */
@@ -554,7 +554,7 @@ picture {
     margin: auto;
 }
 
-.modal-dialog{
+.modal-dialog {
     width: 50%;
     margin: auto;
 }
@@ -729,16 +729,16 @@ video {
         margin-top: 20px;
     }
 
-    .modal-content{
+    .modal-content {
         height: 250px;
     }
 
-    .modal-dialog{
+    .modal-dialog {
         width: 95%;
         margin: auto;
     }
-    
-    iframe{
+
+    iframe {
         height: 210px;
     }
 
@@ -2782,7 +2782,7 @@ button:hover {
 .wave path {
     stroke: #007d6f;
     /* Wave color */
-    stroke-width: 2;
+    stroke-width: 6;
     fill: none;
     stroke-dasharray: 10;
     /* Adjust the length of the dots */
@@ -3029,7 +3029,7 @@ button:hover {
 .sec-page {
     position: relative;
     z-index: 101;
-}  
+}
 
 @media screen and (min-width:1280px) and (max-width:1440px) {
     .certificate {
@@ -3087,6 +3087,14 @@ button:hover {
 
     .certifcate-star {
         padding-top: 0px;
+    }
+
+    .certificate-rating-item-three-p {
+        font-size: 30px;
+    }
+
+    .certficate-rating-item-star {
+        font-size: 20px;
     }
 }
 
@@ -3240,6 +3248,10 @@ button:hover {
     .awdiz-choose {
         padding: 30px 0px 30px 0px;
     }
+
+    .choose-box-one>h6 {
+        font-size: calc(0.9vw + 1rem);
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -3324,7 +3336,7 @@ button:hover {
 .circle-container {
     /* border: 1px solid black; */
     width: 100%;
-    height: 700px;
+    height: auto;
 }
 
 .circle-grid {
@@ -3507,6 +3519,32 @@ button:hover {
         display: none;
         visibility: hidden;
     }
+}
+
+@media screen and (max-width:1440px) {
+    .circle-grid {
+        width: 850px;
+        height: 743px;
+    }
+
+    .circle-grid-image-one {
+        width: 150px;
+        height: 170px;
+    }
+
+    .circle-grid-one {
+        height: 300px;
+    }
+
+    .circle-grid-two {
+        height: 300px;
+    }
+
+    .circle-grid-content {
+        height: 143px;
+    }
+
+
 }
 
 
@@ -4185,5 +4223,3 @@ textarea {
         padding: 10px 0px 10px 0px;
     }
 }
-
-
