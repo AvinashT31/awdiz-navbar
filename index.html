@@ -88,24 +88,26 @@
               </a>
             </div>
           </div>
-
-          <div class="custom-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <!-- <div class="custom-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-body" style="padding:0">
-                  <video id="modal-mobile-video" class="lazyload" width="800" controls="" preload="none"
-                    data-poster="https://res.cloudinary.com/www-awdiz-in/image/upload/v1578817110/video/awdiz-video-back.webp"
-                    id="course-video" style="object-fit:cover">
-
-                    <iframe src="https://www.youtube.com/embed/opIxfZYhYAs" width="100%" height="250px" frameborder=""
+                  <iframe src="https://www.youtube.com/embed/opIxfZYhYAs" width="100%" height="360px" frameborder=""
                       title="Awdiz CCNA Course in Mumbai"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen="" loading="lazy"></iframe>
 
-
-
-
                   </video>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="custom-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body" style="padding:0">
+                  <iframe id="course-video" src="https://www.youtube.com/embed/opIxfZYhYAs" width="100%" height="360px"
+                    frameborder="" title="Awdiz CCNA Course in Mumbai" allowfullscreen="" loading="lazy"></iframe>
                 </div>
               </div>
             </div>
@@ -131,31 +133,30 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <section id="cisco-training" class="cisco-training">
       <div class="cisco-training-page">
         <div class="cisco-training-form">
-          <form class="cisco-form" action="submitform.php" method="POST">
+          <form class="cisco-form">
             <h3>Contact to Plan your Amazing Career Path Journey with Awdiz</h3>
             <label>Full Name</label>
             <br>
-            <input type="text" name="name" placeholder="Please enter your Full Name">
+            <input type="text" name="name" id="username" placeholder="Please enter your Full Name" required>
             <br>
             <label>Phone</label>
             <br>
-            <input type="text" name="phone" placeholder="Please enter your Phone Number">
+            <input type="text" name="phone" id="usernumber" placeholder="Please enter your Phone Number" required>
             <br>
             <label>Email</label>
             <br>
-            <input type="text" name="email" placeholder="Please enter your Email">
+            <input type="text" name="email" id="useremail" placeholder="Please enter your Email" required>
             <br>
             <label>Message</label>
             <br>
-            <textarea class="cisco-textarea" name="message" cols="30" rows="2"
-              placeholder="Message for Awdiz Placement Team"></textarea>
+            <textarea class="cisco-textarea" id="usermessage" name="message" cols="30" rows="2"
+              placeholder="Message for Awdiz Placement Team" required></textarea>
             <br>
             <button type="submit">Submit</button>
           </form>
@@ -3871,45 +3872,36 @@
 
   <script>
 
-    function showModal() {
-      event.preventDefault()
-      var modal = document.getElementById('myModal');
-      modal.style.display = 'flex';
-      var video = document.getElementById('course-video');
-      video.load();
-    }
+function showModal(event) {
+  event.preventDefault();
+  var modal = document.getElementById('myModal');
+  modal.style.display = 'flex';
+}
 
-    function hideModal() {
-      var modal = document.getElementById('myModal');
-      modal.style.display = 'none';
-      var video = document.getElementById('course-video');
-      video.pause();
-    }
+function hideModal() {
+  var modal = document.getElementById('myModal');
+  modal.style.display = 'none';
+  var iframe = document.getElementById('course-video');
+  // Reset the src attribute to stop the video and audio
+  var iframeSrc = iframe.src;
+  iframe.src = iframeSrc;
+}
 
-    function toggleVideo() {
-      var video = document.getElementById('course-video');
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    }
+document.getElementById('myModal').addEventListener('click', function (e) {
+  if (e.target !== this) {
+    return; // Ignore clicks inside the modal that are not on the modal background
+  }
+  hideModal();
+});
 
-    document.getElementById('myModal').addEventListener('click', function (e) {
-      if (e.target == document.getElementById('course-video')) {
-        toggleVideo();
-      } else {
-        hideModal();
-      }
-    });
+document.addEventListener('click', function (e) {
+  var modal = document.getElementById('myModal');
+  var guarenteeDiv = document.querySelector('.guarentee-page'); // Ensure this matches your HTML structure
+  if (modal.style.display === 'flex' && !guarenteeDiv.contains(e.target)) {
+    hideModal();
+  }
+});
 
-    document.addEventListener('click', function (e) {
-      var guarenteeDiv = document.querySelector('.guarentee');
-      var modal = document.getElementById('myModal');
-      if (!guarenteeDiv.contains(e.target) && modal.style.display === 'flex') {
-        hideModal();
-      }
-    });
   </script>
 
   <script>
@@ -4019,40 +4011,31 @@
   </script>
 
   <script>
-    document.querySelector('.cisco-form').addEventListener('submit', function (e) {
-      var isValid = true;
+    document.querySelector(".cisco-form").addEventListener("submit", function (e) {
+      var fullname = document.getElementById("username").value;
+      var number = document.getElementById("usernumber").value;
+      var email = document.getElementById("useremail").value;
+      var message = document.getElementById("usermessage").value;
+      var emailRegex = /\S+@\S+\.\S+/;
+      var phoneRegex = /^\d{10}$/;
 
-      var fullName = document.querySelector('.cisco-form input[type="text"][placeholder="Please enter your Full Name"]');
-      var phone = document.querySelector('.cisco-form input[type="text"][placeholder="Please enter your Phone Number"]');
-      var email = document.querySelector('.cisco-form input[type="text"][placeholder="Please enter your Email"]');
-      var message = document.querySelector('.cisco-form textarea');
-
-      if (!fullName.value.trim()) {
-        alert('Please enter your full name.');
-        fullName.focus();
-        isValid = false;
+      if (fullname.length < 1 && number.length < 1 && email.length < 1 && message.length < 1) {
+        alert("please fill all input details");
+        event.preventDefault();
+        return;
       }
 
-      if (!phone.value.trim() || !/^\d{10}$/.test(phone.value)) {
-        alert('Please enter a valid 10-digit phone number.');
-        phone.focus();
-        isValid = false;
+      if (!phoneRegex.test(number)) {
+        alert("Please enter a valid 10 digit mobile number.");
+        event.preventDefault();
+        return;
       }
 
-      if (!email.value.trim() || !/\S+@\S+\.\S+/.test(email.value)) {
-        alert('Please enter a valid email address.');
-        email.focus();
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        event.preventDefault();
         isValid = false;
-      }
-
-      if (!message.value.trim()) {
-        alert('Please enter your message.');
-        message.focus();
-        isValid = false;
-      }
-
-      if (!isValid) {
-        e.preventDefault();
+        return;
       }
     });
   </script>

@@ -554,8 +554,15 @@ picture {
     margin: auto;
 }
 
+.modal-dialog{
+    width: 50%;
+    margin: auto;
+}
+
 .popup-video .modal-body {
     padding: 0;
+    display: flex;
+    width: 100%;
 }
 
 .popup-video video {
@@ -720,6 +727,19 @@ video {
 
     .content-info {
         margin-top: 20px;
+    }
+
+    .modal-content{
+        height: 250px;
+    }
+
+    .modal-dialog{
+        width: 95%;
+        margin: auto;
+    }
+    
+    iframe{
+        height: 210px;
     }
 
 }

@@ -1319,6 +1319,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div style="display: flex; justify-content: space-between;">
                   <p>Women IT job</p>
                   <p id="women"> <i class="fa-solid fa-plus"></i></p>
+                  <p id="women-minus" style="display: none;"> <i class="fa-solid fa-minus"></i></p>
                 </div>
                 <ul style="display: none;" id="women-job">
                   <li style="padding-top: 15px">Content-one</li>
@@ -1328,9 +1329,30 @@ document.addEventListener("DOMContentLoaded", function () {
               <li><a href="">Career Restart</a></li>
               <li><a href="">Placement</a></li>
               <li><a href="">Review</a></li>
-              <li><a href="">Student Corner</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">About</a></li>
+              <li>
+              <div style="display: flex; justify-content: space-between;">
+              <p>Student Corner</p>
+              <p id="student"> <i class="fa-solid fa-plus"></i></p>
+              <p id="student-minus" style="display: none;"> <i class="fa-solid fa-minus"></i></p>
+            </div>
+            <ul style="display: none;" id="student-job">
+              <li style="padding-top: 15px">Internship</li>
+              <li>Internship</li>
+              <li>Internship</li>
+            </ul>
+            </li>
+            <li>
+            <div style="display: flex; justify-content: space-between;">
+            <p>About</p>
+            <p id="about"> <i class="fa-solid fa-plus"></i></p>
+            <p id="about-minus" style="display: none;"> <i class="fa-solid fa-minus"></i></p>
+          </div>
+          <ul style="display: none;" id="about-job">
+            <li style="padding-top: 15px">Internship</li>
+            <li>Internship</li>
+            <li>Internship</li>
+          </ul>
+          </li>
               <li><a href="">Blockchain</a></li>
             </ul>
           </div>
@@ -1408,18 +1430,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var women = document.getElementById("women");
   var displayWomenJob = document.getElementById("women-job");
-  var isVisible = false;
+  var womenminus = document.getElementById("women-minus");
 
   women.addEventListener("click", function () {
-    if (isVisible) {
-      displayWomenJob.style.display = "none";
-    } else {
-      displayWomenJob.style.display = "block";
-    }
-    isVisible = !isVisible;
+    displayWomenJob.style.display = "block";
+    women.style.display = "none";
+    womenminus.style.display = "block";
   });
-});
 
+  womenminus.addEventListener("click", function () {
+    displayWomenJob.style.display = "none";
+    women.style.display = "block";
+    womenminus.style.display = "none";
+  });
+
+  var student = document.getElementById("student");
+  var displaystudentjob = document.getElementById("student-job");
+  var studentminus = document.getElementById("student-minus");
+
+  student.addEventListener("click", function () {
+    displaystudentjob.style.display = "block";
+    student.style.display = "none";
+    studentminus.style.display = "block";
+  });
+
+  studentminus.addEventListener("click", function () {
+    displaystudentjob.style.display = "none";
+    student.style.display = "block";
+    studentminus.style.display = "none";
+  });
+
+  var about = document.getElementById("about");
+  var displayaboutjob= document.getElementById("about-job");
+  var aboutminus = document.getElementById("about-minus");
+
+  about.addEventListener("click", function () {
+    displayaboutjob.style.display = "block";
+    about.style.display = "none";
+    aboutminus.style.display = "block";
+  });
+
+  aboutminus.addEventListener("click", function () {
+    displayaboutjob.style.display = "none";
+    about.style.display = "block";
+    aboutminus.style.display = "none";
+  });
+
+});
 
 
 
@@ -1699,23 +1756,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // 8.Enquiry Form 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var mobileEnquirySection = document.querySelector('.mobile-enquiry-section');
   var ciscoTrainingSection = document.getElementById('cisco-training');
   var mobileEnquiryButton = document.getElementById('mobile-enquiry-button');
 
-  mobileEnquiryButton.addEventListener('click', function() {
-      mobileEnquirySection.style.display = 'none';
+  mobileEnquiryButton.addEventListener('click', function () {
+    mobileEnquirySection.style.display = 'none';
   });
 
-  window.addEventListener('scroll', function() {
-      var sectionPosition = ciscoTrainingSection.getBoundingClientRect();
+  window.addEventListener('scroll', function () {
+    var sectionPosition = ciscoTrainingSection.getBoundingClientRect();
 
-      if (sectionPosition.top <= window.innerHeight && sectionPosition.bottom >= 0) {
-          mobileEnquirySection.style.display = 'none';
-      } else {
-          mobileEnquirySection.style.display = 'flex'; 
-      }
+    if (sectionPosition.top <= window.innerHeight && sectionPosition.bottom >= 0) {
+      mobileEnquirySection.style.display = 'none';
+    } else {
+      mobileEnquirySection.style.display = 'flex';
+    }
   });
 });
 
