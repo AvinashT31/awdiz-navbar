@@ -162,7 +162,6 @@
 }
 
 
-
 html {
     font-family: Nunito;
     -webkit-text-size-adjust: 100%;
@@ -488,7 +487,6 @@ picture {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
 }
 
 .guarentee-content h2 {
@@ -563,6 +561,7 @@ picture {
     padding: 0;
     display: flex;
     width: 100%;
+    height: 360px;
 }
 
 .popup-video video {
@@ -589,6 +588,7 @@ picture {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
+    height: 400px;
 }
 
 .guarentee-image {
@@ -816,302 +816,6 @@ video {
     .news-content {
         right: 6px;
     }
-}
-
-
-/* cisco-training */
-
-.cisco-training {
-    /* border: 1px solid black; */
-    width: 100%;
-    padding: 80px 0px 80px 0px;
-    box-sizing: border-box;
-
-}
-
-.cisco-training-page {
-    /* border: 1px solid black; */
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-}
-
-.cisco-training-form {
-    /* border: 1px solid black; */
-    width: 38%;
-    height: 613px;
-}
-
-.cisco-form {
-    border: 1px solid black;
-    width: 70%;
-    margin: auto;
-    padding: 25px 15px 25px 15px;
-    background-color: #272566;
-    color: white;
-    border-radius: 10px;
-    position: relative;
-    z-index: 101;
-}
-
-.cisco-training-form::after {
-    content: "";
-    /* border: 1px solid black; */
-    width: 85%;
-    margin: auto;
-    border-radius: 270px;
-    background-color: #d3dfde;
-    display: inline-block;
-    position: relative;
-    bottom: 80%;
-    z-index: -2;
-    height: 536px;
-    left: 7%;
-}
-
-.cisco-form h3 {
-    /* border: 1px solid black; */
-    color: white;
-    font-family: nunito;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.cisco-form label {
-    margin-top: 10px;
-    font-family: mulish;
-    font-size: 14px
-}
-
-.cisco-form input {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-
-    border: none;
-    outline: none;
-    background-color: #ffffff;
-    padding-left: 16px;
-    font-size: 13px;
-    font-family: poppins;
-}
-
-input[type="email"],
-input[type="tel"],
-input[type="text"] {
-    font-size: 14px !important;
-}
-
-input[type="email"]::placeholder,
-input[type="tel"]::placeholder,
-input[type="text"]::placeholder {
-    font-size: 12px !important
-}
-
-textarea.cisco-textarea {
-    font-size: 14px
-}
-
-textarea.cisco-textarea::placeholder {
-    font-size: 12px
-}
-
-.cisco-textarea {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-
-    border: none;
-    outline: none;
-    background-color: #ffffff;
-    padding-left: 16px;
-    font-size: 13px;
-    font-family: poppins;
-}
-
-.cisco-form button {
-    width: 100%;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 550;
-    font-size: 18px;
-    margin-top: 20px;
-    border: none;
-    outline: none;
-    background-color: #007d6f;
-    color: white;
-    font-family: hind;
-    margin: 0;
-}
-
-.cisco-training-info {
-    width: 58%;
-    padding: 60px 40px 120px 25px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.cisco-training-info>h3 {
-    color: #272566;
-    font-family: nunito;
-    font-weight: 900;
-    font-size: calc(1.68vw + 1rem);
-    line-height: 1.2;
-}
-
-.cisco-training-info>p20 {
-    color: #272566;
-    font-family: nunito;
-    font-weight: 900;
-    font-size: calc(1.60vw + 1rem);
-    line-height: 1.2;
-}
-
-.cicso-p {
-    font-size: 44px;
-    color: #007d6f;
-    font-family: nunito;
-    font-weight: 900;
-}
-
-.cisco-job {
-    /* border: 1px solid black; */
-    padding: 20px 0px 20px 0px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-.cisco-container {
-    width: 24%;
-    /* border: 1px solid black; */
-}
-
-.cisco-info {
-    font-size: 14px;
-    font-family: mulish;
-}
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width:1440px) {
-    .cisco-training-form::after {
-        width: 85%;
-        margin: auto;
-        bottom: 62%;
-        height: 390px;
-        left: 7%;
-    }
-
-    .cisco-form label {
-        font-size: 12px;
-    }
-
-    .cisco-form input {
-        font-size: 12px;
-        height: 36px;
-    }
-
-
-
-    .cisco-form button {
-        height: 36px;
-        padding: 0px;
-    }
-
-    .cisco-training-form {
-        height: 565px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .cisco-training-form::after {
-        width: 95%;
-        margin: auto;
-        bottom: 64%;
-        height: 390px;
-        left: 2.5%;
-    }
-
-    .cisco-training-form {
-        height: 560px;
-    }
-
-    .cisco-form {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .cisco-training-page {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .cisco-training-form {
-        width: 100%;
-    }
-
-    .cisco-form {
-        width: 100%;
-    }
-
-    .cisco-training-info {
-        width: 100%;
-        padding: 40px 0px 0px 0px;
-    }
-
-    .cisco-job {
-        width: 100%;
-        /* border: 1px solid black; */
-        justify-content: space-between !important;
-    }
-
-    .cicso-p {
-        font-size: 24px;
-    }
-
-    .cisco-info {
-        font-size: 15px;
-    }
-
-    .cisco-training {
-        padding: 30px 0px 30px 0px;
-    }
-
-    .cisco-container {
-        width: 48%;
-    }
-
-    .ciscos-con {
-        text-align: right;
-    }
-
-    .cisco-fo {
-        margin-top: 35px;
-    }
-
-    .cisco-form input {
-        font-size: 12px;
-    }
-
-    .cisco-form label {
-        font-size: 13px;
-    }
-
-    .cisco-form button {
-        font-size: 16px;
-    }
-
 }
 
 
@@ -2089,7 +1793,7 @@ button:hover {
         border-radius: 10px;
     }
 
-    .our-courses-angular > p{
+    .our-courses-angular>p {
         font-size: 14px;
     }
 
@@ -2457,7 +2161,7 @@ button:hover {
 
 @media screen and (min-width:1280px) and (max-width:1440px) {
 
-    .job-guarentee-program{
+    .job-guarentee-program {
         padding: 30px 0px 30px 0px;
     }
 
@@ -2504,7 +2208,7 @@ button:hover {
 
 @media screen and (max-width:480px) {
 
-    .job-guarentee-program{
+    .job-guarentee-program {
         padding: 30px 0px 30px 0px;
     }
 
@@ -2573,7 +2277,7 @@ button:hover {
         padding: 0px;
     }
 
-    .placement-button{
+    .placement-button {
         width: 35%;
     }
 
@@ -3044,7 +2748,7 @@ button:hover {
     z-index: 101;
 }
 
-.certificate-page-info-p{
+.certificate-page-info-p {
     margin-top: 20px;
 }
 
@@ -3144,7 +2848,7 @@ button:hover {
         padding: 5px 20px 20px 20px;
     }
 
-    .certificate-page-info{
+    .certificate-page-info {
         margin-top: 10px;
     }
 
@@ -3279,7 +2983,7 @@ button:hover {
 
 @media screen and (max-width:480px) {
 
-    .awdiz-choose{
+    .awdiz-choose {
         padding: 30px 0px 30px 0px;
     }
 
@@ -3581,7 +3285,7 @@ button:hover {
     /* border: 1px solid black; */
     width: 100%;
     padding: 20px 0px 20px 0px;
-    background-image: url("img/background.webp");
+    /* background-image: url("img/background.webp"); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -3858,7 +3562,7 @@ textarea {
 
 .double-card {
     flex: 0 0 45%;
-    height: 380px;
+    height: 405px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3945,11 +3649,11 @@ textarea {
     }
 
     .my-carousel-indicators {
-        margin-top: 30px;
+        margin-top: 52px;
     }
 
     .double-container {
-        height: 465px;
+        height: 480px;
         padding-bottom: 0px;
     }
 }
@@ -3982,7 +3686,7 @@ textarea {
         height: 360px;
     }
 
-    .carousel-item-two-p{
+    .carousel-item-two-p {
         font-size: 14px;
     }
 
@@ -3995,11 +3699,11 @@ textarea {
         background-color: white;
     }
 
-    .my-carousel-container{
+    .my-carousel-container {
         height: 250px;
     }
 
-    .my-carousel-slide{
+    .my-carousel-slide {
         height: 250px;
     }
 }
@@ -4268,12 +3972,12 @@ textarea {
         padding: 10px 0px 10px 0px;
     }
 
-    .blog-our-courses-angular > p{
+    .blog-our-courses-angular>p {
         font-size: 14px;
     }
 }
 
-@media screen and (width:320px){
+@media screen and (width:320px) {
     .btnssss {
         width: 66%;
     }

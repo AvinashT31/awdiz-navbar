@@ -1461,7 +1461,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   var about = document.getElementById("about");
-  var displayaboutjob= document.getElementById("about-job");
+  var displayaboutjob = document.getElementById("about-job");
   var aboutminus = document.getElementById("about-minus");
 
   about.addEventListener("click", function () {
@@ -1629,74 +1629,131 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //   6.FORMMODAL
 
-document.addEventListener("DOMContentLoaded", function () {
-  var formmodal = document.getElementById("form-modal");
-  console.log(formmodal, "formmodal");
 
-  formmodal.innerHTML = `
-        
-    <section class="form-modal">
-    <div class="overlay" onclick="toggleForm()"></div>
-    <div class="sticky-form">
-      <form action="/submit-form" method="post">
-        <div class="form-row">
-          <input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
-          <input type="tel" id="phone-number" name="phone_number" placeholder="Phone Number" required>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-          <input type="text" id="message" name="message" placeholder="Message" required>
-          <button type="submit">Request on Call</button>
-        </div>
-      </form>
+
+// 7.global-cisco-training-section
+document.addEventListener('DOMContentLoaded', function () {
+  var ciscosection = document.getElementById("cisco-training");
+
+  ciscosection.innerHTML = `
+  <div class="cisco-training-page">
+  <div class="cisco-training-form">
+    <form class="cisco-form">
+      <h3>Contact to Plan your Amazing Career Path Journey with Awdiz</h3>
+      <label>Full Name</label>
+      <br>
+      <input type="text" name="name" id="username" placeholder="Please enter your Full Name" required>
+      <br>
+      <label>Phone</label>
+      <br>
+      <input type="text" name="phone" id="usernumber" placeholder="Please enter your Phone Number" required>
+      <br>
+      <label>Email</label>
+      <br>
+      <input type="text" name="email" id="useremail" placeholder="Please enter your Email" required>
+      <br>
+      <label>Message</label>
+      <br>
+      <textarea class="cisco-textarea" id="usermessage" name="message" cols="30" rows="2"
+        placeholder="Message for Awdiz Placement Team" required></textarea>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="mobile-badge" class="badge sticky-contact" style="z-index:100;height:40px; width: 100%;">
+    <ul>
+      <li>
+        <i class="fa-solid fa-phone phone" loading="lazy"></i>
+        <span>
+          <a href="tel:+918657202255">
+            <b style="font-weight: 700;color: #fff">8657202255</b>
+          </a>
+        </span>
+      </li>
+      <li>
+        <i class="fa-brands fa-whatsapp whatsapp" loading="lazy"></i>
+        <span>
+          <a href="https://api.whatsapp.com/send?phone=917678000695">
+            <b style="font-weight: 700;color: #fff;">7678000695</b>
+          </a>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cisco-training-info">
+
+    <p20>Placement Guarantee hai to Form Bharne mai Deri kyun?</p20>
+
+    <p class="content-info">India’s No.1 in Cisco Training, renowned for expertise in IT education, offring
+      comprehensive courses, hands-on labs, and certifid instructors, empowering
+      professionals to become specialists</p>
+    <div class="cisco-job">
+      <div class="cisco-container cisco-fo">
+        <p class="cicso-p">16K+</p>
+        <p class="cisco-info">Students Enrolled</p>
+      </div>
+      <div class="cisco-container ciscos-con cisco-fo">
+        <p class="cicso-p">200+</p>
+        <p class="cisco-info">Active Courses</p>
+      </div>
+      <div class="cisco-container  cisco-fo">
+        <p class="cicso-p">12+</p>
+        <p class="cisco-info">Years of Experience</p>
+      </div>
+      <div class="cisco-container ciscos-con cisco-fo">
+        <p class="cicso-p">16K+</p>
+        <p class="cisco-info">Educational Rewards</p>
+      </div>
     </div>
-    <div class="message-icon" onclick="toggleForm()"><i class="fa-regular fa-message"></i></div>
-  </section>
-    `;
-});
+  </div>
+</div>
+<div class="container">
+  <div class="cisco-enquiry">
+    <div class="badge-one">
 
-function toggleForm() {
-  var form = document.querySelector('.sticky-form');
-  var overlay = document.querySelector('.overlay');
-  var isFormVisible = form.style.display === 'flex';
+    </div>
+    <div id="normal-badge" class="badge sticky-contact" style="z-index:100;height:40px">
+      <ul>
+        <li>
+          <i class="fa-solid fa-phone phone" loading="lazy"></i>
+          <span>
+            <a href="tel:+918657202255">
+              <b style="font-weight: 700;color: #fff">8657202255</b>
+            </a>
+          </span>
+        </li>
+        <li>
+          <i class="fa-brands fa-whatsapp whatsapp" loading="lazy"></i>
+          <span>
+            <a href="https://api.whatsapp.com/send?phone=917678000695">
+              <b style="font-weight: 700;color: #fff;">7678000695</b>
+            </a>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-  form.style.display = isFormVisible ? 'none' : 'flex';
-  overlay.style.display = isFormVisible ? 'none' : 'block';
-}
-
-
-
-// 7.phonemeu
-
-document.addEventListener("DOMContentLoaded", function () {
-  var globalphonemenu = document.getElementById("phonemenu");
-
-  globalphonemenu.innerHTML = `
-  <div class="badge sticky-contact" style="z-index:100;height:24px">
-  <ul>
-    <li>
-      <i class="fa-solid fa-phone phone"></i>
-      <span>
-        <a href="tel:+918657202255">
-          <b style="font-weight: 700;color: #fff">8657202255</b>
-        </a>
-      </span>
-    </li>
-    <li>
-      <i class="fa-brands fa-whatsapp whatsapp"></i>
-      <span>
-        <a href="https://api.whatsapp.com/send?phone=917678000695">
-          <b style="font-weight: 700;color: #fff;">7678000695</b>
-        </a>
-      </span>
-    </li>
-  </ul>
 </div>
   `
 })
 
 
-// 8.Enquiry Form 
+// 8.quick-enquiry-section for mobile
 
 document.addEventListener('DOMContentLoaded', function () {
+
+  var mobilequickenquirysection = document.getElementById("mobile-quick-enquiry-section");
+  mobilequickenquirysection.innerHTML = `
+  <a href="#cisco-training" id="mobile-enquiry-button">
+    <div class="mobile-enquiry-section">
+      <div class="mobile-button">
+        <p>Quick Enquiry</p>
+      </div>
+    </div>
+  </a>
+  `
   var mobileEnquirySection = document.querySelector('.mobile-enquiry-section');
   var ciscoTrainingSection = document.getElementById('cisco-training');
   var mobileEnquiryButton = document.getElementById('mobile-enquiry-button');
@@ -1717,66 +1774,76 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// 9.quick-enquiry-section for desktop
+
+document.addEventListener('DOMContentLoaded', function () {
+  var quickenquirysection = document.getElementById("quick-enquiry-section")
+  quickenquirysection.innerHTML = `
+  <a href="#cisco-training"><button id="quick-enquiry">Quick Enquiry</button></a>
+  `
+})
+
+
 // lazyloadscript
 
-document.addEventListener("DOMContentLoaded", function() {
-    var lazyMedia = [].slice.call(document.querySelectorAll("img.lazyload, source.lazyload, iframe.lazyload, video.lazyload, .lazy-bg"));
+document.addEventListener("DOMContentLoaded", function () {
+  var lazyMedia = [].slice.call(document.querySelectorAll("img.lazyload, source.lazyload, iframe.lazyload, video.lazyload, .lazy-bg"));
 
-    if ("IntersectionObserver" in window) {
-        let observer = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    let media = entry.target;
-                    if (media.tagName.toLowerCase() === 'img') {
-                        media.src = media.dataset.src;
-                    } else if (media.tagName.toLowerCase() === 'source') {
-                        media.srcset = media.dataset.srcset;
-                        // Update parent picture element to refresh sources
-                        var parentPicture = media.closest('picture');
-                        if(parentPicture) {
-                            var img = parentPicture.querySelector('img');
-                            if(img && img.dataset.src) {
-                                img.src = img.dataset.src;
-                            }
-                        }
-                    } else if (media.tagName.toLowerCase() === 'iframe') {
-                        media.src = media.dataset.src;
-                    } else if (media.tagName.toLowerCase() === 'video') {
-                        var source = media.querySelector('source');
-                        source.src = source.dataset.src;
-                        media.poster = media.dataset.poster;
-                        media.load();
-                    } else if (media.classList.contains('lazy-bg')) {
-                        media.style.backgroundImage = 'url(' + media.dataset.bg + ')';
-                    }
-                    media.classList.remove("lazyload");
-                    observer.unobserve(media);
-                }
-            });
-        });
-
-        lazyMedia.forEach(function(media) {
-            observer.observe(media);
-        });
-    } else {
-        // Fallback for browsers without IntersectionObserver support
-        lazyMedia.forEach(function(media) {
-            if (media.tagName.toLowerCase() === 'img') {
-                media.src = media.dataset.src;
-            } else if (media.tagName.toLowerCase() === 'source') {
-                media.srcset = media.dataset.srcset;
-            } else if (media.tagName.toLowerCase() === 'iframe') {
-                media.src = media.dataset.src;
-            } else if (media.tagName.toLowerCase() === 'video') {
-                var source = media.querySelector('source');
-                source.src = source.dataset.src;
-                media.poster = media.dataset.poster;
-                media.load();
-            } else if (media.classList.contains('lazy-bg')) {
-                media.style.backgroundImage = 'url(' + media.dataset.bg + ')';
+  if ("IntersectionObserver" in window) {
+    let observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          let media = entry.target;
+          if (media.tagName.toLowerCase() === 'img') {
+            media.src = media.dataset.src;
+          } else if (media.tagName.toLowerCase() === 'source') {
+            media.srcset = media.dataset.srcset;
+            // Update parent picture element to refresh sources
+            var parentPicture = media.closest('picture');
+            if (parentPicture) {
+              var img = parentPicture.querySelector('img');
+              if (img && img.dataset.src) {
+                img.src = img.dataset.src;
+              }
             }
-        });
-    }
+          } else if (media.tagName.toLowerCase() === 'iframe') {
+            media.src = media.dataset.src;
+          } else if (media.tagName.toLowerCase() === 'video') {
+            var source = media.querySelector('source');
+            source.src = source.dataset.src;
+            media.poster = media.dataset.poster;
+            media.load();
+          } else if (media.classList.contains('lazy-bg')) {
+            media.style.backgroundImage = 'url(' + media.dataset.bg + ')';
+          }
+          media.classList.remove("lazyload");
+          observer.unobserve(media);
+        }
+      });
+    });
+
+    lazyMedia.forEach(function (media) {
+      observer.observe(media);
+    });
+  } else {
+    // Fallback for browsers without IntersectionObserver support
+    lazyMedia.forEach(function (media) {
+      if (media.tagName.toLowerCase() === 'img') {
+        media.src = media.dataset.src;
+      } else if (media.tagName.toLowerCase() === 'source') {
+        media.srcset = media.dataset.srcset;
+      } else if (media.tagName.toLowerCase() === 'iframe') {
+        media.src = media.dataset.src;
+      } else if (media.tagName.toLowerCase() === 'video') {
+        var source = media.querySelector('source');
+        source.src = source.dataset.src;
+        media.poster = media.dataset.poster;
+        media.load();
+      } else if (media.classList.contains('lazy-bg')) {
+        media.style.backgroundImage = 'url(' + media.dataset.bg + ')';
+      }
+    });
+  }
 });
 
 

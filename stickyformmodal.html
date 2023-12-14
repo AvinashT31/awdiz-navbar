@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* Sticky-form-modal */
+
+    .form-modal {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0%;
+        background-color: #272566;
+        z-index: 100;
+    }
+
+    .sticky-form {
+        box-sizing: border-box;
+        width: 75%;
+        height: 40px;
+    }
+
+    .sticky-form .form-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sticky-form input,
+    .sticky-form button {
+        width: 15%;
+        padding-left: 10px;
+        font-family: mulish;
+        height: 40px;
+        border: none;
+        box-shadow: 0px -1px 4px rgb(76, 175, 80), 0px -2px 13px -3px rgb(8, 42, 94), inset 0px 2px 0px rgb(76, 175, 80);
+    }
+
+    .sticky-form button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: 0px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+        left: 0;
+    }
+
+    .sticky-form button::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(to right,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.6) 50%,
+                rgba(255, 255, 255, 0) 100%);
+        animation: sweep 2s infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes sweep {
+        0% {
+            transform: rotate(30deg) translateX(-100%);
+        }
+
+        100% {
+            transform: rotate(30deg) translateX(300%);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .sticky-form {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            background-color: #f2f2f2;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 1000;
+            height: 280px;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .sticky-form .form-row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sticky-form input,
+        .sticky-form button {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        .message-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007d6f;
+            color: white;
+            position: fixed;
+            bottom: 4%;
+            right: 10px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+        }
+    }
+
+    /* Hide message icon on larger screens */
+    @media screen and (min-width: 601px) {
+
+        .message-icon,
+        .overlay {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+
+
+    <div id="form-modal">
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var formmodal = document.getElementById("form-modal");
+            console.log(formmodal, "formmodal");
+
+            formmodal.innerHTML = `
+        
+    <section class="form-modal">
+    <div class="overlay" onclick="toggleForm()"></div>
+    <div class="sticky-form">
+      <form action="/submit-form" method="post">
+        <div class="form-row">
+          <input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
+          <input type="tel" id="phone-number" name="phone_number" placeholder="Phone Number" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="text" id="message" name="message" placeholder="Message" required>
+          <button type="submit">Request on Call</button>
+        </div>
+      </form>
+    </div>
+    <div class="message-icon" onclick="toggleForm()"><i class="fa-regular fa-message"></i></div>
+  </section>
+    `;
+        });
+
+        function toggleForm() {
+            var form = document.querySelector('.sticky-form');
+            var overlay = document.querySelector('.overlay');
+            var isFormVisible = form.style.display === 'flex';
+
+            form.style.display = isFormVisible ? 'none' : 'flex';
+            overlay.style.display = isFormVisible ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
