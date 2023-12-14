@@ -1807,122 +1807,6 @@ ul li {
 }
 
 
-/* share-button */
-
-.share-buttons {
-    position: fixed;
-    width: 301px;
-    height: 212px;
-    padding-left: 135px;
-    bottom: 10%;
-    left: 2%;
-    margin-left: -150px;
-    z-index: 100;
-}
-
-.share-buttons .share-button {
-    float: left;
-    margin-top: 18px;
-}
-
-.share-buttons .share-button:after {
-    clear: both;
-    display: table;
-}
-
-.share-buttons .share-button:first-child {
-    margin-top: 0;
-}
-
-.share-button {
-    display: block;
-    position: relative;
-    height: 30px;
-}
-
-.share-button:hover {
-    cursor: pointer;
-}
-
-.share-button:hover .share-button-primary {
-    box-shadow: 1px 0 0 0 rgba(0, 0, 0, .1);
-}
-
-.share-button:hover .share-button-secondary-content {
-    transform: translate3d(0, 0, 0);
-}
-
-.share-button-primary {
-    position: absolute;
-    background-color: #007d6f;
-    width: 35px;
-    height: 35px;
-    border-radius: 20px;
-    left: 0;
-    top: 50%;
-    margin-top: -15px;
-}
-
-.share-button-icon {
-    display: block !important;
-    color: white;
-    position: absolute;
-    width: 26px;
-    line-height: 30px !important;
-    font-size: 17px;
-    margin-top: 2px;
-    margin-left: 10px;
-}
-
-.share-button-secondary {
-    overflow: hidden;
-    margin-left: 15px;
-    height: 35px;
-}
-
-.share-button-secondary-content {
-    font-family: sans-serif;
-    font-size: .75em;
-    background-color: #007d6f;
-    display: block;
-    height: 35px;
-    text-align: left;
-    padding-left: 24px;
-    padding-right: 18px;
-    line-height: 30px;
-    color: white;
-    border-radius: 0 15px 15px 0;
-    transform: translate3d(-100%, 0, 0);
-    transition: transform 175ms ease;
-}
-
-@media (min-width:769px) and (max-width:1280px) {
-    .share-buttons {
-        left: 84.8%;
-        margin-left: 0px;
-        bottom: 10%;
-    }
-
-    .share-button-secondary {
-        transform: translateX(-100%);
-    }
-
-    .share-button-secondary-content {
-        border-radius: 15px 0 0 15px;
-        transform: translate3d(100%, 0, 0);
-        transition: transform 200ms ease;
-    }
-}
-
-
-@media screen and (max-width:768px) {
-    .share-buttons {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-
 /* footer */
 
 footer {
@@ -2225,6 +2109,7 @@ html {
     position: fixed;
     left: 1.3%;
     bottom: 6%;
+    z-index: 99;
 }
 
 .mobile-enquiry-section {

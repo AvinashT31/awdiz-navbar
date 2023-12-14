@@ -1598,66 +1598,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //   4.GLOBAL-SOCIAL-ICON
 
-document.addEventListener("DOMContentLoaded", function () {
-  var sharebutton = document.getElementById("share-buttons");
-
-  sharebutton.innerHTML = `
-    <div class="share-buttons">
-      <div class="share-button" onclick="shareOnTwitter()">
-        <div class="share-button-secondary">
-          <div class="share-button-secondary-content">Share on Twitter</div>
-        </div>
-        <div class="share-button-primary">
-          <i class="share-button-icon fa-brands fa-twitter"></i>
-        </div>
-      </div>
-      <div class="share-button" onclick="shareOnFacebook()">
-        <div class="share-button-secondary">
-          <div class="share-button-secondary-content">Share on Facebook</div>
-        </div>
-        <div class="share-button-primary">
-          <i class="share-button-icon fa-brands fa-facebook"></i>
-        </div>
-      </div>
-      <div class="share-button" onclick="shareOnLinkedIn()">
-        <div class="share-button-secondary">
-          <div class="share-button-secondary-content">Share on LinkedIn</div>
-        </div>
-        <div class="share-button-primary">
-          <i class="share-button-icon fa-brands fa-linkedin"></i>
-        </div>
-      </div>
-      <div class="share-button" onclick="shareOnWhatsApp()">
-        <div class="share-button-secondary">
-          <div class="share-button-secondary-content">Share on Whatsapp</div>
-        </div>
-        <div class="share-button-primary">
-          <i class="share-button-icon fa-brands fa-whatsapp"></i>
-        </div>
-      </div>
-    </div>
-    `
-})
-
-function shareOnTwitter() {
-  var n = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(document.location); window.open(n)
-}
-function shareOnFacebook() {
-  var n = "https://www.facebook.com/sharer.php?u=" + encodeURIComponent(document.location); window.open(n)
-}
-function shareOnLinkedIn() {
-  var n = "https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(document.location); window.open(n)
-}
-function shareOnWhatsApp() {
-  var n = "https://wa.me/?text=" + encodeURIComponent(document.location); window.open(n)
-}
-
-document.addEventListener('click', function () {
-  document.querySelectorAll('.share-button').forEach(function (button) {
-    button.classList.remove('touched');
-  });
-});
-
 
 //   5.GLOBAL-TOP-BAR-SECTION
 
@@ -1775,6 +1715,70 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+// lazyloadscript
+
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyMedia = [].slice.call(document.querySelectorAll("img.lazyload, source.lazyload, iframe.lazyload, video.lazyload, .lazy-bg"));
+
+    if ("IntersectionObserver" in window) {
+        let observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    let media = entry.target;
+                    if (media.tagName.toLowerCase() === 'img') {
+                        media.src = media.dataset.src;
+                    } else if (media.tagName.toLowerCase() === 'source') {
+                        media.srcset = media.dataset.srcset;
+                        // Update parent picture element to refresh sources
+                        var parentPicture = media.closest('picture');
+                        if(parentPicture) {
+                            var img = parentPicture.querySelector('img');
+                            if(img && img.dataset.src) {
+                                img.src = img.dataset.src;
+                            }
+                        }
+                    } else if (media.tagName.toLowerCase() === 'iframe') {
+                        media.src = media.dataset.src;
+                    } else if (media.tagName.toLowerCase() === 'video') {
+                        var source = media.querySelector('source');
+                        source.src = source.dataset.src;
+                        media.poster = media.dataset.poster;
+                        media.load();
+                    } else if (media.classList.contains('lazy-bg')) {
+                        media.style.backgroundImage = 'url(' + media.dataset.bg + ')';
+                    }
+                    media.classList.remove("lazyload");
+                    observer.unobserve(media);
+                }
+            });
+        });
+
+        lazyMedia.forEach(function(media) {
+            observer.observe(media);
+        });
+    } else {
+        // Fallback for browsers without IntersectionObserver support
+        lazyMedia.forEach(function(media) {
+            if (media.tagName.toLowerCase() === 'img') {
+                media.src = media.dataset.src;
+            } else if (media.tagName.toLowerCase() === 'source') {
+                media.srcset = media.dataset.srcset;
+            } else if (media.tagName.toLowerCase() === 'iframe') {
+                media.src = media.dataset.src;
+            } else if (media.tagName.toLowerCase() === 'video') {
+                var source = media.querySelector('source');
+                source.src = source.dataset.src;
+                media.poster = media.dataset.poster;
+                media.load();
+            } else if (media.classList.contains('lazy-bg')) {
+                media.style.backgroundImage = 'url(' + media.dataset.bg + ')';
+            }
+        });
+    }
+});
+
 
 
 
