@@ -1,38 +1,81 @@
-function handleClick(event) {
-  event.preventDefault();
+// function handleClick(event) {
+//   event.preventDefault();
 
-  var hoverDiv = document.getElementById('navbar');
-  var hoverDisplayDiv = document.getElementById('hover-content');
-  var showRightItems = document.querySelectorAll("[id^='show-right-itm']");
-  var otherMenu = document.getElementsByClassName("navtwo-menu");
+//   var hoverDiv = document.getElementById('navbar');
+//   var hoverDisplayDiv = document.getElementById('hover-content');
+//   var showRightItems = document.querySelectorAll("[id^='show-right-itm']");
+//   var otherMenu = document.getElementsByClassName("navtwo-menu");
 
-  // Using mouseenter and mouseleave
-  for (var i = 0; i < otherMenu.length; i++) {
-    otherMenu[i].addEventListener('mouseenter', function () {
-      hoverDisplayDiv.classList.remove('flex-display');
-    });
-  }
+//   // Using mouseenter and mouseleave
+//   for (var i = 0; i < otherMenu.length; i++) {
+//     otherMenu[i].addEventListener('mouseenter', function () {
+//       hoverDisplayDiv.classList.remove('flex-display');
+//     });
+//   }
 
-  hoverDiv.addEventListener('mouseenter', function () {
-    hoverDisplayDiv.classList.add('flex-display');
-    showRightItems.forEach(item => item.style.display = "none");
-    showRightItems[0].style.display = "block";
-  });
+//   hoverDiv.addEventListener('mouseenter', function () {
+//     hoverDisplayDiv.classList.add('flex-display');
+//     showRightItems.forEach(item => item.style.display = "none");
+//     showRightItems[0].style.display = "block";
+//   });
 
-  hoverDiv.addEventListener('mouseleave', function (event) {
-    if (!hoverDiv.contains(event.relatedTarget)) {
-      hoverDisplayDiv.classList.remove('flex-display');
-    }
-  });
+//   hoverDiv.addEventListener('mouseleave', function (event) {
+//     if (!hoverDiv.contains(event.relatedTarget)) {
+//       hoverDisplayDiv.classList.remove('flex-display');
+//     }
+//   });
 
-  hoverDisplayDiv.addEventListener('mouseenter', function () {
-    hoverDisplayDiv.classList.add('flex-display');
-  });
+//   hoverDisplayDiv.addEventListener('mouseenter', function () {
+//     hoverDisplayDiv.classList.add('flex-display');
+//   });
 
-  hoverDisplayDiv.addEventListener('mouseleave', function () {
-    hoverDisplayDiv.classList.remove('flex-display');
-  });
-}
+//   hoverDisplayDiv.addEventListener('mouseleave', function () {
+//     hoverDisplayDiv.classList.remove('flex-display');
+//   });
+// }
+
+
+// function handleClick(event) {
+//   event.preventDefault();
+
+//   var hoverDiv = document.getElementById('navbar');
+//   var hoverDisplayDiv = document.getElementById('hover-content');
+//   var showRightItems = document.querySelectorAll("[id^='show-right-itm']");
+//   var otherMenu = document.getElementsByClassName("navtwo-menu");
+//   var hideTimeout;
+
+//   hoverDiv.addEventListener('click', function () {
+//     hoverDisplayDiv.classList.add('flex-display');
+//     showRightItems.forEach(item => item.style.display = "none");
+//     showRightItems[0].style.display = "block";
+//   });
+
+//   hoverDisplayDiv.addEventListener('mouseleave', function () {
+//     hideTimeout = setTimeout(function () {
+//       hoverDisplayDiv.classList.remove('flex-display');
+//     }, 5000);
+//   });
+
+//   hoverDisplayDiv.addEventListener('mouseenter', function () {
+//     clearTimeout(hideTimeout);
+//   });
+
+//   document.addEventListener('click', function (event) {
+//     if (!hoverDiv.contains(event.target) && !hoverDisplayDiv.contains(event.target)) {
+//       hoverDisplayDiv.classList.remove('flex-display');
+//       clearTimeout(hideTimeout);
+//     }
+//   });
+
+//   for (var i = 0; i < otherMenu.length; i++) {
+//     otherMenu[i].addEventListener('mouseenter', function () {
+//       hoverDisplayDiv.classList.remove('flex-display');
+//     });
+//   }
+// }
+
+// document.addEventListener('DOMContentLoaded', handleClick);
+
 
 function displaycontent(event) {
   document.querySelectorAll('.menu-item').forEach(item => {
