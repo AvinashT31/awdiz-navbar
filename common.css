@@ -1420,6 +1420,10 @@ ul li {
         font-size: 12px !important;
     }
 
+    .show-item-one ul a {
+        font-size: 12px !important;
+    }
+
     .show-item-two-container p {
         font-size: 12px !important;
     }
@@ -1485,7 +1489,7 @@ ul li {
         font-size: 14px !important;
     }
 
-    .show-item-one ul li {
+    .show-item-one ul a {
         font-size: 11px !important;
     }
 
@@ -1627,7 +1631,12 @@ ul li {
     padding-left: 15px;
 }
 
-.show-item-one ul li {
+.show-item-one ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-item-one ul a {
     list-style: none;
     font-family: 'Mulish';
     font-size: 13px;
@@ -1635,6 +1644,9 @@ ul li {
     margin-left: 15px;
     padding: 0;
     margin-bottom: 7px;
+    text-decoration: none;
+    /* color: black; */
+    color: #384252;
 }
 
 .show-item-two {
@@ -1670,6 +1682,11 @@ ul li {
     background-position: center;
 }
 
+.show-item-two-container a{
+    text-decoration: none;
+    color: black;
+}
+
 .show-item-two-container p {
     padding-left: 15px;
     font-family: 'Mulish';
@@ -1703,6 +1720,14 @@ ul li {
     background-color: #edf8fa;
     border-radius: 6px;
     margin-right: 17px;
+}
+
+.show-item-container a{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    color: black;
 }
 
 .show-item-container-box {

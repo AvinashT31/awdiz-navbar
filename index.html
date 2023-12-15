@@ -3670,36 +3670,6 @@
   </script>
 
   <script>
-    document.querySelector(".cisco-form").addEventListener("submit", function (e) {
-      var fullname = document.getElementById("username").value;
-      var number = document.getElementById("usernumber").value;
-      var email = document.getElementById("useremail").value;
-      var message = document.getElementById("usermessage").value;
-      var emailRegex = /\S+@\S+\.\S+/;
-      var phoneRegex = /^\d{10}$/;
-
-      if (fullname.length < 1 && number.length < 1 && email.length < 1 && message.length < 1) {
-        alert("please fill all input details");
-        event.preventDefault();
-        return;
-      }
-
-      if (!phoneRegex.test(number)) {
-        alert("Please enter a valid 10 digit mobile number.");
-        event.preventDefault();
-        return;
-      }
-
-      if (!emailRegex.test(email)) {
-        alert("Please enter a valid email address.");
-        event.preventDefault();
-        isValid = false;
-        return;
-      }
-    });
-  </script>
-
-  <script>
     document.addEventListener('DOMContentLoaded', () => {
       updateCardsPerView();
       window.addEventListener('resize', updateCardsPerView);
@@ -3842,18 +3812,20 @@
         return;
       }
 
-      if (!trialphoneRegex.test(trialnumber)) {
-        alert("Please enter a valid 10 digit mobile number.");
-        event.preventDefault();
-        return;
-      }
-
       if (!trialemailRegex.test(trialemail)) {
         alert("Please enter a valid email address.");
         event.preventDefault();
         isValid = false;
         return;
       }
+
+      if (!trialphoneRegex.test(trialnumber)) {
+        alert("Please enter a valid 10 digit mobile number.");
+        event.preventDefault();
+        return;
+      }
+
+  
     });
   </script>
 

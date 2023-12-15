@@ -68,424 +68,462 @@ document.addEventListener("DOMContentLoaded", function () {
   var globalNav = document.getElementById("global-nav");
   globalNav.innerHTML = `  
   <div class="topbar-section">
-  <div class="container">
-      <div class="topbar-inner">
-          <div class="top-bar-left pull-left">
-              <ul>
-                  <li><i class="fa fa-phone"></i> &nbsp; Phone: 7678000695 | &nbsp; 8657202255</li>
-                  <li><i class="fa fa-envelope"></i> &nbsp; Email: <a
-                          href="mailto:contact@awdiz.in">contact@awdiz.in</a></li>
-              </ul>
-          </div>
-          <div id="top-right" class="top-bar-right pull-right">
-              <ul>
-                  <li><a href="https://www.facebook.com/awdiz" target="_blank"><i
-                              class="fa-brands fa-facebook"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i
-                              class="fa-brands fa-youtube"></i></a></li>
-                  <li><a href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i
-                              class="fa-brands fa-instagram"></i></a></li>
-                  <li style="padding: 0px 14px 0px;">Mumbai Pune Bangalore</li>
-                  <li style="padding-right: 0"><button class="glow-on-hover" type="button"
-                          style="width:125px;height:auto;margin: 0;"><a href="https://www.awdiz.in/contact">Enroll
-                              Now</a></button></li>
-              </ul>
-          </div>
-      </div>
-  </div>
-</div>
-<div class="navbar">
-  <div class="container">
-      <div onmouseover="handleClick(event)" class="navmenu">
-          <div class="navone">
-              <div class="navlogo navtwo-menu">
-                  <img src="img/awdiz.png" class="img-fluid" alt="">
-              </div>
-          </div>
-          <div class="navdropdown">
-              <div class="navcourses" id="navbar">
-                  <p style="padding: 28px 35px;">All Courses</p>
-              </div>
-              <div onmouseover="displaycontent(event)" class="show-item" id="hover-content">
-                  <div class="show-item-left">
-                      <h3>Course Categories</h3>
-                      <ul>
-                          <li class="menu-item" style="background-color: white;" data-target="show-right-itm-one"
-                              id="opensoftwarepage">Software Development <i id="icon"
-                                  style="padding-left: 17px; color: #272566;" class="fa-solid fa-angle-right"></i>
-                          </li>
-                          <li class="menu-item" id="openinfrapage" data-target="show-right-itm-two">Networking
-                              infrastructure <i id="icon-one" style="color: #edf8fa;"
-                                  class="fa-solid fa-angle-right arrow"></i></li>
-                          <li class="menu-item" id="opendmpage" data-target="show-right-itm-three">Digital
-                              Marketing <i id="icon-two" style="padding-left: 57px; color: #edf8fa;"
-                                  class="fa-solid fa-angle-right"></i>
-                          </li>
-                          <li class="menu-item" id="opendspage" data-target="show-right-itm-four">Data science <i
-                                  id="icon-three" style="padding-left: 83px; color: #edf8fa;"
-                                  class="fa-solid fa-angle-right"></i>
-                          </li>
-                          <li class="menu-item" id="openmlpage" data-target="show-right-itm-five">Machine Learning
-                              <i id="icon-four" style="padding-left: 47px; color: #edf8fa;"
-                                  class="fa-solid fa-angle-right"></i>
-                          </li>
-                          <li class="menu-item" id="opencspage" data-target="show-right-itm-six">Cyber security <i
-                                  id="icon-five" style="padding-left: 71px; color: #edf8fa;"
-                                  class="fa-solid fa-angle-right"></i>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="show-content">
-                      <div id="show-right-itm-one" class="content-div">
-                          <div class="show-item-right">
-                              <div class="show-item-content">
-                                  <div class="show-item-one">
-                                      <h3>Individual course</h3>
-                                      <ul>
-                                          <li>Angular 8 - 12 Training</li>
-                                          <li>Node.js Training</li>
-                                          <li>React.js Training</li>
-                                          <li>JavaScript + TypeScript Training</li>
-                                          <li>FullStack Web Developer Training</li>
-                                          <li>FullStack Java Developer Training</li>
-                                          <li>UI UX Development</li>
-                                          <li>MVC with Dot Net Training</li>
-                                      </ul>
-                                  </div>
-                                  <div class="show-item-two">
-                                      <h3>Job guarantee program</h3>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+        <div class="container">
+            <div class="topbar-inner">
+                <div class="top-bar-left pull-left">
+                    <ul>
+                        <li><i class="fa fa-phone"></i> &nbsp; Phone: 7678000695 | &nbsp; 8657202255</li>
+                        <li><i class="fa fa-envelope"></i> &nbsp; Email: <a
+                                href="mailto:contact@awdiz.in">contact@awdiz.in</a></li>
+                    </ul>
+                </div>
+                <div id="top-right" class="top-bar-right pull-right">
+                    <ul>
+                        <li><a href="https://www.facebook.com/awdiz" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCib2IAJ7I-42CUKzDoXC6ag" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/awesome_studies_awdiz" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li style="padding: 0px 14px 0px;">Mumbai Pune Bangalore</li>
+                        <li style="padding-right: 0"><button class="glow-on-hover" type="button"
+                                style="width:125px;height:auto;margin: 0;"><a href="https://www.awdiz.in/contact">Enroll
+                                    Now</a></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="container">
+            <div onmouseover="handleClick(event)" class="navmenu">
+                <div class="navone">
+                    <div class="navlogo navtwo-menu">
+                        <img src="img/awdiz.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="navdropdown">
+                    <div class="navcourses" id="navbar">
+                        <p style="padding: 28px 35px;">All Courses</p>
+                    </div>
+                    <div onmouseover="displaycontent(event)" class="show-item" id="hover-content">
+                        <div class="show-item-left">
+                            <h3>Course Categories</h3>
+                            <ul>
+                                <li class="menu-item" style="background-color: white;" data-target="show-right-itm-one"
+                                    id="opensoftwarepage">Software Development <i id="icon"
+                                        style="padding-left: 17px; color: #272566;" class="fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="menu-item" id="openinfrapage" data-target="show-right-itm-two">Networking
+                                    infrastructure <i id="icon-one" style="color: #edf8fa;"
+                                        class="fa-solid fa-angle-right arrow"></i></li>
+                                <li class="menu-item" id="opendmpage" data-target="show-right-itm-three">Digital
+                                    Marketing <i id="icon-two" style="padding-left: 57px; color: #edf8fa;"
+                                        class="fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="menu-item" id="opendspage" data-target="show-right-itm-four">Data science <i
+                                        id="icon-three" style="padding-left: 83px; color: #edf8fa;"
+                                        class="fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="menu-item" id="openmlpage" data-target="show-right-itm-five">Machine Learning
+                                    <i id="icon-four" style="padding-left: 47px; color: #edf8fa;"
+                                        class="fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="menu-item" id="opencspage" data-target="show-right-itm-six">Cyber security <i
+                                        id="icon-five" style="padding-left: 71px; color: #edf8fa;"
+                                        class="fa-solid fa-angle-right"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="show-content">
+                            <div id="show-right-itm-one" class="content-div">
+                                <div class="show-item-right">
+                                    <div class="show-item-content">
+                                        <div class="show-item-one">
+                                            <h3>Individual course</h3>
+                                            <ul>
+                                                <a href="">Angular 8 - 12 Training</a>
+                                                <a href="">Node.js Training</a>
+                                                <a href="">React.js Training</a>
+                                                <a href="">JavaScript + TypeScript Training</a>
+                                                <a href="">FullStack Web Developer Training</a>
+                                                <a href="">FullStack Java Developer Training</a>
+                                                <a href="">UI UX Development</a>
+                                                <a href="">MVC with Dot Net Training</a>
+                                            </ul>
+                                        </div>
+                                        <div class="show-item-two">
+                                            <h3>Job guarantee program</h3>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
 
-                                          </div>
-                                          <p>MERN Master</p>
-                                      </div>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                                </div>
+                                                <a href="">
+                                                    <p>MERN Master</p>
+                                                </a>
+                                            </div>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
 
-                                          </div>
-                                          <p>MEAN Master</p>
-                                      </div>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                                </div>
+                                                <a href="">
+                                                    <p>MEAN Master</p>
+                                                </a>
+                                            </div>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
 
-                                          </div>
-                                          <p>Java Full Stack</p>
-                                      </div>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                                </div>
+                                                <a href="">
+                                                    <p>Java Full Stack</p>
+                                                </a>
+                                            </div>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
 
-                                          </div>
-                                          <p>Dot Net Full Stack</p>
-                                      </div>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                                </div>
+                                                <a href="">
+                                                    <p>Dot Net Full Stack</p>
+                                                </a>
+                                            </div>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
 
-                                          </div>
-                                          <p>Blockchain Fullstack</p>
-                                      </div>
-                                  </div>
-                                  <div class="show-item-three">
-                                      <h3>Master's Program</h3>
-                                      <div class="show-item-container">
-                                          <div class="show-item-container-box">
+                                                </div>
+                                                <a href="">
+                                                    <p>Blockchain Fullstack</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="show-item-three">
+                                            <h3>Master's Program</h3>
+                                          
+                                                <div class="show-item-container">
+                                                   <a href="">
+                                                    <div class="show-item-container-box">
 
-                                          </div>
-                                          <div class="show-item-container-box-one">
-                                              <p>MERN Stack</p>
-                                              <p class="item">Duration - 6 months</p>
-                                          </div>
-                                      </div>
-                                      <div class="show-item-container">
-                                          <div class="show-item-container-box">
+                                                    </div>
+                                                    <div class="show-item-container-box-one">
+                                                        <p>MERN Stack</p>
+                                                        <p class="item">Duration - 6 months</p>
+                                                    </div>
+                                                   </a> 
+                                                </div>
+                                            
+                                            <div class="show-item-container">
+                                               <a href="">
+                                                <div class="show-item-container-box">
 
-                                          </div>
-                                          <div class="show-item-container-box-one">
-                                              <p>MEAN Stack</p>
-                                              <p class="item">Duration - 6 months</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="show-item-right-button">
-                                  <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
-                              </div>
+                                                </div>
+                                                <div class="show-item-container-box-one">
+                                                    <p>MEAN Stack</p>
+                                                    <p class="item">Duration - 6 months</p>
+                                                </div>
+                                               </a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-item-right-button">
+                                        <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
 
-                          </div>
-                      </div>
-
-
-                      <div style="display: none;" id="show-right-itm-two" class="content-div">
-                          <div class="show-item-right">
-                              <div class="show-item-content">
-                                  <div class="show-item-one">
-                                      <h3>Individual course</h3>
-                                      <ul>
-                                          <li>CCNA Training</li>
-                                          <li>CCNP Training</li>
-                                          <li>Hardware and Networking Course</li>
-                                          <li>AWS Training</li>
-                                          <li>Windows Administrator L1 Training</li>
-                                          <li>Linux Administrator L1 Training</li>
-                                          <li>Microsoft Azure Devops</li>
-                                          <li>Job Guaranteed Program</li>
-                                      </ul>
-                                  </div>
-                                  <div class="show-item-two">
-                                      <h3>Job guarantee program</h3>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
-
-                                          </div>
-                                          <p>MERN Master</p>
-                                      </div>
-
-                                  </div>
-                                  <div class="show-item-three" class="content-div">
-                                      <h3>Master's Program</h3>
-                                      <div class="show-item-container">
-                                          <div class="show-item-container-box">
-
-                                          </div>
-                                          <div class="show-item-container-box-one">
-                                              <p>L1 Network Engineer</p>
-                                              <p class="item">Duration - 6 months</p>
-                                          </div>
-                                      </div>
-                                      <div class="show-item-container">
-                                          <div class="show-item-container-box">
-
-                                          </div>
-                                          <div class="show-item-container-box-one">
-                                              <p>L2 Network Engineer</p>
-                                              <p class="item">Duration - 6 months</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="show-item-right-button">
-                                  <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
-                              </div>
-                          </div>
-                      </div>
+                                </div>
+                            </div>
 
 
-                      <div style="display: none;" id="show-right-itm-three" class="content-div">
-                          <div class="show-item-right">
-                              <div class="show-item-content">
-                                  <div class="show-item-one">
-                                      <h3>Individual course</h3>
-                                      <ul>
-                                          <li>SEO Training</li>
-                                          <li>SMM Training</li>
-                                          <li>Google WEB Analytics Training</li>
-                                          <li>Google Adwords & Adsense Training</li>
-                                          <li>UI UX Designer Training</li>
-                                      </ul>
-                                  </div>
-                                  <div class="show-item-two">
-                                      <h3>Job guarantee program</h3>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                            <div style="display: none;" id="show-right-itm-two" class="content-div">
+                                <div class="show-item-right">
+                                    <div class="show-item-content">
+                                        <div class="show-item-one">
+                                            <h3>Individual course</h3>
+                                            <ul>
+                                                <a href="">CCNA Training</a>
+                                                <a href="">CCNP Training</a>
+                                                <a href="">Hardware and Networking Course</a>
+                                                <a href="">Windows Administrator L1 Training</a>
+                                                <a href="">AWS Training</a>
+                                                <a href="">Linux Administrator L1 Training</a>
+                                                <a href="">Microsoft Azure Devops</a>
+                                                <a href="">Job Guaranteed Program</a>
 
-                                          </div>
-                                          <p>MERN Master</p>
-                                      </div>
+                                            </ul>
+                                        </div>
+                                        <div class="show-item-two">
+                                            <h3>Job guarantee program</h3>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
 
-                                  </div>
-                                  <div class="show-item-three">
-                                      <h3>Master's Program</h3>
-                                      <div class="show-item-container">
-                                          <div class="show-item-container-box">
+                                                </div>
+                                                <a href="">
+                                                    <p>MERN Master</p>
+                                                </a>
+                                            </div>
 
-                                          </div>
-                                          <div class="show-item-container-box-one">
-                                              <p>Advanced Digital Marketing</p>
-                                              <p class="item">Duration - 6 months</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="show-item-right-button">
-                                  <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
-                              </div>
-                          </div>
-                      </div>
+                                        </div>
+                                        <div class="show-item-three" class="content-div">
+                                            <h3>Master's Program</h3>
+
+                                            <div class="show-item-container">
+                                                <a href="">
+                                                    <div class="show-item-container-box">
+
+                                                    </div>
+                                                    <div class="show-item-container-box-one">
+                                                        <p>L1 Network Engineer</p>
+                                                        <p class="item">Duration - 6 months</p>
+                                                    </div>
+                                                </a>
 
 
-                      <div style="display: none;" id="show-right-itm-four" class="content-div">
-                          <div class="show-item-right">
-                              <div class="show-item-content">
-                                  <div class="show-item-one">
-                                      <h3>Individual course</h3>
-                                      <ul>
-                                          <li>Data Science with R Training</li>
-                                          <li>Data Science with Python Training</li>
-                                          <li>Data Science with SAS Training</li>
-                                          <li>Data Science with Tableau Training</li>
-                                          <li>Data Science with Power BI Training</li>
-                                          <li>Data Analyst Training</li>
-                                          <li>Natural Language Processing NLP Training</li>
-                                      </ul>
-                                  </div>
-                                  <div class="show-item-two">
-                                      <h3>Job guarantee program</h3>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                            </div>
+                                            <div class="show-item-container">
+                                              <a href="">
+                                                <div class="show-item-container-box">
 
-                                          </div>
-                                          <p>MERN Master</p>
-                                      </div>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                                </div>
+                                                <div class="show-item-container-box-one">
+                                                    <p>L2 Network Engineer</p>
+                                                    <p class="item">Duration - 6 months</p>
+                                                </div>
+                                              </a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-item-right-button">
+                                        <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
 
-                                          </div>
-                                          <p>MEAN Master</p>
-                                      </div>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
 
-                                          </div>
-                                          <p>Java Full Stack</p>
-                                      </div>
+                            <div style="display: none;" id="show-right-itm-three" class="content-div">
+                                <div class="show-item-right">
+                                    <div class="show-item-content">
+                                        <div class="show-item-one">
+                                            <h3>Individual course</h3>
+                                            <ul>
+                                                <a href="">SEO Training</a>
+                                                <a href="">SMM Training</a>
+                                                <a href="">Google WEB Analytics Training</a>
+                                                <a href="">Google Adwords & Adsense Training</a>
+                                                <a href="">UI UX Designer Training</a>
 
-                                  </div>
-                                  <div class="show-item-three">
-                                      <h3>Master's Program</h3>
-                                      <div class="show-item-container">
-                                          <div class="show-item-container-box">
+                                            </ul>
+                                        </div>
+                                        <div class="show-item-two">
+                                            <h3>Job guarantee program</h3>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
 
-                                          </div>
-                                          <div class="show-item-container-box-one">
-                                              <p>AWS & Microsoft Azure Devops</p>
-                                              <p class="item">Duration - 6 months</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="show-item-right-button">
-                                  <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
-                              </div>
-                          </div>
-                      </div>
-                      <div style="display: none;" id="show-right-itm-five" class="content-div">
-                          <div class="show-item-right">
-                              <div class="show-item-content">
-                                  <div class="show-item-one">
-                                      <h3>Individual course</h3>
-                                      <ul>
-                                          <li>Machine Learning & AI</li>
-                                          <li>Machine Learning & Cloud</li>
-                                          <li>Machine Learning & Deep Learning</li>
-                                          <li>Machine Learning & NLP</li>
-                                      </ul>
-                                  </div>
-                                  <div class="show-item-two">
-                                      <h3>Job guarantee program</h3>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                                </div>
+                                              <a href=""> <p>MERN Master</p></a> 
+                                            </div>
 
-                                          </div>
-                                          <p>Java Full Stack</p>
-                                      </div>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                        </div>
+                                        <div class="show-item-three">
+                                            <h3>Master's Program</h3>
+                                            <div class="show-item-container">
+                                              <a href="">
+                                                <div class="show-item-container-box">
 
-                                          </div>
-                                          <p>Dot Net Full Stack</p>
-                                      </div>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                                                </div>
+                                                <div class="show-item-container-box-one">
+                                                    <p>Advanced Digital Marketing</p>
+                                                    <p class="item">Duration - 6 months</p>
+                                                </div>
+                                              </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-item-right-button">
+                                        <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
 
-                                          </div>
-                                          <p>Blockchain Fullstack</p>
-                                      </div>
-                                  </div>
-                                  <div class="show-item-three">
-                                      <h3>Master's Program</h3>
-                                      <div class="show-item-container">
-                                          <div class="show-item-container-box">
 
-                                          </div>
-                                          <div class="show-item-container-box-one">
-                                              <p>Machine Learning & AI</p>
-                                              <p class="item">Duration - 6 months</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="show-item-right-button">
-                                  <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
-                              </div>
-                          </div>
-                      </div>
-                      <div style="display: none;" id="show-right-itm-six" class="content-div">
-                          <div class="show-item-right">
-                              <div class="show-item-content">
-                                  <div class="show-item-one">
-                                      <h3>Individual course</h3>
-                                      <ul>
-                                          <li>Certified Ethical Hacker CEH v11</li>
-                                          <li>Mobile Application Security & Mobile Device Pentesting</li>
-                                          <li>Web Application Hacking & Bug Bounty</li>
-                                          <li>Web Server Hacking & Network Pentesting</li>
-                                      </ul>
-                                  </div>
-                                  <div class="show-item-two">
-                                      <h3>Job guarantee program</h3>
-                                      <div class="show-item-two-container">
-                                          <div class="show-item-two-container-box">
+                            <div style="display: none;" id="show-right-itm-four" class="content-div">
+                                <div class="show-item-right">
+                                    <div class="show-item-content">
+                                        <div class="show-item-one">
+                                            <h3>Individual course</h3>
+                                            <ul>
+                                                <a href="">Data Science with R Training</a>
+                                                <a href="">Data Science with Python Training</a>
+                                                <a href="">Data Science with SAS Training</a>
+                                                <a href="">Data Science with Tableau Training</a>
+                                                <a href="">Data Science with Power BI Training</a>
+                                                <a href="">Data Analyst Training</a>
+                                                <a href="">Natural Language Processing NLP Training</a>
 
-                                          </div>
-                                          <p>MERN Master</p>
-                                      </div>
-                                  </div>
-                                  <div class="show-item-three">
-                                      <h3>Master's Program</h3>
-                                      <div class="show-item-container">
-                                          <div class="show-item-container-box">
+                                            </ul>
+                                        </div>
+                                        <div class="show-item-two">
+                                            <h3>Job guarantee program</h3>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
 
-                                          </div>
-                                          <div class="show-item-container-box-one">
-                                              <p>Advanced Penetration Testing Course</p>
-                                              <p class="item">Duration - 6 months</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="show-item-right-button">
-                                  <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="navtwo navtwo-menu">
-              <ul>
-                  <li><a href="" style="margin-left:14px">Women IT jobs</a< /li>
-                  <li><a href="" style="margin-left:14px">Career start</a></li>
-                  <li><a href="" style="margin-left:14px">Placement</a></li>
-                  <li><a href="" style="margin-left:14px">Review</a></li>
-                  <li class="navtwo-student"><a style="padding-left:10px">Student Corner</a>
-                      <ul class="navtwo-dropdown" style=height:135px>
-                          <li ><a href="" >Internship</a></li>
-                          <li ><a href="" >Internship</a></li>
-                          <li ><a href="" >Internship</a></li>
-                      </ul>
-                  </li>
-                  <li class="navtwo-about"><a style="padding-left:10px">About</a>
-                      <ul class="navtwo-dropdown-one" style=height:135px;>
-                      <li ><a href="" >Internship</a></li>
-                      <li ><a href="" >Internship</a></li>
-                      <li ><a href="" >Internship</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </div>
-</div>
+                                                </div>
+                                             <a href=""> <p>MERN Master</p></a>  
+                                            </div>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
+
+                                                </div>
+                                             <a href=""> <p>MEAN Master</p></a>  
+                                            </div>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
+
+                                                </div>
+                                               <a href=""><p>Java Full Stack</p></a> 
+                                            </div>
+
+                                        </div>
+                                        <div class="show-item-three">
+                                            <h3>Master's Program</h3>
+                                            <div class="show-item-container">
+                                             <a href="">
+                                                <div class="show-item-container-box">
+
+                                                </div>
+                                                <div class="show-item-container-box-one">
+                                                    <p>AWS & Microsoft Azure Devops</p>
+                                                    <p class="item">Duration - 6 months</p>
+                                                </div>
+                                             </a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-item-right-button">
+                                        <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: none;" id="show-right-itm-five" class="content-div">
+                                <div class="show-item-right">
+                                    <div class="show-item-content">
+                                        <div class="show-item-one">
+                                            <h3>Individual course</h3>
+                                            <ul>
+                                                <a href="">Machine Learning & AI</a>
+                                                <a href="">Machine Learning & Cloud</a>
+                                                <a href="">Machine Learning & Deep Learning</a>
+                                                <a href="">Machine Learning & NLP</a>
+                                            
+                                            </ul>
+                                        </div>
+                                        <div class="show-item-two">
+                                            <h3>Job guarantee program</h3>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
+
+                                                </div>
+                                              <a href=""> <p>Java Full Stack</p></a> 
+                                            </div>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
+
+                                                </div>
+                                               <a href=""><p>Dot Net Full Stack</p></a> 
+                                            </div>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
+
+                                                </div>
+                                                <a href=""><p>Blockchain Fullstack</p></a>
+                                            </div>
+                                        </div>
+                                        <div class="show-item-three">
+                                            <h3>Master's Program</h3>
+                                            <div class="show-item-container">
+                                               <a href="">
+                                                <div class="show-item-container-box">
+
+                                                </div>
+                                                <div class="show-item-container-box-one">
+                                                    <p>Machine Learning & AI</p>
+                                                    <p class="item">Duration - 6 months</p>
+                                                </div>
+                                               </a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-item-right-button">
+                                        <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: none;" id="show-right-itm-six" class="content-div">
+                                <div class="show-item-right">
+                                    <div class="show-item-content">
+                                        <div class="show-item-one">
+                                            <h3>Individual course</h3>
+                                            <ul>
+                                                <a href="">Certified Ethical Hacker CEH v11</a>
+                                                <a href="">Mobile Application Security & Mobile Device Pentesting</a>
+                                                <a href="">Web Application Hacking & Bug Bounty</a>
+                                                <a href="">Web Server Hacking & Network Pentesting</a>
+
+                                            </ul>
+                                        </div>
+                                        <div class="show-item-two">
+                                            <h3>Job guarantee program</h3>
+                                            <div class="show-item-two-container">
+                                                <div class="show-item-two-container-box">
+
+                                                </div>
+                                              <a href=""><p>MERN Master</p></a>  
+                                            </div>
+                                        </div>
+                                        <div class="show-item-three">
+                                            <h3>Master's Program</h3>
+                                            <div class="show-item-container">
+                                               <a href="">
+                                                <div class="show-item-container-box">
+
+                                                </div>
+                                                <div class="show-item-container-box-one">
+                                                    <p>Advanced Penetration Testing Course</p>
+                                                    <p class="item">Duration - 6 months</p>
+                                                </div>
+                                               </a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-item-right-button">
+                                        <button>EXPLORE THE CATEGORY<i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navtwo navtwo-menu">
+                    <ul>
+                        <li><a href="" style="margin-left:14px">Women IT jobs</a< /li>
+                        <li><a href="" style="margin-left:14px">Career start</a></li>
+                        <li><a href="" style="margin-left:14px">Placement</a></li>
+                        <li><a href="" style="margin-left:14px">Review</a></li>
+                        <li class="navtwo-student"><a style="padding-left:10px">Student Corner</a>
+                            <ul class="navtwo-dropdown" style=height:135px>
+                                <li><a href="">Internship</a></li>
+                                <li><a href="">Internship</a></li>
+                                <li><a href="">Internship</a></li>
+                            </ul>
+                        </li>
+                        <li class="navtwo-about"><a style="padding-left:10px">About</a>
+                            <ul class="navtwo-dropdown-one" style=height:135px;>
+                                <li><a href="">Internship</a></li>
+                                <li><a href="">Internship</a></li>
+                                <li><a href="">Internship</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
  `
 })
 
@@ -1737,7 +1775,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </div>
   `
+  attachFormSubmitListener();
+  
 })
+
+function attachFormSubmitListener() {
+  document.querySelector(".cisco-form").addEventListener("submit", function (e) {
+    var fullname = document.getElementById("username").value;
+    var number = document.getElementById("usernumber").value;
+    var email = document.getElementById("useremail").value;
+    var message = document.getElementById("usermessage").value;
+    var emailRegex = /\S+@\S+\.\S+/;
+    var phoneRegex = /^\d{10}$/;
+
+    if (fullname.length < 1 && number.length < 1 && email.length < 1 && message.length < 1) {
+      alert("please fill all input details");
+      e.preventDefault();
+      return;
+    }
+
+    if (!phoneRegex.test(number)) {
+      alert("Please enter a valid 10 digit mobile number.");
+      e.preventDefault();
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      e.preventDefault();
+      isValid = false;
+      return;
+    }
+  });
+}
+
+
+
+
+
+
+
+
 
 
 // 8.quick-enquiry-section for mobile
@@ -1845,6 +1923,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
