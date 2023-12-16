@@ -848,6 +848,9 @@ html {
   margin: 0;
     z-index: 99;
     font-family: hind;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .mobile-enquiry-section {
@@ -876,7 +879,7 @@ html {
     height: 35px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 10px;
     background-color: #272566;
@@ -1574,6 +1577,7 @@ ul li {
 .show-item-left ul {
     line-height: 2.6;
     cursor: pointer;
+    margin-top: 8px;
 }
 
 .show-item-left ul li {
@@ -1678,9 +1682,9 @@ ul li {
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    background-image: url(https://www.simplilearn.com/ice9/assets/master_icon.svgz);
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .show-item-two-container a{
@@ -1736,15 +1740,19 @@ ul li {
     width: 35%;
     height: 79px;
     background-color: white;
-    background-image: url(https://www.simplilearn.com/ice9/university/IITK_University_Logo_on_Megamenu.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.show-item-container-box img{
+    width: 100%;
+    height: 100%;
+}
+
+
 .show-item-container-box-one {
-    width: 60%;
+    width: 59%;
     line-height: 1.2;
     display: flex;
     flex-direction: column;
@@ -1769,6 +1777,7 @@ ul li {
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .show-item-right-button button {

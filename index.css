@@ -586,9 +586,13 @@ picture {
 
 .custom-modal .modal-content {
     background: #fff;
-    padding: 20px;
     border-radius: 5px;
-    height: 400px;
+    height: 355px;
+}
+
+.custom-modal .modal-content iframe{
+    border: 2px solid black;
+    border-radius: 6px;
 }
 
 .guarentee-image {
@@ -730,7 +734,7 @@ video {
     }
 
     .modal-content {
-        height: 250px;
+        height: 210px !important;
     }
 
     .modal-dialog {
@@ -1246,7 +1250,7 @@ button:hover {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin-bottom: 10px;
-    height: 250px;
+    height: 200px;
 }
 
 .mobile-slider-img img {
@@ -2357,6 +2361,7 @@ button:hover {
     width: 130px;
     margin-left: 15px;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .infinity-carousel-slide {
@@ -2463,7 +2468,7 @@ button:hover {
 
 .training-box-one>p {
     padding-top: 24px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: mulish;
     /* color: #373737; */
 }
@@ -3521,6 +3526,7 @@ textarea {
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .my-active {

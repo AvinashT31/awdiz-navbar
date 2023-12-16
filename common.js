@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="show-item-two-container">
                                             <a href="">
                                             <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                             </div>
 
                                             <p>MERN Master</p>
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             </div>
                                             <div class="show-item-two-container">
                                             <a href="">   <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                               
                                                     <p>MEAN Master</p>
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             </div>
                                             <div class="show-item-two-container">
                                             <a href="">    <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                               
                                                     <p>Java Full Stack</p>
@@ -224,15 +224,14 @@ document.addEventListener("DOMContentLoaded", function () {
                                             </div>
                                             <div class="show-item-two-container">
                                             <a href="">      <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
-                                                
                                                     <p>Dot Net Full Stack</p>
                                                 </a>
                                             </div>
                                             <div class="show-item-two-container">
                                             <a href="">      <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                             
                                                     <p>Blockchain Fullstack</p>
@@ -245,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                                 <div class="show-item-container">
                                                    <a href="">
                                                     <div class="show-item-container-box">
-
+                                                    <img src="/img/masters weppp.webp" alt="" loading="lazy">
                                                     </div>
                                                     <div class="show-item-container-box-one">
                                                         <p>MERN Stack</p>
@@ -257,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="show-item-container">
                                                <a href="">
                                                 <div class="show-item-container-box">
-
+                                                <img src="/img/masters weppp.webp" alt="" loading="lazy">
                                                 </div>
                                                 <div class="show-item-container-box-one">
                                                     <p>MEAN Stack</p>
@@ -296,7 +295,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
                                             <a href="">       <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                      
                                                     <p>MERN Master</p>
@@ -310,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="show-item-container">
                                                 <a href="">
                                                     <div class="show-item-container-box">
-
+                                                    <img src="/img/masters weppp.webp" alt="" loading="lazy">
                                                     </div>
                                                     <div class="show-item-container-box-one">
                                                         <p>L1 Network Engineer</p>
@@ -323,7 +322,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="show-item-container">
                                               <a href="">
                                                 <div class="show-item-container-box">
-
+                                                <img src="/img/masters weppp.webp" alt="" loading="lazy">
                                                 </div>
                                                 <div class="show-item-container-box-one">
                                                     <p>L2 Network Engineer</p>
@@ -358,7 +357,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
                                             <a href="">     <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                                <p>MERN Master</p></a> 
                                             </div>
@@ -369,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="show-item-container">
                                               <a href="">
                                                 <div class="show-item-container-box">
-
+                                                <img src="/img/masters weppp.webp" alt="" loading="lazy">
                                                 </div>
                                                 <div class="show-item-container-box-one">
                                                     <p>Advanced Digital Marketing</p>
@@ -406,19 +405,19 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
                                             <a href=""> <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                               <p>MERN Master</p></a>  
                                             </div>
                                             <div class="show-item-two-container">
                                             <a href="">   <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                               <p>MEAN Master</p></a>  
                                             </div>
                                             <div class="show-item-two-container">
                                             <a href="">   <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                                <p>Java Full Stack</p></a> 
                                             </div>
@@ -429,7 +428,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="show-item-container">
                                              <a href="">
                                                 <div class="show-item-container-box">
-
+                                                <img src="/img/masters weppp.webp" alt="" loading="lazy">
                                                 </div>
                                                 <div class="show-item-container-box-one">
                                                     <p>AWS & Microsoft Azure Devops</p>
@@ -461,19 +460,19 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
                                             <a href="">   <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                                <p>Java Full Stack</p></a> 
                                             </div>
                                             <div class="show-item-two-container">
                                             <a href="">   <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                             <p>Dot Net Full Stack</p></a> 
                                             </div>
                                             <div class="show-item-two-container">
                                             <a href="">  <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                                 <p>Blockchain Fullstack</p></a>
                                             </div>
@@ -483,7 +482,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="show-item-container">
                                                <a href="">
                                                 <div class="show-item-container-box">
-
+                                                <img src="/img/masters weppp.webp" alt="" loading="lazy">
                                                 </div>
                                                 <div class="show-item-container-box-one">
                                                     <p>Machine Learning & AI</p>
@@ -515,7 +514,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
                                             <a href="">    <div class="show-item-two-container-box">
-
+                                            <img src="/img/job-guarentee.webp" alt="" loading="lazy">
                                                 </div>
                                              <p>MERN Master</p></a>  
                                             </div>
@@ -525,7 +524,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="show-item-container">
                                                <a href="">
                                                 <div class="show-item-container-box">
-
+                                                <img src="/img/masters weppp.webp" alt="" loading="lazy">
                                                 </div>
                                                 <div class="show-item-container-box-one">
                                                     <p>Advanced Penetration Testing Course</p>
@@ -1872,6 +1871,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="mobile-enquiry-section">
       <div class="mobile-button">
         <p>Quick Enquiry</p>
+        <i class="fa-solid fa-hand-pointer"></i>
       </div>
     </div>
   </a>
@@ -1901,7 +1901,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var quickenquirysection = document.getElementById("quick-enquiry-section")
   quickenquirysection.innerHTML = `
-  <a href="#cisco-training"><button id="quick-enquiry">Quick Enquiry</button></a>
+  <a href="#cisco-training"><button id="quick-enquiry">Quick Enquiry <i class="fa-solid fa-hand-pointer"></i></button></a>
   `
 })
 
