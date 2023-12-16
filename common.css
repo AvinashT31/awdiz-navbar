@@ -1387,6 +1387,7 @@ ul li {
 }
 
 
+
 @media screen and (min-width:1181px) and (max-width:1366px) {
     .navcourses {
         font-size: 12px !important;
@@ -1588,7 +1589,7 @@ ul li {
 }
 
 .show-item-left i {
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 
@@ -1685,6 +1686,7 @@ ul li {
 .show-item-two-container a{
     text-decoration: none;
     color: black;
+    display: flex;
 }
 
 .show-item-two-container p {
@@ -1804,6 +1806,16 @@ ul li {
     .navbar {
         display: none;
         visibility: hidden;
+    }
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px) {
+    .show-item-left i{
+        margin-left: 60px;
+    }
+
+    .show-item-right-button button{
+        width: 30%;
     }
 }
 

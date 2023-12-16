@@ -1,38 +1,38 @@
-// function handleClick(event) {
-//   event.preventDefault();
+function handleClick(event) {
+  event.preventDefault();
 
-//   var hoverDiv = document.getElementById('navbar');
-//   var hoverDisplayDiv = document.getElementById('hover-content');
-//   var showRightItems = document.querySelectorAll("[id^='show-right-itm']");
-//   var otherMenu = document.getElementsByClassName("navtwo-menu");
+  var hoverDiv = document.getElementById('navbar');
+  var hoverDisplayDiv = document.getElementById('hover-content');
+  var showRightItems = document.querySelectorAll("[id^='show-right-itm']");
+  var otherMenu = document.getElementsByClassName("navtwo-menu");
 
-//   // Using mouseenter and mouseleave
-//   for (var i = 0; i < otherMenu.length; i++) {
-//     otherMenu[i].addEventListener('mouseenter', function () {
-//       hoverDisplayDiv.classList.remove('flex-display');
-//     });
-//   }
+  // Using mouseenter and mouseleave
+  for (var i = 0; i < otherMenu.length; i++) {
+    otherMenu[i].addEventListener('mouseenter', function () {
+      hoverDisplayDiv.classList.remove('flex-display');
+    });
+  }
 
-//   hoverDiv.addEventListener('mouseenter', function () {
-//     hoverDisplayDiv.classList.add('flex-display');
-//     showRightItems.forEach(item => item.style.display = "none");
-//     showRightItems[0].style.display = "block";
-//   });
+  hoverDiv.addEventListener('mouseenter', function () {
+    hoverDisplayDiv.classList.add('flex-display');
+    showRightItems.forEach(item => item.style.display = "none");
+    showRightItems[0].style.display = "block";
+  });
 
-//   hoverDiv.addEventListener('mouseleave', function (event) {
-//     if (!hoverDiv.contains(event.relatedTarget)) {
-//       hoverDisplayDiv.classList.remove('flex-display');
-//     }
-//   });
+  hoverDiv.addEventListener('mouseleave', function (event) {
+    if (!hoverDiv.contains(event.relatedTarget)) {
+      hoverDisplayDiv.classList.remove('flex-display');
+    }
+  });
 
-//   hoverDisplayDiv.addEventListener('mouseenter', function () {
-//     hoverDisplayDiv.classList.add('flex-display');
-//   });
+  hoverDisplayDiv.addEventListener('mouseenter', function () {
+    hoverDisplayDiv.classList.add('flex-display');
+  });
 
-//   hoverDisplayDiv.addEventListener('mouseleave', function () {
-//     hoverDisplayDiv.classList.remove('flex-display');
-//   });
-// }
+  hoverDisplayDiv.addEventListener('mouseleave', function () {
+    hoverDisplayDiv.classList.remove('flex-display');
+  });
+}
 
 
 // function handleClick(event) {
@@ -198,42 +198,43 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <div class="show-item-two">
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">
+                                            <div class="show-item-two-container-box">
 
-                                                </div>
-                                                <a href="">
-                                                    <p>MERN Master</p>
-                                                </a>
+                                            </div>
+
+                                            <p>MERN Master</p>
+                                        </a>
                                             </div>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">   <div class="show-item-two-container-box">
 
                                                 </div>
-                                                <a href="">
+                                              
                                                     <p>MEAN Master</p>
                                                 </a>
                                             </div>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">    <div class="show-item-two-container-box">
 
                                                 </div>
-                                                <a href="">
+                                              
                                                     <p>Java Full Stack</p>
                                                 </a>
                                             </div>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">      <div class="show-item-two-container-box">
 
                                                 </div>
-                                                <a href="">
+                                                
                                                     <p>Dot Net Full Stack</p>
                                                 </a>
                                             </div>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">      <div class="show-item-two-container-box">
 
                                                 </div>
-                                                <a href="">
+                                            
                                                     <p>Blockchain Fullstack</p>
                                                 </a>
                                             </div>
@@ -294,10 +295,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <div class="show-item-two">
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">       <div class="show-item-two-container-box">
 
                                                 </div>
-                                                <a href="">
+                                     
                                                     <p>MERN Master</p>
                                                 </a>
                                             </div>
@@ -356,10 +357,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <div class="show-item-two">
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">     <div class="show-item-two-container-box">
 
                                                 </div>
-                                              <a href=""> <p>MERN Master</p></a> 
+                                               <p>MERN Master</p></a> 
                                             </div>
 
                                         </div>
@@ -404,22 +405,22 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <div class="show-item-two">
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href=""> <div class="show-item-two-container-box">
 
                                                 </div>
-                                             <a href=""> <p>MERN Master</p></a>  
+                                              <p>MERN Master</p></a>  
                                             </div>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">   <div class="show-item-two-container-box">
 
                                                 </div>
-                                             <a href=""> <p>MEAN Master</p></a>  
+                                              <p>MEAN Master</p></a>  
                                             </div>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">   <div class="show-item-two-container-box">
 
                                                 </div>
-                                               <a href=""><p>Java Full Stack</p></a> 
+                                               <p>Java Full Stack</p></a> 
                                             </div>
 
                                         </div>
@@ -459,22 +460,22 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <div class="show-item-two">
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">   <div class="show-item-two-container-box">
 
                                                 </div>
-                                              <a href=""> <p>Java Full Stack</p></a> 
+                                               <p>Java Full Stack</p></a> 
                                             </div>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">   <div class="show-item-two-container-box">
 
                                                 </div>
-                                               <a href=""><p>Dot Net Full Stack</p></a> 
+                                            <p>Dot Net Full Stack</p></a> 
                                             </div>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">  <div class="show-item-two-container-box">
 
                                                 </div>
-                                                <a href=""><p>Blockchain Fullstack</p></a>
+                                                <p>Blockchain Fullstack</p></a>
                                             </div>
                                         </div>
                                         <div class="show-item-three">
@@ -513,10 +514,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <div class="show-item-two">
                                             <h3>Job guarantee program</h3>
                                             <div class="show-item-two-container">
-                                                <div class="show-item-two-container-box">
+                                            <a href="">    <div class="show-item-two-container-box">
 
                                                 </div>
-                                              <a href=""><p>MERN Master</p></a>  
+                                             <p>MERN Master</p></a>  
                                             </div>
                                         </div>
                                         <div class="show-item-three">

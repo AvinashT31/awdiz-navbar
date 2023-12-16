@@ -1149,6 +1149,8 @@ button:hover {
     background: #fff;
     margin-right: 1.7%;
     margin-left: 1.7%;
+    border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .slider-img {
