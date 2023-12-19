@@ -653,12 +653,6 @@ video {
 
 }
 
-@media (min-width:1150px) and (max-width:1280px) {
-    .news-content {
-        right: 1%;
-    }
-}
-
 @media (min-width: 380px) and (max-width: 393px) {
     .news-content {
         right: 3px;
@@ -3877,6 +3871,13 @@ textarea {
     color: white;
     font-family: mulish;
 }
+
+@media screen and (max-width:1920px){
+    .blog-our-courses-info{
+        margin-top: 0px;
+    }
+} 
+
 
 @media screen and (min-width:1280px) and (max-width:1440px) {
     .blog-courses-name ul li {
