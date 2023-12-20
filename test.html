@@ -1,150 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <style>
-/* @-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-300px * 7));
-  }
-}
+  <style>
+    #carousel-container {
+      position: relative;
+    }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-300px * 7));
-  }
-} */
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 960px;
-}
-.slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 300px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(300px * 14);
-}
-.slider .slide {
-  height: 100px;
-  width: 300px;
-}
+    #carousel-progress {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+    }
 
-.development-item-two-one-subpoint {
-    /* border: 1px solid black; */
-    width: 300px;
-    padding: 15px 15px 15px 15px;
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    background-color: white;
-    margin-right: 30px;
-}
+    .progress-step {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
 
-.development-item-two-one-circle {
-    border: 1px solid black;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-}
+    .progress-step.active {
+      color: green;
+      /* Active color */
+    }
 
-.development-item-two-one-content {
-    /* border: 1px solid black; */
-    width: 65%;
-    font-size: 14px;
-    line-height: 1.5;
-    font-family: mulish;
-}
+    #carousel-slides {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
 
-    </style>
+    .slide {
+      min-width: 100%;
+      transition: transform 0.3s ease;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    /* Hide all slides by default */
+    .slide:not(.active) {
+      visibility: hidden;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+    }
+
+    #prev-button {
+      left: 0;
+    }
+
+    #next-button {
+      right: 0;
+    }
+  </style>
 </head>
-<body>
-    <div class="slider">
-        <div class="slide-track">
-            <div class="slide">
-                <div class="development-item-two-one-subpoint">
-                    <div class="development-item-two-one-circle">
 
-                    </div>
-                    <div class="development-item-two-one-content">
-                        <p>IBM 3.7 LPA 1</p>
-                        <p><b>Networking Analyst</b></p>
-                        <p>CCNA Course</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-            </div>
-            <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-            </div>
-        </div>
+<body>
+  <div id="carousel-container">
+    <div id="carousel-progress">
+      <span class="progress-step active">Resume Preparation</span>
+      <span class="progress-step">Mock Interviews</span>
+      <span class="progress-step">Web Portfolio</span>
+      <!-- Add more steps as needed -->
     </div>
+    <div id="carousel-slides">
+      <div class="slide active">Content for Resume Preparation</div>
+      <div class="slide">Content for Mock Interviews</div>
+      <div class="slide">Content for Web Portfolio</div>
+      <!-- Add more slides as needed -->
+    </div>
+    <button id="prev-button">Previous</button>
+    <button id="next-button">Next</button>
+  </div>
+
+  <script>
+    let currentSlideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const progressSteps = document.querySelectorAll('.progress-step');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+
+    function updateCarousel(newIndex) {
+      // Update the slides
+      slides[currentSlideIndex].classList.remove('active');
+      slides[newIndex].classList.add('active');
+
+      // Update the progress steps
+      progressSteps[currentSlideIndex].classList.remove('active');
+      progressSteps[newIndex].classList.add('active');
+
+      currentSlideIndex = newIndex;
+    }
+
+    prevButton.addEventListener('click', () => {
+      if (currentSlideIndex > 0) {
+        updateCarousel(currentSlideIndex - 1);
+      }
+    });
+
+    nextButton.addEventListener('click', () => {
+      if (currentSlideIndex < slides.length - 1) {
+        updateCarousel(currentSlideIndex + 1);
+      }
+    });
+
+    // Initialize the first slide as active
+    updateCarousel(0);
+
+  </script>
+
 </body>
+
 </html>

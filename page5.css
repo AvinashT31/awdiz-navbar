@@ -203,7 +203,7 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .view-more-button{
+    .view-more-button {
         padding: 15px 0px 15px 0px;
         font-size: 16px;
     }
@@ -301,7 +301,7 @@ button {
 .development-item-two {
     /* border: 1px solid black; */
     width: 48%;
-    height: 675px;
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -309,15 +309,32 @@ button {
     align-content: center;
 }
 
-.development-item-two-one {
+.development-infinity {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 15px 0px 15px 0px;
+    height: 170px;
+    overflow: hidden;
+}
+
+.development-infinity .development-item-two-one {
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    -webkit-animation: scroll 10s linear infinite;
     animation: scroll 10s linear infinite;
+    width: calc(245px * 6);
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-245px * 3));
+    }
 }
 
 @keyframes scroll {
@@ -326,21 +343,24 @@ button {
     }
 
     100% {
-        transform: translateX(-100%)
+        transform: translateX(calc(-245px * 3));
     }
 }
 
+
 .development-item-two-one-subpoint {
     /* border: 1px solid black; */
-    width: 300px;
-    padding: 15px 15px 15px 15px;
-    flex: 0 0 auto;
+    height: 110px;
+    width: 245px;
+    flex: 0 0 245px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     background-color: white;
     margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .development-item-two-one-circle {
@@ -358,20 +378,52 @@ button {
     font-family: mulish;
 }
 
-.development-item-two-two {
+.development-infinity-two {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 15px 0px 15px 0px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+    height: 170px;
+    overflow: hidden;
 }
+
+
+.development-infinity-two .development-item-two-two {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-animation: development-item-two-two-scroll 10s linear infinite;
+    animation: development-item-two-two-scroll 10s linear infinite;
+    width: calc(245px * 6);
+}
+
+@-webkit-keyframes development-item-two-two-scroll {
+    0% {
+        transform: translateX(calc(-245px * 3));
+
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes development-item-two-two-scroll {
+    0% {
+        transform: translateX(calc(-245px * 3));
+
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 .development-item-two-two-subpoint {
     /* border: 1px solid black; */
-    width: 300px;
-    padding: 15px 15px 15px 15px;
+    height: 110px;
+    width: 245px;
     flex: 0 0 auto;
     display: flex;
     justify-content: space-between;
@@ -379,6 +431,8 @@ button {
     border-radius: 10px;
     background-color: white;
     margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .development-item-two-two-circle {
@@ -652,23 +706,23 @@ button {
         margin-top: 20px;
     }
 
-    .development-carousel h2{
+    .development-carousel h2 {
         font-size: 35px;
     }
 
-    .development-slide-para{
+    .development-slide-para {
         font-size: 18px;
     }
 
-    .development-slide-course{
+    .development-slide-course {
         font-size: 16px;
     }
 
-    .development-two-slide-para{
+    .development-two-slide-para {
         font-size: 18px;
     }
 
-    .development-two-slide-course{
+    .development-two-slide-course {
         font-size: 16px;
     }
 }
@@ -777,7 +831,7 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .awdiz-hiring h2{
+    .awdiz-hiring h2 {
         font-size: 35px;
     }
 }
@@ -918,19 +972,19 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .development-placement h3{
+    .development-placement h3 {
         font-size: 35px;
     }
 
-    .development-career{
+    .development-career {
         padding-top: 50px;
     }
 
-    .development-career-box{
+    .development-career-box {
         margin-top: 0px;
     }
 
-    .development-career-item-one ul li{
+    .development-career-item-one ul li {
         font-size: 18px;
     }
 }
@@ -1072,19 +1126,19 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .student-speak-h3{
+    .student-speak-h3 {
         font-size: 35px;
     }
 
-    .student-speak-box{
+    .student-speak-box {
         padding-top: 20px;
     }
 
-    .student-speak-item-one > h4{
+    .student-speak-item-one>h4 {
         font-size: 24px;
     }
 
-    .student-speak-item-one > p{
+    .student-speak-item-one>p {
         padding-bottom: 15px;
     }
 }
@@ -1096,6 +1150,168 @@ button {
     border: 1px solid black;
     width: 100%;
     padding: 50px 0px 50px 0px;
+}
+
+.profile-building-container{
+    width: 75%;
+    margin: auto;
+}
+
+.resume-section {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-section-one {
+    border: 1px solid black;
+    width: 19%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.resume-section-circle {
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-section-para {
+    /* border: 1px solid black; */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar-section {
+    /* border: 1px solid black; */
+    width: 88%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.progress-circle {
+    /* border: 1px solid black; */
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress-line {
+    /* border: 1px solid black; */
+    width: 24%;
+    height: 5px;
+    border-right: none;
+    border-left: none;
+}
+
+#progress-circle-one {
+    background-color: #007D6F;
+}
+
+#progress-line-one {
+    background-color: #007D6F;
+}
+
+#progress-circle-two {
+    background-color: #007D6F;
+}
+
+#progress-line-two {
+    background-color: #99cbc5;
+}
+
+#progress-circle-three {
+    background-color: #99cbc5;
+}
+
+#progress-line-three {
+    background-color: #99cbc5;
+}
+
+#progress-circle-four {
+    background-color: #99cbc5;
+}
+
+#progress-line-four {
+    background-color: #99cbc5;
+}
+
+#progress-circle-five {
+    background-color: #99cbc5;
+}
+
+.resume-carousel {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-carousel-one {
+    border: 1px solid black;
+    width: 48%;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-crousel-square{
+    border: 1px solid black;
+    width: 35%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.resume-carousel-content{
+    border: 1px solid black;
+    width: 60%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+.resume-carousel-content h4{
+    font-size: 24px;
+    font-family: nunito;
+}
+
+.resume-carousel-content p{
+    font-size: 20px;
+}
+
+.resume-carousel-button{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.resume-left-arrow{
+    border: 1px solid black;
+}
+
+.resume-right-arrow{
+    border: 1px solid black;
 }
 
 /* career-service */
@@ -1176,7 +1392,7 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .career-service h4{
+    .career-service h4 {
         font-size: 35px;
     }
 }
@@ -1284,19 +1500,19 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .transformingcareer h5{
+    .transformingcareer h5 {
         font-size: 35px;
     }
 
-    .transforming-career-item-one{
+    .transforming-career-item-one {
         font-size: 14px;
     }
 
-    .transforming-career-heading{
+    .transforming-career-heading {
         font-size: 13px;
     }
 
-    .tranform-career-information{
+    .tranform-career-information {
         font-size: 15px;
     }
 }
@@ -1384,7 +1600,7 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .success-box-one{
+    .success-box-one {
         padding: 40px 0px 30px 0px;
     }
 }
@@ -1476,7 +1692,6 @@ button {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .student-review-carousel-item-one {
@@ -1539,24 +1754,24 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .student-page h5{
+    .student-page h5 {
         font-size: 35px;
         padding-top: 0px;
     }
 
-    .student-review-carousel-item-one > p{
+    .student-review-carousel-item-one>p {
         font-size: 15px;
     }
 
-    .student-review-carousel-para{
+    .student-review-carousel-para {
         font-size: 18px;
     }
 
-    .student-review-carousel-box{
+    .student-review-carousel-box {
         align-items: normal;
     }
 
-    .student-review-carousel-item-two{
+    .student-review-carousel-item-two {
         height: 170px;
     }
 }
@@ -1651,15 +1866,15 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .ccna-review h5{
+    .ccna-review h5 {
         font-size: 35px;
     }
 
-    .ccna-review{
+    .ccna-review {
         padding: 50px 0px 50px 0px;
     }
 
-    .ccna-review-carousel{
+    .ccna-review-carousel {
         margin-top: 15px;
     }
 }
@@ -1790,16 +2005,16 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .senior-page h5{
+    .senior-page h5 {
         font-size: 35px;
         padding-top: 0px;
     }
 
-    .senior-page-item-two > p{
+    .senior-page-item-two>p {
         font-size: 18px;
     }
 
-    .senior-box-one{
+    .senior-box-one {
         padding-top: 50px;
     }
 }
@@ -1902,16 +2117,16 @@ button {
 }
 
 @media screen and (max-width:1440px) {
-    .development-form h2{
+    .development-form h2 {
         font-size: 20px;
         padding-bottom: 0px;
     }
 
-    .development-form label{
+    .development-form label {
         font-size: 12px;
     }
 
-    .development-form input{
+    .development-form input {
         height: 36px;
     }
 }
