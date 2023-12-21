@@ -311,7 +311,7 @@ picture {
 }
 
 
-@media (min-width: 1281px) and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1600px) {
     .homepage-left {
         width: 48%;
     }
@@ -335,7 +335,6 @@ picture {
     }
 }
 
-@media screen and (min-width:992px) and (max-width:1199px) {}
 
 @media screen and (min-width:768px) and (max-width:991px) {
 
@@ -641,7 +640,7 @@ video {
     }
 }
 
-@media (min-width: 481px) and (max-width: 1440px) {
+@media (min-width: 481px) and (max-width: 1600px) {
     .mt_btn_yellow {
         font-size: 57px;
         padding: 0px;
@@ -1017,7 +1016,7 @@ video {
 
 @media screen and (width:1440px) {}
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .why-awdiz-image i {
         font-size: 24px;
     }
@@ -1521,7 +1520,7 @@ button:hover {
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .our-courses-info::-webkit-scrollbar {
@@ -1720,7 +1719,7 @@ button:hover {
 }
 
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .carousel-card-unique {
         font-size: 14px;
         padding: 15px;
@@ -2159,7 +2158,7 @@ button:hover {
     }
 }
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
 
     .job-guarentee-program {
         padding: 30px 0px 30px 0px;
@@ -2305,7 +2304,7 @@ button:hover {
     }
 
     100% {
-        transform: translateX(calc(-200px * 16));
+        transform: translateX(calc(-137px * 16));
     }
 }
 
@@ -2315,18 +2314,19 @@ button:hover {
     }
 
     100% {
-        transform: translateX(calc(-200px * 16));
+        transform: translateX(calc(-137px * 16));
     }
 }
 
 .infinity-carousel-slider {
-    height: 90px;
+    height: auto;
     margin: auto;
     overflow: hidden;
     position: relative;
     width: auto;
     margin-top: 34px;
     padding: 15px 0px 15px 0px;
+    /* border: 1px solid black; */
 }
 
 .infinity-carousel-slider::before,
@@ -2347,26 +2347,30 @@ button:hover {
     -webkit-animation: infinity-carousel-scroll 30s linear infinite;
     animation: infinity-carousel-scroll 30s linear infinite;
     display: flex;
-    width: calc(200px * 32);
+    width: calc(137px * 32);
 }
 
 .infinity-carousel-slider .infinity-carousel-slide {
-    height: 60px;
-    width: 130px;
+    height: 112px;
+    width: 112px;
     margin-left: 15px;
     margin-right: 10px;
+    border-radius: 10px;
     border-radius: 10px;
 }
 
 .infinity-carousel-slide {
-    width: 200px;
-    height: 60px;
+    width: 112px;
+    height: 112px;
     text-align: center;
     line-height: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 13px #B6BEFC;
+    background-color: white;
 }
 
 .infinity-carousel-slide img {
@@ -2375,9 +2379,7 @@ button:hover {
 }
 
 
-@media screen and (width:1440px) {}
-
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .infinty-carousel {
         padding: 30px 0px 30px 0px;
     }
@@ -2518,7 +2520,7 @@ button:hover {
 }
 
 
-@media screen and (width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1600px) {
     .training-box-one {
         height: 330px;
     }
@@ -2545,7 +2547,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1439px) {
     .training {
         padding: 30px 0px 20px 0px;
     }
@@ -2561,6 +2563,7 @@ button:hover {
 
     .training-box-one>p {
         padding-top: 0px;
+        font-size: 14px;
     }
 
     .training-box-one h3 {
@@ -2753,7 +2756,7 @@ button:hover {
     margin-top: 20px;
 }
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .certificate {
         padding: 30px 0px 20px 0px;
     }
@@ -2970,9 +2973,8 @@ button:hover {
     margin-top: 40px;
 }
 
-@media screen and (width:1440px) {}
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .awdiz-choose {
         padding: 30px 0px 30px 0px;
     }
@@ -3050,7 +3052,7 @@ button:hover {
 
 @media screen and (width:1440px) {}
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .placement-institute {
         padding: 30px 0px 30px 0px;
     }
@@ -3253,7 +3255,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .circle-grid {
         width: 850px;
         height: 743px;
@@ -3399,7 +3401,7 @@ textarea {
     }
 }
 
-@media screen and (min-width:1280px) and (max-width: 1440px) {
+@media screen and (min-width:1280px) and (max-width: 1600px) {
     .send-button {
         font-size: 16px;
     }
@@ -3625,7 +3627,7 @@ textarea {
 
 @media screen and (width:1440px) {}
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .review-section {
         padding: 30px 0px 30px 0px;
     }
@@ -3879,7 +3881,7 @@ textarea {
 } 
 
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     .blog-courses-name ul li {
         font-size: 14px !important;
     }

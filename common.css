@@ -945,6 +945,17 @@ html {
     width: 56%;
 }
 
+
+@media screen and (max-width:1600px) {
+    .badge-one{
+        width: 56.5%;
+    }
+    #normal-badge{
+        width: 27%;
+    }
+
+}
+
 @media screen and (max-width:1440px) {
     .badge-one{
         width: 56.5%;
@@ -1120,7 +1131,7 @@ ul li {
     background-color: white;
 }
 
-@media screen and (min-width:1181px) and (max-width:1366px) {
+@media screen and (min-width:1181px) and (max-width:1600px) {
     .topbar-inner ul li:first-child {
         font-size: 12px !important;
     }
@@ -2003,7 +2014,7 @@ footer {
     font-family: mulish;
 }
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1600px) {
     footer {
         padding: 30px 0px 30px 0px;
     }
@@ -2292,7 +2303,8 @@ textarea.cisco-textarea::placeholder {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:1440px) {
+
+@media screen and (min-width:1440px) and (max-width:1600px) {
     .cisco-training-form::after {
         width: 85%;
         margin: auto;
@@ -2310,8 +2322,6 @@ textarea.cisco-textarea::placeholder {
         height: 36px;
     }
 
-
-
     .cisco-form button {
         height: 36px;
         padding: 0px;
@@ -2322,21 +2332,44 @@ textarea.cisco-textarea::placeholder {
     }
 }
 
+@media screen and (max-width:1600px) {
+    .cisco-training-form::after {
+        width: 85%;
+        margin: auto;
+        bottom: 68%;
+        height: 421px;
+        left: 8%;
+      }
+}
+
+
+@media screen and (max-width:1366px) {
+    .cisco-training-form::after {
+        height: 377px;
+        bottom: 57%;
+        left: 8%;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .cisco-training-form::after {
         width: 95%;
         margin: auto;
-        bottom: 64%;
+        bottom: 63%;
         height: 390px;
         left: 2.5%;
     }
 
     .cisco-training-form {
-        height: 560px;
+        height: 585px;
     }
 
     .cisco-form {
         width: 80%;
+    }
+
+    .cisco-enquiry{
+        margin-top: 20px;
     }
 }
 
