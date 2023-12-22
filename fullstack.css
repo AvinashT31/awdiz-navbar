@@ -352,7 +352,7 @@ button {
 }
 
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1366px) {
 
     .fullstack-intro {
         padding-bottom: 60px;
@@ -569,7 +569,7 @@ button {
 }
 
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1366px) {
     .javascript-course {
         height: 100px;
     }
@@ -644,7 +644,7 @@ button {
 }
 
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1366px) {
     .fullstack-technologies-h4 {
         font-size: 35px;
     }
@@ -768,7 +768,7 @@ button {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width:1280px) and (max-width:1440px) {
+@media screen and (min-width:1280px) and (max-width:1366px) {
     .why-awdiz-image i {
         font-size: 24px;
     }
@@ -779,6 +779,18 @@ button {
 
     .why-awdiz-page {
         padding: 40px 0px 40px 0px;
+    }
+
+    .why-awdiz-h8 {
+        font-size: 35px;
+    }
+
+    .why-awdiz-h9 {
+        font-size: 35px;
+    }
+
+    .fullstack-near-para {
+        font-size: 18px !important;
     }
 
 }
@@ -842,7 +854,7 @@ button {
 .fullstack-package h4 {
     font-size: 50px;
     color: #272566;
-    padding-top: 60px;
+    padding-top: 20px;
     font-weight: 800;
     font-family: nunito;
 }
@@ -904,6 +916,7 @@ button {
 .fullstack-pacakge-info-h4 {
     color: #007d6f;
     margin-top: 8px;
+    font-size: 28px !important;
 }
 
 .fullstack-pacakge-info>p {
@@ -911,7 +924,7 @@ button {
     font-family: mulish;
 }
 
-.fullstack-pacakge-info-margin{
+.fullstack-pacakge-info-margin {
     margin-top: 25px;
 }
 
@@ -923,7 +936,7 @@ button {
     border-radius: 10px;
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (min-width:1280px) and (max-width:1366px) {
     .fullstack-package h4 {
         font-size: 35px;
         padding-top: 10px;
@@ -942,7 +955,7 @@ button {
     }
 
     .fullstack-pacakge-info>p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .fullstack-package-content-one {
@@ -996,8 +1009,7 @@ button {
     /* border: 1px solid black; */
     width: 55%;
     margin: auto;
-    padding: 30px 0px 30px 0px;
-    margin-top: 15px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1010,9 +1022,28 @@ button {
     border-radius: 35px;
 }
 
-
 .display-para {
     border: 1px solid black;
+}
+
+
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .awdiz-trust h3 {
+        font-size: 35px;
+        padding-top: 0px;
+    }
+
+    .awdiz-trust {
+        padding-top: 30px;
+    }
+
+    .awdiz-trust-container {
+        padding: 0px;
+    }
+
+    .awdiz-trust-box {
+        width: 80%;
+    }
 }
 
 /* demo-exclusive */
@@ -1051,12 +1082,11 @@ button {
     font-family: mulish;
 }
 
-
-.book-demo-box-one>h7 {
+/* .book-demo-box-one>h7 {
     font-size: 28px;
     color: white;
     font-family: mulish;
-}
+} */
 
 .book-demo-box-two-button {
     /* border: 1px solid black; */
@@ -1069,6 +1099,18 @@ button {
     background-color: #007D6F;
     color: white;
     font-family: hind;
+}
+
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .book-demo-box-one>h5 {
+        font-size: 18px;
+    }
+
+    .book-demo-box-two-button {
+        font-size: 18px;
+        height: 45px;
+    }
+
 }
 
 
@@ -1104,6 +1146,17 @@ button {
     margin-top: 30px;
 }
 
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .awdiz-chatgpt h5 {
+        padding: 0px;
+        font-size: 35px;
+    }
+
+    .awdiz-chagpt-point {
+        margin-top: 20px;
+    }
+}
+
 
 /* fullstack-syllabus */
 
@@ -1111,6 +1164,9 @@ button {
     /* border: 1px solid black; */
     width: 100%;
     padding: 70px 0px 0px 0px;
+    /* position: sticky;
+    bottom: 8px;
+    z-index: 500; */
 }
 
 .fullstack-syllabus-box-one {
@@ -1156,6 +1212,29 @@ button {
     font-size: 16px;
     padding-top: 30px;
     font-family: mulish;
+}
+
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .fullstack-syllabus {
+        padding-top: 30px;
+    }
+
+    .fullstack-syllabus-display-content {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .fullstack-syllabus-display-content>h5 {
+        font-size: 35px;
+    }
+
+    .fullstack-syllabus-display-content>p {
+        padding-top: 15px;
+        font-size: 15px;
+    }
+
+    .awdiz-chagpt-point>p {
+        font-size: 15px;
+    }
 }
 
 /* industry */
@@ -1378,6 +1457,67 @@ button {
     background-color: #272566;
 }
 
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .industry {
+        padding: 30px 0px;
+    }
+
+    .industry-box-one {
+        padding: 0px;
+    }
+
+    .industry-item-one {
+        padding: 0px;
+        height: auto;
+    }
+
+    .industry-item-form {
+        padding-bottom: 0px;
+        height: 640px;
+    }
+
+    .industry-item-form>h3 {
+        font-size: 20px;
+    }
+
+    .industry-item-form>p {
+        font-size: 15px;
+
+    }
+
+    .industry-content-info>h6 {
+        font-size: 24px
+    }
+
+    .industry-content-one {
+        height: 90px;
+    }
+
+    .industry-button {
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .industry-box-two>h6 {
+        font-size: 20px;
+    }
+
+    .industry-box-three {
+        font-size: 20px;
+        padding: 20px 20px 20px 40px;
+    }
+
+    .industry-para {
+        font-size: 15px;
+        padding-top: 30px;
+    }
+
+    .industry-para-one {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+}
+
 
 /* languague */
 
@@ -1437,6 +1577,35 @@ button {
     background-color: #007D6F;
     color: white;
     font-family: hind;
+}
+
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .languague {
+        padding-top: 30px;
+    }
+
+    .languague-heading {
+        padding-top: 0px;
+        font-size: 35px;
+    }
+
+    .languague-para {
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    .languague-item-one {
+        height: 125px;
+    }
+
+    .languague-box-one {
+        padding-bottom: 30px;
+    }
+
+    .book-demo-two-button {
+        font-size: 16px;
+        height: 50px;
+    }
 }
 
 
@@ -1588,6 +1757,33 @@ button {
     line-height: 2.0
 }
 
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .fullstackproject-covered {
+        padding-bottom: 30px;
+    }
+
+    .fullstack-project-heading {
+        padding-top: 0px;
+        font-size: 35px;
+    }
+
+    .covered-slide {
+        font-size: 12px;
+    }
+
+    .covered-prev {
+        height: 35px;
+    }
+
+    .covered-next {
+        height: 35px;
+    }
+
+    .displaycoveredcontent-box-two>p {
+        font-size: 15px;
+    }
+}
+
 /* fullstack-project */
 
 .fullstack-project {
@@ -1712,7 +1908,7 @@ button {
 .fullstack-project-para {
     padding-top: 30px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
     padding-left: 15px;
     font-family: mulish;
 }
@@ -1767,6 +1963,78 @@ button {
     line-height: 1.5;
     font-family: mulish;
 }
+
+.mar {
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .fullstack-project-heading {
+        margin-top: 0px;
+        font-size: 35px;
+    }
+
+    .project-modal {
+        padding-bottom: 10px;
+    }
+
+    .first-project-modal>p {
+        font-size: 16px;
+    }
+
+    .fullstack-project {
+        padding: 0px;
+    }
+
+    .fullstack-project-heading-one {
+        font-size: 35px;
+    }
+
+    .fullstack-project-content ul li p {
+        font-size: 15px;
+    }
+
+    .fullstack-project-content ul li {
+        padding-left: 0px;
+    }
+
+    .fullstack-project-content ul {
+        padding-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .mar {
+        margin-top: 40px;
+    }
+
+    .fullstack-project-para {
+        font-size: 15px;
+    }
+
+    .fullstack-trainer-image {
+        height: 55px;
+    }
+
+    .fullstack-trainer-heading {
+        font-size: 18px;
+    }
+
+    .trainer-info {
+        font-size: 14px;
+    }
+
+    .fullstack-trainer {
+        padding-top: 40px;
+    }
+
+    .fullstack-project-heading-h6{
+        font-size: 35px;
+    }
+
+
+}
+
 
 
 /* developer */
@@ -1827,6 +2095,8 @@ button {
 
 .emis-box-one-para {
     padding-top: 20px;
+    font-size: 16px;
+    font-family: mulish;
 }
 
 .emis-box-one-partner {
@@ -1952,6 +2222,7 @@ button {
 .emis-session-box-one>p {
     margin-left: 15px;
     font-family: poppins;
+    font-size: 16px;
 }
 
 .emis-pro {
@@ -1970,6 +2241,30 @@ button {
 .apply-button:hover {
     background-color: #272566;
 }
+
+
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .developer-points ul li p {
+        font-size: 15px;
+    }
+
+    .emis-box-one-para {
+        font-size: 14px;
+    }
+
+    .emis-box-one-para-two {
+        margin-top: 70px;
+    }
+
+    .emis-session-box-one>p {
+        font-size: 13px;
+    }
+
+    .apply-button {
+        font-size: 14px;
+    }
+}
+
 
 
 /* certificate */
@@ -2005,6 +2300,16 @@ button {
     /* border: 1px solid black; */
     width: 25%;
     height: 290px;
+}
+
+.para-three {
+    margin-top: 30px;
+}
+
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .display-course-item-one {
+        font-size: 15px;
+    }
 }
 
 
@@ -2046,6 +2351,19 @@ button {
     width: 100%;
     padding: 30px 0px 30px 0px;
     background-color: #edf8fA;
+}
+
+.fullstack-project-heading-h3{
+    font-size: 50px;
+    font-family: nunito;
+    color: #272566;
+}
+
+.review-para-one {
+    padding-left: 0px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-size: 16px;
 }
 
 .review-wrapper {
@@ -2098,6 +2416,9 @@ button {
     cursor: pointer;
     margin-left: 5px;
     box-shadow: rgba(0, 125, 111, 100) 0px 2px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .review-caorusel-student {
@@ -2135,6 +2456,7 @@ button {
     padding-top: 30px;
     line-height: 1.5;
     text-align: left;
+    font-size: 16px;
 }
 
 .review-carousel-circle {
@@ -2275,8 +2597,41 @@ button {
 
 .fullstack-slide-logo-img-h6 {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     color: #272566;
+}
+
+
+@media screen and (min-width:1280px) and (max-width:1366px) {
+    .review-para-one{
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    .review-carousel-container{
+        padding-top: 30px;
+    }
+
+    .review-carousel-item > p{
+        font-size: 14px;
+        padding-top: 15px;
+    }
+
+    .review-carousel-student-name > h6{
+        font-size: 20px;
+    }
+
+    .review-carousel-item{
+        padding-bottom: 30px;
+    }
+
+    .fullstack-project-heading-h3{
+        font-size: 35px;
+    }
+
+    .fullstack-carousel-wrapper{
+        padding-top: 10px;
+    }
 }
 
 /* developer-questions */
@@ -2459,11 +2814,10 @@ textarea {
 
     .covered-slide {
         font-size: 14px;
-
     }
 }
 
-@media screen and (min-width:1280px) and (max-width: 1440px) {
+@media screen and (min-width:1280px) and (max-width: 1366px) {
     .send-button {
         font-size: 16px;
     }
@@ -2483,13 +2837,19 @@ textarea {
     .fullstack-intro-button {
         width: 65%;
     }
-}
 
-@media screen and (max-width:1280px) {
-    .covered-slide {
-        font-size: 13px;
+    .demo-form-content > h3 {
+        font-size: calc(1vw + 1rem);
+      }
 
-    }
+      .trial-form > h6{
+        font-size: 20px;
+      }
+
+      .send-button {
+        font-size: 16px;
+        padding: 15px 0px 15px 0px;
+      }
 }
 
 @media screen and (max-width:480px) {
@@ -2522,4 +2882,10 @@ textarea {
     .send-button {
         font-size: 16px !important;
     }
+}
+
+
+
+.showcase {
+    padding: 30px 0px 30px 0px;
 }

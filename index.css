@@ -1538,9 +1538,12 @@ button:hover {
 
 
 .our-courses-image {
-     border: 1px solid black;
+     /* border: 1px solid black; */
     width: 100%;
     margin-bottom: 15px;
+    height: 230px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .our-courses-image img {
