@@ -1164,9 +1164,12 @@ button {
     /* border: 1px solid black; */
     width: 100%;
     padding: 70px 0px 0px 0px;
-    /* position: sticky;
-    bottom: 8px;
-    z-index: 500; */
+    z-index: 300;
+}
+
+.fullstack-syllabus-container {
+    width: 90%;
+    margin: auto;
 }
 
 .fullstack-syllabus-box-one {
@@ -1180,9 +1183,15 @@ button {
     border-radius: 10px;
 }
 
+.fullstack-syllabus-box-one a{
+      /* border: 1px solid black; */
+      width: 25%;
+      text-decoration: none;
+}
+
 .fullstack-syllabus-item-one {
     /* border: 1px solid black; */
-    width: 25%;
+    width: 100%;
     padding: 10px 10px 10px 10px;
     display: flex;
     justify-content: center;
@@ -2028,7 +2037,7 @@ button {
         padding-top: 40px;
     }
 
-    .fullstack-project-heading-h6{
+    .fullstack-project-heading-h6 {
         font-size: 35px;
     }
 
@@ -2353,7 +2362,7 @@ button {
     background-color: #edf8fA;
 }
 
-.fullstack-project-heading-h3{
+.fullstack-project-heading-h3 {
     font-size: 50px;
     font-family: nunito;
     color: #272566;
@@ -2603,33 +2612,33 @@ button {
 
 
 @media screen and (min-width:1280px) and (max-width:1366px) {
-    .review-para-one{
+    .review-para-one {
         margin-bottom: 25px;
         font-size: 15px;
     }
 
-    .review-carousel-container{
+    .review-carousel-container {
         padding-top: 30px;
     }
 
-    .review-carousel-item > p{
+    .review-carousel-item>p {
         font-size: 14px;
         padding-top: 15px;
     }
 
-    .review-carousel-student-name > h6{
+    .review-carousel-student-name>h6 {
         font-size: 20px;
     }
 
-    .review-carousel-item{
+    .review-carousel-item {
         padding-bottom: 30px;
     }
 
-    .fullstack-project-heading-h3{
+    .fullstack-project-heading-h3 {
         font-size: 35px;
     }
 
-    .fullstack-carousel-wrapper{
+    .fullstack-carousel-wrapper {
         padding-top: 10px;
     }
 }
@@ -2838,18 +2847,18 @@ textarea {
         width: 65%;
     }
 
-    .demo-form-content > h3 {
+    .demo-form-content>h3 {
         font-size: calc(1vw + 1rem);
-      }
+    }
 
-      .trial-form > h6{
+    .trial-form>h6 {
         font-size: 20px;
-      }
+    }
 
-      .send-button {
+    .send-button {
         font-size: 16px;
         padding: 15px 0px 15px 0px;
-      }
+    }
 }
 
 @media screen and (max-width:480px) {

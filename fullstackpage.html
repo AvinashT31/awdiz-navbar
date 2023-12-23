@@ -27,7 +27,6 @@
     <div id="mobile-navigation">
     </div>
 
-
     <section class="fullstack-intro">
         <div class="container">
             <h1>Full Stack Developer Course with Placement Guarantee in Mumbai
@@ -199,15 +198,18 @@
                 </p>
                 <h3>Full Stack Web Development <br>
                     Course in Mumbai</h3>
-                <p style="color: black; font-weight: 100 ;">Awdiz is one of the Best Institute for Full Stack Developer
+                <p style="color: black; font-weight: 100 ;">Awdiz is one of the Best Institute for Full Stack
+                    Developer
                     Course in Mumbai,
                     offering Advanced Full
                     Stack <br>
-                    Developer course with placement guarantee. Awdiz ranks in the Top 5 Full Stack Developer Courses in
+                    Developer course with placement guarantee. Awdiz ranks in the Top 5 Full Stack Developer Courses
+                    in
                     Mumbai. <br> Awdiz is the only Full Stack Developer training institute in Mumbai that has
                     incorporated
                     Chat GPT <br>
-                    For Programming with over 100+ Coding Prompts For ChatGPT. Supercharge your career with one of India
+                    For Programming with over 100+ Coding Prompts For ChatGPT. Supercharge your career with one of
+                    India
                     s
                     top Full Stack <br> Web Development institutes.
                 </p>
@@ -364,11 +366,11 @@
                 <i class="fa-regular fa-star"></i>
                 <p>Starting package from 3 to 6 lpa</p>
             </div>
-            <div  class="fullstack-intro-first-point fullstack-package-heading margin-one">
+            <div class="fullstack-intro-first-point fullstack-package-heading margin-one">
                 <i class="fa-regular fa-star"></i>
                 <p>6 Months Full Stack Developer Job Guarantee Program</p>
             </div>
-            <div  class="fullstack-intro-first-point fullstack-package-heading margin-one">
+            <div class="fullstack-intro-first-point fullstack-package-heading margin-one">
                 <i class="fa-regular fa-star"></i>
                 <p>Full Stack Developer Course Fees in Mumbai is ₹ 69000</p>
             </div>
@@ -469,21 +471,21 @@
                         <div class="awdiz-image">
 
                         </div>
-                       
+
                     </div>
-                    <div  class="awdiz-trust-box">
-                        <div  class="awdiz-image">
+                    <div class="awdiz-trust-box">
+                        <div class="awdiz-image">
 
                         </div>
                         <div class="awdiz-image">
 
                         </div>
-                        <div  class="awdiz-image">
+                        <div class="awdiz-image">
 
                         </div>
-                        <div  class="awdiz-image">
+                        <div class="awdiz-image">
 
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -525,7 +527,8 @@
 
             <div class="fullstack-intro-first-point awdiz-chagpt-point">
                 <i class="fa-regular fa-star"></i>
-                <p>But remember it lacks the experience and understanding of the context that human coders possess</p>
+                <p>But remember it lacks the experience and understanding of the context that human coders possess
+                </p>
             </div>
 
             <div class="fullstack-intro-first-point awdiz-chagpt-point">
@@ -536,27 +539,36 @@
         </div>
     </section>
 
-    <section class="fullstack-syllabus">
-        <div class="container">
+    <section id="fullstack-syllabus" class="fullstack-syllabus">
+        <div id="fullstack-syllabus-container" class="fullstack-syllabus-container">
             <div class="fullstack-syllabus-box-one">
+
                 <div id="syallbus" style="background-color: #007d6f; color: white;" class="fullstack-syllabus-item-one">
                     <P>Full Stack Developer Course Syllabus</P>
                 </div>
+
+
 
                 <div id="detailsawdiz" class="fullstack-syllabus-item-one">
                     <P>Full Stack Developer Course Details</P>
                 </div>
 
+
+
                 <div id="certificationawdiz" class="fullstack-syllabus-item-one">
                     <P>Full Stack Developer Course Certification</P>
                 </div>
 
+
+
                 <div id="trainingawdiz" class="fullstack-syllabus-item-one">
                     <P>Full Stack Developer Training at Awdiz</P>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <div id="displaysyallbus" style="width: 100%;">
         <section>
@@ -1093,7 +1105,7 @@
     </section>
     </div>
 
-    <div style="display: none; width: 100%;" id="displaydetailsawdiz">
+    <div style="width: 100%;" id="displaydetailsawdiz">
         <section class="fullstack-project">
             <div class="container">
                 <div class="fullstack-project-content">
@@ -1315,7 +1327,7 @@
                 <div class="emis">
                     <div class="emis-fbox-one">
                         <p>Easy Financing Options</p>
-                        <p class="emis-box-one-para">We have partnered with the following financing 
+                        <p class="emis-box-one-para">We have partnered with the following financing
                             Companiesto provide finance options at as low as 0% interest rates with no hidden cost
                         </p>
                         <div class="emis-box-one-partner">
@@ -1440,7 +1452,7 @@
         </section>
     </div>
 
-    <div style="display: none; width: 100%;" id="displaycertificationawdiz">
+    <div style="width: 100%;" id="displaycertificationawdiz">
         <section class="coursecertificate">
             <div class="container">
                 <div class="display-course-content">
@@ -1485,7 +1497,7 @@
         </section>
     </div>
 
-    <div style="display: none;" id="displaytrainingawdiz">
+    <div id="displaytrainingawdiz">
         <section class="fullstackcareer">
             <div class="container">
                 <div class="fullstackcareer-page">
@@ -2108,94 +2120,102 @@
         });
     </script>
 
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+
+            var fullstacksyllabus = document.getElementById("fullstack-syllabus");
+            var fullstacksyllabuscontainer = document.getElementById("fullstack-syllabus-container");
+            var globalnav = document.getElementById("global-nav");
+
+            var fullstacksyllabusposition = fullstacksyllabus.getBoundingClientRect();
+
+            if (fullstacksyllabusposition.top <= 0) {
+                fullstacksyllabus.style.position = "sticky";
+                fullstacksyllabus.style.top = "-75px";
+                fullstacksyllabuscontainer.style.width = "100%";
+                globalnav.style.display = "none";
+            }
+            else {
+                fullstacksyllabus.style.position = "";
+                fullstacksyllabuscontainer.style.width = "90%";
+                globalnav.style.display = "";
+            }
+        })
+    </script>
+
+    <script>
+        window.addEventListener("scroll", function () {
             var detailsawdiz = document.getElementById("detailsawdiz");
-            var displaydetailsawdiz = document.getElementById("displaydetailsawdiz")
+            var syallbus = document.getElementById("syallbus");
+            var certificationawdiz = document.getElementById("certificationawdiz");
+            var trainingawdiz = document.getElementById("trainingawdiz");
 
-            detailsawdiz.addEventListener('click', function () {
-                displaydetailsawdiz.style.display = "block"
+            var displaydetailsawdiz = document.getElementById("displaydetailsawdiz");
+            var displaycertificationawdiz = document.getElementById("displaycertificationawdiz");
+            var displaytrainingawdiz = document.getElementById("displaytrainingawdiz");
+            var displaysyallbus = document.getElementById("displaysyallbus");
+
+            var displaydetailsawdizposition = displaydetailsawdiz.getBoundingClientRect();
+            var displaycertificationawdizposition = displaycertificationawdiz.getBoundingClientRect();
+            var displaytrainingawdizposition = displaytrainingawdiz.getBoundingClientRect()
+            var displaysyallbuspositions = displaysyallbus.getBoundingClientRect()
+
+            if (displaydetailsawdizposition.top < window.innerHeight && displaydetailsawdizposition.bottom >= 0) {
                 detailsawdiz.style.backgroundColor = "#007d6f";
-                detailsawdiz.style.color = "white";
+                detailsawdiz.style.color = "white"
 
-                displaycertificationawdiz.style.display = "none"
-                certificationawdiz.style.backgroundColor = "#edf8fA";
-                certificationawdiz.style.color = "black";
+                syallbus.style.backgroundColor = "";
+                syallbus.style.color = "black"
 
-                displaytrainingawdiz.style.display = "none"
-                trainingawdiz.style.backgroundColor = "#edf8fA";
+                trainingawdiz.style.backgroundColor = "";
                 trainingawdiz.style.color = "black";
 
-                displaysyallbus.style.display = "none"
-                syallbus.style.backgroundColor = "#edf8fA";
-                syallbus.style.color = "black";
-            });
+                certificationawdiz.style.backgroundColor = "";
+                certificationawdiz.style.color = "black";
+            }
 
-
-
-            var certificationawdiz = document.getElementById("certificationawdiz")
-            var displaycertificationawdiz = document.getElementById("displaycertificationawdiz")
-
-            certificationawdiz.addEventListener('click', function () {
-                displaycertificationawdiz.style.display = "block"
+            if (displaycertificationawdizposition.top < window.innerHeight && displaycertificationawdizposition.bottom >= 0) {
                 certificationawdiz.style.backgroundColor = "#007d6f";
                 certificationawdiz.style.color = "white";
 
-                displaytrainingawdiz.style.display = "none"
-                trainingawdiz.style.backgroundColor = "#edf8fA";
-                trainingawdiz.style.color = "black";
+                detailsawdiz.style.backgroundColor = "";
+                detailsawdiz.style.color = "black"
 
-                displaysyallbus.style.display = "none"
-                syallbus.style.backgroundColor = "#edf8fA";
+                syallbus.style.backgroundColor = "";
                 syallbus.style.color = "black";
 
-                displaydetailsawdiz.style.display = "none"
-                detailsawdiz.style.backgroundColor = "#edf8fA";
-                detailsawdiz.style.color = "black";
-            });
+                trainingawdiz.style.backgroundColor = "";
+                trainingawdiz.style.color = "black";
+            }
 
-            var trainingawdiz = document.getElementById("trainingawdiz")
-            var displaytrainingawdiz = document.getElementById("displaytrainingawdiz")
-
-            trainingawdiz.addEventListener('click', function () {
-                displaytrainingawdiz.style.display = "block"
+            if (displaytrainingawdizposition.top < window.innerHeight && displaytrainingawdizposition.bottom >= 0) {
                 trainingawdiz.style.backgroundColor = "#007d6f";
                 trainingawdiz.style.color = "white";
 
-                displaycertificationawdiz.style.display = "none"
-                certificationawdiz.style.backgroundColor = "#edf8fA";
+                certificationawdiz.style.backgroundColor = "";
                 certificationawdiz.style.color = "black";
 
-                displaysyallbus.style.display = "none"
-                syallbus.style.backgroundColor = "#edf8fA";
-                syallbus.style.color = "black";
+                detailsawdiz.style.backgroundColor = "";
+                detailsawdiz.style.color = "black"
 
-                displaydetailsawdiz.style.display = "none"
-                detailsawdiz.style.backgroundColor = "#edf8fA";
-                detailsawdiz.style.color = "black";
+                syallbus.style.backgroundColor = "";
+                syallbus.style.color = "black"
+            }
 
-            });
-
-            var syallbus = document.getElementById("syallbus")
-            var displaysyallbus = document.getElementById("displaysyallbus")
-
-            syallbus.addEventListener('click', function () {
-                displaysyallbus.style.display = "block"
+            if (displaysyallbuspositions.top < window.innerHeight && displaysyallbuspositions.bottom >= 0) {
                 syallbus.style.backgroundColor = "#007d6f";
                 syallbus.style.color = "white";
 
-                displaytrainingawdiz.style.display = "none"
-                trainingawdiz.style.backgroundColor = "#edf8fA";
+                trainingawdiz.style.backgroundColor = "";
                 trainingawdiz.style.color = "black";
 
-                displaycertificationawdiz.style.display = "none"
-                certificationawdiz.style.backgroundColor = "#edf8fA";
+                certificationawdiz.style.backgroundColor = "";
                 certificationawdiz.style.color = "black";
 
-                displaydetailsawdiz.style.display = "none"
-                detailsawdiz.style.backgroundColor = "#edf8fA";
-                detailsawdiz.style.color = "black";
-            });
+                detailsawdiz.style.backgroundColor = "";
+                detailsawdiz.style.color = "black"
+            }
         })
     </script>
 
