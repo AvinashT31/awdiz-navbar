@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="navdropdown">
                     <div class="navcourses" id="navbar">
-                        <p style="padding: 28px 35px;">All Courses</p>
+                        <p style="padding: 24px 35px;">All Courses</p>
                     </div>
                     <div onmouseover="displaycontent(event)" class="show-item" id="hover-content">
                         <div class="show-item-left">
@@ -1899,11 +1899,25 @@ document.addEventListener('DOMContentLoaded', function () {
 // 9.quick-enquiry-section for desktop
 
 document.addEventListener('DOMContentLoaded', function () {
-  var quickenquirysection = document.getElementById("quick-enquiry-section")
-  quickenquirysection.innerHTML = `
-  <a href="#cisco-training"><button id="quick-enquiry">Quick Enquiry <i class="fa-solid fa-hand-pointer"></i></button></a>
-  `
-})
+  var quickEnquirySection = document.getElementById("quick-enquiry-section");
+  quickEnquirySection.innerHTML = `
+      <a href="#cisco-training"><button id="quick-enquiry" style="display: none;">Quick Enquiry <i class="fa-solid fa-hand-pointer"></i></button></a>
+  `;
+
+  var quickEnquiryButton = document.getElementById("quick-enquiry");
+
+  window.addEventListener("scroll", function() {
+      if (window.scrollY > 300) {
+          quickEnquiryButton.style.display = "flex";
+      } else {
+          quickEnquiryButton.style.display = "none";
+      }
+  });
+});
+
+
+
+
 
 
 // lazyloadscript

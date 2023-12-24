@@ -2,200 +2,132 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="/fontawesome/css/brands.css" rel="stylesheet">
-  <link href="/fontawesome/css/solid.css" rel="stylesheet">
+    <style>
+        .guarantee-carousael-seection {
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            display: none;
+        }
+
+        .guarantee-carousel-button {
+            padding: 20px 25px 20px 25px;
+            background-color: #bebed1;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .guarantee-carousel-button:hover {
+            background-color: #272566;
+            color: white;
+        }
+
+        .guarantee-courses-name {
+            width: 100%;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .guarantee-courses-wrapper {
+            overflow: hidden;
+        }
+
+        #guarantee-courses-carousel {
+            display: flex;
+            transition: all 0.3s ease;
+            list-style: none;
+            padding: 0;
+            justify-content: space-between;
+            padding: 0px 15px;
+            position: relative;
+            z-index: 101;
+        }
+
+
+        .guarantee-courses-name ul li {
+            flex: 0 0 calc(15% - 10px);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 15px 0px 15px 0px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: hind;
+            font-weight: 800;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .guarantee-carousael-seection {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="success-box-one">
-    <table>
-      <thead>
-        <tr>
-          <th class="services-heading">services</th>
-          <th class="services-one">services</th>
-          <th class="services-one">services</th>
-          <th class="services-one">services</th>
-          <th class="services-one">services</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="tr-heading">
-            Resume-Building <br>
-         <span>  Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia nobis amet perspiciatis hic
-          nulla architecto, expedita</span> 
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <p>----</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Resume-Building <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia nobis amet perspiciatis hic
-            nulla architecto, expedita
-          </td>
-          <td>
-       <p>Only PGA</p>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <p>----</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Resume-Building <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia nobis amet perspiciatis hic
-            nulla architecto, expedita
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <p>----</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Resume-Building <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia nobis amet perspiciatis hic
-            nulla architecto, expedita
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <p>Only PGA</p>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <p>----</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Resume-Building <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia nobis amet perspiciatis hic
-            nulla architecto, expedita
-          </td>
-          <td>
-            <p>Only PGA</p>
-          </td>
-          <td>
-            <p>Only PGA</p>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <p>----</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Resume-Building <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia nobis amet perspiciatis hic
-            nulla architecto, expedita
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <p>----</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Resume-Building <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia nobis amet perspiciatis hic
-            nulla architecto, expedita
-          </td>
-          <td>
-            <i class="fa-solid fa-circle-check"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-indian-rupee-sign"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-indian-rupee-sign"></i>
-          </td>
-          <td>
-            <i class="fa-solid fa-indian-rupee-sign"></i>
-          </td>
-        </tr>
-      </tbody>
+    <div class="guarantee-carousael-seection">
+        <button class="guarantee-carousel-button" id="guarantee-prevButton"> <i class="fa-solid fa-arrow-left-long"
+                loading="lazy"></i></button>
+        <button class="guarantee-carousel-button" id="guarantee-nextButton"> <i class="fa-solid fa-arrow-right-long"
+                loading="lazy"></i></button>
+    </div>
+    <div class="guarantee-courses-name" style="background-color: #edf8fA;">
+        <div class="guarantee-courses-wrapper">
+            <ul id="guarantee-courses-carousel">
+                <li id="guarentee-software" style="background-color: #007d6f; color: white;">
+                    Software</li>
+                <li id="guarentee-Networking">Networking</li>
+                <li id="guarentee-dm">Digital Marketing</li>
+                <li id="guarentee-ds">Data Science</li>
+                <li id="guarentee-ml">Machine Learning</li>
+                <li id="guarentee-cs">Cyber Security</li>
+            </ul>
+        </div>
+    </div>
 
-    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const prevBtn = document.getElementById('guarantee-prevButton');
+            const nextBtn = document.getElementById('guarantee-nextButton');
+            const carousel = document.getElementById('guarantee-courses-carousel');
+            let currentSlide = 0;
 
-    <style>
-      table {
-        border: 1px solid black;
-        width: 100%;
-      }
-      table th{
-        font-size: 24px;
-        text-align: left;
-        padding-left: 20px;
-      }
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide === 0) {
+                    currentSlide = carousel.children.length - 2; // Go to the last slide
+                } else {
+                    currentSlide--;
+                }
+                updateCarousel();
+            });
 
-      .services-heading {
-        border: 1px solid black;
-        width: 40%;
-        height: 40px;
-      
-      }
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide >= carousel.children.length - 2) {
+                    currentSlide = 0; // Go back to the first slide
+                } else {
+                    currentSlide++;
+                }
+                updateCarousel();
+            });
 
-      .services-one {
-        border: 1px solid black;
-        width: 15%;
-        height: 40px;
-      }
-
-      tbody td {
-        border: 1px solid black;
-      }
-
-      .tr-heading{
-        font-size: 16px;
-        font-family: mulish;
-      }
-    </style>
-  </div>
-
+            function updateCarousel() {
+                const slideWidth = carousel.children[0].offsetWidth;
+                carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+            }
+        });
+    </script>
 </body>
 
 </html>
