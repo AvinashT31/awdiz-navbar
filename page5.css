@@ -1288,10 +1288,10 @@ button {
 
 /* mobile version */
 
-.mobile-developemt-carosusel-container{
- overflow: hidden;
- display: flex;
- scroll-snap-type: x mandatory;
+.mobile-developemt-carosusel-container {
+    overflow: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
 }
 
 .mobile-development-career-item-one {
@@ -1301,7 +1301,8 @@ button {
 }
 
 .mobile-development-indicator-icon.active {
-    background-color: #007D6F; /* Active indicator color */
+    background-color: #007D6F;
+    /* Active indicator color */
 }
 
 .mobile-development-career-tem-two {
@@ -1348,7 +1349,7 @@ button {
     margin-top: 20px;
 }
 
-.mobile-development-indicator-icon{
+.mobile-development-indicator-icon {
     border: 1px solid black;
     width: 20px;
     height: 20px;
@@ -1412,7 +1413,7 @@ button {
 }
 
 @media screen and (min-width:481px) and (max-width:5000px) {
-    .mobile-development-carousel{
+    .mobile-development-carousel {
         display: none;
         visibility: hidden;
     }
@@ -1701,50 +1702,51 @@ button {
 
 @media screen and (max-width: 768px) {
     .student-speak-box {
-        justify-content: flex-start; /* Align slides to the start */
+        justify-content: flex-start;
+        /* Align slides to the start */
     }
 
     .student-speak-first-box {
-      flex:  0  0 100%;
-      padding: 0;
+        flex: 0 0 100%;
+        padding: 0;
     }
 
     /* Adjust any other styles as needed for mobile view */
 }
 
 @media screen and (max-width:480px) {
-    .student-speal-button{
+    .student-speal-button {
         padding: 0;
     }
 
-    .student-speak-h3{
+    .student-speak-h3 {
         font-size: 20px;
     }
 
-    .student-speak-item-one > p{
+    .student-speak-item-one>p {
         font-size: 13px;
         margin-bottom: 10px;
     }
 
-    .student-speak-item-service{
+    .student-speak-item-service {
         font-size: 13px;
     }
 
-    .student-speak-item-logo{
+    .student-speak-item-logo {
         height: 90px;
     }
 
-    .student-speak-item-service-icon{
+    .student-speak-item-service-icon {
         height: 30px;
         width: 30px;
         border-radius: 15px;
     }
 
-    .student-speak-item-service{
+    .student-speak-item-service {
         height: 50px;
     }
 
-    .student-speak-item-one > h4{
+    .student-speak-item-one>h4 {
         font-size: 20px;
     }
 }
@@ -2000,8 +2002,61 @@ button {
 }
 
 @media screen and (max-width:480px) {
-    .profile-building-container{
+    .profile-building-container {
         width: 90%;
+    }
+
+    .resume-section-one {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .resume-section-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .resume-section-para {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .resume-crousel-square {
+        height: 70px;
+        margin-top: 18px;
+    }
+
+    .resume-carousel-content {
+        line-height: unset;
+        height: 108px;
+    }
+
+    .resume-carousel-content h4 {
+        font-size: 13px;
+    }
+
+    .resume-carousel-content p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .resume-carousel-one {
+        padding: 0;
+    }
+
+    .resume-right-arrow {
+        width: 12%;
+    }
+
+    .resume-left-arrow {
+        width: 12%;
+    }
+
+    .resume-carousel {
+        padding: 0;
     }
 }
 
@@ -2097,6 +2152,58 @@ button {
 @media screen and (max-width:1280px) {
     .career-item-one>p {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .career-service h4 {
+        font-size: 20px;
+    }
+
+    .career-service {
+        padding-bottom: 20px;
+    }
+
+    .career-box-one {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .career-item-one {
+        width: 48%;
+        padding: 15px;
+    }
+
+    .career-item-one i {
+        font-size: 30px;
+    }
+
+    .career-item-one>h5 {
+        font-size: 16px;
+    }
+
+    .career-item-one>p {
+        font-size: 14px;
+    }
+
+    .career-margin {
+        margin-top: 30px;
+    }
+
+    .career-item-two i {
+        font-size: 30px;
+    }
+
+    .career-item-two>h5 {
+        font-size: 16px;
+    }
+
+    .career-item-two>p {
+        font-size: 14px;
+    }
+
+    .career-item-two {
+        padding: 15px;
     }
 }
 
@@ -2266,6 +2373,36 @@ button {
     }
 }
 
+@media screen and (max-width:480px) {
+    .transformingcareer h5 {
+        font-size: 20px;
+    }
+
+    .transforming-career-page {
+        flex-wrap: wrap;
+    }
+
+    .transforming-career-first-page {
+        width: 100%;
+    }
+
+    .transforming-career-item-one {
+        font-size: 14px;
+    }
+
+    .transforming-career-heading {
+        font-size: 14px;
+    }
+
+    .transform-career-logo-img {
+        width: 30%;
+    }
+
+    .transforming-margin {
+        margin-top: 40px;
+    }
+}
+
 
 /* success-page */
 
@@ -2364,6 +2501,51 @@ tbody td {
         padding-top: 30px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block; 
+    }
+
+    .services-heading, .services-one {
+        width: auto; 
+    }
+
+    .tr-heading, .table-right, .table-cont {
+        font-size: smaller; 
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd; 
+    }
+
+    td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    .tr-heading{
+        margin-left: 0;
+        margin-top: 25px;
+        line-height: 20px;
+        height: 110px;
+    }
+
+    .success-box-one{
+        padding-top: 10px;
+    }
+}
+
 
 
 /* student-page */
@@ -2499,9 +2681,13 @@ tbody td {
 
 .student-review-carousel-item-two {
     border: 1px solid black;
-    width: 30%;
+    width: 100%;
     height: 220px;
     border-radius: 25px;
+}
+
+.student-review-carousel-item-eight{
+    width: 30%;
 }
 
 
@@ -2575,6 +2761,35 @@ tbody td {
     .student-review-carousel-item-two {
         height: 155px;
     }
+}
+
+@media screen and (max-width:480px) {
+    .student-page h5{
+        font-size: 20px;
+    }
+
+    .student-review-carousel-item-one{
+        height: 300px;
+    }
+
+    .student-review-carousel-item-one > p{
+        font-size: 12px;
+    }
+
+    .student-review-carousel-info > p{
+        font-size: 13px;
+    }
+
+    .student-review-carousel-item-two{
+        height: 90px;
+    }
+
+    /* .student-review-carousel-item-eight{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    
 }
 
 
@@ -2711,6 +2926,24 @@ tbody td {
 
     .ccna-review-carousel {
         padding: 20px 0px 0px 0px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .ccna-review h5 {
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .ccna-review-carousel {
+        height: 450px;
+    }
+
+    .ccna-review-carousel .ccna-review-slide {
+        height: 400px;
+        width: 350px;
     }
 }
 
@@ -2926,6 +3159,58 @@ tbody td {
 
     .senior-button {
         width: 44%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .senior-box-two {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .senior-box-two::-webkit-scrollbar {
+        display: none;
+    }
+
+    .osenior-box-two::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    .senior-box-two::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 10px;
+    }
+    
+    .senior-box-two::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    .senior-item-one {
+        flex: 0 0 90%;
+        margin-right: 1.7%;
+        margin-left: 1.7%;
+        scroll-snap-align: start;
+    }
+
+    .senior-button{
+        width: 60%;
+    }
+
+    .view-more-button{
+        width: 45%;
+        font-size: 15px;
+    }
+
+    .senior-page h5{
+        font-size: 20px;
+    }
+
+    .student-review-star i{
+        font-size: 12px;
     }
 }
 
