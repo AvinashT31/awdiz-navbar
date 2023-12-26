@@ -155,25 +155,25 @@ document.addEventListener("DOMContentLoaded", function () {
                             <ul>
                                 <li class="menu-item" style="background-color: white;" data-target="show-right-itm-one"
                                     id="opensoftwarepage">Software Development <i id="icon"
-                                        style="padding-left: 17px; color: #272566;" class="fa-solid fa-angle-right"></i>
+                                         color: #272566;" class="fa-solid fa-angle-right"></i>
                                 </li>
                                 <li class="menu-item" id="openinfrapage" data-target="show-right-itm-two">Networking
                                     infrastructure <i id="icon-one" style="color: #edf8fa;"
                                         class="fa-solid fa-angle-right arrow"></i></li>
                                 <li class="menu-item" id="opendmpage" data-target="show-right-itm-three">Digital
-                                    Marketing <i id="icon-two" style="padding-left: 57px; color: #edf8fa;"
+                                    Marketing <i id="icon-two" color: #edf8fa;"
                                         class="fa-solid fa-angle-right"></i>
                                 </li>
                                 <li class="menu-item" id="opendspage" data-target="show-right-itm-four">Data science <i
-                                        id="icon-three" style="padding-left: 83px; color: #edf8fa;"
+                                        id="icon-three" color: #edf8fa;"
                                         class="fa-solid fa-angle-right"></i>
                                 </li>
                                 <li class="menu-item" id="openmlpage" data-target="show-right-itm-five">Machine Learning
-                                    <i id="icon-four" style="padding-left: 47px; color: #edf8fa;"
+                                    <i id="icon-four" color: #edf8fa;"
                                         class="fa-solid fa-angle-right"></i>
                                 </li>
                                 <li class="menu-item" id="opencspage" data-target="show-right-itm-six">Cyber security <i
-                                        id="icon-five" style="padding-left: 71px; color: #edf8fa;"
+                                        id="icon-five"  color: #edf8fa;"
                                         class="fa-solid fa-angle-right"></i>
                                 </li>
                             </ul>
@@ -672,13 +672,14 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu-list">
-            <a href="">Data Science with R Training</a>
-            <a href="">Data Science with Python Training</a>
-            <a href="">Data Science with SAS Training</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with TableauTraining</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with Tableau Training</a>
+            <a href="">Angular 8 - 12 Training</a>
+            <a href="">Node.js Training</a>
+            <a href="">React.js Training</a>
+            <a href="">JavaScript + TypeScript Training</a>
+            <a href="">FullStack Web Developer Training</a>
+            <a href="">FullStack Java Developer Training</a>
+            <a href="">UI UX Development</a>
+            <a href="">MVC with Dot Net Training</a>
             </div>
           </div>
           <div class="software-menu-job-program">
@@ -790,13 +791,13 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu-list">
-            <a href="">Data Science with R Training</a>
-            <a href="">Data Science with Python Training</a>
-            <a href="">Data Science with SAS Training</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with TableauTraining</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with Tableau Training</a>
+            <a href="">CCNA Training</a>
+            <a href="">CCNP Training</a>
+            <a href="">Hardware and Networking Course</a>
+            <a href="">AWS Training</a>
+            <a href="">Windows Administrator L1 Training</a>
+            <a href="">Linux Administrator L1 Training</a>
+            <a href="">Microsoft Azure Devops</a>
             </div>
           </div>
 
@@ -847,7 +848,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                   <div class="software-master-program-box-one">
                     <a href="">
-                      <p>Advanced Digital Marketing</p>
+                      <p>L1 L2 Network Engineer</p>
                     </a>
                     <a href="">
                       <p class="duration">Duration - 6 months</p>
@@ -913,13 +914,11 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu-list">
-            <a href="">Data Science with R Training</a>
-            <a href="">Data Science with Python Training</a>
-            <a href="">Data Science with SAS Training</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with TableauTraining</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with Tableau Training</a>
+            <a href="">SEO Training</a>
+            <a href="">SMM Training</a>
+            <a href="">Google WEB Analytics Training</a>
+            <a href="">Google Adwords & Adsense Training</a>
+            <a href="">UI UX Designer Training</a>
             </div>
           </div>
 
@@ -1039,9 +1038,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="">Data Science with Python Training</a>
             <a href="">Data Science with SAS Training</a>
             <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with TableauTraining</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with Tableau Training</a>
+            <a href="">Data Science with Power BI Training</a>
+            <a href="">Natural Language Processing NLP Training</a>
             </div>
           </div>
 
@@ -1156,11 +1154,11 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu-list">
-            <a href="">Data Science with R Training</a>
-            <a href="">Data Science with Python Training</a>
-            <a href="">Data Science with SAS Training</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with TableauTraining</a>
+            <a href="">Machine Learning & AI</a>
+            <a href="">Machine Learning & Cloud</a>
+            <a href="">Machine Learning & Deep Learning</a>
+            <a href="">Machine Learning & NLP</a>
+            <a href="">Machine Learning & AI</a>
             <a href="">Data Science with Tableau Training</a>
             <a href="">Data Science with Tableau Training</a>
             </div>
@@ -1277,13 +1275,11 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="software-menu-courses">
             <h4>Individual Courses</h4>
             <div class="software-menu-submenu-list">
-            <a href="">Data Science with R Training</a>
-            <a href="">Data Science with Python Training</a>
-            <a href="">Data Science with SAS Training</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with TableauTraining</a>
-            <a href="">Data Science with Tableau Training</a>
-            <a href="">Data Science with Tableau Training</a>
+            <a href="">Certified Ethical Hacker CEH v11</a>
+            <a href="">Mobile Application Security & Mobile Device
+            Pentesting</a>
+            <a href="">Web Application Hacking & Bug Bounty</a>
+            <a href="">Web Server Hacking & Network Pentesting</a>
             </div>
           </div>
 
@@ -1417,9 +1413,10 @@ document.addEventListener("DOMContentLoaded", function () {
               <p id="student-minus" style="display: none;"> <i class="fa-solid fa-minus"></i></p>
             </div>
             <ul style="display: none;" id="student-job">
-              <li style="padding-top: 15px">Internship</li>
-              <li>Internship</li>
-              <li>Internship</li>
+              <li style="padding-top: 15px"><a href="">Interview Questions & Answers</a></li>
+              <li><a href="">Placed Students List</a></li>
+              <li><a href="">Current Job Openings</a></li>
+              <li><a href="">College Internships</a></li>
             </ul>
             </li>
             <li>
@@ -1429,9 +1426,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <p id="about-minus" style="display: none;"> <i class="fa-solid fa-minus"></i></p>
           </div>
           <ul style="display: none;" id="about-job">
-            <li style="padding-top: 15px">Internship</li>
-            <li>Internship</li>
-            <li>Internship</li>
+            <li style="padding-top: 15px"><a href="">Colloborate</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Course Reviews</a></li>
+            <li><a href="">Browse Courses</a></li>
           </ul>
           </li>
               <li><a href="">Blockchain</a></li>
@@ -1624,7 +1622,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="footer-social-page">
               <div class="footer-box-one">
                   <h2>Contact Us</h2>
-                  <p class="footer-box-page-info">Call : <a href="tel: +917678000695 | 8657202255">+91 7678000695 | 8657202255</a></p>
+                  <p class="footer-box-page-info">Call : <a href="tel: +917678000695">+91 7678000695</a> <span><a href="tel: +918657202255">| 8657202255</a></span></p>
                   <p class="footer-box-page-info">Vashi Plaza Building 2nd Floor A Wing
                       Offie number 421A Sector 17 Vashi Navi
                       Mumbai Maharashtra 400703</p>
@@ -1650,11 +1648,8 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="footer-map">
                   <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8695598070517!2d72.99514087586859!3d19.069471852176072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3c1c6aaaacd%3A0x1660edf108a1e4c4!2sAWDIZ%20%7C%20CCNA%20Linux%20Windows%20Digital%20Marketing%20Data%20Science%20Machine%20Learning%20Full%20Stack!5e0!3m2!1sen!2sin!4v1698900190324!5m2!1sen!2sin"
-                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-              <div class="footer-map">
-                  <img style="width: 100%; height: 100%;" class="image-fluid" src="img/images.jpg" alt="">
               </div>
           </div>
           <br>

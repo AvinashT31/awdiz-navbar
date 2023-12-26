@@ -254,8 +254,13 @@ html {
     padding-left: 10px;
 }
 
+.banner-section-button a {
+    width: 100%;
+    text-align: center;
+}
+
 .banner-section-button button {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 27%;
     border-radius: 10px;
     font-weight: 900;
@@ -511,7 +516,7 @@ picture {
 
 .guarentee-rating-container {
     width: 31%;
-    height: 80px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -523,7 +528,7 @@ picture {
 
 .guarentee-rating-container img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .guarentee-rating-odd-container {
@@ -543,7 +548,8 @@ picture {
 
 .guarentee-rating-odd-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
 }
 
 .popup-video .modal-dialog {
@@ -589,14 +595,14 @@ picture {
     height: 355px;
 }
 
-.custom-modal .modal-content iframe{
+.custom-modal .modal-content iframe {
     border: 2px solid black;
     border-radius: 6px;
 }
 
 .guarentee-image {
     width: 45%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     overflow: hidden;
     position: relative;
 }
@@ -633,6 +639,52 @@ video {
 
 /* MEDIA QUERIES */
 
+
+@media screen and (min-width:3201px) and (max-width:3840px) {
+    .mt_btn_yellow {
+        font-size: 150px;
+    }
+
+    .news-content {
+        right: 35px;
+        bottom: 4px;
+    }
+}
+
+@media screen and (min-width:3073px) and (max-width:3200px) {
+    .mt_btn_yellow {
+        font-size: 130px;
+    }
+
+    .news-content {
+        right: 35px;
+        bottom: 4px;
+    }
+}
+
+
+@media screen and (min-width:2561px) and (max-width:3072px) {
+    .mt_btn_yellow {
+        font-size: 130px;
+    }
+
+    .news-content {
+        right: 30px;
+        bottom: 4px;
+    }
+}
+
+@media screen and (min-width:2048px) and (max-width:2560px) {
+    .mt_btn_yellow {
+        font-size: 80px;
+    }
+
+    .news-content {
+        right: 19px;
+        bottom: 2px;
+    }
+}
+
 @media (min-width:1441px) and (max-width:1920px) {
     .mt_btn_yellow {
         font-size: 76px;
@@ -651,6 +703,7 @@ video {
     }
 
 }
+
 
 @media (min-width: 380px) and (max-width: 393px) {
     .news-content {
@@ -743,6 +796,7 @@ video {
 
 }
 
+
 @media screen and (max-width:428px) {
     .guarentee-image {
         width: 100%;
@@ -770,6 +824,7 @@ video {
         right: 7px;
     }
 }
+
 
 @media screen and (max-width:412px) {
     .guarentee-image {
@@ -814,6 +869,7 @@ video {
         right: 6px;
     }
 }
+
 
 
 /* video-show */
@@ -901,7 +957,7 @@ video {
     }
 
     .video-show {
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
         margin-bottom: 0px;
     }
 }
@@ -920,6 +976,7 @@ video {
         height: 200px;
     }
 }
+
 
 
 /* why-awdiz-page */
@@ -1025,7 +1082,7 @@ video {
 @media screen and (max-width:480px) {
     .why-awdiz-page {
         /* border: 1px solid black; */
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .why-awdiz-course {
@@ -1147,7 +1204,7 @@ button:hover {
     margin-right: 1.7%;
     margin-left: 1.7%;
     border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .slider-img {
@@ -1302,7 +1359,7 @@ button:hover {
 
 @media screen and (min-width:1280px) and (max-width:1440px) {
     .awdiz-career {
-        padding: 30px 0px 30px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .career-page {
@@ -1325,7 +1382,7 @@ button:hover {
     }
 
     .awdiz-career {
-        padding: 20px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .career-page {
@@ -1538,12 +1595,12 @@ button:hover {
 
 
 .our-courses-image {
-     /* border: 1px solid black; */
+    /* border: 1px solid black; */
     width: 100%;
     margin-bottom: 15px;
     height: 230px;
-  border-radius: 10px;
-  overflow: hidden;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .our-courses-image img {
@@ -1756,7 +1813,7 @@ button:hover {
     }
 
     .our-courses {
-        padding: 30px 0px 30px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .our-courses-summary {
@@ -1800,7 +1857,7 @@ button:hover {
     }
 
     .our-courses {
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .our-courses-summary {
@@ -2142,6 +2199,16 @@ button:hover {
     font-family: mulish;
 }
 
+@media screen and (width:1920px) {
+    .view-more-button{
+        padding: 20px 0px 20px 0px;
+    }
+
+    .send-button{
+        font-size: 20px !important;
+    }
+}
+
 
 @media screen and (width:1440px) {
     .view-more-button {
@@ -2164,7 +2231,7 @@ button:hover {
 @media screen and (min-width:1280px) and (max-width:1600px) {
 
     .job-guarentee-program {
-        padding: 30px 0px 30px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .guarantee-courses-name ul li {
@@ -2211,7 +2278,7 @@ button:hover {
 @media screen and (max-width:480px) {
 
     .job-guarentee-program {
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .job-guarentee-info {
@@ -2229,7 +2296,7 @@ button:hover {
     }
 
     .job-guarentee-box-one {
-        flex: 0 0 auto;
+        flex: 0 0 90%;
         width: 100%;
         flex-direction: column;
         margin-right: 20px;
@@ -2276,7 +2343,7 @@ button:hover {
     }
 
     .placement-view {
-        padding: 0px;
+        padding-top: 20px;
     }
 
     .placement-button {
@@ -2397,7 +2464,7 @@ button:hover {
 @media screen and (max-width:480px) {
 
     .infinity-carousel {
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .infinity-carousel-slider {
@@ -2529,7 +2596,7 @@ button:hover {
     }
 
     .training {
-        padding: 30px 0px 20px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .training-steps {
@@ -2552,7 +2619,7 @@ button:hover {
 
 @media screen and (min-width:1280px) and (max-width:1439px) {
     .training {
-        padding: 30px 0px 20px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .training-box-one {
@@ -2761,11 +2828,11 @@ button:hover {
 
 @media screen and (min-width:1280px) and (max-width:1600px) {
     .certificate {
-        padding: 30px 0px 20px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .certificate-page {
-        padding: 20px 0px 20px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .certificate-first-page {
@@ -2792,11 +2859,11 @@ button:hover {
     }
 
     .certificate-info {
-        padding-top: 0px;
+        padding-top: 15px;
     }
 
     .certificate-rating {
-        padding: 0px;
+        padding-top: 40px;
     }
 
     .certificate-rating-first {
@@ -2829,7 +2896,7 @@ button:hover {
 @media screen and (max-width:480px) {
 
     .certificate {
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .certificate-page {
@@ -2909,6 +2976,10 @@ button:hover {
     .sec-page {
         margin-top: 30px;
     }
+
+    .certificate H5{
+        text-align: center;
+    }
 }
 
 /* awdiz-choose */
@@ -2982,7 +3053,7 @@ button:hover {
 
 @media screen and (min-width:1280px) and (max-width:1600px) {
     .awdiz-choose {
-        padding: 30px 0px 30px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .choose-box-one>h6 {
@@ -2993,7 +3064,7 @@ button:hover {
 @media screen and (max-width:480px) {
 
     .awdiz-choose {
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .choose-container {
@@ -3060,14 +3131,14 @@ button:hover {
 
 @media screen and (min-width:1280px) and (max-width:1600px) {
     .placement-institute {
-        padding: 30px 0px 30px 0px;
+        padding: 60px 0px 60px 0px;
     }
 }
 
 @media screen and (max-width:480px) {
 
     .placement-institute {
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 }
 
@@ -3077,6 +3148,7 @@ button:hover {
     /* border: 1px solid black; */
     width: 100%;
     height: auto;
+    padding: 40px 0px 40px 0px;
 }
 
 .circle-grid {
@@ -3143,8 +3215,8 @@ button:hover {
 .circle-mobile-container {
     /* border: 1px solid black; */
     width: 100%;
-    height: 560px;
-
+    height: 590px;
+    padding: 20px 0px 20px 0px;
 }
 
 .circle-mobile-grid {
@@ -3302,7 +3374,7 @@ button:hover {
 .demo-form-section {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 20px 0px 20px 0px;
+    padding: 30px 0px 30px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3346,34 +3418,35 @@ fieldset {
 }
 
 .message-fieldset {
-    height: 100px;
+    height: 69px;
     border-radius: 10px;
 }
 
 textarea {
-    border: 1px solid #cccccc;
-    width: 100%;
-    margin-bottom: 20px;
+    /* border: 1px solid #cccccc; */
+    width: 98%;
     border-radius: 15px;
-    padding: 8px 0px 5px 10px;
+    padding: 8px 0px 5px 11px;
     font-size: 14px;
     font-family: mulish;
     resize: vertical;
-    min-height: 60px;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+    height: 48px;
+    max-height: 48px;
+    border: none;
+    outline: none;
 }
 
-
 .legend-name {
-    margin-left: 10px;
+    margin-left: 6px;
     font-size: 11px;
     font-weight: 550;
+    padding: 0px 5px 0px 5px;
 }
 
 .inputtrial {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 8px 0px 5px 10px;
+    padding: 8px 0px 5px 11px;
     border: none;
     outline: none;
     font-size: 14px;
@@ -3451,6 +3524,10 @@ textarea {
 
     .send-button {
         font-size: 16px !important;
+    }
+
+    .demo-form{
+        padding: 40px 0px 40px 0px;
     }
 }
 
@@ -3635,7 +3712,7 @@ textarea {
 
 @media screen and (min-width:1280px) and (max-width:1600px) {
     .review-section {
-        padding: 30px 0px 30px 0px;
+        padding: 50px 0px 50px 0px;
     }
 
     .review-page {
@@ -3670,8 +3747,8 @@ textarea {
 
 @media screen and (max-width:480px) {
     .review-section {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .review-page {
@@ -3754,7 +3831,7 @@ textarea {
     display: flex;
     transition: all 0.3s ease;
     list-style: none;
-    padding: 0;
+    padding: 0px 20px 0px 20px;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -3821,6 +3898,10 @@ textarea {
     scrollbar-width: none;
 }
 
+.blog-our-courses-info::-webkit-scrollbar {
+    display: none;
+}
+
 .blog-our-courses-angular {
     flex: 0 0 29%;
     /* margin-right: 60px; */
@@ -3862,7 +3943,7 @@ textarea {
 .blog-placement-view {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 30px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3880,11 +3961,11 @@ textarea {
     font-family: mulish;
 }
 
-@media screen and (max-width:1920px){
-    .blog-our-courses-info{
+@media screen and (max-width:1920px) {
+    .blog-our-courses-info {
         margin-top: 0px;
     }
-} 
+}
 
 
 @media screen and (min-width:1280px) and (max-width:1600px) {
@@ -3893,7 +3974,7 @@ textarea {
     }
 
     .Blog-page {
-        padding: 30px 0px 30px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .blog-courses-name {
@@ -3979,7 +4060,7 @@ textarea {
     }
 
     .blog-placement-view {
-        padding: 10px 0px 0px 0px;
+        padding: 40px 0px 0px 0px;
     }
 
     .blog-button {

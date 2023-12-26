@@ -638,6 +638,7 @@ button {
     color: #384252;
     padding-left: 15px;
     list-style: none;
+    font-size: 14px;
 }
 
 .software-menu-job-submenu-box {
@@ -649,11 +650,15 @@ button {
 
 .software-menu-submenu a {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .software-menu-submenu p {
     padding-left: 20px;
     color: #384252;
+    font-size: 14px;
 }
 
 .software-master-program {
@@ -701,13 +706,17 @@ button {
 
 .software-master-program-box-one {
     /* border: 1px solid black; */
-    width: 60%;
+    width: 70%;
     padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .software-master-program-box-one a {
     text-decoration: none;
     color: #384252;
+    font-size: 14px;
 }
 
 .software-menu-job-box-one p {
@@ -841,26 +850,26 @@ button {
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 #quick-enquiry {
-   position: fixed;
-  bottom: 6%;
-  left: 6px;
-  width: 240px;
-  height: 46px;
-  background: linear-gradient(145deg, #99f599, #88e588);
-  border: none;
-  border-radius: 5px;
-  color: #03033f;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 0;
-  cursor: pointer;
-  margin: 0;
+    position: fixed;
+    bottom: 6%;
+    left: 6px;
+    width: 240px;
+    height: 46px;
+    background: linear-gradient(145deg, #99f599, #88e588);
+    border: none;
+    border-radius: 5px;
+    color: #03033f;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
     z-index: 99;
     font-family: hind;
     display: flex;
@@ -889,7 +898,7 @@ html {
     color: white;
 }
 
-.mobile-button{
+.mobile-button {
     width: 40%;
     height: 35px;
     margin: auto;
@@ -918,6 +927,8 @@ html {
 @media screen and (max-width:480px) {
     .cisco-enquiry {
         flex-direction: column;
+        display: none;
+        visibility: hidden;
     }
 
     .sticky-contact {
@@ -956,44 +967,47 @@ html {
     vertical-align: middle;
 }
 
-.badge-one{
+.badge-one {
     width: 56%;
 }
 
 
 @media screen and (max-width:1600px) {
-    .badge-one{
+    .badge-one {
         width: 56.5%;
     }
-    #normal-badge{
+
+    #normal-badge {
         width: 27%;
     }
 
 }
 
 @media screen and (max-width:1440px) {
-    .badge-one{
+    .badge-one {
         width: 56.5%;
     }
-    #normal-badge{
+
+    #normal-badge {
         width: 27%;
     }
 
 }
 
 @media screen and (width:1280px) {
-    .badge-one{
+    .badge-one {
         width: 58%;
     }
 
-    #normal-badge{
+    #normal-badge {
         width: 30%;
-    }  
+    }
 }
 
 @media screen and (max-width: 480px) {
     .sticky-contact {
         display: block !important;
+        margin-top: 30px;
     }
 }
 
@@ -1349,7 +1363,8 @@ ul li {
 }
 
 
-.navtwo-dropdown,.navtwo-dropdown-one {
+.navtwo-dropdown,
+.navtwo-dropdown-one {
     display: none !important;
     margin-top: 0px !important;
     z-index: 99999;
@@ -1367,27 +1382,27 @@ ul li {
     padding: 10px !important;
 }
 
-.navtwo-student{
+.navtwo-student {
     /* border: 1px solid black; */
     height: 100%;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navtwo-about{
+.navtwo-about {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
-.navtwo-dropdown{
+.navtwo-dropdown {
     /* border: 1px solid black; */
     top: 60px;
 }
 
-.navtwo-dropdown-one{
+.navtwo-dropdown-one {
     top: 60px;
     left: 0;
 }
@@ -1464,8 +1479,8 @@ ul li {
     }
 
     .show-item-container-box {
-        width: 25% !important;
-        height: 40px !important;
+        width: 30% !important;
+        height: 55px !important;
     }
 
     .show-item-right {
@@ -1611,7 +1626,7 @@ ul li {
     list-style: none;
     padding-left: 15px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Mulish';
     font-size: 14px;
@@ -1620,7 +1635,7 @@ ul li {
 }
 
 .show-item-left i {
-    margin-left: 150px;
+    margin-right: 15px;
 }
 
 
@@ -1664,8 +1679,8 @@ ul li {
 }
 
 .show-item-one ul {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .show-item-one ul a {
@@ -1714,7 +1729,7 @@ ul li {
     align-items: center;
 }
 
-.show-item-two-container a{
+.show-item-two-container a {
     text-decoration: none;
     color: black;
     display: flex;
@@ -1755,7 +1770,7 @@ ul li {
     margin-right: 17px;
 }
 
-.show-item-container a{
+.show-item-container a {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1770,6 +1785,11 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.show-item-container-box img {
+    width: 100%;
+    height: 100%;
 }
 
 .show-item-container-box-one {
@@ -1840,11 +1860,11 @@ ul li {
 }
 
 @media screen and (min-width:1280px) and (max-width:1440px) {
-    .show-item-left i{
+    .show-item-left i {
         margin-left: 60px;
     }
 
-    .show-item-right-button button{
+    .show-item-right-button button {
         width: 30%;
     }
 }
@@ -1882,7 +1902,7 @@ footer {
 .footer-box-one-para {
     padding-top: 40px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-family: mulish;
 }
 
@@ -1895,6 +1915,7 @@ footer {
     color: white;
     font-size: 16px;
     font-family: mulish;
+    margin-bottom: 10px;
 }
 
 .footer-social-page {
@@ -2002,11 +2023,12 @@ footer {
     font-size: 24px;
     height: 100%;
     color: white;
+    line-height: unset
 }
 
 .footer-map {
     /* border: 1px solid black; */
-    width: 28%;
+    width: 64%;
     height: 220px;
     border-radius: 15px;
     overflow: hidden;
@@ -2066,7 +2088,7 @@ footer {
 
 @media screen and (max-width:480px) {
 
-    footer{
+    footer {
         padding: 0px;
     }
 
@@ -2099,32 +2121,32 @@ footer {
         font-size: 14px;
     }
 
-    .footer-box-one-para{
+    .footer-box-one-para {
         padding-top: 20px;
         font-size: 14px;
     }
 
-    .footer-box-one-h2{
+    .footer-box-one-h2 {
         margin-top: 20px;
     }
 
-    .footer-box-one > h2{
+    .footer-box-one>h2 {
         font-size: 20px;
     }
 
-    .footer-box-one-para li{
+    .footer-box-one-para li {
         font-size: 14px;
     }
 
-    .footer-box-page-info{
+    .footer-box-page-info {
         font-size: 14px;
     }
 
-    .social-footer-icon{
+    .social-footer-icon {
         margin-top: 20px;
     }
 
-    .footer-declaimer-sub-para{
+    .footer-declaimer-sub-para {
         font-size: 14px;
     }
 }
@@ -2223,6 +2245,10 @@ input[type="text"]::placeholder {
     font-size: 12px !important
 }
 
+textarea[type="text"]::placeholder {
+    font-size: 12px !important
+}
+
 textarea.cisco-textarea {
     font-size: 14px
 }
@@ -2233,10 +2259,10 @@ textarea.cisco-textarea::placeholder {
 
 .cisco-textarea {
     width: 100%;
-    height: 50px;
+    height: 69px;
     border-radius: 5px;
     margin-bottom: 20px;
-
+    max-height: 69px;
     border: none;
     outline: none;
     background-color: #ffffff;
@@ -2349,7 +2375,7 @@ textarea.cisco-textarea::placeholder {
         bottom: 68%;
         height: 421px;
         left: 8%;
-      }
+    }
 }
 
 
@@ -2378,7 +2404,7 @@ textarea.cisco-textarea::placeholder {
         width: 80%;
     }
 
-    .cisco-enquiry{
+    .cisco-enquiry {
         margin-top: 20px;
     }
 }
@@ -2417,7 +2443,7 @@ textarea.cisco-textarea::placeholder {
     }
 
     .cisco-training {
-        padding: 30px 0px 30px 0px;
+        padding: 40px 0px 40px 0px;
     }
 
     .cisco-container {
@@ -2445,4 +2471,3 @@ textarea.cisco-textarea::placeholder {
     }
 
 }
-
