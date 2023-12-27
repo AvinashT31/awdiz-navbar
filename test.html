@@ -5,136 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        .senior-box-one {
-            /* border: 1px solid black; */
-            width: 100%;
-            padding: 80px 0px 30px 0px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .senior-page-item-one {
-            border: 1px solid #272566;
-            width: 8%;
-            padding: 10px 0px 10px 0px;
-            border-radius: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .senior-page-item-one>p {
-            font-family: hind;
-            font-weight: 800;
-            font-size: 20px;
-        }
-
-        .senior-page-item-two {
-            border: 1px solid #272566;
-            width: 18%;
-            padding: 10px 0px 10px 0px;
-            border-radius: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .senior-page-item-two>p {
-            font-family: hind;
-            font-weight: 800;
-            font-size: 20px;
-        }
-
-        @media screen and (max-width: 768px) {
-            .senior-box-one {
-                overflow: hidden;
-                white-space: nowrap;
-                display: flex;
-                align-items: center;
-                padding: 10px;
-            }
-
-            .senior-page-item-one,
-            .senior-page-item-two {
-                display: inline-block;
-                width: auto;
-                /* Adjust width as needed */
-                margin-right: 10px;
-                /* Spacing between items */
-            }
-
-            .carousel-control {
-                display: inline-block;
-                /* Show buttons on mobile */
-                /* Additional styling for buttons */
-            }
-        }
-
-        /* Ensure carousel controls are hidden on desktop */
-        .carousel-control {
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="senior-box-one">
-        <!-- Add Previous Button -->
-        <button class="carousel-control left">Prev</button>
+    <section id="fullstack-syllabus" class="fullstack-syllabus">
+        <div id="fullstack-syllabus-container" class="fullstack-syllabus-container">
+            <div class="fullstack-syllabus-box-one">
 
-        <div id="all-senior" class="senior-page-item-one">
-            <p>All</p>
+                <div id="syallbus" style="background-color: #007d6f; color: white;"
+                    class="fullstack-syllabus-item-one nav-item">
+                    <P>Full Stack Developer Course Syllabus</P>
+                </div>
+
+
+                <div id="detailsawdiz" class="fullstack-syllabus-item-one nav-item">
+                    <P>Full Stack Developer Course Details</P>
+                </div>
+
+
+                <div id="certificationawdiz" class="fullstack-syllabus-item-one nav-item">
+                    <P>Full Stack Developer Course Certification</P>
+                </div>
+
+
+                <div id="trainingawdiz" class="fullstack-syllabus-item-one nav-item">
+                    <P>Full Stack Developer Training at Awdiz</P>
+                </div>
+
+            </div>
         </div>
-        <div id="non-it" class="senior-page-item-two">
-            <p>Non IT Branch to IT Job</p>
-        </div>
-        <div id="non-Engineering" class="senior-page-item-two">
-            <p>Non-Engineering Degree</p>
-        </div>
-        <div id="career-gap" class="senior-page-item-two">
-            <p>Career Gap</p>
-        </div>
-        <div id="M-N-C" class="senior-page-item-two">
-            <p>Got Into Top MNCs</p>
-        </div>
-        <!-- Add Next Button -->
-        <button class="carousel-control right">Next</button>
+    </section>
+
+    <div id="displaysyallbus" class="content-section" style="width: 100%;">
+        <section>
+            <div class="container">
+
+            </div>
+        </section>
+
+        <section class="industry">
+            <div class="container">
+
+            </div>
+        </section>
+
+
+        <section class="languague">
+            <div class="container">
+
+            </div>
+        </section>
+
+
+        <section class="demo-exclusive">
+            <div class="container">
+
+            </div>
+        </section>
     </div>
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const container = document.querySelector('.senior-box-one');
-            let scrollPosition = 0;
-
-            document.querySelector('.carousel-control.right').addEventListener('click', function () {
-                if (window.innerWidth <= 768) {
-                    scrollPosition += container.offsetWidth; // Move one viewport width
-                    if (scrollPosition >= container.scrollWidth) {
-                        scrollPosition = 0; // Loop back to start
-                    }
-                    container.scrollLeft = scrollPosition;
-                }
-            });
-
-            document.querySelector('.carousel-control.left').addEventListener('click', function () {
-                if (window.innerWidth <= 768) {
-                    scrollPosition -= container.offsetWidth; // Move one viewport width
-                    if (scrollPosition < 0) {
-                        scrollPosition = container.scrollWidth - container.offsetWidth;
-                    }
-                    container.scrollLeft = scrollPosition;
-                }
-            });
-        });
-
-
-    </script>
 </body>
 
 </html>

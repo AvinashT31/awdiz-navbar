@@ -612,7 +612,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var mobile = document.getElementById("mobile-navigation");
 
   mobile.innerHTML = ` 
-  <nav class="mobile-navbar">
+  <nav class="mobile-navbar" id="mobile-navbar">
     <div class="mobile-nav">
       <div class="moblie-nav-left">
         <img src="img/awdiz.png" class="img-fluid" alt="">
