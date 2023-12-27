@@ -501,11 +501,11 @@ picture {
     line-height: 1.2;
 }
 
-.content-info {
+/* .content-info {
     line-height: 1.7;
     font-size: 16px;
     font-family: mulish;
-}
+} */
 
 .guarentee-rating {
     /* border: 1px solid black; */
@@ -775,9 +775,9 @@ video {
         width: 100%;
     }
 
-    .content-info {
+    /* .content-info {
         margin-top: 20px;
-    }
+    } */
 
     .modal-content {
         height: 210px !important;

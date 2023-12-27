@@ -2310,6 +2310,18 @@ textarea.cisco-textarea::placeholder {
     line-height: 1.2;
 }
 
+@media screen and (max-width: 480px) {
+    .content-info {
+      margin-top: 20px;
+    }
+  }
+  
+  .content-info {
+    line-height: 1.7;
+    font-size: 16px;
+    font-family: mulish;
+  }
+
 .cicso-p {
     font-size: 44px;
     color: #007d6f;
