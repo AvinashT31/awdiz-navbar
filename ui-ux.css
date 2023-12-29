@@ -173,9 +173,9 @@ html {
     /* border: 1px solid black; */
     width: 90%;
     margin: auto;
-  }
+}
 
-  button {
+button {
     background-color: #333;
     color: black;
     border: none;
@@ -200,7 +200,7 @@ html {
     background-color: #007d6f;
     color: white;
     font-family: mulish;
-  }
+}
 
 
 /* UI-UX PAGE */
@@ -208,7 +208,7 @@ html {
 .ui-ux-banner {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 30px 0px 60px 0px;
+    padding: 60px 0px 60px 0px;
     background-color: #edf8fA;
 }
 
@@ -260,6 +260,10 @@ html {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+#ui-ux-item-six {
+    margin-top: 50px;
+}
+
 .ui-ux-item-two-image {
     border: 1px solid black;
     width: 100%;
@@ -268,7 +272,7 @@ html {
 }
 
 .ui-ux-item-two>p {
-    line-height: 1.5;
+    line-height: 1.8;
     font-family: mulish;
     font-size: 16px;
 }
@@ -277,11 +281,83 @@ html {
     /* border: 1px solid black; */
     width: 100%;
     margin-top: 8px;
-    height: 35px;
+    height: 41px;
     background-color: #007D6F;
     color: white;
     font-weight: 800;
     font-family: hind;
+    margin-left: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .ui-ux-item-two-image {
+        height: 100px;
+    }
+
+    .ui-ux-item-two>p {
+        font-size: 12px;
+    }
+
+    .watch-review-button {
+        height: 35px;
+    }
+
+    .ui-ux-banner {
+        padding: 50px 0px 50px 0px;
+    }
+
+    .ui-ux-box-one>h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .ui-ux-banner {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .ui-ux-first-section {
+        flex-direction: column;
+    }
+
+    .ui-ux-box-one {
+        width: 100%;
+    }
+
+    .ui-ux-box-one>h1 {
+        font-size: 24px;
+    }
+
+    .ui-ux-box-two {
+        width: 100%;
+    }
+
+    .ui-ux-item-two {
+        width: 45%;
+    }
+
+    .ui-ux-item-two-image {
+        height: 100px;
+    }
+
+    .ui-ux-item-two>p {
+        font-size: 11px;
+    }
+
+    .watch-review-button {
+        font-size: 12px;
+        height: 30px;
+    }
+
+    #ui-ux-item-six {
+        margin-top: 40px;
+    }
+
+    #ui-ux-item {
+        margin-top: 40px;
+    }
 }
 
 /* ui-ux-key-points */
@@ -303,13 +379,34 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .ui-ux-key ul li {
-    font-size: 18px !important;
+    font-size: 18px;
     color: black;
     font-weight: 800;
     font-family: mulish;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .ui-ux-key-points {
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .ui-ux-key-points {
+        padding: 20px 0;
+    }
+
+    .ui-ux-key ul li {
+        font-size: 16px;
+        width: 100%;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+    }
 }
 
 /* ux-academy */
@@ -317,7 +414,7 @@ html {
 .ux-academy {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 80px 0px 80px 0px;
+    padding: 60px 0px 60px 0px;
     text-align: center;
     line-height: 1.8;
     background-color: #edf8fA;
@@ -333,6 +430,11 @@ html {
     font-size: 24px;
     font-family: mulish;
     color: #007D6F;
+}
+
+.ux-academy-para-one {
+    font-size: 18px;
+    font-family: mulish;
 }
 
 .ux-academy h2 {
@@ -376,12 +478,87 @@ html {
     font-family: mulish;
 }
 
+.ux-social-linkdein-content-para {
+    font-weight: 800;
+    font-size: 16px;
+    font-family: mulish;
+}
+
+.ux-social-linkdein-content-para-one {
+    font-size: 16px;
+    font-family: mulish;
+}
+
+.ux-social-linkdein-content-para-two {
+    font-size: 16px;
+    font-family: mulish;
+}
+
+.ux-social-linkdein-content-para-three {
+    font-size: 16px;
+    font-weight: 800;
+    font-family: mulish;
+    margin-top: 15px;
+}
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .ux-academy {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .ux-academy-para {
+        font-size: 20px;
+    }
+
+    .ux-academy h2 {
+        font-size: 35px;
+    }
+
+    .ux-academy-para-one {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .ux-academy {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .ux-container {
+        width: 100%;
+    }
+
+    .ux-academy-para {
+        font-size: 20px;
+    }
+
+    .ux-academy h2 {
+        font-size: 24px;
+    }
+
+    .ux-academy-para-one {
+        font-size: 16px;
+    }
+
+    .ux-social-section {
+        flex-direction: column;
+    }
+
+    .ux-social-linkdein {
+        width: 80%;
+    }
+
+    #ux-social {
+        margin-top: 30px;
+    }
+}
+
 /* why-ux-design */
 
 .why-ux-design {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 40px 0px 40px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .h2-heading {
@@ -412,6 +589,15 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 20px;
+}
+
+.why-ux-design-box-three {
+    margin-top: 10px;
+}
+
+#why-ux-design-box-four {
+    margin-left: 45px;
 }
 
 .why-ux-design-box-one>p {
@@ -427,19 +613,67 @@ html {
     background-color: #edf8fa;
 }
 
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .why-ux-design {
+        padding: 40px 0;
+    }
+
+    .h2-heading {
+        font-size: 35px;
+    }
+
+    .why-ux-design-box-one>p {
+        font-size: 16px;
+    }
+
+    .why-ux-design-section {
+        padding: 0;
+    }
+
+    #why-ux-design-box-four {
+        margin-left: 32px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .why-ux-design {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .h2-heading {
+        font-size: 20px;
+        margin-left: 35px;
+    }
+
+    .why-ux-design-box-one {
+        width: 100%;
+    }
+
+    .why-ux-design-box-one>p {
+        font-size: 16px;
+    }
+
+    .why-ux-design-section {
+        padding: 0;
+    }
+
+    #why-ux-design-box-four {
+        margin-left: 0;
+    }
+}
+
 /* fullstack-package */
 
 .fullstack-package {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 30px 0px 30px 0px;
+    padding: 60px 0px 60px 0px;
     background-color: #edf8fA;
 }
 
 .fullstack-package h2 {
     font-size: 50px;
     color: #272566;
-    padding-top: 60px;
     font-weight: 800;
     font-family: nunito;
 }
@@ -453,21 +687,29 @@ html {
     line-height: 2.5;
 }
 
+#full-margin {
+    margin-top: 50px;
+}
+
+#full-margin-one {
+    margin-top: 20px;
+}
+
 .fullstack-package-heading>p {
-    font-size: 20px !important;
+    font-size: 20px;
     font-weight: 500;
 }
 
-.fullstack-intro-first-point > p {
+.fullstack-intro-first-point>p {
     margin-left: 10px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-family: mulish;
-  }
+}
 
 .fullstack-package-section {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 60px 0px 30px 0px;
+    padding: 60px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -490,6 +732,10 @@ html {
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
+.fullstack-package-content-five {
+    margin-top: 25px;
+}
+
 .fullstack-package-line {
     /* border: 1px solid black; */
     width: 3%;
@@ -502,6 +748,14 @@ html {
     width: 94%;
     height: 100%;
     padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.fullstack-pacakge-info-number {
+    color: #007d6f;
+    padding-top: 8px;
 }
 
 .fullstack-pacakge-info>p {
@@ -517,12 +771,82 @@ html {
     border-radius: 10px;
 }
 
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .fullstack-package {
+        padding: 40px 0;
+    }
+
+    .fullstack-package h2 {
+        font-size: 35px;
+    }
+
+    #full-margin {
+        margin-top: 40px;
+    }
+
+    .fullstack-package-heading>p {
+        font-size: 18px;
+    }
+
+    .fullstack-pacakge-info-number {
+        font-size: 24px !important;
+    }
+
+    .fullstack-pacakge-info>p {
+        font-size: 16px;
+    }
+
+    .fullstack-package-content-one {
+        height: 130px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .fullstack-package {
+        padding: 40px 0;
+    }
+
+    .fullstack-package h2 {
+        font-size: 20px;
+    }
+
+    #full-margin {
+        margin-top: 20px;
+    }
+
+    .fullstack-package-heading>p {
+        font-size: 16px;
+    }
+
+    .fullstack-package-section {
+        flex-direction: column;
+    }
+
+    .fullstack-package-content {
+        width: 100%;
+    }
+
+    .fullstack-pacakge-info>p {
+        font-size: 13px;
+    }
+
+    .fullstack-package-content-one {
+        height: 100px;
+    }
+
+    .fullstack-package-company {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+}
+
 /* learn-ux-design */
 
 .learn-ux-design {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 60px 0px 80px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .learn-ux-desing-h2 {
@@ -530,7 +854,7 @@ html {
     text-align: center;
     font-weight: 800;
     color: #272566;
-    padding: 40px 0px 40px 0px;
+    padding: 0px 0px 40px 0px;
     font-family: nunito;
 }
 
@@ -586,6 +910,10 @@ html {
     background-color: #d9d2d2;
 }
 
+.learn-ux-desing-circle i {
+    transform: rotate(45deg);
+}
+
 .learn-ux-design-item-one>p {
     /* border: 1px solid black; */
     width: 65%;
@@ -619,12 +947,13 @@ html {
 .ux-first-syllabus {
     /* border: 1px solid black; */
     width: 100%;
+    padding: 60px 0px 60px 0;
 }
 
 .ux-design-course-page {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 60px 0px 30px 0px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -641,7 +970,7 @@ html {
 
 .ux-design-course-image {
     border: 1px solid black;
-    width: 12%;
+    width: 50px;
     height: 50px;
     margin-bottom: 30px;
 }
@@ -660,6 +989,10 @@ html {
     margin-top: 15px;
 }
 
+.ux-design-course-duration-one {
+    margin-left: 15px;
+}
+
 .ux-design-course-name {
     padding: 10px 0px 10px 0px;
     font-size: 24px;
@@ -668,7 +1001,12 @@ html {
 
 .ux-desing-course-one-para {
     font-family: mulish;
-    line-height: 1.5;
+    line-height: 1.8;
+    margin-bottom: 10px
+}
+
+#ux-design-paraa {
+    margin-top: 70px;
 }
 
 .ux-design-tool {
@@ -695,6 +1033,114 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .learn-ux-design {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .learn-ux-desing-h2 {
+        font-size: 35px;
+    }
+
+    .learn-ux-design-heading>h2 {
+        font-size: 35px;
+    }
+
+    .learn-ux-design-item-one>p {
+        font-size: 16px;
+    }
+
+    .learn-ux-design-item-two-one>h2 {
+        font-size: 35px;
+    }
+
+    .learn-ux-design-item-one {
+        height: 450px;
+    }
+
+    .learn-ux-design-item-two {
+        height: 450px;
+    }
+
+    .ux-first-syllabus {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .ux-design-course-name {
+        font-size: 20px;
+    }
+
+    .ux-desing-course-one-p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .learn-ux-design {
+        padding: 40px 0;
+    }
+
+    .learn-ux-desing-h2 {
+        font-size: 20px;
+    }
+
+    .learn-ux-design-box-one {
+        flex-direction: column;
+    }
+
+    .learn-ux-design-item-one {
+        width: 100%;
+        height: 390px;
+    }
+
+    .learn-ux-design-heading>h2 {
+        font-size: 20px;
+    }
+
+    .learn-ux-design-item-one>p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .learn-ux-design-item-two {
+        width: 100%;
+        height: 390px;
+    }
+
+    .learn-ux-design-item-two-one>h2 {
+        font-size: 20px;
+    }
+
+    #learn-mar {
+        margin-top: 40px;
+    }
+
+    .ux-first-syllabus {
+        padding: 40px 0;
+    }
+
+    .ux-desing-course-one {
+        width: 100%;
+    }
+
+    .ux-design-course-name {
+        font-size: 20px;
+    }
+
+    #ux-design-para {
+        margin-top: 70px;
+    }
+
+    .ux-design-tool-box {
+        width: 46%;
+    }
+
+    #ux-design-to {
+        margin-top: 40px;
+    }
 }
 
 /* awdiz-chatgpt */
@@ -702,13 +1148,13 @@ html {
 .awdiz-chatgpt {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 30px 0px 30px 0px;
+    padding: 60px 0px 60px 0px;
     background-color: #edf8fA;
 }
 
 .awdiz-chatgpt h3 {
     font-size: 50px;
-    padding: 60px 0px 15px 0px;
+    padding: 0px 0px 15px 0px;
     font-family: nunito;
     font-weight: 800;
 }
@@ -717,6 +1163,7 @@ html {
     font-size: 16px;
     margin-left: 8px;
     font-family: mulish;
+    line-height: 1.8;
 }
 
 .awdiz-chagpt-point {
@@ -728,13 +1175,62 @@ html {
     margin-top: 30px;
 }
 
+.awdiz-sho-point {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.awdiz-point {
+    /* border: 1px solid black; */
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .awdiz-chatgpt {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .awdiz-chatgpt h3 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .awdiz-chatgpt {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .awdiz-chatgpt h3 {
+        font-size: 20px;
+    }
+
+    .awdiz-point {
+        margin-top: 20px;
+    }
+}
 
 /* fullstack-syllabus */
+
+.fullstack-uiux {
+    /* border: 1px solid black; */
+    padding: 60px 0px 60px 0px;
+}
 
 .fullstack-syllabus {
     /* border: 1px solid black; */
     width: 100%;
     padding: 70px 0px 0px 0px;
+    position: relative;
+    z-index: 900;
 }
 
 .fullstack-syllabus-box-one {
@@ -746,6 +1242,11 @@ html {
     align-items: center;
     background-color: #edf8fA;
     border-radius: 10px;
+}
+
+.fullstack-syllabus-container {
+    width: 90%;
+    margin: auto;
 }
 
 .fullstack-syllabus-item-one {
@@ -766,15 +1267,43 @@ html {
     font-size: 50px;
     font-weight: 800;
     color: #272566;
-    margin-top: 80px;
     font-family: nunito;
 }
 
 .fullstack-syllabus-display-content>p {
-    line-height: 1.5;
+    line-height: 1.8;
     font-size: 16px;
     padding-top: 30px;
     font-family: mulish;
+}
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .fullstack-syllabus-item-one {
+        font-size: 13px;
+    }
+
+    .fullstack-syllabus-display-content>h3 {
+        font-size: 35px;
+    }
+
+    .fullstack-uiux {
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .fullstack-syllabus-item-one {
+        font-size: 10px;
+    }
+
+    .fullstack-syllabus-display-content>h3 {
+        font-size: 20px;
+    }
+
+    .fullstack-uiux {
+        padding: 40px 0;
+    }
 }
 
 
@@ -783,7 +1312,7 @@ html {
 .portfolio {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 70px 0px 70px 0px;
+    padding: 60px 0px 60px 0px;
     background-color: #edf8fA;
 }
 
@@ -824,7 +1353,7 @@ html {
 
 .portfolio-second-page>p {
     padding-top: 20px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-size: 16px;
     font-family: mulish;
 }
@@ -847,20 +1376,28 @@ html {
     align-items: center;
 }
 
+#portfolio-margin {
+    margin-left: 20px;
+}
+
 .portfolio-desing-first>p {
     margin-left: 10px;
+}
+
+.project-view {
+    text-decoration: underline;
+    padding-top: 0px;
 }
 
 .showcase {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 30px 0px 30px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .showcase-box-one {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 30px 0px 30px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -930,14 +1467,14 @@ html {
 .showcase-para {
     font-family: mulish;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
     padding-top: 20px;
 }
 
 
-.showcase-points {
+/* .showcase-points {
     margin-top: 15px;
-}
+} */
 
 
 .showcase-container {
@@ -952,7 +1489,7 @@ html {
 }
 
 .showcase-wrapper {
-    padding: 30px 0px 30px 0px;
+    /* padding: 30px 0px 30px 0px; */
     overflow: hidden;
     flex: 1;
 }
@@ -999,12 +1536,145 @@ html {
 }
 
 
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .portfolio {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .portfolio-second-page>h3 {
+        font-size: 35px;
+    }
+
+    .portfolio-desing-first {
+        width: 28%;
+    }
+
+    .portfolio-page-one {
+        width: 20%;
+    }
+
+    .portfolio-second-page {
+        width: 75%;
+    }
+
+    .showcase {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .showcase-box-item-one>h4 {
+        font-size: 35px;
+    }
+
+    .showcase-box-item-two-one {
+        height: 40px;
+    }
+
+    .showcase-box-two-item-one {
+        height: 200px;
+    }
+
+    .showcase-h4 {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .portfolio {
+        padding: 40px 0;
+    }
+
+    .portfolio-second-page>h3 {
+        font-size: 20px;
+    }
+
+    .portfolio-page {
+        flex-direction: column;
+    }
+
+    .portfolio-page-one {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-second-page {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .portfolio-desing-first>p {
+        font-size: 16px;
+    }
+
+    .portfolio-desing-first {
+        width: 70%;
+        margin: auto;
+    }
+
+    .project-view {
+        text-align: center;
+    }
+
+    .showcase-slide .showcase-card {
+        flex: 0 0 100%;
+        /* Each card takes full width */
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .showcase-button {
+        width: 5%;
+    }
+
+    .showcase {
+        padding: 40px 0;
+    }
+
+    .showcase-box-item-one {
+        width: 100%;
+    }
+
+    .showcase-box-item-two {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .showcase-box-item-one>h4 {
+        font-size: 20px;
+    }
+
+    .showcase-box-one {
+        flex-direction: column;
+    }
+
+    .showcase-box-item-two-one {
+        width: 12%;
+        height: 40px;
+    }
+
+    .showcase-box-two-item-one {
+        height: 200px;
+    }
+
+    .showcase-h4 {
+        font-size: 18px;
+    }
+
+    .portfolio-design{
+        flex-direction: column;
+        height: 200px;
+    }
+}
+
+
 /* .kickass-student */
 
 .kickass-student {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 50px 0px 50px 0px;
+    padding: 60px 0px 60px 0px;
     background-color: #edf8fA;
 }
 
@@ -1052,11 +1722,75 @@ html {
 }
 
 
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .kickass-student {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .student-work-section-item-one {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:4000px) {
+    .mobile-kickass-student {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+/* mobile-kickass-student */
+
+.mobile-kickass-student {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+}
+
+.mobile-kickass-student-h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+    color: #272566;
+    font-family: nunito;
+}
+
+.mobile-kickass-container {
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.mobile-kickass-card {
+    flex: 0 0 90%;
+    height: 300px;
+    box-shadow: 0 2px 5px 0 rgba(17, 121, 239, .15);
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #fff;
+    margin-right: 1.7%;
+    margin-left: 1.7%;
+    scroll-snap-align: start;
+}
+
+@media screen and (max-width:480px) {
+    .kickass-student {
+        display: none;
+        visibility: hidden;
+    }
+}
+
 /* top-company */
 
 .top-company {
     /* border: 1px solid black; */
-    padding: 30px 0px 30px 0px;
+    padding: 60px 0px 60px 0px;
     background-color: #0a0f26;
 }
 
@@ -1138,7 +1872,7 @@ html {
     width: 200px;
     height: 60px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1210,7 +1944,7 @@ html {
     width: 200px;
     height: 60px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1222,11 +1956,38 @@ html {
     height: 100%;
 }
 
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .top-company {
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .top-company {
+        padding: 40px 0;
+    }
+
+    .top-company h5 {
+        font-size: 18px;
+    }
+}
 
 .front-end {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 0px 0px 40px 0px;
+    padding: 60px 0px 60px 0px;
+}
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .front-end {
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .front-end {
+        padding: 40px 0px 40px 0px;
+    }
 }
 
 /* mentorship */
@@ -1259,7 +2020,7 @@ html {
 
 .mentor-box-one>p {
     width: 55%;
-    line-height: 1.5;
+    line-height: 1.8;
     padding-top: 30px;
     font-size: 16px;
     font-family: mulish;
@@ -1429,13 +2190,14 @@ html {
 .awdizzz-info {
     font-size: 16px;
     font-family: mulish;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .awdizz-ui-carousel-content {
     text-align: center;
     font-size: 16px;
     font-family: mulish;
+    line-height: 1.8;
 }
 
 .awdizz-ui-carousel-content>p {
@@ -1460,14 +2222,89 @@ html {
     font-family: hind;
 }
 
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .mentor-box-one>h4 {
+        font-size: 35px;
+    }
 
+    .awdizz-ui-carousel-button {
+        width: 65%;
+    }
 
+    .awdizz-carousel-button {
+        height: 40px;
+    }
+}
 
+@media screen and (max-width:480px) {
+
+    .mentorship {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .mentor {
+        flex-direction: column;
+    }
+
+    .mentor-box-one {
+        width: 100%;
+    }
+
+    .mentor-box-one>h4 {
+        font-size: 20px;
+        padding-top: 0;
+    }
+
+    .mentor-box-one>p {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .mentor-box-two {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .first-mentor-msg {
+        height: 75px;
+    }
+
+    .second-mentor-msg {
+        height: 75px;
+    }
+
+    .last-mentor-msg {
+        height: 75px;
+    }
+
+    .awdizz-carousel-slide {
+        flex: 0 0 100%;
+    }
+
+    .awdizz-carousel-button {
+        width: 9%;
+        height: 36px;
+    }
+
+    .awdizz-next {
+        left: 88%;
+    }
+
+    .awdizz-ui-carousel-button {
+        width: 55%;
+    }
+
+    .awdizz-prev{
+        left: 0;
+    }
+}
+
+/* .cohort */
 
 .cohort {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 80px 0px 30px 0px;
+    padding: 60px 0px 60px 0px;
     background-color: #edf8fA;
 }
 
@@ -1478,7 +2315,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px 30px 0px;
+    /* padding: 30px 0px 30px 0px; */
 }
 
 .cohort-section-one {
@@ -1519,7 +2356,7 @@ html {
 
 .cohort-section-two>p {
     padding-top: 25px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-family: mulish;
     font-size: 16px;
 }
@@ -1533,6 +2370,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .course-report-circle {
@@ -1543,13 +2381,64 @@ html {
     overflow: hidden;
 }
 
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .cohort {
+        padding: 40px 0;
+    }
+
+    .cohort-section-two>h4 {
+        font-size: 35px;
+    }
+
+    .cohort-button {
+        font-size: 20px;
+    }
+
+    .cohort-section-one {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cohort {
+        padding: 40px 0;
+    }
+
+    .cohort-section {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .cohort-section-one {
+        width: 75%
+    }
+
+    .cohort-section-two {
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .cohort-section-two>h4 {
+        font-size: 20px;
+    }
+
+    .cohort-button {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* ux-review */
 
 .ux-review {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 80px 0px 30px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .ux-design-people {
@@ -1684,7 +2573,7 @@ html {
 
 .ux-desing-people-item-one-para {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-family: mulish;
 }
 
@@ -1727,6 +2616,14 @@ html {
     margin-top: 30px;
 }
 
+.ux-design-people-star-one {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    margin-top: 30px;
+}
+
 .fullstack-project-heading-one {
     font-size: 50px;
     color: #272566;
@@ -1749,18 +2646,242 @@ html {
     height: 540px;
 }
 
+.trustpilot-p {
+    margin-top: 10px;
+    font-family: mulish;
+}
+
+
+/* mobile-ux-review */
+
+.mobile-ux-review{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 40px 0;
+}
+
+.mobile-ux-rating-box{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.mobile-ux-rating-box-one{
+    /* border: 1px solid black; */
+    width: 100%;
+    font-size: 20px;
+}
+
+.mobile-ux-rating-box-two{
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: mulish;
+    /* border: 1px solid black; */
+}
+
+.mobile-ux-rating-item{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 30px;
+}
+
+.mobile-ux-item-one{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mobile-ux-rating-item-one{
+    /* border: 1px solid black; */
+    width: 12%;
+    font-size: 20px;
+}
+
+.mobile-ux-rating-item-two{
+    /* border: 1px solid black; */
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3px;
+}
+
+.mobile-ux-item-three{
+    font-size: 20px;
+    color: #272566;
+    font-family: mulish;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.mobile-ux-item-three-para{
+    margin-top: 5px;
+    font-family: mulish;
+    font-size: 16px;
+}
+
+.mobile-ux-rating-seven{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 15px;
+}
+
+.mobile-ux-rating-eight{
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 40px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+}
+
+.mobile-ux-rating-eight-para{
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: mulish;
+}
+
+.mobile-ux-rating-nine{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.mobile-ux-rating-ten{
+    /* border: 1px solid black; */
+    width: 73%;
+    font-family: mulish;
+}
+
+.mobile-ux-rating-eleven{
+    /* border: 1px solid black; */
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-rating-ux-circle{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.mobile-ux-rating-p{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.mobile-ux-rating-ten-p{
+    margin-top: 5px;
+    font-family: mulish;
+}
+
+#toggle-button{
+    border: 1px solid black;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: hind;
+    height: 40px;
+    padding: 0;
+    background-color: #007D6F;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+@media screen and (min-width:481px) and (max-width:4000px) {
+    .mobile-ux-review{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .fullstack-project-heading-one {
+        font-size: 35px;
+    }
+
+    .ux-design-people-info>h4 {
+        font-size: 35px;
+    }
+
+    .ux-design-people-rating>h4 {
+        font-size: 20px;
+    }
+
+    .trustpilot-p {
+        font-size: 15px;
+    }
+
+    .ux-design-content-circle-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 11px;
+    }
+
+    .ux-design-people-star {
+        width: 45%;
+        justify-content: space-between;
+    }
+
+    .ux-design-people-star-one {
+        width: 27%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .fullstack-project-heading-one {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .fullstack-roadmap {
+        width: 100%;
+        padding: 0;
+        height: 500px;
+        margin-top: 30px;
+    }
+
+    .fullstack-roadmap-image {
+        height: 500px;
+    }
+
+    .mobile-ux-review{
+        display: block;
+    }
+
+    .ux-review{
+        display: none;
+        visibility: hidden;
+    }
+}
+
 /* developer */
 
 .developer {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 40px 0px 40px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .fullstack-project-heading {
     font-size: 50px;
     color: #272566;
-    padding-top: 50px;
     /* padding-left: 15px; */
     font-weight: 800;
     font-family: nunito;
@@ -1778,6 +2899,7 @@ html {
 .emis-fbox-one {
     /* border: 1px solid black; */
     width: 50%;
+    height: 552px;
     padding: 40px 15px 40px 15px;
     text-align: center;
     background-color: #007D6F;
@@ -1786,8 +2908,27 @@ html {
     font-family: mulish;
 }
 
+.emis-item-one-partner-one {
+    /* border: 1px solid black; */
+    width: 35%;
+}
+
+.emis-item-one {
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+}
+
+.emis-item-two {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
 .emis-box-one-para {
     padding-top: 20px;
+    font-size: 16px;
 }
 
 .emis-box-one-partner {
@@ -1852,13 +2993,59 @@ html {
     font-family: mulish;
 }
 
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .developer {
+        padding: 40px 0;
+    }
+
+    .fullstack-project-heading {
+        font-size: 35px;
+    }
+
+    .co-margin {
+        margin-top: 118px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .developer {
+        padding: 40px 0;
+    }
+
+    .fullstack-project-heading {
+        font-size: 20px;
+    }
+
+    .emis {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .emis-fbox-one {
+        width: 100%;
+    }
+
+    .emis-box-one-para {
+        font-size: 14px;
+    }
+
+    .emis-fbox-two {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .rupees {
+        font-size: 24px;
+    }
+}
+
 
 /* .coursecertificate */
 
 .coursecertificate {
     /* border: 1px solid black; */
     width: 100%;
-    padding: 0px 0px 40px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .display-course-content {
@@ -1878,7 +3065,7 @@ html {
     /* border: 1px solid black; */
     width: 65%;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
     font-family: mulish;
 }
 
@@ -1886,6 +3073,31 @@ html {
     /* border: 1px solid black; */
     width: 25%;
     height: 290px;
+}
+
+@media screen AND (min-width:1280px) and (max-width:1600px) {
+    .coursecertificate {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .coursecertificate {
+        padding: 40px 0;
+    }
+
+    .display-course-box {
+        flex-direction: column;
+    }
+
+    .display-course-item-one {
+        width: 100%;
+    }
+
+    .display-course-certificate-image {
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 
 /* demo-exclusive */
@@ -1949,3 +3161,83 @@ html {
     color: white;
     font-family: hind;
 }
+
+@media screen and (min-width:1280px) and (max-width:1600px) {
+    .book-demo-box-one>h3 {
+        font-size: 20px;
+    }
+
+    .book-demo-two-button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .book-demo-exclusive {
+        flex-direction: column;
+    }
+
+    .book-demo-box-one {
+        width: 100%;
+    }
+
+    .book-demo-box-two {
+        width: 100%;
+    }
+
+    .book-demo-box-one>h3 {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .book-demo-two-button {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}
+
+
+
+/* video-modal */
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(237, 248, 250, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 640px;
+    z-index: 2000;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

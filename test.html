@@ -7,62 +7,70 @@
     <title>Document</title>
 </head>
 
+<style>
+    .section {
+        display: none;
+    }
+
+    .section:nth-child(-n+4) {
+        display: block;
+    }
+
+    /* Add more CSS as needed for styling */
+</style>
+
 <body>
-    <section id="fullstack-syllabus" class="fullstack-syllabus">
-        <div id="fullstack-syllabus-container" class="fullstack-syllabus-container">
-            <div class="fullstack-syllabus-box-one">
 
-                <div id="syallbus" style="background-color: #007d6f; color: white;"
-                    class="fullstack-syllabus-item-one nav-item">
-                    <P>Full Stack Developer Course Syllabus</P>
-                </div>
+    <div id="main-div">
+        <div class="section" id="section1">Section 1 Content</div>
+        <div class="section" id="section2">Section 2 Content</div>
+        <div class="section" id="section3">Section 3 Content</div>
+        <div class="section" id="section4">Section 4 Content</div>
+        <div class="section" id="section5">Section 5 Content</div>
+        <div class="section" id="section6">Section 6 Content</div>
+        <div class="section" id="section7">Section 7 Content</div>
+        <div class="section" id="section8">Section 8 Content</div>
+        <div class="section" id="section9">Section 9 Content</div>
+        <div class="section" id="section10">Section 10 Content</div>
+        <div class="section" id="section11">Section 11 Content</div>
+        <div class="section" id="section12">Section 12 Content</div>
+        <div class="section" id="section13">Section 13 Content</div>
+        <div class="section" id="section14">Section 14 Content</div>
+        <div class="section" id="section15">Section 15 Content</div>
+        
 
-
-                <div id="detailsawdiz" class="fullstack-syllabus-item-one nav-item">
-                    <P>Full Stack Developer Course Details</P>
-                </div>
-
-
-                <div id="certificationawdiz" class="fullstack-syllabus-item-one nav-item">
-                    <P>Full Stack Developer Course Certification</P>
-                </div>
-
-
-                <div id="trainingawdiz" class="fullstack-syllabus-item-one nav-item">
-                    <P>Full Stack Developer Training at Awdiz</P>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <div id="displaysyallbus" class="content-section" style="width: 100%;">
-        <section>
-            <div class="container">
-
-            </div>
-        </section>
-
-        <section class="industry">
-            <div class="container">
-
-            </div>
-        </section>
-
-
-        <section class="languague">
-            <div class="container">
-
-            </div>
-        </section>
-
-
-        <section class="demo-exclusive">
-            <div class="container">
-
-            </div>
-        </section>
+        <!-- Additional sections here -->
     </div>
+    <button id="toggle-button">Read More</button>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = Array.from(document.querySelectorAll('.section'));
+            const toggleButton = document.getElementById('toggle-button');
+            let visibleCount = 4;
+
+            toggleButton.addEventListener('click', () => {
+                if (toggleButton.textContent.includes('More')) {
+                    visibleCount = Math.min(sections.length, visibleCount + 4);
+                    if (visibleCount === sections.length) {
+                        toggleButton.textContent = 'Read Less';
+                    }
+                } else {
+                    visibleCount = Math.max(4, visibleCount - 4);
+                    if (visibleCount === 4) {
+                        toggleButton.textContent = 'Read More';
+                    }
+                }
+
+                sections.forEach((section, index) => {
+                    section.style.display = index < visibleCount ? 'block' : 'none';
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>

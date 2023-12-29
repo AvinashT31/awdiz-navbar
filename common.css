@@ -642,10 +642,11 @@ button {
 }
 
 .software-menu-job-submenu-box {
-    border: 1px solid black;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    /* border: 1px solid black; */
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .software-menu-submenu a {
@@ -698,9 +699,9 @@ button {
 }
 
 .software-master-program-box {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 28%;
-    height: 70px;
+    height: 79px;
     background-color: white;
 }
 
@@ -1272,7 +1273,6 @@ ul li {
     position: sticky;
     top: 0%;
     z-index: 1000;
-    background-color: #edf8fa;
 }
 
 .nav {
