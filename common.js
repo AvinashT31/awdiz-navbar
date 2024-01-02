@@ -1736,7 +1736,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <button type="submit">Submit</button>
     </form>
   </div>
-  <div id="mobile-badge" class="badge sticky-contact" style="z-index:100;height:40px; width: 100%;">
+  <div id="mobile-badge" class="badge sticky-contact">
     <ul>
       <li>
         <i class="fa-solid fa-phone phone" loading="lazy"></i>
@@ -1814,7 +1814,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
   `
   attachFormSubmitListener();
-  
+
 })
 
 function attachFormSubmitListener() {
@@ -1901,12 +1901,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var quickEnquiryButton = document.getElementById("quick-enquiry");
 
-  window.addEventListener("scroll", function() {
-      if (window.scrollY > 300) {
-          quickEnquiryButton.style.display = "flex";
-      } else {
-          quickEnquiryButton.style.display = "none";
-      }
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+      quickEnquiryButton.style.display = "flex";
+    } else {
+      quickEnquiryButton.style.display = "none";
+    }
   });
 });
 

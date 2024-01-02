@@ -718,14 +718,14 @@ button {
         height: 200px;
     }
 
-    .fullstack-intro{
+    .fullstack-intro {
         padding-top: 30px;
         padding-bottom: 0;
     }
 }
 
 @media screen and (max-width:320px) {
-    .fullstack-intro-points{
+    .fullstack-intro-points {
         height: 570px;
     }
 }
@@ -1312,29 +1312,29 @@ button {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.full-inter{
+.full-inter {
     /* border: 1px solid black; */
-  width: 85%;
-  margin: auto;
+    width: 85%;
+    margin: auto;
     margin-top: auto;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.full-awdiz{
-       /* border: 1px solid black; */
-       width: 32%;
-       height: 80px;
-       display: flex;
-       align-items: center;
-       border-radius: 10px;
-       background-color: white;
-       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+.full-awdiz {
+    /* border: 1px solid black; */
+    width: 32%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.full-awdiz-info{
+.full-awdiz-info {
     font-size: 14px;
     font-family: poppins;
     text-align: center;
@@ -1444,15 +1444,15 @@ button {
         font-size: 20px;
     }
 
-    .why-awdiz-course{
+    .why-awdiz-course {
         width: 100%;
     }
 
-    .why-con{
+    .why-con {
         margin-top: 0;
     }
 
-    .why-awdiz-container{
+    .why-awdiz-container {
         width: 100%;
         margin-top: 45px;
     }
@@ -3204,7 +3204,7 @@ button {
         font-size: 14px;
     }
 
-    .first-project-modal > a{
+    .first-project-modal>a {
         font-size: 14px;
     }
 }
@@ -4101,7 +4101,7 @@ button {
     }
 }
 
-@media screen and (min-width:481px) and (max-width:4000px) {
+@media screen and (min-width:801px) and (max-width:4000px) {
     .fullstack-four-carousel-container {
         display: none !important;
         visibility: hidden;
@@ -4511,7 +4511,7 @@ textarea {
 }
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:800px) {
     .fullstack-carousel-container {
         display: none;
         visibility: hidden;
@@ -4602,7 +4602,7 @@ textarea {
     font-family: hind;
 }
 
-@media screen and (min-width:481px) and (max-width:4000px) {
+@media screen and (min-width:801px) and (max-width:4000px) {
     .cohort-table {
         display: none;
         visibility: hidden;
@@ -4613,3 +4613,739 @@ textarea {
         visibility: hidden;
     }
 }
+
+@media screen and (max-width:800px) {
+    .fullstack-intro h1 {
+        font-size: 28px;
+    }
+
+    .fullstack-intro h2 {
+        font-size: 24px;
+    }
+
+    .fullstack-into-section {
+        flex-direction: column;
+    }
+
+    .fullstack-intro-points {
+        width: 100%;
+        height: 340px;
+    }
+
+    .fullstack-intro-button {
+        width: 50%;
+    }
+
+    .fullstack-intro-student-review {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .javascript-course {
+        display: none;
+    }
+
+    .fullstack-intro {
+        padding-bottom: 0px;
+    }
+
+    .fullstack-course-intro {
+        padding-top: 30px;
+    }
+
+    .breadcrumb-main .breadcrumb>li {
+        font-size: 18px;
+    }
+
+    .fullstack-course-section>h3 {
+        font-size: 28px;
+    }
+
+    .guarentee-rating {
+        width: 100%;
+    }
+
+    .fullstack-technologies-h4 {
+        font-size: 28px;
+    }
+
+    .fullstack-container {
+        width: 100%;
+    }
+
+    .fullstack-circular-progress {
+        height: 130px;
+    }
+
+    .why-awdiz h4 {
+        font-size: 28px;
+    }
+
+    .why-awdiz-image {
+        width: 64px;
+        height: 59px;
+        left: 5%;
+    }
+
+    .why-awdiz-info {
+        font-size: 11px;
+        margin-left: 15px;
+        margin-right: 11px;
+    }
+
+    .fullstack-package h4 {
+        font-size: 28px;
+    }
+
+    .fullstack-package-heading>p {
+        font-size: 16px !important;
+    }
+
+    .fullstack-package-section {
+        flex-direction: column;
+    }
+
+    .fullstack-package-content {
+        width: 100%;
+    }
+
+    .fullstack-package-company {
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    .fullstack-pacakge-info>p {
+        font-size: 16px;
+    }
+
+    .fullstack-pacakge-info-h4 {
+        font-size: 24px !important;
+    }
+
+    .awdiz-trust h3 {
+        font-size: 28px;
+    }
+
+    .awdiz-trust-container {
+        flex-direction: column;
+    }
+
+    .awdiz-trust-section {
+        width: 100%;
+    }
+
+    .awdiz-trust-box {
+        flex-wrap: nowrap;
+        width: 60%;
+    }
+
+    .awdiz-trust-image {
+        width: 100%;
+    }
+
+    .book-demo-box-one {
+        width: 53%;
+    }
+
+    .book-demo-box-one>h5 {
+        font-size: 15px;
+    }
+
+    .book-demo-box-two {
+        width: 40%;
+    }
+
+    .book-demo-box-two-button {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .fullstack-syllabus-item-one {
+        font-size: 14px;
+    }
+
+    .fullstack-syllabus-display-content>h5 {
+        font-size: 28px;
+    }
+
+    .industry-box-one {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .industry-item-one {
+        width: 100%;
+        height: 700px;
+    }
+
+    .industry-item-two {
+        width: 100%;
+    }
+
+    .industry-item-three {
+        width: 9%;
+        padding: 8px;
+    }
+
+    .languague-heading {
+        font-size: 28px;
+    }
+
+    .languague-box-one {
+        width: 100%;
+    }
+
+    .languague-item-one {
+        height: 100px;
+    }
+
+    .book-demo-two-button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .fullstack-project-heading {
+        font-size: 28px;
+    }
+
+    .industry-box-three {
+        font-size: 18px;
+        padding: 20px 20px 20px 40px;
+    }
+
+    .industry-box-two>h6 {
+        font-size: 20px;
+    }
+
+    .displaycoveredcontent-box-two>h6 {
+        font-size: 20px;
+    }
+
+    .displaycoveredcontent-item-two {
+        width: 47%;
+    }
+
+    .awdiz-chagpt-point>p {
+        font-size: 14px;
+    }
+
+    .displaycoveredcontent-box-two {
+        width: 70%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .project-modal {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .first-project-modal {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .fullstack-project-heading-one {
+        font-size: 28px;
+    }
+
+    .fullstack-roadmap {
+        width: 100%;
+    }
+
+    .fullstack-trainer {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .fullstack-trainer-info {
+        width: 47%;
+        margin-top: 40px;
+    }
+
+    .fullstack-trainer-heading {
+        font-size: 19px;
+    }
+
+    .fullstack-trainer-image {
+        width: 28%;
+    }
+
+    .why-awdiz-h8 {
+        font-size: 28px;
+    }
+
+    .emis {
+        width: 100%;
+    }
+
+    .emis-box-one-para {
+        font-size: 13px;
+    }
+
+    .emis-box-one-para-two {
+        margin-top: 40px;
+    }
+
+    .rupees {
+        font-size: 24px;
+    }
+
+    .full-cohort {
+        margin-top: 0;
+    }
+
+    .emis-para {
+        padding-bottom: 30px;
+    }
+
+    .emis-class-session {
+        display: none;
+        visibility: hidden;
+    }
+
+    .coursecertificate{
+        padding: 0;
+    }
+
+    .display-course-box{
+        flex-direction: column;
+    }
+
+    .display-course-item-one{
+        width: 100%;
+    }
+
+    .display-course-certificate-image{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .fullstackcareer{
+        padding: 0;
+    }
+
+    .why-awdiz-h9{
+        font-size: 28px;
+    }
+
+    .fullstack-near-para{
+        font-size: 18px;
+    }
+
+    .full-inter{
+        width: 90%;
+    }
+
+    .demo-form-section{
+        flex-direction: column;
+    }
+
+    .demo-form-content{
+        width: 100%;
+    }
+
+    .demo-form-content > p{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .demo-form-trial{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .send-button{
+        font-size: 20px;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .fullstack-project-heading-h6{
+        font-size: 28px;
+    }
+
+    .question-section{
+        font-size: 18px;
+    }
+
+    .answer > p{
+        font-size: 18px;
+    }
+
+    .fullstack-project-heading-h3{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:600px)  {
+    .fullstack-intro h1 {
+        font-size: 28px;
+    }
+
+    .fullstack-intro h2 {
+        font-size: 24px;
+    }
+
+    .fullstack-into-section {
+        flex-direction: column;
+    }
+
+    .fullstack-intro-points {
+        width: 100%;
+        height: 465px;
+    }
+
+    .fullstack-intro-button {
+        width: 70%;
+    }
+
+    .fullstack-intro-student-review {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .javascript-course {
+        display: none;
+    }
+
+    .fullstack-intro {
+        padding-bottom: 0px;
+    }
+
+    .fullstack-course-intro {
+        padding-top: 30px;
+    }
+
+    .breadcrumb-main .breadcrumb>li {
+        font-size: 18px;
+    }
+
+    .fullstack-course-section>h3 {
+        font-size: 28px;
+    }
+
+    .guarentee-rating {
+        width: 100%;
+    }
+
+    .fullstack-technologies-h4 {
+        font-size: 28px;
+    }
+
+    .fullstack-container {
+        width: 100%;
+    }
+
+    .fullstack-circular-progress {
+        height: 130px;
+    }
+
+    .why-awdiz h4 {
+        font-size: 28px;
+    }
+
+    .why-awdiz-image {
+        width: 64px;
+        height: 59px;
+        left: 5%;
+    }
+
+    .why-awdiz-info {
+        font-size: 11px;
+        margin-left: 15px;
+        margin-right: 11px;
+    }
+
+    .fullstack-package h4 {
+        font-size: 28px;
+    }
+
+    .fullstack-package-heading>p {
+        font-size: 16px !important;
+    }
+
+    .fullstack-package-section {
+        flex-direction: column;
+    }
+
+    .fullstack-package-content {
+        width: 100%;
+    }
+
+    .fullstack-package-company {
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    .fullstack-pacakge-info>p {
+        font-size: 16px;
+    }
+
+    .fullstack-pacakge-info-h4 {
+        font-size: 24px !important;
+    }
+
+    .awdiz-trust h3 {
+        font-size: 28px;
+    }
+
+    .awdiz-trust-container {
+        flex-direction: column;
+    }
+
+    .awdiz-trust-section {
+        width: 100%;
+    }
+
+    .awdiz-trust-box {
+        flex-wrap: nowrap;
+        width: 60%;
+    }
+
+    .awdiz-trust-image {
+        width: 100%;
+    }
+
+    .book-demo-box-one {
+        width: 53%;
+    }
+
+    .book-demo-box-one>h5 {
+        font-size: 15px;
+    }
+
+    .book-demo-box-two {
+        width: 40%;
+    }
+
+    .book-demo-box-two-button {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .fullstack-syllabus-item-one {
+        font-size: 14px;
+    }
+
+    .fullstack-syllabus-display-content>h5 {
+        font-size: 28px;
+    }
+
+    .industry-box-one {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .industry-item-one {
+        width: 100%;
+        height: 700px;
+    }
+
+    .industry-item-two {
+        width: 100%;
+    }
+
+    .industry-item-three {
+        width: 9%;
+        padding: 8px;
+    }
+
+    .languague-heading {
+        font-size: 28px;
+    }
+
+    .languague-box-one {
+        width: 100%;
+    }
+
+    .languague-item-one {
+        height: 100px;
+    }
+
+    .book-demo-two-button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .fullstack-project-heading {
+        font-size: 28px;
+    }
+
+    .industry-box-three {
+        font-size: 18px;
+        padding: 20px 20px 20px 40px;
+    }
+
+    .industry-box-two>h6 {
+        font-size: 20px;
+    }
+
+    .displaycoveredcontent-box-two>h6 {
+        font-size: 20px;
+    }
+
+    .displaycoveredcontent-item-two {
+        width: 47%;
+    }
+
+    .awdiz-chagpt-point>p {
+        font-size: 14px;
+    }
+
+    .displaycoveredcontent-box-two {
+        width: 70%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .project-modal {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .first-project-modal {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .fullstack-project-heading-one {
+        font-size: 28px;
+    }
+
+    .fullstack-roadmap {
+        width: 100%;
+    }
+
+    .fullstack-trainer {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .fullstack-trainer-info {
+        width: 47%;
+        margin-top: 40px;
+    }
+
+    .fullstack-trainer-heading {
+        font-size: 19px;
+    }
+
+    .fullstack-trainer-image {
+        width: 37%;
+    }
+
+    .why-awdiz-h8 {
+        font-size: 28px;
+    }
+
+    .emis {
+        width: 100%;
+    }
+
+    .emis-box-one-para {
+        font-size: 13px;
+    }
+
+    .emis-box-one-para-two {
+        margin-top: 40px;
+    }
+
+    .rupees {
+        font-size: 24px;
+    }
+
+    .full-cohort {
+        margin-top: 0;
+    }
+
+    .emis-para {
+        padding-bottom: 30px;
+    }
+
+    .emis-class-session {
+        display: none;
+        visibility: hidden;
+    }
+
+    .coursecertificate{
+        padding: 0;
+    }
+
+    .display-course-box{
+        flex-direction: column;
+    }
+
+    .display-course-item-one{
+        width: 100%;
+    }
+
+    .display-course-certificate-image{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .fullstackcareer{
+        padding: 0;
+    }
+
+    .why-awdiz-h9{
+        font-size: 28px;
+    }
+
+    .fullstack-near-para{
+        font-size: 18px;
+    }
+
+    .full-inter{
+        width: 90%;
+    }
+
+    .demo-form-section{
+        flex-direction: column;
+    }
+
+    .demo-form-content{
+        width: 100%;
+    }
+
+    .demo-form-content > p{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .demo-form-trial{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .send-button{
+        font-size: 20px;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .fullstack-project-heading-h6{
+        font-size: 28px;
+    }
+
+    .question-section{
+        font-size: 18px;
+    }
+
+    .answer > p{
+        font-size: 18px;
+    }
+
+    .fullstack-project-heading-h3{
+        font-size: 28px;
+    }
+}
+
+

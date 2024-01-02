@@ -812,6 +812,12 @@ video {
     }
 }
 
+@media screen and (min-width:600px) and (max-width:800px) {
+    .modal-dialog{
+        width: 90%;
+    }
+}
+
 @media screen and (max-width:480px) {
     .guarentee-rating-container img {
         width: 239px;
@@ -1624,7 +1630,7 @@ button:hover {
 }
 
 
-@media screen and (min-width:800px) and (max-width:4000px) {
+@media screen and (min-width:801px) and (max-width:4000px) {
     .mobile-carousel-container {
         display: none;
         visibility: hidden;
@@ -1995,21 +2001,7 @@ button:hover {
     align-items: center;
 }
 
-@media screen and (max-width: 800px) {
-    .carousel-card-unique {
-        flex: 0 0 calc(40% - 10px);
-        margin-right: 10px;
-        padding: 10px;
-    }
 
-    .carousel-wrapper-unique {
-        overflow-x: hidden;
-    }
-
-    .carousel-slide-unique {
-        justify-content: start;
-    }
-}
 
 .our-courses-rating {
     /* border: 1px solid black; */
@@ -2157,6 +2149,20 @@ button:hover {
         border: 2px solid white;
         background: white;
         border-radius: 10px;
+    }
+
+    .carousel-card-unique {
+        flex: 0 0 calc(33% - 10px);
+        margin-right: 60px;
+        padding: 10px;
+    }
+
+    .carousel-wrapper-unique {
+        overflow-x: hidden;
+    }
+
+    .carousel-slide-unique {
+        justify-content: start;
     }
 }
 
@@ -3313,7 +3319,75 @@ button:hover {
     }
 }
 
-@media screen and (min-width:600px) and (max-width:800px) {
+@media screen and (max-width:800px){
+    .certificate{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .certificate-page{
+        padding: 40px 0;
+    }
+
+    .certificate-first-page{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .certificate-page-info{
+        width: 53%;
+    }
+
+    .certi{
+        font-size: 15px !important;
+    }
+
+    .certificate-button{
+        padding-top: 0;
+        width: 67%;
+        font-size: 14px;
+    }
+
+    .certificate-page-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 75px;
+    }
+
+    .certificate-rating{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .certificate-rating-first{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .certificate-rating-first-para1{
+        font-size: 20px;
+    }
+
+    .certificate-rating-first-para{
+        font-size: 35px;
+    }
+
+    .certificate-rating-item-three-p{
+        font-size: 35px;
+    }
+
+    .certficate-rating-item-star{
+        width: 25%;
+        font-size: 24px;
+    }
+
+    .certificate-page-info-p{
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
     .certificate{
         padding: 30px 0px 30px 0px;
     }
@@ -3361,7 +3435,7 @@ button:hover {
     }
 
     .certificate-rating-first-para1{
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .certificate-rating-first-para{
@@ -3373,7 +3447,7 @@ button:hover {
     }
 
     .certficate-rating-item-star{
-        width: 40%;
+        width: 30%;
         font-size: 24px;
     }
 }
@@ -3546,6 +3620,31 @@ button:hover {
     }
 }
 
+@media screen and (min-width:600px) and (max-width:800px) {
+    .awdiz-choose{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .choose-box-one > h6{
+        font-size: 18px;
+    }
+
+    .choose-box-one-img{
+        width: 15%;
+    }
+
+    .choose-box-one{
+        width: 47%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .choose-box-one-img{
+        width: 21%;
+    }
+}
+
 @media screen and (max-width:480px) {
 
     .awdiz-choose {
@@ -3612,11 +3711,15 @@ button:hover {
 }
 
 
-@media screen and (width:1440px) {}
-
 @media screen and (min-width:1280px) and (max-width:1600px) {
     .placement-institute {
         padding: 60px 0px 60px 0px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .placement-institute{
+        padding: 30px 0;
     }
 }
 
@@ -3811,7 +3914,14 @@ button:hover {
     }
 }
 
-@media screen and (min-width:481px) and (max-width:4000px) {
+@media screen and (min-width:600px) and (max-width:800px) {
+    .circle-container {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:4000px) {
     .circle-mobile-container {
         display: none;
         visibility: hidden;
@@ -3976,6 +4086,25 @@ textarea {
 
     .demo-form-content>p {
         font-size: 20px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .demo-form-section{
+        flex-direction: column;
+    }
+
+    .demo-form-content{
+        width: 100%;
+    }
+
+    .demo-form-trial{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .send-button{
+        font-size: 23px;
     }
 }
 
@@ -4193,8 +4322,6 @@ textarea {
 }
 
 
-@media screen and (width:1440px) {}
-
 @media screen and (min-width:1280px) and (max-width:1600px) {
     .review-section {
         padding: 50px 0px 50px 0px;
@@ -4227,6 +4354,32 @@ textarea {
     .double-container {
         height: 480px;
         padding-bottom: 0px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .review-section{
+        padding: 30px 0;
+    }
+
+    .review-page{
+        flex-direction: column;
+    }
+
+    .single-carosual{
+        width: 100%;
+    }
+
+    .double-container{
+        width: 100%;
+    }
+
+    .double-card{
+        height: 475px;
+    }
+
+    .carousel-item-two-p{
+        font-size: 14px;
     }
 }
 
@@ -4501,6 +4654,62 @@ textarea {
         font-size: 14px;
     }
 
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .Blog-page{
+        padding: 30px 0;
+    }
+
+    .blog-page-carousel {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .blog-courses-name ul li {
+        flex: 0 0 38%;
+        margin-left: 10px;
+    }
+    
+    .blog-carousel-button:hover {
+        background-color: #bebed1;
+    }
+
+    .blog-our-courses-info {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        margin-top: 0px;
+    }
+
+    .blog-our-courses-angular {
+        flex: 0 0 90%;
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-top: 30px;
+    }
+
+    .blog-placement-view {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .blog-button {
+        width: 45%;
+        font-size: 17px;
+        height: 48px !important;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .blog-our-courses-angular>p {
+        font-size: 14px;
+    }
+
+    .btnssss{
+        font-size: 16px;
+        width: 37%;
+    }
 }
 
 @media screen and (max-width:480px) {

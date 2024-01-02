@@ -927,6 +927,13 @@ html {
     align-items: center;
 }
 
+#mobile-badge {
+    z-index: 100;
+    height: 40px;
+    width: 100%;
+    margin: auto;
+}
+
 @media screen and (max-width:480px) {
     .cisco-enquiry {
         flex-direction: column;
@@ -958,10 +965,16 @@ html {
     }
 }
 
-@media (min-width:600px) and (max-width:800px){
-    .cisco-enquiry{
+@media (min-width:600px) and (max-width:800px) {
+    .cisco-enquiry {
         display: none;
         visibility: hidden;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    #mobile-badge {
+        width: 80%;
     }
 }
 
@@ -974,6 +987,7 @@ html {
     white-space: nowrap;
     vertical-align: middle;
 }
+
 
 .badge-one {
     width: 56%;
@@ -1016,6 +1030,14 @@ html {
     .sticky-contact {
         display: block;
         margin-top: 30px;
+    }
+
+    #mobile-badge{
+        margin-top: 50px;
+    }
+
+    .card1{
+        width: 85%;
     }
 }
 
@@ -1072,7 +1094,7 @@ html {
     z-index: 100;
 }
 
-@media only screen and (min-width:0px) and (max-width: 800px) {
+@media only screen and (min-width:0px) and (max-width: 480px) {
     .topbar-section {
         display: none !important
     }
@@ -1094,14 +1116,20 @@ html {
 }
 
 @media screen and (min-width:600px) and (max-width:800px) {
-    .pull-left{
+    .pull-left {
+        text-align: center;
+        width: 100%;
         text-align: center;
     }
 
-    .pull-right{
-      float: left;
-      width: 95%;
-      text-align: center;
+    .pull-right {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .topbar-section {
+        display: none !important
     }
 }
 
@@ -2104,6 +2132,41 @@ footer {
 }
 
 
+@media screen and (min-width:600px) and (max-width:800px) {
+    footer {
+        padding-top: 0px;
+    }
+
+    .footer-page {
+        flex-direction: column;
+    }
+
+    .footer-box-one {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .footer-box-one-para {
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .footer-social-page {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .footer-declaimer {
+        width: 100%;
+    }
+
+    .footer-map {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
 @media screen and (max-width:480px) {
 
     footer {
@@ -2502,76 +2565,89 @@ textarea.cisco-textarea::placeholder {
 
 }
 
-@media (min-width:600px) and (max-width:800px){
-    .cisco-training{
+@media (min-width:600px) and (max-width:800px) {
+    .cisco-training {
         padding: 30px 0px 30px 0px;
     }
 
-    .cisco-training-page{
+    .cisco-training-page {
         flex-direction: column;
     }
 
-    .cisco-training-form{
+    .cisco-training-form {
         width: 100%;
-    }
-
-    .cisco-training-form::after{
-        width: 97%;
-        height: 500px;
-        bottom: 80%;
-    }
-
-    .cisco-training-form{
         height: 596px;
     }
 
-    .cisco-training-info{
+    .cisco-training-form::after {
+        width: 97%;
+        height: 500px;
+        bottom: 80%;
+     
+    }
+
+    .cisco-training-info {
         width: 100%;
     }
 
-    .cisco-form{
-        width: 100%;
+    .cisco-form {
+        width: 80%;
     }
 
-    .cisco-training-info{
+    .cisco-training-info {
         padding: 50px 0px 0px 0px;
     }
 
-    .cisco-job{
+    .cisco-job {
         justify-content: space-between;
     }
 
-    .cisco-container{
+    .cisco-container {
         width: 34%;
     }
 
-    .cisco-fo{
+    .cisco-fo {
         margin-top: 35px;
     }
 
-    .video-show-page{
+    .video-show-page {
         flex-direction: column-reverse;
     }
 
-    .video-show-page-ok-right{
+    .video-show-page-ok-right {
         width: 100%;
     }
 
-    .right-video{
+    .right-video {
         display: none;
     }
 
-    .video-show-page-ok{
+    .video-show-page-ok {
         width: 100%;
         margin-top: 40px;
     }
 
-    .video-show{
+    .video-show {
         padding: 30px 0px 30px 0px;
         margin-bottom: 0;
     }
 
-    .why-awdiz-page{
-        padding: 30px 0px;
+    .why-awdiz-page {
+        padding: 50px 0px;
+        /* padding: 30px 0px; */
+    }
+
+    .ciscos-con {
+        text-align: right;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .cisco-training-form::after {
+           width: 89%;
+        height: 570px;
+        bottom: 92%;
+        left: 5.5%;
     }
 }

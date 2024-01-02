@@ -3814,7 +3814,7 @@
     }
 
     function updateCardsPerView() {
-      if (window.innerWidth <= 600) {
+      if (window.innerWidth <= 800) {
         cardsPerViewUnique = 2;
       } else {
         cardsPerViewUnique = 5;
@@ -3970,7 +3970,7 @@
 
       let currentCard = 0;
 
-      const getStep = () => window.innerWidth > 768 ? stepDesktop : stepMobile;
+      const getStep = () => window.innerWidth > 480 ? stepDesktop : stepMobile;
 
       prevBtn.addEventListener('click', () => {
         const step = getStep();
