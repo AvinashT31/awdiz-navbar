@@ -308,8 +308,7 @@ picture {
     height: 400px;
 }
 
-@media screen and (max-width:480px) {
-
+@media (min-width:1px) and (max-width:480px) {
     .banner-section {
         height: 370px;
     }
@@ -369,34 +368,46 @@ picture {
 
 }
 
-@media screen and (min-width:481px) and (max-width:767px) {
+@media screen and (min-width:600px) and (max-width:800px) {
 
     .homePage {
-        flex-direction: column;
-        padding: 50px 0px 50px 0px;
+        flex-direction: column-reverse;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .homepage-right {
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     .homepage-left {
         width: 100%;
     }
 
-    .homepage-right {
-        display: none;
-        visibility: hidden;
-    }
-
     .banner-section-guarentee {
-        width: 50%;
+        display: none;
     }
 
     .banner-section-button button {
-        width: 30%;
-
+        width: 100%;
     }
 
+    .banner-section {
+        height: 370px;
+        align-items: center;
+    }
+
+    .banner-section>h1 {
+        text-align: center;
+    }
+
+    .banner-section>p {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width:480px) {
+@media (min-width:1px) and (max-width:480px) {
     .banner-section-para {
         display: none;
     }
@@ -685,8 +696,6 @@ picture {
     height: 355px;
 }
 
-
-
 .modal-content iframe {
     border: 1px solid #007d6f;
     border-radius: 6px;
@@ -959,6 +968,33 @@ video {
 
     .news-content {
         right: 6px;
+    }
+}
+
+@media (min-width:600px) and (max-width:800px) {
+    .guarentee {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .guarentee-page {
+        flex-direction: column;
+    }
+
+    .guarentee-image {
+        width: 100%;
+    }
+
+    .guarentee-content {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .content-info {
+        margin-top: 50px;
+    }
+
+    .guarentee-rating {
+        margin-top: 50px;
     }
 }
 
@@ -1252,11 +1288,68 @@ video {
 
 /* MEDIA QUERIES */
 
-@media screen and (width:1440px) {}
 
 @media screen and (min-width:1280px) and (max-width:1600px) {
     .why-awdiz-image i {
         font-size: 24px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .info-one {
+        width: 110px;
+        height: 61px;
+    }
+
+    .info-two {
+        width: 75px;
+        height: 58px;
+    }
+
+    .info-three {
+        width: 95px;
+        height: 55px
+    }
+
+    .info-four {
+        width: 102px;
+        height: 55px;
+    }
+
+    .info-five {
+        width: 115px;
+        height: 55px;
+    }
+
+    .info-six {
+        width: 115px;
+        height: 57px;
+
+    }
+
+    .info-seven {
+        width: 115px;
+        height: 60px;
+    }
+
+    .info-eight {
+        width: 66px;
+        height: 58px;
+    }
+
+    .info-nine {
+        width: 86px;
+        height: 60px;
+    }
+
+    .why-awdiz-info {
+        font-size: 11px;
+        margin-left: 16px;
+        margin-right: 10px;
+    }
+
+    .why-awdiz-image {
+        left: 5%;
     }
 }
 
@@ -1531,10 +1624,20 @@ button:hover {
 }
 
 
-@media screen and (min-width:481px) and (max-width:4000px) {
+@media screen and (min-width:800px) and (max-width:4000px) {
     .mobile-carousel-container {
         display: none;
         visibility: hidden;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .awdiz-career {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .career-page {
+        padding: 0;
     }
 }
 
@@ -1583,7 +1686,13 @@ button:hover {
         display: none;
         visibility: hidden;
     }
+}
 
+@media screen and (min-width:600px) and (max-width:800px) {
+    .carousel-container {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 /* our-courses */
@@ -1886,10 +1995,11 @@ button:hover {
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .carousel-card-unique {
-        flex: 0 0 calc(33% - 10px);
+        flex: 0 0 calc(40% - 10px);
         margin-right: 10px;
+        padding: 10px;
     }
 
     .carousel-wrapper-unique {
@@ -2020,6 +2130,33 @@ button:hover {
 
     .our-courses-angular {
         margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .our-courses {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .our-courses-summary {
+        flex-direction: column;
+    }
+
+    .our-summary-arrow {
+        width: 100%;
+    }
+
+    .our-courses-angular {
+        flex: 0 0 auto;
+        margin-right: 22px;
+    }
+
+    .our-courses-angular {
+        width: 85%;
+        margin-top: 22px;
+        border: 2px solid white;
+        background: white;
+        border-radius: 10px;
     }
 }
 
@@ -2465,6 +2602,58 @@ button:hover {
     }
 }
 
+@media screen and (min-width:600px) and (max-width:800px) {
+    .job-guarentee-program {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .guarantee-carousael-seection {
+        display: flex;
+    }
+
+    .guarantee-courses-name ul li {
+        flex: 0 0 40%;
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    .job-guarentee-info {
+        padding-top: 40px;
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .job-guarentee-box-one {
+        flex: 0 0 90%;
+        width: 100%;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .job-guarentee-item-one {
+        width: 100%;
+    }
+
+    .job-guarentee-section-one {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .view-more-button {
+        width: 33%;
+        padding: 15px 0px 15px 0px;
+        font-size: 18px;
+    }
+
+    .placement-view {
+        padding: 0;
+    }
+}
+
 @media screen and (max-width:480px) {
 
     .job-guarentee-program {
@@ -2746,10 +2935,9 @@ button:hover {
 
 .wave-container {
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
-
 }
 
 .wave {
@@ -2828,6 +3016,48 @@ button:hover {
 
     .training-box-one h3 {
         margin-top: 0px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .training {
+        padding: 30px 0px;
+    }
+
+    .training-steps {
+        height: 506px;
+    }
+
+    .training-box-one {
+        width: 14%;
+        height: 257px;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .training-box-one h3 {
+        font-size: 17px;
+        margin-top: 13px;
+    }
+
+    .training-box-one > p {
+        font-size: 9px;
+        padding-top: 13px;
+    margin-bottom: 15px;
+    }
+
+    .train-img{
+        margin-top: 10px;
+    }
+
+    .wave{
+        height: 550px;
+    }
+
+    .wave path{
+        stroke-width: 8;
     }
 }
 
@@ -3080,6 +3310,71 @@ button:hover {
 
     .certficate-rating-item-star {
         font-size: 20px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .certificate{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .certificate-page{
+        padding: 40px 0;
+        flex-direction: column;
+    }
+
+    .certificate-first-page{
+        width: 100%;
+    }
+
+    .certificate-page-info{
+        width: 53%;
+    }
+
+    .certi{
+        font-size: 20px !important;
+    }
+
+    .certificate-button{
+        padding-top: 0;
+        width: 57%;
+    }
+
+    .certificate-page-circle{
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+    }
+
+    .sec-page{
+        margin-top: 35px;
+    }
+
+    .certificate-rating{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .certificate-rating-first{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .certificate-rating-first-para1{
+        font-size: 24px;
+    }
+
+    .certificate-rating-first-para{
+        font-size: 35px;
+    }
+
+    .certificate-rating-item-three-p{
+        font-size: 35px;
+    }
+
+    .certficate-rating-item-star{
+        width: 40%;
+        font-size: 24px;
     }
 }
 

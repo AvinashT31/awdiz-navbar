@@ -662,7 +662,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="software-heading-right">
-              <p style="padding-left: 10px; ">Software Development</p>
+              <p>Software Development</p>
             </div>
           </div>
         </div>
@@ -1382,10 +1382,10 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="mobile-hamburg-click-section-heading">
           <div class="mobile-hamburg-click-section-heading-page">
             <div class="mobile-hamburg-click-section-heading-left">
-              <i style="padding-top: 10px;" class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="mobile-hamburg-click-section-heading-right">
-              <p style="padding-left: 18px; padding-top: 10px;">MENU</p>
+              <p>MENU</p>
             </div>
           </div>
         </div>

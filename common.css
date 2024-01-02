@@ -283,6 +283,7 @@ button {
     width: 100%;
     height: auto;
     background-color: #f3f4f6;
+    padding: 10px 0px 10px 0px;
     /* box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 2px 6px; */
 }
 
@@ -291,12 +292,12 @@ button {
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .mobile-hamburg-click-section-heading-left {
     /* border: 1px solid black; */
-    width: 30%;
+    width: 20%;
     font-size: 20px;
 }
 
@@ -306,9 +307,9 @@ button {
 
 .mobile-hamburg-click-section-heading-right {
     /* border: 1px solid black; */
-    width: 70%;
+    width: 60%;
     display: flex;
-    padding-bottom: 10px;
+    justify-content: center;
     align-items: center;
     font-weight: 550;
 }
@@ -338,6 +339,7 @@ button {
 .mobile-hamburg-submenu ul li {
     font-size: 15px;
     font-family: poppins;
+    padding-left: 0;
 }
 
 .mobile-hamburg-submenu ul li a {
@@ -377,7 +379,7 @@ button {
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* padding: 10px 0px 10px 0px; */
 }
 
@@ -393,9 +395,9 @@ button {
 
 .allcourses-heading-right {
     /* border: 1px solid black; */
-    width: 80%;
+    width: 60%;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     padding-left: 28px;
     align-items: center;
     font-weight: 550;
@@ -427,6 +429,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0;
 }
 
 
@@ -436,7 +439,7 @@ button {
 }
 
 
-@media screen and (min-width:485px) and (max-width:4000px) {
+@media screen and (min-width:801px) and (max-width:4000px) {
     .mobile-navbar {
         display: none;
         visibility: hidden;
@@ -540,9 +543,8 @@ button {
 
 .software-heading-right {
     /* border: 1px solid black; */
-    width: 80%;
+    width: 60%;
     display: flex;
-    /* padding-left: 20px; */
     align-items: center;
     font-weight: 550;
 }
@@ -942,7 +944,7 @@ html {
     }
 }
 
-@media screen and (min-width:481px) and (max-width:4000px) {
+@media screen and (min-width:801px) and (max-width:4000px) {
     #mobile-badge {
         display: none;
         visibility: hidden;
@@ -954,9 +956,14 @@ html {
         display: none;
         visibility: hidden;
     }
-
 }
 
+@media (min-width:600px) and (max-width:800px){
+    .cisco-enquiry{
+        display: none;
+        visibility: hidden;
+    }
+}
 
 
 
@@ -1007,7 +1014,7 @@ html {
 
 @media screen and (max-width: 480px) {
     .sticky-contact {
-        display: block !important;
+        display: block;
         margin-top: 30px;
     }
 }
@@ -1065,7 +1072,7 @@ html {
     z-index: 100;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width:0px) and (max-width: 800px) {
     .topbar-section {
         display: none !important
     }
@@ -1084,6 +1091,18 @@ html {
 
 .pull-right {
     float: right
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .pull-left{
+        text-align: center;
+    }
+
+    .pull-right{
+      float: left;
+      width: 95%;
+      text-align: center;
+    }
 }
 
 ul {
@@ -1160,6 +1179,7 @@ ul li {
 .glow-on-hover:hover {
     background-color: white;
 }
+
 
 @media screen and (min-width:1181px) and (max-width:1600px) {
     .topbar-inner ul li:first-child {
@@ -1852,7 +1872,7 @@ ul li {
     margin-left: -99px;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:800px) {
     .navbar {
         display: none;
         visibility: hidden;
@@ -1868,8 +1888,6 @@ ul li {
         width: 30%;
     }
 }
-
-
 
 /* footer */
 
@@ -2312,15 +2330,15 @@ textarea.cisco-textarea::placeholder {
 
 @media screen and (max-width: 480px) {
     .content-info {
-      margin-top: 20px;
+        margin-top: 20px;
     }
-  }
-  
-  .content-info {
+}
+
+.content-info {
     line-height: 1.7;
     font-size: 16px;
     font-family: mulish;
-  }
+}
 
 .cicso-p {
     font-size: 44px;
@@ -2482,4 +2500,78 @@ textarea.cisco-textarea::placeholder {
         font-size: 16px;
     }
 
+}
+
+@media (min-width:600px) and (max-width:800px){
+    .cisco-training{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .cisco-training-page{
+        flex-direction: column;
+    }
+
+    .cisco-training-form{
+        width: 100%;
+    }
+
+    .cisco-training-form::after{
+        width: 97%;
+        height: 500px;
+        bottom: 80%;
+    }
+
+    .cisco-training-form{
+        height: 596px;
+    }
+
+    .cisco-training-info{
+        width: 100%;
+    }
+
+    .cisco-form{
+        width: 100%;
+    }
+
+    .cisco-training-info{
+        padding: 50px 0px 0px 0px;
+    }
+
+    .cisco-job{
+        justify-content: space-between;
+    }
+
+    .cisco-container{
+        width: 34%;
+    }
+
+    .cisco-fo{
+        margin-top: 35px;
+    }
+
+    .video-show-page{
+        flex-direction: column-reverse;
+    }
+
+    .video-show-page-ok-right{
+        width: 100%;
+    }
+
+    .right-video{
+        display: none;
+    }
+
+    .video-show-page-ok{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .video-show{
+        padding: 30px 0px 30px 0px;
+        margin-bottom: 0;
+    }
+
+    .why-awdiz-page{
+        padding: 30px 0px;
+    }
 }
